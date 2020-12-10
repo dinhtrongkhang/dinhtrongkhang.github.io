@@ -1,0 +1,40 @@
+:root {
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --sencondary--color: red;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
+}
+.baitap {
+    display: flex;
+    justify-content: center;
+}
+.home, .bai1, .bai2, .bai3, .bai4, .bai5, .bai6, .bai7, .dom, .calc {
+    width: 90px;
+    height: 30px;
+    background-color: turquoise;
+    margin: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 2rem;
+    color: var(--overlay-color);
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
