@@ -1,0 +1,134 @@
+/* ---------- 1. Setting --------- */
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --sencondary--color: red;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-color);
+}
+.baitap {
+  display: none;
+}
+.pc {
+  display: none;
+}
+.home,
+.bai1,
+.bai2,
+.bai3,
+.bai4,
+.bai5,
+.bai6,
+.bai7,
+.dom,
+.calc {
+  width: 90px;
+  height: 30px;
+  background-color: turquoise;
+  margin: 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 2rem;
+  color: var(--overlay-color);
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.grid__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "main" "footer";
+}
+.header {
+  grid-area: header;
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.header > .box {
+  width: 60px;
+  height: 30px;
+  background-color: coral;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.header > .box:nth-child(1) {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+}
+.header > .box:nth-child(3) {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+}
+.header > .box:nth-child(2) {
+  margin: 15px;
+}
+.main {
+  width: 100%;
+  height: 100%;
+}
+.main > .box {
+  width: calc(100% - 30px);
+  height: 300px;
+  background-color: tomato;
+  margin: 0 15px 15px 15px;
+}
+.footer {
+  grid-area: footer;
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .pc {
+    display: block;
+  }
+  .baitap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .header {
+    background-color: blue;
+  }
+  .header > .box {
+    width: 90px;
+  }
+  .header > .box:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    left: 105px;
+  }
+  .main > .box {
+    margin: 15px;
+  }
+  .footer {
+    background-color: blue;
+  }
+}
