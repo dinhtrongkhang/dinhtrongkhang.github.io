@@ -1,0 +1,134 @@
+/* ------------- 1. setting ----------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+.wrapper {
+  max-width: 1920px;
+  margin: auto;
+}
+.main {
+  max-width: 1066px;
+  margin: auto;
+}
+@font-face {
+  font-family: ubuntulight;
+  src: url(../font/Ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: Playfairregular;
+  src: url(../font/Playfair_Display/PlayfairDisplay-Regular.ttf);
+}
+
+/* ------------ 2. header ------------- */
+/* .header {
+  background-color: aqua;
+  max-width: 100%;
+  height: 60px;
+} */
+
+.navbar-brand {
+  font-family: "Inconsolata", monospace;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.navbar-nav .nav-item .nav-link {
+  font-family: myriad;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* ------------ 3. banner ---------- */
+.banner img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+/* ----------- 4. info ------------- */
+.info {
+  max-width: 900px;
+  margin: auto;
+}
+
+.info h1,
+.lifestyle h1 {
+  text-transform: uppercase;
+  color: #b4ad9e;
+  font-size: 1.4rem;
+  font-family: ubuntulight;
+}
+.info h2,
+.lifestyle h3 {
+  color: #626262;
+  font-size: 3rem;
+  font-family: Playfairregular;
+}
+.info p,
+.lifestyle p {
+  color: #626262;
+  font-size: 1.4rem;
+  font-family: Playfairregular;
+}
+
+/* --------------- 5.form ---------------- */
+
+.form {
+    background-color: rgb(226, 225, 225);
+    max-width: 100%;
+    height: 300px;
+}
+.form h3 {
+  text-align: center;
+  color: #333333;
+  font-family: myriad;
+}
+.button {
+  text-align: center;
+}
+.btn {
+  border: 1px solid gray;
+  font-family: playfair;
+  font-size: 20px;
+}
+
+/* ------------ 6. info ---------------- */
+.product h1 {
+  text-transform: uppercase;
+  color: #b4ad9e;
+  font-size: 1.4rem;
+  font-family: ubuntulight;
+}
+.product h3 {
+  color: #626262;
+  font-size: 3rem;
+  font-family: Playfairregular;
+}
+.product p {
+  color: #626262;
+  font-size: 1.4rem;
+  font-family: Playfairregular;
+}
+
+/* ---------------- 7. footer -------------- */
+
+.footer {
+  max-width: 100%;
+  height: 60px;
+  background-color: #f0f0f0;
+  color: black;
+}
+.footer-left {
+  align-items: center;
+  font-family: Playfairregular;
+  font-size: 14px;
+}
+
+.footer-right {
+  align-items: center;
+  font-family: Playfairregular;
+  font-size: 14px;
+}
