@@ -1,134 +1,594 @@
 /* ------------- 1. setting ----------- */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 html {
-  font-size: 10px;
+    font-size: 10px;
 }
+
 .wrapper {
-  max-width: 1920px;
-  margin: auto;
-}
-.main {
-  max-width: 1066px;
-  margin: auto;
-}
-@font-face {
-  font-family: ubuntulight;
-  src: url(../font/Ubuntu/Ubuntu-Light.ttf);
-}
-@font-face {
-  font-family: Playfairregular;
-  src: url(../font/Playfair_Display/PlayfairDisplay-Regular.ttf);
-}
-
-/* ------------ 2. header ------------- */
-/* .header {
-  background-color: aqua;
-  max-width: 100%;
-  height: 60px;
-} */
-
-.navbar-brand {
-  font-family: "Inconsolata", monospace;
-  font-size: 30px;
-  text-transform: uppercase;
-}
-.navbar-nav .nav-item .nav-link {
-  font-family: myriad;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-/* ------------ 3. banner ---------- */
-.banner img {
-    max-width: 100%;
-    height: auto;
+    max-width: 1920px;
     margin: auto;
 }
-/* ----------- 4. info ------------- */
-.info {
-  max-width: 900px;
-  margin: auto;
+
+.main {
+    max-width: 1066px;
+    margin: auto;
 }
 
-.info h1,
-.lifestyle h1 {
-  text-transform: uppercase;
-  color: #b4ad9e;
-  font-size: 1.4rem;
-  font-family: ubuntulight;
+a {
+    text-decoration: none;
 }
-.info h2,
-.lifestyle h3 {
-  color: #626262;
-  font-size: 3rem;
-  font-family: Playfairregular;
+
+@font-face {
+    font-family: ubuntulight;
+    src: url(../font/Ubuntu/Ubuntu-Light.ttf);
 }
-.info p,
-.lifestyle p {
-  color: #626262;
-  font-size: 1.4rem;
-  font-family: Playfairregular;
+
+@font-face {
+    font-family: Playfairregular;
+    src: url(../font/Playfair_Display/PlayfairDisplay-Regular.ttf);
 }
+
+@font-face {
+    font-family: Inconsolataregular;
+    src: url(../font/Inconsolata/Inconsolata-Regular.ttf);
+}
+
+
+/* ------------ 2. header ------------- */
+
+.header {
+    max-width: 100%;
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list:last-child {
+    margin-right: 0px;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.logo {
+    margin-left: 2rem;
+}
+
+.logo a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Inconsolataregular;
+    color: #000000;
+    font-size: 3rem;
+}
+
+.nav__menu {
+    display: none;
+}
+
+.menu-list a:hover {
+    color: tomato;
+}
+
+.nav__mobile {
+    margin-top: 10rem;
+}
+
+.list__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Playfairregular;
+    color: #626262;
+    font-size: 1.4rem;
+}
+
+.burger {
+    font-size: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+
+/* ------------ 3. banner ---------- */
+
+.banner img {
+    max-width: calc(100% - 40px);
+    margin: 2rem;
+}
+
+
+/* ----------- 4. content ------------- */
+
+.content,
+.product,
+.content__post,
+.content__post img {
+    max-width: 900px;
+    max-height: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+    margin: auto;
+}
+
+.content h1,
+.product h1,
+.content__post h1,
+.content__sidebar h1,
+.content__sidebar .sidebar-left h1 {
+    text-transform: uppercase;
+    color: #b4ad9e;
+    font-size: 1.4rem;
+    font-family: ubuntulight;
+    margin-top: 2rem;
+}
+
+.content h3,
+.product h3,
+.content__post h2,
+.content__sidebar h2,
+.content__sidebar .sidebar-left h2 {
+    color: #626262;
+    font-size: 3rem;
+    font-family: Playfairregular;
+    margin-top: 3rem;
+}
+
+.content p,
+.product p,
+.content__post p,
+.content__sidebar,
+.content__sidebar .sidebar-left p {
+    color: #626262;
+    font-size: 1.4rem;
+    font-family: Playfairregular;
+    margin: 4rem 2rem 1rem 2rem;
+}
+
+.content img,
+.product img {
+    margin-top: 5rem;
+    max-width: 100%;
+}
+
 
 /* --------------- 5.form ---------------- */
 
 .form {
     background-color: rgb(226, 225, 225);
     max-width: 100%;
-    height: 300px;
-}
-.form h3 {
-  text-align: center;
-  color: #333333;
-  font-family: myriad;
-}
-.button {
-  text-align: center;
-}
-.btn {
-  border: 1px solid gray;
-  font-family: playfair;
-  font-size: 20px;
+    max-height: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 10rem;
+    padding-top: 5rem;
 }
 
+.form h3 {
+    text-align: center;
+    color: #333333;
+    font-family: Playfairregular;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.form-email {
+    width: 25rem;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+
 /* ------------ 6. info ---------------- */
-.product h1 {
-  text-transform: uppercase;
-  color: #b4ad9e;
-  font-size: 1.4rem;
-  font-family: ubuntulight;
+
+
+/* ------------ load more ------------- */
+
+.button {
+    text-align: center;
+    margin-top: 10rem;
 }
-.product h3 {
-  color: #626262;
-  font-size: 3rem;
-  font-family: Playfairregular;
+
+.btn:hover {
+    background-color: tomato;
+    color: #fff;
+    transition: all ease-in 0.5s;
 }
-.product p {
-  color: #626262;
-  font-size: 1.4rem;
-  font-family: Playfairregular;
+
+.btn {
+    border: 1px solid gray;
+    font-family: playfair;
+    font-size: 1.4rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    cursor: pointer;
 }
+
 
 /* ---------------- 7. footer -------------- */
 
 .footer {
-  max-width: 100%;
-  height: 60px;
-  background-color: #f0f0f0;
-  color: black;
-}
-.footer-left {
-  align-items: center;
-  font-family: Playfairregular;
-  font-size: 14px;
+    max-width: 100%;
+    height: 60px;
+    background-color: #f0f0f0;
+    color: black;
+    margin-top: 10rem;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 1rem;
 }
 
-.footer-right {
-  align-items: center;
-  font-family: Playfairregular;
-  font-size: 14px;
+.info-left {
+    font-family: Playfairregular;
+    font-size: 14px;
+}
+
+.info-left a:nth-child(2) {
+    margin-left: 2rem;
+}
+
+.info-right {
+    font-family: Playfairregular;
+    font-size: 14px;
+}
+
+.footer-right i {
+    font-size: 2rem;
+}
+
+.info-right span,
+.info-right i {
+    width: 30px;
+}
+
+
+/* ------------ post-full-width ---------------  */
+
+.content__post img {
+    margin: 5rem 2rem 2rem 2rem;
+    max-width: calc(100% - 4rem);
+}
+
+.social {
+    margin-top: 5rem;
+    max-width: 100%;
+}
+
+.social i,
+.social span {
+    font-size: 2rem;
+    color: #b4ad9e;
+    width: 3.5rem;
+}
+
+.form {
+    text-align: center;
+}
+
+.form-post h4 {
+    font-family: Playfairregular;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #b4ad9e;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.product__post {
+    display: inline-block;
+}
+
+.product__post img {
+    max-width: calc(100% - 3rem);
+    max-height: 100%;
+}
+
+.product__post h5 {
+    color: #626262;
+    font-size: 1.4rem;
+    font-family: Playfairregular;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 8rem;
+}
+
+
+/* --------------- comment ---------- */
+
+.feedback h1 {
+    margin-top: 5rem;
+    margin-left: 2rem;
+    color: #b4ad9e;
+}
+
+.feedback {
+    max-width: 900px;
+    margin: auto;
+}
+
+.feedback1 .box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: tomato;
+}
+
+.feedback1 {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.name__info {
+    margin-left: 2rem;
+}
+
+.name__info .name {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+}
+
+.comment {
+    padding-top: 1rem;
+    margin-right: 2rem;
+}
+
+.reply {
+    padding-top: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #b4ad9e;
+}
+
+.reply a {
+    color: #b4ad9e;
+}
+
+.name__info input {
+    width: 375px;
+    height: 40px;
+}
+
+.social__post {
+    margin-top: 3rem;
+    position: absolute;
+    left: 68%;
+}
+
+.social__post i,
+.social__post span {
+    font-size: 1rem;
+    color: #b4ad9e;
+    margin-right: 1rem;
+}
+
+
+/* -------------- post-sidebar -------------- */
+
+.content__sidebar {}
+
+.content__sidebar img {
+    max-width: 100%;
+}
+
+.content__sidebar .sidebar-left img {
+    margin-top: 5rem;
+}
+
+
+/* ------------- sidebar ------------ */
+
+.sidebar-right img,
+.sidebar-right h1,
+.sidebar-right p {
+    margin: auto;
+}
+
+.sidebar-right h1 {
+    color: #626262;
+    font-size: 2rem;
+    font-family: Playfairregular;
+    margin-top: 2rem;
+}
+
+.sidebar-right p {
+    color: #626262;
+    font-size: 1.4rem;
+    font-family: Playfairregular;
+    margin-top: 1rem;
+}
+
+.sidebar-social {
+    margin-left: 3rem;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.sidebar-social i {
+    width: 2rem;
+}
+
+.sidebar-right h1:last-child {
+    text-transform: uppercase;
+    margin-top: 5rem;
+}
+
+.sidebar-right li {
+    margin-left: 3rem;
+    color: #626262;
+    font-size: 1.4rem;
+    font-family: Playfairregular;
+    margin-top: 2rem;
+}
+
+.sidebar-right span {
+    margin-left: 5rem;
+    font-size: 1.4rem;
+}
+
+.sidebar-right img:first-child {
+    margin-top: 3rem;
+}
+
+.sidebar-right img:last-child {
+    margin-top: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-left: 0;
+    }
+    .nav__menu {
+        display: flex;
+    }
+    .nav__mobile {
+        margin-top: 0;
+    }
+    .nav__mobile .menu-list {
+        border-bottom: none;
+    }
+    .menu-list {
+        margin-right: 10rem;
+    }
+    .burger {
+        display: none;
+    }
+    .banner img {
+        max-width: 100%;
+        margin: auto;
+    }
+    .content,
+    .product {
+        margin: auto;
+    }
+    .content h1,
+    .content h3,
+    .content p,
+    .product h1,
+    .product h3,
+    .product p {
+        text-align: start;
+    }
+    .form {
+        margin: auto;
+        margin-top: 10rem;
+        padding-top: 5rem;
+    }
+    .footer {
+        max-width: 100%;
+        height: 60px;
+        background-color: #f0f0f0;
+        color: black;
+        margin-top: 10rem;
+        margin-left: 0;
+        margin-right: 0;
+        line-height: 60px;
+        padding-top: 0;
+    }
+    .footer__info {
+        width: 900px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .form {
+        max-width: 100%;
+        text-align: start;
+    }
+    /* -------------- post full width ------------- */
+    .content__post h1,
+    .content__post h2,
+    .content__post p {
+        text-align: start;
+    }
+    .content__post h2 {
+        margin-bottom: 3rem;
+    }
+    .content__post p {
+        margin: 3rem 0 0 0;
+    }
+    .content__post img {
+        margin: auto;
+        max-width: 100%;
+    }
+    .product__post {
+        display: flex;
+        justify-content: center;
+    }
+    .product__post img {
+        max-width: 100%;
+        margin: auto;
+    }
+    .social {
+        position: absolute;
+        left: 66%;
+    }
+    .form {
+        text-align: start;
+    }
+    .form-post {
+        max-width: 900px;
+        margin: auto;
+    }
+    .form-post h4 {
+        margin-left: 12px;
+    }
+    .form-post h5 {
+        margin-left: 0;
+    }
+    .form-post img {
+        margin: auto;
+    }
+    .feedback h1 {
+        margin-left: 0;
+    }
+    .feedback1 {
+        margin-left: 0;
+    }
+    .name__info input {
+        width: 825px;
+        height: 40px;
+    }
+    .social__post {
+        margin-top: 3rem;
+        position: absolute;
+        left: 75%;
+    }
+    /* ------------ sidebar ------------ */
+    .content__sidebar {
+        text-align: start;
+    }
+    .content__sidebar {
+        max-width: 960px;
+        max-height: 100%;
+        margin-left: 10rem;
+        margin-right: 1rem;
+        margin-top: 5rem;
+    }
+    .sidebar-right img,
+    .sidebar-right h1,
+    .sidebar-right p {
+        margin-left: 3rem;
+    }
 }
