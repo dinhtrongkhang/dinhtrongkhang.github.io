@@ -256,8 +256,16 @@ a {
 
 /* ------------ galery slide show -------------- */
 
+.slider img {
+    margin: 8px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 10px;
+}
+
 .slider {
     position: relative;
+    margin: 20px;
 }
 
 .slider .prev-Arrow {
@@ -291,8 +299,6 @@ a {
     cursor: pointer;
     z-index: 1000;
 }
-
-.slider-item {}
 
 
 /* //////////////////////////////// */
