@@ -1,0 +1,42 @@
+.multiple-items img {
+    margin: 15px;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.slide-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.prev-arrow {
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 15px solid #e43a0f;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    z-index: 1000;
+}
+
+.next-arrow {
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-right: 0 solid transparent;
+    border-left: 15px solid #e91c0d;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
