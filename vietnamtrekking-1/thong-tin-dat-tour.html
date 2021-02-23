@@ -1,0 +1,337 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thông tin đặt tour | Vietnam Trekking</title>
+    <link rel="shortcut icon" href="img/logo vietnamtrekking.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/thong-tin-dat-tour.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- --------------- header start------------- -->
+        <header class="l-header">
+            <nav class="nav container">
+                <div class="nav__logo"><a href="index.html">Vietnamtrekking</a></div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Trang chủ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="du-lich-trong-nuoc.html" class="nav__link">Du lịch trong nước</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="du-lich-nuoc-ngoai.html" class="nav__link">Du lịch nước ngoài</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="blog-du-lich.html" class="nav__link">Blog du lịch</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="form-account.html"><i class="fas fa-user nav__user"></i></a>
+                    <i class="fas fa-bars nav__toggle" id="nav-toggle"></i>
+                </div>
+            </nav>
+        </header>
+        <!-- --------------- header end ------------- -->
+        <!---------------- main start ------------------>
+        <div class="thongtindattour container">
+            <!-- <h3>Thông tin liên hệ</h3>
+            <table class="formthongtin">
+                <tr>
+                    <td>
+                        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                            <div>
+                                <label>Họ và Tên*</label><label class="validation-error hide" id="fullNameValidationError">Vui lòng nhập đầy đủ họ tên</label>
+                                <input type="text" name="fullName" id="fullName">
+                            </div>
+                            <div>
+                                <label>Email</label>
+                                <input type="text" name="email" id="email">
+                            </div>
+                            <div>
+                                <label>Di động</label>
+                                <input class="number" type="text" name="tel" id="tel">
+                            </div>
+                            <div class="form-action-buttons">
+                                <input type="submit" value="Xác nhận">
+                            </div>
+                        </form>
+                    </td>
+                    <td>
+                        <table class="list" id="employeeList">
+                            <div class="list__title"></div>
+                            <thead>
+                                <tr>
+                                    <th>Họ và Tên</th>
+                                    <th>Email</th>
+                                    <th>Di động</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table> -->
+
+            <h3>Xin quý khách vui lòng nhập thông tin hành khách</h3>
+            <table class="formthongtin">
+                <tr>
+                    <td>
+                        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                            <div>
+                                <label>Họ và Tên*</label><label class="validation-error hide" id="fullNameValidationError">Vui lòng nhập đầy đủ họ tên</label>
+                                <input type="text" name="fullName" id="fullName">
+                            </div>
+                            <div>
+                                <label>Ngày sinh</label>
+                                <input type="date" name="ngaysinh" id="birthday">
+                            </div>
+                            <div>
+                                <label>Thành tiền</label>
+                                <input class="money" type="text" name="money" id="money" placeholder="5.000.000đ">
+                            </div>
+                            <div class="form-action-buttons">
+                                <input type="submit" value="Xác nhận">
+                            </div>
+                        </form>
+                    </td>
+                    <td>
+                        <table class="list" id="employeeList">
+                            <div class="list__title">Danh sách hành khách</div>
+                            <thead>
+                                <tr>
+                                    <th>Họ và Tên</th>
+                                    <th>Ngày sinh</th>
+                                    <th>Thành tiền</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="thongtinthanhtoan">
+                <h3>Xin quý khách vui lòng chọn hình thức thanh toán</h3>
+                <div class="thongtinthanhtoan-1">
+                    <input type="radio" id="thanhtoantaivp" name="gender" value="thanhtoantaivp" onclick="myFunction1()">
+                    <label for="thanhtoantaivp">Thanh toán tại văn phòng chúng tôi</label>
+                    <div class="thanhtoan1" id="thanhtoan1">
+                        <ul style="list-style: disc; margin-left: 1.5rem;">
+                            <li>
+                                <p>Quý khách vui lòng thanh toán tại bất kỳ văn phòng Vietravel trên toàn quốc và các chi nhánh ngoài nước. Chi tiết Xin lưu ý, Quý khách nên liên lạc trước khi đến để biết rõ hơn về giờ làm việc và các hồ sơ cần chuẩn bị
+                                    khi thanh toán.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="thongtinthanhtoan-2">
+                    <input type="radio" id="chuyenkhoan" name="gender" value="chuyenkhoan" onclick="myFunction2()">
+                    <label for="chuyenkhoan">Chuyển khoản qua ngân hàng</label><br>
+                    <div class="thanhtoan2" id="thanhtoan2">
+
+                        <ul style="list-style: disc; margin-left: 1.5rem;">
+                            <li>
+                                <p>Vietnamtrekking chấp nhận thanh toán chuyển khoản từ ATM / Internet Banking / Quầy giao dịch khách hàng. </p>
+                            </li>
+                            <li>
+                                <p>Quý khách sau khi thực hiện việc chuyển khoản vui lòng gửi email đến sales@Vietnamtrekking.vn hoặc gọi tổng đài 0904339993 để được xác nhận từ công ty chúng tôi.</p>
+                            </li>
+                            <li>
+                                <p>Vietnamtrekking xin gửi thông tin chuyển khoản như bên dưới để Quý khách thanh toán trước thời hạn ghi trên Thông tin đặt tour. Sau thời gian trên nếu Quý khách không chuyển khoản thanh toán, booking sẽ tự động huỷ ra.</p>
+                            </li>
+                            <li>
+                                <p>Vietnamtrekking sẽ không giải quyết các trường hợp booking tự động hủy nếu quý khách không thực hiện đúng các hướng dẫn trên. Tên Tài Khoản : Vietnamtrekking</p>
+                            </li>
+                            <li>
+                                <p>Tên tài khoản viết tắt : VIETNAMTREKKING</p>
+                            </li>
+                            <li>
+                                <p>Số Tài khoản: 1111111111111111</p>
+                            </li>
+                            <li>
+                                <p>Ngân hàng: Techcombank chi nhánh Hà Nội</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="thongtinthanhtoan-3">
+                    <input type="radio" id="thanhtoanonline" name="gender" value="thanhtoanonline" onclick="myFunction3()">
+                    <label for="thanhtoanonline">Thẻ tín dụng</label>
+                    <div class="thanhtoan3" id="thanhtoan3">
+                        <ul style="list-style: disc; margin-left: 1.5rem;">
+                            <li>
+                                <p>Quý khách vui lòng chọn loại thẻ:</p>
+                            </li>
+                            <div class="thanhtoan-online">
+                                <div class="jcb"><img src="libs/icons/jcb.svg" alt="jcb"></div>
+                                <div class="visa"><img src="libs/icons/visa.svg" alt="visa"></div>
+                                <div class="mastercard"><img src="libs/icons/mastercard.svg" alt="mastercard"></div>
+                            </div>
+                            <li>
+                                <p>THANH TOÁN BẰNG THẺ TÍN DỤNG VÀ GHI NỢ QUỐC TẾ</p>
+                            </li>
+                            <li>
+                                <p>Quý khách sử dụng Thẻ tín dụng hoặc Thẻ ghi nợ quốc tế được phát hành bởi các Ngân hàng, Công ty tài chính và các tổ chức thẻ quốc tế Visa, MasterCard, JCB. Giao dịch thanh toán của quý khách được xử lý an toàn bởi CyberSource,
+                                    công ty con của tổ chức thẻ quốc tế VISA.</p>
+                            </li>
+                            <li>
+                                <p>CyberSource đạt chuẩn PCI DSS là một tiêu chuẩn an ninh thông tin bắt buộc dành cho các doanh nghiệp lưu trữ, truyền tải và xử lý thẻ thanh toán, được quản lý bởi Hội đồng Tiêu chuẩn An toàn Ngành thanh toán thẻ PCI SSC
+                                    được thành lập bởi các tổ chức thẻ quốc tế. Vietnamtrekking sử dụng giao thức HTTPS (giao thức kết hợp giữa giao thức HTTP và giao thức bảo mật SSL) cho toàn bộ website, ứng dụng di động, cùng với CyberSource nhằm đảm
+                                    bảo thông tin thanh toán của Quý khách được mã hóa trong quá trình truyền tải, xử lý thanh toán thẻ, ngăn cản sự xâm nhập trái phép, giả mạo thông tin.</p>
+                            </li>
+                            <li>
+                                <p>Vietnamtrekking phối hợp với các tổ chức thẻ triển khai thành công dịch vụ xác thực chủ thẻ giao dịch trực tuyến 3-D Secure bao gồm: Verified by Visa, MasterCard SecureCode, J/Secure nhằm gia tăng bảo mật, hạn chế gian
+                                    lận thanh toán thẻ trực tuyến.</p>
+                            </li>
+                            <li>
+                                <p>Sau khi thanh toán thành công, Quý khách sẽ nhận được vé điện tử qua email tự động, nhanh chóng và vẫn đảm bảo an toàn tuyệt đối trong quá trình thanh toán.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dieukhoanthanhtoan margin-top">
+                    <h3>Điều khoản bắt buộc khi đăng ký online</h3>
+                    <ul class="example margin-top padding">
+                        <h4>Điều kiện bán vé các chương trình du lịch trong nước</h4>
+                        <li><strong>I. GIÁ VÉ DU LỊCH</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est ea quam, soluta cum expedita vero veritatis nulla ex, doloribus corporis quos nobis asperiores nisi assumenda, quibusdam beatae eaque obcaecati dolorum
+                                magnam sunt! Quas aperiam quasi ad accusamus dolorem odio natus. Doloremque blanditiis libero dolores cumque cupiditate molestias nesciunt voluptatum.</p>
+                        </li>
+                        <li><strong>II. GIÁ DÀNH CHO TRẺ EM</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est ea quam, soluta cum expedita vero veritatis nulla ex, doloribus corporis quos nobis asperiores nisi assumenda, quibusdam beatae eaque obcaecati dolorum
+                                magnam sunt! Quas aperiam quasi ad accusamus dolorem odio natus. Doloremque blanditiis libero dolores cumque cupiditate molestias nesciunt voluptatum.</p>
+                        </li>
+                        <li><strong>III. THANH TOÁN</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est ea quam, soluta cum expedita vero veritatis nulla ex, doloribus corporis quos nobis asperiores nisi assumenda, quibusdam beatae eaque obcaecati dolorum
+                                magnam sunt! Quas aperiam quasi ad accusamus dolorem odio natus. Doloremque blanditiis libero dolores cumque cupiditate molestias nesciunt voluptatum.</p>
+                        </li>
+                        <li><strong>IV. HỦY VÉ VÀ PHÍ HỦY VÉ DU LỊCH</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est ea quam, soluta cum expedita vero veritatis nulla ex, doloribus corporis quos nobis asperiores nisi assumenda, quibusdam beatae eaque obcaecati dolorum
+                                magnam sunt! Quas aperiam quasi ad accusamus dolorem odio natus. Doloremque blanditiis libero dolores cumque cupiditate molestias nesciunt voluptatum.</p>
+                        </li>
+                        <li><strong>V. NHỮNG YÊU CẦU ĐẶC BIỆT TRONG CHUYẾN DU LỊCH</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est ea quam, soluta cum expedita vero veritatis nulla ex, doloribus corporis quos nobis asperiores nisi assumenda, quibusdam beatae eaque obcaecati dolorum
+                                magnam sunt! Quas aperiam quasi ad accusamus dolorem odio natus. Doloremque blanditiis libero dolores cumque cupiditate molestias nesciunt voluptatum.</p>
+                        </li>
+                        <li><strong>VI. KHÁCH SẠN</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est ea quam, soluta cum expedita vero veritatis nulla ex, doloribus corporis quos nobis asperiores nisi assumenda, quibusdam beatae eaque obcaecati dolorum
+                                magnam sunt! Quas aperiam quasi ad accusamus dolorem odio natus. Doloremque blanditiis libero dolores cumque cupiditate molestias nesciunt voluptatum.</p>
+                        </li>
+                        <li><strong>VII. VẬN CHUYỂN</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est ea quam, soluta cum expedita vero veritatis nulla ex, doloribus corporis quos nobis asperiores nisi assumenda, quibusdam beatae eaque obcaecati dolorum
+                                magnam sunt! Quas aperiam quasi ad accusamus dolorem odio natus. Doloremque blanditiis libero dolores cumque cupiditate molestias nesciunt voluptatum.</p>
+                        </li>
+                        <li><strong>VIII. HÀNH LÝ</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est ea quam, soluta cum expedita vero veritatis nulla ex, doloribus corporis quos nobis asperiores nisi assumenda, quibusdam beatae eaque obcaecati dolorum
+                                magnam sunt! Quas aperiam quasi ad accusamus dolorem odio natus. Doloremque blanditiis libero dolores cumque cupiditate molestias nesciunt voluptatum.</p>
+                        </li>
+                        <li><strong>IX. BẢO HIỂM DU LỊCH</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est ea quam, soluta cum expedita vero veritatis nulla ex, doloribus corporis quos nobis asperiores nisi assumenda, quibusdam beatae eaque obcaecati dolorum
+                                magnam sunt! Quas aperiam quasi ad accusamus dolorem odio natus. Doloremque blanditiis libero dolores cumque cupiditate molestias nesciunt voluptatum.</p>
+                        </li>
+                        <li><strong>X.</strong> Trong quá trình thực hiện, nếu xảy ra tranh chấp sẽ được giải quyết trên cơ sở thương lượng trong thời hạn 30 ngày kể từ ngày một trong hai bên đưa tranh chấp ra thương lượng. Hết thời hạn này nếu tranh chấp
+                            không được giải quyết hoặc một trong hai bên không đồng ý với kết quả thương lượng thì có quyền đưa tranh chấp ra giải quyết tại Tòa án thẩm quyền.
+                            <br>
+                            <strong> * Vé du lịch được xem như Hợp đồng lữ hành và được lập thành 2 bản, mỗi bên giữ một bản, có
+                                giá trị như nhau.</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="dieukien margin-top">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Tôi đồng ý với các điều kiện trên</label>
+                </form>
+
+                <a href="thanh-toan-online.html"><button type="button">Đặt tour</button></a>
+
+            </div>
+
+
+        </div>
+        <!------------------- main end -------------------->
+        <!-- ---------------- footer start ------------------ -->
+        <div class="footer">
+            <div class="footer__content container">
+                <div class="footer__top">
+                    <div class="footer__top-thanhtoan">
+                        <h3>Chấp nhận thanh toán</h3>
+                        <div class="footer__top-thanhtoan-online">
+                            <div class="jcb"><img src="libs/icons/jcb.svg" alt="jcb"></div>
+                            <div class="visa"><img src="libs/icons/visa.svg" alt="visa"></div>
+                            <div class="mastercard"><img src="libs/icons/mastercard.svg" alt="mastercard"></div>
+                        </div>
+                    </div>
+                    <div class="footer__top-folowus">
+                        <h3>Kết nối với Vietnamtrekking</h3>
+                        <div class="footer__top-folowus-social">
+                            <div class="facebook">
+                                <a href="https://www.facebook.com/vietnamtrekking"><img src="libs/icons/facebook.svg" alt="fb"></a>
+                            </div>
+                            <div class="youtube">
+                                <a href="https://www.youtube.com/channel/UC6kb8QEAD8zy-NhVpxxSvmw"><img src="libs/icons/youtube.svg" alt="youtube"></a>
+                            </div>
+                            <div class="twitter">
+                                <a href="https://twitter.com/vietnamtrekkin1"><img src="libs/icons/twitter.svg" alt="twitter"></a>
+                            </div>
+                            <div class="pinterest">
+                                <a href="https://www.pinterest.com/khangdinhtb"><img src="libs/icons/pinterest.svg" alt="pinterest"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__contact">
+                    <div class="footer__contact-info">
+                        <h6>Văn phòng tại Hà Nội</h6>
+                        <p>Địa chỉ: Trung Văn - Nam Từ Liêm</p>
+                        <p>Tel: 0904339993</p>
+                        <p>Email: khangdinhtb@gmail.com</p>
+                    </div>
+                    <div class="footer__contact-info">
+                        <h6>Văn phòng tại Hà Nội</h6>
+                        <p>Địa chỉ: Trung Văn - Nam Từ Liêm</p>
+                        <p>Tel: 0904339993</p>
+                        <p>Email: khangdinhtb@gmail.com</p>
+                    </div>
+                    <div class="footer__contact-info">
+                        <h6>Văn phòng tại Hà Nội</h6>
+                        <p>Địa chỉ: Trung Văn - Nam Từ Liêm</p>
+                        <p>Tel: 0904339993</p>
+                        <p>Email: khangdinhtb@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-copyright">
+                    © 2021 Toàn bộ bản quyền thuộc Vietnam Trekking
+                </div>
+            </div>
+        </div>
+        <!-- ---------------- footer end ------------------ -->
+        <!-- js -->
+        <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+        <script src="libs/slick/slick.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>

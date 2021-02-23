@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/banner1.jpg);
+}
+
+.form-1 {
+    width: 36rem;
+    min-height: 10rem;
+    padding: 2rem 3rem;
+    text-align: center;
+    background: #fff;
+    border-radius: .2rem;
+    align-self: center;
+    box-shadow: 0 .2rem .5rem 0 rgba(51, 62, 73, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.form-2 {
+    width: 36rem;
+    min-height: 10rem;
+    padding: 2rem 3rem;
+    text-align: center;
+    background: #fff;
+    border-radius: .2rem;
+    align-self: center;
+    box-shadow: 0 .2rem .5rem 0 rgba(51, 62, 73, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form__header {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 3rem;
+}
+
+.form__heading {
+    font-size: 2.5rem;
+    font-weight: 400px;
+    cursor: pointer;
+    color: #DBA510;
+}
+
+.form .heading,
+.form-2 .heading {
+    font-size: 2rem;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+.form-label,
+.form-message {
+    text-align: left;
+}
+
+.form-label {
+    font-weight: 700;
+    padding-bottom: .6rem;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+}
+
+.form-control {
+    height: 4rem;
+    padding: .8rem 1.2rem;
+    border: 1px solid #b3b3b3;
+    border-radius: .3rem;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.form-control:hover {
+    border-color: #1dbfaf;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: .4rem 0 0;
+}
+
+.form-group__policy-text {
+    font-size: 1.2rem;
+}
+
+.form-group__text-link {
+    text-decoration: none;
+    color: red;
+}
+
+.form-submit {
+    outline: none;
+    background-color: #166987;
+    margin-top: 1.2rem;
+    padding: 1.2rem 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 1.6rem;
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #DBA510;
+}
+
+.form__switch-btn {
+    font-size: 1.3rem;
+    font-weight: 500px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__switch-btn p {
+    padding: 1rem;
+}
+
+.form__switch-btn .dangky {
+    color: #DBA510;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* --------------  bằng social --------------- */
+
+.form-group__social {
+    margin: 1.5rem 1.5rem;
+}
+
+.social-text {
+    padding: 0.7rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.social-icon {
+    height: 3.6rem;
+    width: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    color: #333;
+    border-radius: 50%;
+    border: 1px solid #333;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #166987;
+    border-color: #DBA510
+}

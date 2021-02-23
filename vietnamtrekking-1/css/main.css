@@ -1,0 +1,1072 @@
+/* fonts  */
+
+@font-face {
+    font-family: "Roboto-regular";
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(../font/Roboto/Roboto-Bold.ttf);
+}
+
+
+/* colors  */
+
+:root {
+    --primary: #166987;
+    --secondary: #DBA510;
+    --text-color: #333;
+    --ternary: #6C6C6C;
+    --danger: #FE4545;
+    --dark-color: #101010;
+    --white-color: #FAFAFA;
+    --gray-color: #F0F1F3;
+    --background: #ececec;
+    --light: #F0F0F0;
+    --heaven: #FFFFFF;
+    --black: #000;
+    --footer: #2D333F;
+}
+
+
+/* Reset  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto-regular", sans-serif;
+    line-height: 2.2rem;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ------ header ------ */
+
+.l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--gray-color);
+}
+
+
+/* --------- nav ------------ */
+
+.nav {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: 5rem;
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--white-color);
+        transition: .5s;
+        z-index: 1000;
+    }
+}
+
+.nav__link {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.nav__link:hover {
+    color: var(--secondary);
+}
+
+.nav__logo a {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.nav__user {
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.nav__toggle {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* ----------- show menu ----------- */
+
+.show {
+    right: 0;
+}
+
+.active {
+    color: var(--secondary);
+}
+
+
+/* Header banner */
+
+.header__banner-cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header__banner {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 2rem 1rem;
+}
+
+.header__banner-title-slogan {
+    display: none;
+}
+
+.header__search-title-form {
+    padding: 0 3rem;
+    margin-top: 7rem;
+}
+
+.header__search-title-form form {
+    padding: 1.5rem;
+    width: 100%;
+    background-color: var(--heaven);
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .9);
+    border-radius: .5rem;
+}
+
+.header__search-title-form form input[type="submit"] {
+    width: 8rem;
+    height: 3rem;
+    color: var(--light);
+    background: var(--primary);
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: .2s linear;
+    display: block;
+    margin: auto;
+}
+
+.header__search-title-form form h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.header__search-title-form form input {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    height: 4rem;
+    font-size: 1.5rem;
+    background: var(--heaven);
+    border: none;
+    outline: none;
+    color: var(--dark-color);
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
+    border-radius: .5rem;
+}
+
+.header__search-title-form form button {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background: var(--secondary);
+    color: var(--light);
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
+    display: block;
+    margin: auto;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.header__search-title-form form button:hover {
+    border: 1px solid #DBA510;
+    color: var(--secondary);
+    background: none;
+}
+
+
+/* tourhot */
+
+.tour h2,
+.dulichvietnam__city h2,
+.dulichnuocngoai h2 {
+    margin-top: 5rem;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.tour__tourhot-box {
+    width: 30rem;
+    height: 45rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 1.5rem 1rem;
+    outline: none;
+}
+
+.tour__tourhot-box-slide-img {
+    height: 20rem;
+}
+
+.tour__tourhot-box-slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.tour__tourhot-box-stars {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    color: var(--secondary);
+}
+
+.tour__tourhot-box-name,
+.tour__tourhot-box-time,
+.tour__tourhot-box-day,
+.tour__tourhot-box-price {
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+}
+
+.tour__tourhot-box-name,
+.tour__tourhot-box-price {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.tour__tourhot-box-name a,
+.tour__tourhot-box-price a {
+    color: var(--text-color);
+}
+
+.tour__tourhot-box-name a:hover,
+.tour__tourhot-box-price a:hover {
+    color: var(--secondary);
+}
+
+.tour__tourhot-box-time,
+.tour__tourhot-box-day {
+    font-size: 1.3rem;
+}
+
+.tour__tourhot-box-booking {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tour__tourhot-box-booking a {
+    font-size: 1.6rem;
+}
+
+.book-btn {
+    width: 20rem;
+    height: 3rem;
+    display: block;
+    margin: auto;
+    text-align: center;
+    line-height: 3rem;
+    background-color: var(--secondary);
+    color: var(--light);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, .2);
+    outline: none;
+}
+
+.book-btn:hover {
+    color: var(--secondary);
+    background-color: var(--light);
+    border: 1px solid #DBA510;
+    transition: all ease 0.3s;
+}
+
+.prev-arrow {
+    position: absolute;
+    top: 44%;
+    left: 6%;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-arrow i {
+    color: var(--text-color);
+    font-size: 3rem;
+}
+
+.next-arrow {
+    position: absolute;
+    top: 44%;
+    right: 6%;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.next-arrow i {
+    color: var(--text-color);
+    font-size: 3rem;
+}
+
+
+/* du lịch Việt Nam */
+
+.dulichvietnam.bg-dark {
+    background-color: var(--footer);
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    padding: 2rem 0rem;
+}
+
+.dulichvietnam.bg-light {
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    padding: 2rem 0rem;
+}
+
+.dulichvietnam.bg-light h2 {
+    color: var(--text-color);
+}
+
+.dulichvietnam h2 {
+    font-size: 2rem;
+    color: var(--light);
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.dulichvietnam__tour-item {
+    width: 100%;
+    height: calc(15rem - 2rem);
+    position: relative;
+    background-image: url(../img/da-nang-1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+
+.dulichvietnam__tour3 {
+    width: 100%;
+    height: 15rem;
+    background-image: url(../img/nha-trang-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dulichvietnam__tour2 {
+    width: 100%;
+    height: calc(15rem - 2rem);
+    background-image: url(../img/phu-quoc-1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+
+.dulichvietnam__tour22 {
+    width: 100%;
+    height: calc(15rem - 2rem);
+    background-image: url(../img/quang-binh-1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+
+.dulichvietnam__tour-item .overlay,
+.dulichvietnam__tour3 .overlay,
+.dulichvietnam__tour2 .overlay,
+.dulichvietnam__tour22 .overlay {
+    height: 100%;
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 0.4042659300048145) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.dulichvietnam__tour-subtour,
+.dulichvietnam__tour2,
+.dulichvietnam__tour22 {
+    position: relative;
+}
+
+.dulichvietnam__tour-item h5 a,
+.dulichvietnam__tour3 h5 a,
+.dulichvietnam__tour2 h5 a,
+.dulichvietnam__tour22 h5 a {
+    color: var(--light);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 80%;
+    left: 2rem;
+    cursor: pointer;
+}
+
+.dulichvietnam__tour3 h5 a {
+    top: 94%;
+}
+
+.dulichvietnam__tour2 h5 a,
+.dulichvietnam__tour22 h5 a {
+    top: 80%;
+}
+
+.dulichvietnam button,
+.tour__handbook button,
+.dulichnuocngoai button {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background: var(--secondary);
+    color: var(--light);
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
+    display: block;
+    margin: auto;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.dulichvietnam button:hover,
+.tour__handbook button:hover,
+.dulichnuocngoai button:hover,
+.thongtinthanhtoan button:hover {
+    border: 1px solid #DBA510;
+    color: var(--secondary);
+    background: var(--white-color);
+}
+
+
+/* form đăng ký nhận ưu đãi */
+
+
+/* .formuudai {
+    background-image: url(../img/hoa-dao-1.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+
+.formuudai {
+    background-color: var(--primary);
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.formuudai h3,
+.formuudai h5 {
+    color: var(--heaven);
+    text-align: center;
+}
+
+.formuudai h3 {
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.formuudai h5 {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+}
+
+.formuudai__form {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.formuudai__form input:first-child {
+    width: 20rem;
+    height: 3rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+}
+
+.formuudai__form button {
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    margin-left: 0.5rem;
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.formuudai__form button:hover {
+    border: 1px solid #DBA510;
+    background-color: var(--light);
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+
+/* Du lịch nước ngoài */
+
+.tour__tourhot-box.tournuocngoai {
+    height: 42rem;
+}
+
+.tour__dulichnuocngoai-box {
+    width: 30rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 1.5rem;
+    outline: none;
+}
+
+.tour__dulichnuocngoai-box-slide-img {
+    height: 20rem;
+}
+
+.tour__dulichnuocngoai-box-slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.tour__dulichnuocngoai-box-name {
+    margin: 1.5rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.tour__dulichnuocngoai-box-name a {
+    color: var(--text-color);
+}
+
+.tour__dulichnuocngoai-box-name a:hover {
+    color: var(--secondary);
+}
+
+.prev-arrow-nuocngoai {
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-arrow-nuocngoai i {
+    color: var(--light);
+    font-size: 2rem;
+}
+
+.next-arrow-nuocngoai {
+    position: absolute;
+    top: 40%;
+    right: 6%;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.next-arrow-nuocngoai i {
+    color: var(--light);
+    font-size: 2rem;
+}
+
+
+/* Blog du lịch */
+
+.tour__handbook {
+    margin: auto;
+}
+
+.tour__handbook-title h2 {
+    margin-top: 5rem;
+}
+
+.tour__handbook h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.tour__handbook-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour__handbook-chitiet {
+    width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+}
+
+.tour__handbook-chitiet1 {
+    width: 100%;
+    height: 100%;
+}
+
+.tour__handbook-chitiet1 img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.tour__handbook-chitiet1 h3 {
+    color: var(--text-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.tour__handbook-chitiet1 h3 a {
+    color: var(--text-color);
+}
+
+.tour__handbook-chitiet1 h3 a:hover {
+    color: var(--secondary);
+}
+
+.tour__handbook-chitiet1-dayandview {
+    display: flex;
+    margin-bottom: .5rem;
+    color: #757575;
+}
+
+.tour__handbook-chitiet1-dayandview i {
+    margin-left: 3rem;
+    font-size: 1.3rem;
+    margin-top: .25rem;
+}
+
+.tour__handbook-chitiet1-dayandview p:last-child {
+    margin-left: .5rem;
+}
+
+.tour__handbook-chitiet1 p {
+    font-size: 1.3rem;
+}
+
+.tour__handbook-chitiet1 a p {
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+.tour__handbook-chitiet1 p:nth-child(4) {
+    cursor: pointer;
+}
+
+.tour__handbook-chitiet1 h6 {
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin: .5rem;
+}
+
+.tour__handbook-chitiet1 h6 a {
+    border-bottom: 1px solid black;
+    color: var(--text-color);
+}
+
+.tour__handbook-chitiet2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.tour__handbook-chitiet2-post {
+    display: block;
+}
+
+.tour__handbook-chitiet2-post img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+.tour__handbook-chitiet2-post-title {
+    padding-top: 1rem;
+}
+
+.tour__handbook-chitiet2-post-title h3 {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.tour__handbook-chitiet2-post-title h3 a {
+    color: var(--text-color);
+}
+
+.tour__handbook-chitiet2-post-title h3 a:hover {
+    color: var(--secondary);
+}
+
+.tour__handbook-chitiet2-post-title p {
+    font-size: 1.3rem;
+    color: #757575;
+}
+
+.tour__handbook-chitiet2-post:nth-child(2),
+.tour__handbook-chitiet2-post:nth-child(3),
+.tour__handbook-chitiet2-post:nth-child(4) {
+    margin-top: 2rem;
+}
+
+
+/* footer ap thanh toan */
+
+.footer {
+    background-color: var(--footer);
+    margin-top: 5rem;
+}
+
+.footer__top-thanhtoan h3,
+.footer__top-folowus h3 {
+    color: var(--light);
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+.footer__top-thanhtoan-online .jcb,
+.footer__top-thanhtoan-online .visa,
+.footer__top-folowus-social .youtube,
+.footer__top-folowus-social .twitter,
+.footer__top-folowus-social .pinterest,
+.footer__top-folowus-social .facebook {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 1.5rem;
+}
+
+.footer__top-thanhtoan-online .visa,
+.footer__top-folowus-social .youtube,
+.footer__top-folowus-social .twitter,
+.footer__top-folowus-social .pinterest {
+    margin-left: 1.5rem;
+}
+
+.footer__top-thanhtoan-online .mastercard {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1.5rem;
+    margin-top: .5rem;
+}
+
+.footer__top-thanhtoan-online {
+    display: flex;
+}
+
+
+/*  footer social */
+
+.footer__top-folowus-social .facebook img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.footer__top-folowus-social {
+    display: flex;
+}
+
+
+/* footer contact */
+
+.footer__contact-info {
+    color: var(--light);
+    margin-top: 2rem;
+}
+
+.footer__contact-info h6 {
+    font-size: 1.5rem;
+}
+
+.footer__contact-info p {
+    font-size: 1.3rem;
+    margin-top: .5rem;
+}
+
+
+/* footer bottom */
+
+.footer__bottom-copyright {
+    color: var(--light);
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer__bottom {
+    background-color: #000000;
+}
+
+
+/* ------------- Media query -------------- */
+
+@media all and (min-width: 768px) {
+    /* header banner */
+    .header__banner-title {
+        display: flex;
+        align-items: center;
+    }
+    .header__banner-title-slogan {
+        display: block;
+    }
+    .header__banner-title-slogan h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+        color: var(--light);
+        text-shadow: 0 .3rem .5rem #000;
+    }
+    .header__banner-title-slogan p {
+        font-size: 2rem;
+        color: var(--light);
+        line-height: 3rem;
+        text-shadow: 0 .3rem .5rem #000;
+        margin-top: 1rem;
+    }
+    .header__search-title-form form {
+        width: 30rem;
+        margin-bottom: 5rem;
+    }
+    .header__search-title-form form h3 {
+        font-size: 2rem;
+    }
+    .header__search-title-form form input[type="submit"] {
+        width: 12rem;
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+    /* tourhot */
+    .prev-arrow,
+    .prev-arrow-nuocngoai {
+        left: 3%;
+    }
+    .prev-arrow i,
+    .prev-arrow-nuocngoai i {
+        font-size: 3rem;
+    }
+    .next-arrow,
+    .next-arrow-nuocngoai {
+        right: 3%;
+    }
+    .next-arrow i,
+    .next-arrow-nuocngoai i {
+        font-size: 3rem;
+    }
+    /* du lịch Việt Nam */
+    .dulichvietnam__tour h5 a {
+        top: 80%;
+        font-size: 1.6rem;
+    }
+    .dulichvietnam__tour3 h5 a {
+        top: 90%;
+        font-size: 1.6rem;
+    }
+    .dulichvietnam__tour2 h5 a,
+    .dulichvietnam__tour22 h5 a {
+        top: 80%;
+    }
+    /* form ưu đãi */
+    .formuudai__form {}
+    /* Du lịch nước ngoài */
+    .prev-arrow-nuocngoai,
+    .next-arrow-nuocngoai {
+        top: 40%;
+    }
+    /* Blog du lịch */
+    .tour__handbook-chitiet2 {
+        margin-top: 0;
+    }
+    .tour__handbook-chitiet2 h3 {
+        margin-bottom: .5rem;
+    }
+    .tour__handbook-chitiet2-post {
+        display: flex;
+    }
+    .tour__handbook-chitiet2-post-title {
+        padding-left: 1.5rem;
+        padding-top: 0;
+    }
+    .tour__handbook-chitiet2-post img {
+        width: 20rem;
+        margin-top: 0;
+    }
+    /* ----------- footer ----------- */
+    .footer__bottom-copyright {
+        text-align: center;
+    }
+}
+
+
+/* ---------------- Desktop Menu ----------------- */
+
+@media all and (min-width: 1024px) {
+    /* --------------- Header ---------------- */
+    .nav__logo a {
+        font-size: 2.5rem;
+    }
+    .nav__list {
+        display: flex;
+    }
+    .nav__item {
+        padding: 0 2rem;
+    }
+    .nav__toggle {
+        display: none;
+    }
+    .nav__user {
+        margin-right: 0rem;
+    }
+    /* header banner */
+    .header__banner-title-slogan h1 {
+        font-size: 6rem;
+        padding-left: 3rem;
+        line-height: 8rem;
+    }
+    .header__banner-title-slogan p {
+        font-size: 3rem;
+        margin-top: 2rem;
+        padding-left: 3rem;
+        line-height: 4rem;
+    }
+    /* dulichvietnam */
+    .dulichvietnam__tour h5 a {
+        top: 90%;
+        font-size: 1.6rem;
+    }
+    .dulichvietnam__tour2 h5 a,
+    .dulichvietnam__tour22 h5 a {
+        top: 80%;
+    }
+    .dulichvietnam__tour-item {
+        height: 30rem;
+    }
+    .dulichvietnam__tour22 {
+        width: 100%;
+        margin-left: 0;
+    }
+    /* form ưu đãi */
+    .formuudai h3 {
+        font-size: 3rem;
+    }
+    .formuudai h5 {
+        font-size: 2rem;
+    }
+    /* Du lịch nước ngoài */
+    .prev-arrow,
+    .prev-arrow-nuocngoai {
+        left: 1.6%;
+    }
+    .next-arrow,
+    .next-arrow-nuocngoai {
+        right: 1.6%;
+    }
+    /* ------------ footer ----------- */
+    .footer__top {
+        display: flex;
+    }
+    .footer__top-folowus {
+        margin-left: 5rem;
+    }
+    .footer__contact {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__top-thanhtoan h3,
+    .footer__top-folowus h3 {
+        font-size: 2rem;
+    }
+    .footer__contact-info h6 {
+        font-size: 2rem;
+    }
+    .footer__contact-info p {
+        font-size: 1.6rem;
+    }
+}
