@@ -1,14 +1,16 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sơ đồ trang | Vietnam Trekking</title>
+    <title>Thanh toán online | Vietnamtrekking</title>
     <link rel="shortcut icon" href="img/logo vietnamtrekking.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
     <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/so-do-trang.css">
+    <link rel="stylesheet" href="css/thanh-toan-online.css">
 </head>
 
 <body>
@@ -31,57 +33,47 @@
                         <li class="nav__item">
                             <a href="blog-du-lich.html" class="nav__link">Blog du lịch</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="so-do-trang.html" class="nav__link active">Sơ đồ trang</a>
-                        </li>
                     </ul>
                 </div>
-                <div>
-                    <a href="form-account.html"><i class="fas fa-user nav__user"></i></a>
-                    <i class="fas fa-bars nav__toggle" id="nav-toggle"></i>
+                <div class="nav__user">
+                    <a href="form-account.html"><i class="fas fa-user "></i></a>
+
+                </div>
+                <div class="nav__toggle">
+                    <i class="fas fa-bars " id="nav-toggle"></i>
                 </div>
             </nav>
         </header>
         <!-- --------------- header end ------------- -->
-        <!---------------- main start ------------------>
-        <div class="main container">
-            <h3 style="margin-top: 7rem">Sơ đồ trang</h3>
-            <div class="sodotrang container">
-                <ol>
-                    <li><a href="index.html">Trang chủ</a>
-                        <ul>
-                            <li><a href="index.html">Tour hot</a></li>
-                            <li><a href="index.html">Du lịch trong nước</a></li>
-                            <li><a href="index.html">Du lịch nước ngoài</a></li>
-                            <li><a href="index.html">Blog du lịch</a></li>
-                            <li><a href="index.html">Sơ đồ trang</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="du-lich-trong-nuoc.html">Du lịch trong nước</a>
-                        <ul>
-                            <li><a href="#">Lorem, ipsum dolor.</a></li>
-                            <li><a href="#">Lorem, ipsum dolor.</a></li>
-                            <li><a href="#">Lorem, ipsum dolor.</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="du-lich-nuoc-ngoai.html">Du lịch nước ngoài</a>
-                        <ul>
-                            <li><a href="#">Lorem, ipsum dolor.</a></li>
-                            <li><a href="#">Lorem, ipsum dolor.</a></li>
-                            <li><a href="#">Lorem, ipsum dolor.</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="blog-du-lich.html">Blog du lịch</a>
-                        <ul>
-                            <li><a href="blog-du-lich.html">Cẩm nang du lịch</a></li>
-                            <li><a href="blog-du-lich.html">Du lịch khám phá</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Sơ đồ trang</a></li>
-                </ol>
+
+        <div class="payment">
+            <h2>Thanh toán online</h2>
+            <div class="form">
+                <div class="card space icon-relative">
+                    <label class="label">Tên tài khoản:</label>
+                    <input type="text" class="input" placeholder="Họ và tên">
+                    <!-- <i class="fas fa-user"></i> -->
+                </div>
+                <div class="card space icon-relative">
+                    <label class="label">Số thẻ:</label>
+                    <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Số thẻ">
+                    <!-- <i class="far fa-credit-card"></i> -->
+                </div>
+                <div class="card-grp space">
+                    <div class="card-item icon-relative">
+                        <label class="label">Hạn sử dụng:</label>
+                        <input type="text" name="expiry-data" class="input" placeholder="00 / 00">
+                        <!-- <i class="far fa-calendar-alt"></i> -->
+                    </div>
+                    <div class="card-item icon-relative">
+                        <label class="label">CVC:</label>
+                        <input type="text" class="input" data-mask="000" placeholder="000">
+                        <!-- <i class="fas fa-lock"></i> -->
+                    </div>
+                </div>
+                <a href="xac-nhan-dat-tour.html"><button type="button"> Thanh toán</button></a>
             </div>
         </div>
-        <!------------------- main end -------------------->
         <!-- ---------------- footer start ------------------ -->
         <div class="footer">
             <div class="footer__content container">
@@ -140,8 +132,9 @@
             </div>
         </div>
         <!-- ---------------- footer end ------------------ -->
-        <!-- js -->
-        <script src="js/main.js"></script>
+    </div>
+    <!-- js -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
