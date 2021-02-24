@@ -105,8 +105,8 @@ $('.tour__dulichnuocngoai').slick({
 
 $('.tour__chitiet-box-img').slick({
     speed: 1000,
-    prevArrow: '<span class="prev-arrow-nuocngoai slide-arrow"><i class="fas fa-angle-left"></i></span>',
-    nextArrow: '<span class="next-arrow-nuocngoai slide-arrow"><i class="fas fa-angle-right"></i></span>',
+    prevArrow: '<span class="prev-arrow-tourchitiet slide-arrow"><i class="fas fa-angle-left"></i></span>',
+    nextArrow: '<span class="next-arrow-tourchitiet slide-arrow"><i class="fas fa-angle-right"></i></span>',
     infinite: false,
     speed: 300,
     slidesToShow: 1,
