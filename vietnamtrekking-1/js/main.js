@@ -1,6 +1,6 @@
 // account đăng nhập và đăng ký
 
-function myFunction() {
+function account() {
     var a = document.getElementById("form-1");
     if (a.style.display == "none") {
         a.style.display = "block";
@@ -218,6 +218,8 @@ $('#birthday').on('change', function() {
 
     if (year === 2021) {
         $('#money').val('0đ')
+    } else if (year === 2021 - 1) {
+        $('#money').val('1.000.000đ')
     } else {
         $('#money').val('10.000.000đ')
     }
@@ -254,36 +256,3 @@ $(function($) {
         $('.validation').addClass($('.has-error').length ? 'text-danger' : 'text-success');
     });
 });
-
-
-
-
-//
-
-
-function myFunction1() {
-    var x = document.getElementById("thanhtoan1");
-    if (x.style.display == "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function myFunction2() {
-    var y = document.getElementById("thanhtoan2");
-    if (y.style.display == "none") {
-        y.style.display = "block";
-    } else {
-        y.style.display = "none";
-    }
-}
-
-function myFunction3() {
-    var z = document.getElementById("thanhtoan3");
-    if (z.style.display == "none") {
-        z.style.display = "block";
-    } else {
-        z.style.display = "none";
-    }
-}

@@ -270,6 +270,11 @@ label.validation-error {
     display: none;
 }
 
+.content>ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
 .dieukhoanthanhtoan h3,
 .thongtinthanhtoan h3 {
     font-size: 2rem;

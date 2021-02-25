@@ -98,7 +98,7 @@
                                 <input type="text" name="fullName" id="fullName">
                             </div>
                             <div>
-                                <label>Ngày sinh</label>
+                                <label>Ngày sinh*</label><label class="validation-error hide" id="birthDayValidateError">Vui lòng nhập ngày sinh</label>
                                 <input type="date" name="ngaysinh" id="birthday">
                             </div>
                             <div>
@@ -134,8 +134,8 @@
                 <div class="thanhtoantour">
                     <input type="radio" id="thanhtoantaivp" name="gender" value="thanhtoantaivp" onclick="myFunction1()">
                     <label for="thanhtoantaivp">Thanh toán tại văn phòng chúng tôi</label>
-                    <div class="content" id="thanhtoan1">
-                        <ul style="list-style: disc; margin-left: 1.5rem;">
+                    <div class="content">
+                        <ul style="">
                             <li>
                                 <p>Quý khách vui lòng thanh toán tại bất kỳ văn phòng Vietnamtrekking trên toàn quốc và các chi nhánh ngoài nước. Chi tiết Xin lưu ý, Quý khách nên liên lạc trước khi đến để biết rõ hơn về giờ làm việc và các hồ sơ cần chuẩn
                                     bị khi thanh toán.
@@ -148,9 +148,9 @@
                 <div class="thanhtoantour">
                     <input type="radio" id="chuyenkhoan" name="gender" value="chuyenkhoan" onclick="myFunction2()">
                     <label for="chuyenkhoan">Chuyển khoản qua ngân hàng</label><br>
-                    <div class="content" id="thanhtoan2">
+                    <div class="content">
 
-                        <ul style="list-style: disc; margin-left: 1.5rem;">
+                        <ul style="">
                             <li>
                                 <p>Vietnamtrekking chấp nhận thanh toán chuyển khoản từ ATM / Internet Banking / Quầy giao dịch khách hàng. </p>
                             </li>
@@ -177,8 +177,8 @@
                 <div class="thanhtoantour">
                     <input type="radio" id="thanhtoanonline" name="gender" value="thanhtoanonline" onclick="myFunction3()">
                     <label for="thanhtoanonline">Thẻ tín dụng</label>
-                    <div class="content" id="thanhtoan3">
-                        <ul style="list-style: disc; margin-left: 1.5rem;">
+                    <div class="content">
+                        <ul style="">
                             <li>
                                 <p>Quý khách vui lòng chọn loại thẻ:</p>
                             </li>
