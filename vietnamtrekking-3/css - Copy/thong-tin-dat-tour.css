@@ -173,24 +173,18 @@ label.validation-error {
     font-size: 1.6rem;
 }
 
-.thongtinthanhtoan-1 label,
-.thongtinthanhtoan-2 label,
-.thongtinthanhtoan-3 label {
+.thanhtoantour label {
     font-size: 1.5rem;
     margin-left: 1rem;
     cursor: pointer;
 }
 
-.thongtinthanhtoan-1 input,
-.thongtinthanhtoan-2 input,
-.thongtinthanhtoan-3 input {
+.thanhtoantour input {
     margin-top: 1.5rem;
     cursor: pointer;
 }
 
-.thongtinthanhtoan-1 p,
-.thongtinthanhtoan-2 p,
-.thongtinthanhtoan-3 p {
+.thanhtoantour p {
     font-size: 1.3rem;
 }
 
@@ -223,6 +217,11 @@ label.validation-error {
     border: 1px solid var(--text-color);
     overflow-y: scroll;
     /* Add the ability to scroll */
+}
+
+.huytour>li {
+    list-style: disc;
+    margin-left: 1.5rem;
 }
 
 
@@ -267,9 +266,7 @@ label.validation-error {
     display: flex;
 }
 
-.thanhtoan1,
-.thanhtoan2,
-.thanhtoan3 {
+.content {
     display: none;
 }
 

@@ -130,6 +130,29 @@
     margin-left: 2.5rem;
 }
 
+.prev-arrow-tourchitiet,
+.next-arrow-tourchitiet {
+    position: absolute;
+    top: 45%;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-arrow-tourchitiet {
+    left: 2%;
+}
+
+.next-arrow-tourchitiet {
+    right: 2%;
+}
+
+.prev-arrow-tourchitiet i,
+.next-arrow-tourchitiet i {
+    color: var(--white-color);
+    font-size: 3rem;
+}
+
 @media all and (min-width: 768px) {
     .tour__chitiet-box-slide-img {
         height: 50rem;
@@ -146,5 +169,24 @@
     }
     .tour__chitiet-box-info h2 {
         margin-top: 0rem;
+    }
+    .prev-arrow-tourchitiet,
+    .next-arrow-tourchitiet {
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .prev-arrow-tourchitiet {
+        left: 2%;
+    }
+    .next-arrow-tourchitiet {
+        right: 2%;
+    }
+    .prev-arrow-tourchitiet i,
+    .next-arrow-tourchitiet i {
+        color: var(--white-color);
+        font-size: 5rem;
     }
 }

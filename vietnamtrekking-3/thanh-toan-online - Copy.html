@@ -1,16 +1,16 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Xác nhận đặt tour | Vietnam Trekking</title>
+    <title>Thanh toán online | Vietnamtrekking</title>
     <link rel="shortcut icon" href="img/logo vietnamtrekking.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
     <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/xac-nhan-dat-tour.css">
+    <link rel="stylesheet" href="css/thanh-toan-online.css">
 </head>
 
 <body>
@@ -45,75 +45,35 @@
             </nav>
         </header>
         <!-- --------------- header end ------------- -->
-        <!---------------- main start ------------------>
-        <div class="xacnhandattour container">
-            <h3>Xác nhận đặt tour thành công</h3>
-            <div class="confirm">
-                <p>Cảm ơn bạn đã tin tưởng và lựa chọn Vietnam Trekking</p>
-                <p>Vietnam Trekking sẽ liên hệ lại để xác nhận đặt tour của bạn.</p>
-                <p>Trân trọng!</p>
+
+        <div class="payment">
+            <h2>Thanh toán online</h2>
+            <div class="form">
+                <div class="card space icon-relative">
+                    <label class="label">Tên tài khoản:</label>
+                    <input type="text" class="input" placeholder="Họ và tên">
+                    <!-- <i class="fas fa-user"></i> -->
+                </div>
+                <div class="card space icon-relative">
+                    <label class="label">Số thẻ:</label>
+                    <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Số thẻ">
+                    <!-- <i class="far fa-credit-card"></i> -->
+                </div>
+                <div class="card-grp space">
+                    <div class="card-item icon-relative">
+                        <label class="label">Hạn sử dụng:</label>
+                        <input type="text" name="expiry-data" class="input" placeholder="00 / 00">
+                        <!-- <i class="far fa-calendar-alt"></i> -->
+                    </div>
+                    <div class="card-item icon-relative">
+                        <label class="label">CVC:</label>
+                        <input type="text" class="input" data-mask="000" placeholder="000">
+                        <!-- <i class="fas fa-lock"></i> -->
+                    </div>
+                </div>
+                <a href="xac-nhan-dat-tour.html"><button type="button"> Thanh toán</button></a>
             </div>
-            <h4></h4>
-            <table class="formthongtin">
-                <tr>
-                    <td>
-                        <table class="list" id="employeeList">
-                            <div class="list__title">Danh sách hành khách</div>
-                            <thead>
-                                <tr>
-                                    <th>Họ và Tên</th>
-                                    <th>Ngày sinh</th>
-                                    <th>Thành tiền</th>
-                                </tr>
-                                <tr>
-                                    <th>Đinh Trọng Khang</th>
-                                    <th>01/01/2021</th>
-                                    <th>5.000.000đ</th>
-                                </tr>
-                                <tr>
-                                    <th>Đinh Trọng Khang</th>
-                                    <th>01/01/2021</th>
-                                    <th>5.000.000đ</th>
-                                </tr>
-                                <tr>
-                                    <th>Đinh Trọng Khang</th>
-                                    <th>01/01/2021</th>
-                                    <th>5.000.000đ</th>
-                                </tr>
-                                <tr>
-                                    <th>Đinh Trọng Khang</th>
-                                    <th>01/01/2021</th>
-                                    <th>5.000.000đ</th>
-                                </tr>
-                            </thead>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-            <h4></h4>
-            <table class="formthongtin">
-                <tr>
-                    <td>
-                        <table class="list" id="employeeList">
-                            <div class="list__title">Thông tin đặt tour</div>
-                            <thead>
-                                <tr>
-                                    <th>Họ và Tên</th>
-                                    <th>Số điện thoại</th>
-                                    <th>Email</th>
-                                </tr>
-                                <tr>
-                                    <th>Đinh Trọng Khang</th>
-                                    <th>0904339993</th>
-                                    <th>khangdinhtb@gmail.com</th>
-                                </tr>
-                            </thead>
-                        </table>
-                    </td>
-                </tr>
-            </table>
         </div>
-        <!------------------- main end -------------------->
         <!-- ---------------- footer start ------------------ -->
         <div class="footer">
             <div class="footer__content container">
@@ -172,10 +132,10 @@
             </div>
         </div>
         <!-- ---------------- footer end ------------------ -->
-        <!-- js -->
-        <script src="libs/jquery/jquery-3.5.1.min.js"></script>
-        <script src="libs/slick/slick.min.js"></script>
-        <script src="js/main.js"></script>
+    </div>
+    <!-- js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

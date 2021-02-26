@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng nhập | Vietnam Trekking</title>
     <link rel="shortcut icon" href="img/logo-chinh-vietnamtrekking.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
     <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/form-account.css">
@@ -43,6 +45,7 @@
     </header>
     <!-- ------------ header end ------------ -->
 
+    <!-- ------------ main start ------------- -->
     <div class="main">
 
         <!-- form đăng nhập -->
@@ -52,13 +55,13 @@
 
             <div class="form-group">
                 <label for="email" class="form-label">Email</label>
-                <input id="email" name="email" type="text" placeholder="Nhập email" class="form-control">
+                <input id="email__dk" name="email" type="text" placeholder="Nhập email" class="form-control">
                 <span class="form-message"></span>
             </div>
 
             <div class="form-group">
                 <label for="password" class="form-label">Mật khẩu</label>
-                <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                <input id="password__dk" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
                 <span class="form-message"></span>
             </div>
 
@@ -80,19 +83,13 @@
             </div>
             <div class="form__switch-btn">
                 <p>Bạn chưa có tài khoản?</p>
-                <p class="dangky" onclick="myFunction()">Đăng ký</p>
+                <p class="dangky" onclick="account()">Đăng ký</p>
             </div>
         </form>
 
         <!-- form đăng ký -->
         <form action="" method="POST" class="form-1" id="form-1">
             <h3 class="form__heading">Đăng ký</h3>
-
-            <!-- <div class="form-group">
-                <label for="fullname" class="form-label">Họ và tên</label>
-                <input id="fullname" name="fullname" type="text" placeholder="VD: Đinh Trọng Khang" class="form-control">
-                <span class="form-message"></span>
-            </div> -->
 
             <div class="form-group">
                 <label for="email" class="form-label">Email</label>
@@ -139,10 +136,11 @@
 
             <div class="form__switch-btn">
                 <p>Bạn đã tài khoản?</p>
-                <p class="dangky" onclick="myFunction()">Đăng nhập</p>
+                <p class="dangky" onclick="account()">Đăng nhập</p>
             </div>
         </form>
     </div>
+    <!-- ------------ main end ------------- -->
 
     <!-- ---------------- footer start ------------------ -->
     <div class="footer">
@@ -203,6 +201,8 @@
     </div>
     <!-- ---------------- footer end ------------------ -->
     <!-- js -->
+    <script src="js/jquery.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/validator.js"></script>
     <script>

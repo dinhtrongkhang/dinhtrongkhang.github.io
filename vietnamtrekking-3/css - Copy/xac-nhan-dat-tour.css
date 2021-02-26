@@ -105,7 +105,8 @@ body {
     line-height: 2.2rem;
 }
 
-.formthongtin {
+.formthongtin__danhsach,
+.formthongtin__dattour {
     margin: 3rem auto;
 }
 
@@ -129,6 +130,5 @@ th {
 }
 
 table.list thead>tr {
-    /* background-color: var(--secondary); */
     color: var(--text-color);
 }

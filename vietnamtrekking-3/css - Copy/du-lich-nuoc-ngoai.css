@@ -19,6 +19,9 @@
     --text-color: #333;
     --ternary: #6C6C6C;
     --danger: #FE4545;
+    --dark-color: #101010;
+    --white-color: #FAFAFA;
+    --gray-color: #F0F1F3;
     --background: #ececec;
     --light: #F0F0F0;
     --heaven: #FFFFFF;
@@ -76,17 +79,17 @@ body {
     }
 }
 
-.dulichvietnam__title {
+.dulichnuocngoai__title {
     margin-top: 5rem;
 }
 
-.dulichvietnam__title a,
-.dulichvietnam__title span {
+.dulichnuocngoai__title a,
+.dulichnuocngoai__title span {
     font-size: 1.6rem;
     color: var(--ternary);
 }
 
-.dulichvietnam__title span {
+.dulichnuocngoai__title span {
     padding: 0 .5rem;
 }
 

@@ -19,6 +19,9 @@
     --text-color: #333;
     --ternary: #6C6C6C;
     --danger: #FE4545;
+    --dark-color: #101010;
+    --white-color: #FAFAFA;
+    --gray-color: #F0F1F3;
     --background: #ececec;
     --light: #F0F0F0;
     --heaven: #FFFFFF;
@@ -146,7 +149,7 @@ body {
 .blog__tour-dicovery p a {
     font-size: 1.4rem;
     line-height: 2.2rem;
-    color: var(--ternary);
+    color: var(--text-color);
 }
 
 .blog__tour-dicovery p a:hover {
@@ -165,13 +168,13 @@ body {
     .header__banner-slogan h1 {
         font-size: 5rem;
         line-height: 6rem;
-        color: var(--light);
+        color: var(--white-color);
         text-shadow: 0 .3rem .5rem #000;
     }
     .header__banner-slogan p {
         font-size: 3rem;
         line-height: 4rem;
-        color: var(--light);
+        color: var(--white-color);
         text-shadow: 0 .3rem .5rem #000;
     }
     .blog__tour-dicovery h3 {

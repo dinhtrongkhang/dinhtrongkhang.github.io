@@ -1,6 +1,6 @@
 // account đăng nhập và đăng ký
 
-function myFunction() {
+function account() {
     var a = document.getElementById("form-1");
     if (a.style.display == "none") {
         a.style.display = "block";
@@ -105,8 +105,8 @@ $('.tour__dulichnuocngoai').slick({
 
 $('.tour__chitiet-box-img').slick({
     speed: 1000,
-    prevArrow: '<span class="prev-arrow-nuocngoai slide-arrow"><i class="fas fa-angle-left"></i></span>',
-    nextArrow: '<span class="next-arrow-nuocngoai slide-arrow"><i class="fas fa-angle-right"></i></span>',
+    prevArrow: '<span class="prev-arrow-tourchitiet slide-arrow"><i class="fas fa-angle-left"></i></span>',
+    nextArrow: '<span class="next-arrow-tourchitiet slide-arrow"><i class="fas fa-angle-right"></i></span>',
     infinite: false,
     speed: 300,
     slidesToShow: 1,
@@ -212,58 +212,22 @@ function validate() {
     return isValid;
 }
 
-//thanh toan online
+//
+$('#birthday').on('change', function() {
+    const year = +$(this).val().slice(0, 4);
 
-$(function($) {
-    $('[data-numeric]').payment('restrictNumeric');
-    $('.cc-number').payment('formatCardNumber');
-    $('.cc-exp').payment('formatCardExpiry');
-    $('.cc-cvc').payment('formatCardCVC');
-    $.fn.toggleInputError = function(erred) {
-        this.parent('.form-group').toggleClass('has-error', erred);
-        return this;
-    };
-    $('form').submit(function(e) {
-        e.preventDefault();
-        var cardType = $.payment.cardType($('.cc-number').val());
-        $('.cc-number').toggleInputError(!$.payment.validateCardNumber($('.cc-number').val()));
-        $('.cc-exp').toggleInputError(!$.payment.validateCardExpiry($('.cc-exp').payment('cardExpiryVal')));
-        $('.cc-cvc').toggleInputError(!$.payment.validateCardCVC($('.cc-cvc').val(), cardType));
-        $('.cc-brand').text(cardType);
-        $('.validation').removeClass('text-danger text-success');
-        $('.validation').addClass($('.has-error').length ? 'text-danger' : 'text-success');
-    });
-});
-
-
-
+    if (year === 2021) {
+        $('#money').val('0đ')
+    } else {
+        $('#money').val('10.000.000đ')
+    }
+})
 
 //
+$('.thanhtoantour').click(function() {
+    // An toan bo
+    $('.thanhtoantour').children('.content').hide()
 
-
-function myFunction1() {
-    var x = document.getElementById("thanhtoan1");
-    if (x.style.display == "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function myFunction2() {
-    var y = document.getElementById("thanhtoan2");
-    if (y.style.display == "none") {
-        y.style.display = "block";
-    } else {
-        y.style.display = "none";
-    }
-}
-
-function myFunction3() {
-    var z = document.getElementById("thanhtoan3");
-    if (z.style.display == "none") {
-        z.style.display = "block";
-    } else {
-        z.style.display = "none";
-    }
-}
+    // Hien cai dang duoc click
+    $(this).children('.content').show();
+})

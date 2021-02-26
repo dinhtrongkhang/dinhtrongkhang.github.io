@@ -79,15 +79,16 @@ body {
 }
 
 .main {
-    min-height: 150vh;
+    min-height: 200vh;
     display: flex;
     justify-content: center;
-    background: cornflowerblue;
+    background: var(--primary);
 }
 
 .form-1 {
     width: 32rem;
-    min-height: 10rem;
+    /* min-height: 10rem; */
+    height: auto;
     padding: 2rem 3rem;
     text-align: center;
     background: var(--white-color);
@@ -104,7 +105,8 @@ body {
 
 .form-2 {
     width: 32rem;
-    min-height: 10rem;
+    /* min-height: 10rem; */
+    height: auto;
     padding: 2rem 3rem;
     text-align: center;
     background: var(--white-color);

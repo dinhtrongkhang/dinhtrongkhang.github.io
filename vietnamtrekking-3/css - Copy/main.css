@@ -283,11 +283,6 @@ a {
     color: var(--text-color);
 }
 
-.tour__tourhot {
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-
 .tour__tourhot-box {
     width: 30rem;
     height: 45rem;
@@ -382,31 +377,36 @@ a {
     transition: all ease 0.3s;
 }
 
+.tour__tourhot,
+.tour__dulichnuocngoai {
+    margin: 0 1rem;
+}
+
 .prev-arrow {
     position: absolute;
     top: 44%;
-    left: 6%;
+    left: -4%;
     display: inline-block;
     cursor: pointer;
     z-index: 1;
 }
 
 .prev-arrow i {
-    color: var(--text-color);
+    color: var(--secondary);
     font-size: 3rem;
 }
 
 .next-arrow {
     position: absolute;
     top: 44%;
-    right: 6%;
+    right: -4%;
     display: inline-block;
     cursor: pointer;
     z-index: 1;
 }
 
 .next-arrow i {
-    color: var(--text-color);
+    color: var(--secondary);
     font-size: 3rem;
 }
 
@@ -447,6 +447,7 @@ a {
     background-size: cover;
     background-position: center;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 
 .dulichvietnam__tour3 {
@@ -455,6 +456,7 @@ a {
     background-image: url(../img/nha-trang-1.jpg);
     background-size: cover;
     background-position: center;
+    cursor: pointer;
 }
 
 .dulichvietnam__tour2 {
@@ -464,6 +466,7 @@ a {
     background-size: cover;
     background-position: center;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 
 .dulichvietnam__tour22 {
@@ -473,6 +476,7 @@ a {
     background-size: cover;
     background-position: center;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 
 .dulichvietnam__tour-item .overlay,
@@ -490,9 +494,9 @@ a {
 }
 
 .dulichvietnam__tour-item h5 a,
-.dulichvietnam__tour3 h5 a,
 .dulichvietnam__tour2 h5 a,
-.dulichvietnam__tour22 h5 a {
+.dulichvietnam__tour22 h5 a,
+.dulichvietnam__tour3 h5 a {
     color: var(--light);
     font-size: 1.5rem;
     position: absolute;
@@ -509,6 +513,53 @@ a {
 .dulichvietnam__tour22 h5 a {
     top: 80%;
 }
+
+
+/* .dulichvietnam__tour3 {
+    position: relative;
+} */
+
+
+/* .dulichvietnam__tour3>.details {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, .98;
+} */
+
+
+/* .dulichvietnam__tour3 .content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 2rem;
+    align-items: flex-end;
+    color: var(--white-color);
+}
+
+.dulichvietnam__tour3 .content h5 {
+    font-size: 1.6rem;
+    transition: 0.5s;
+    transform: translateY(20rem);
+}
+
+.dulichvietnam__tour3:hover .content h5,
+.dulichvietnam__tour3:hover .content p {
+    transform: translateY(0);
+    transition: 0.6s;
+    z-index: 2;
+}
+
+.dulichvietnam__tour3 .content p {
+    font: 1.4rem;
+    transition: 0.5s;
+    transform: translateY(20rem);
+} */
 
 .dulichvietnam button,
 .tour__handbook button,
@@ -650,29 +701,29 @@ a {
 .prev-arrow-nuocngoai {
     position: absolute;
     top: 40%;
-    left: 6%;
+    left: -4%;
     display: inline-block;
     cursor: pointer;
     z-index: 1;
 }
 
 .prev-arrow-nuocngoai i {
-    color: var(--light);
-    font-size: 2rem;
+    color: var(--secondary);
+    font-size: 3rem;
 }
 
 .next-arrow-nuocngoai {
     position: absolute;
     top: 40%;
-    right: 6%;
+    right: -4%;
     display: inline-block;
     cursor: pointer;
     z-index: 1;
 }
 
 .next-arrow-nuocngoai i {
-    color: var(--light);
-    font-size: 2rem;
+    color: var(--secondary);
+    font-size: 3rem;
 }
 
 
@@ -762,7 +813,7 @@ a {
 .tour__handbook-chitiet1 h6 {
     font-size: 1.3rem;
     cursor: pointer;
-    margin: .5rem;
+    margin: .5rem 0rem;
 }
 
 .tour__handbook-chitiet1 h6 a {
@@ -1079,8 +1130,15 @@ a {
         right: -2%;
     }
     .prev-arrow i,
-    .next-arrow i {
+    .next-arrow i,
+    .prev-arrow-nuocngoai i,
+    .next-arrow-nuocngoai i {
         font-size: 5rem;
+    }
+    .tour__tourhot,
+    .tour__dulichnuocngoai {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     /* ------------ footer ----------- */
     .footer__top {

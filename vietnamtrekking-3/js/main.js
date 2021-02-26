@@ -1,6 +1,6 @@
 // account đăng nhập và đăng ký
 
-function myFunction() {
+function account() {
     var a = document.getElementById("form-1");
     if (a.style.display == "none") {
         a.style.display = "block";

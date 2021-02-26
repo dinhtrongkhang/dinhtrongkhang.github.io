@@ -79,15 +79,16 @@ body {
 }
 
 .main {
-    min-height: 120vh;
+    min-height: 200vh;
     display: flex;
     justify-content: center;
-    background-image: url(../img/banner1.jpg);
+    background: var(--primary);
 }
 
 .form-1 {
-    width: 26rem;
-    min-height: 10rem;
+    width: 32rem;
+    /* min-height: 10rem; */
+    height: auto;
     padding: 2rem 3rem;
     text-align: center;
     background: var(--white-color);
@@ -99,12 +100,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    margin-top: 7rem;
+    margin-top: 20rem;
 }
 
 .form-2 {
-    width: 26rem;
-    min-height: 10rem;
+    width: 32rem;
+    /* min-height: 10rem; */
+    height: auto;
     padding: 2rem 3rem;
     text-align: center;
     background: var(--white-color);
@@ -115,6 +117,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 20rem;
 }
 
 .form__header {
@@ -272,6 +275,7 @@ body {
 }
 
 .footer {
+    height: auto;
     margin-top: 0rem;
 }
 
