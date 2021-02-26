@@ -79,7 +79,7 @@ body {
 }
 
 .main {
-    min-height: 100vh;
+    min-height: 120vh;
     display: flex;
     justify-content: center;
     background: var(--primary);
@@ -100,7 +100,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    margin-top: 17rem;
+    margin-top: 12rem;
 }
 
 .form-2 {
@@ -117,7 +117,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 15rem;
+    margin-top: 12rem;
 }
 
 .form__header {
