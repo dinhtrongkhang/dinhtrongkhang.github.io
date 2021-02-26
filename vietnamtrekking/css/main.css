@@ -243,11 +243,15 @@ a {
     height: 4rem;
     font-size: 1.5rem;
     background: var(--heaven);
-    border: none;
+    border: .1rem solid var(--primary);
     outline: none;
     color: var(--dark-color);
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
     border-radius: .5rem;
+}
+
+.form-control:hover {
+    border-color: var(--secondary);
 }
 
 .header__search-title-form form button {
