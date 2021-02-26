@@ -148,10 +148,9 @@ a {
     display: flex;
 }
 
-.nav__user a {
+.nav__user i {
     color: var(--secondary);
     font-size: 2rem;
-    /* margin-right: 2rem; */
 }
 
 .nav__user {

@@ -78,44 +78,94 @@ body {
     }
 }
 
-.main {
-    min-height: 120vh;
-    display: flex;
-    justify-content: center;
-    background: var(--primary);
+
+/* Center the image and position the close button */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
 }
 
-.form-1 {
-    width: 32rem;
-    height: auto;
-    padding: 2rem 3rem;
-    text-align: center;
-    background: var(--white-color);
-    border-radius: .2rem;
-    align-self: center;
-    box-shadow: 0 .2rem .5rem 0 rgba(51, 62, 73, 0.1);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+/* The Modal (background) */
+
+.modal {
     display: none;
-    margin-top: 12rem;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
 }
 
-.form-2 {
-    width: 32rem;
-    height: auto;
-    padding: 2rem 3rem;
-    text-align: center;
-    background: var(--white-color);
-    border-radius: .2rem;
-    align-self: center;
-    box-shadow: 0 .2rem .5rem 0 rgba(51, 62, 73, 0.1);
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 36rem;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button (x) */
+
+.close {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 12rem;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
 }
 
 .form__header {
@@ -129,6 +179,7 @@ body {
     font-weight: 40rem;
     cursor: pointer;
     color: var(--secondary);
+    text-align: center;
 }
 
 .form .heading,
