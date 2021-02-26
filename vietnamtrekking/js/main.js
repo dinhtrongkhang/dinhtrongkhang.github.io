@@ -1,14 +1,33 @@
 // account đăng nhập và đăng ký
 
-function account() {
-    var a = document.getElementById("form-1");
-    if (a.style.display == "none") {
-        a.style.display = "block";
-    } else {
-        a.style.display = "none";
+// function account() {
+//     var a = document.getElementById("form-1");
+//     if (a.style.display == "none") {
+//         a.style.display = "block";
+//     } else {
+//         a.style.display = "none";
+//     }
+// }
+
+// Get the modal dang nhap
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 }
 
+// Get the modal dang ky
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 // show menu
 const showMenu = (toggleId, navId) => {
