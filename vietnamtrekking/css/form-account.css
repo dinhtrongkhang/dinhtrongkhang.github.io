@@ -100,7 +100,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    margin-top: 20rem;
+    margin-top: 17rem;
 }
 
 .form-2 {
@@ -117,7 +117,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 20rem;
+    margin-top: 15rem;
 }
 
 .form__header {
