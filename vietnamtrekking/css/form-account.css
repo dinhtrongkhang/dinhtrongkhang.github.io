@@ -1,0 +1,288 @@
+/* fonts  */
+
+@font-face {
+    font-family: "Roboto-regular";
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(../font/Roboto/Roboto-Bold.ttf);
+}
+
+
+/* colors  */
+
+:root {
+    --primary: #166987;
+    --secondary: #DBA510;
+    --text-color: #333;
+    --ternary: #6C6C6C;
+    --danger: #FE4545;
+    --dark-color: #101010;
+    --white-color: #FAFAFA;
+    --gray-color: #F0F1F3;
+    --background: #ececec;
+    --light: #F0F0F0;
+    --heaven: #FFFFFF;
+    --black: #000;
+    --footer: #2D333F;
+}
+
+
+/* Reset  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto-regular", sans-serif;
+    line-height: 2.2rem;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+.main {
+    min-height: 200vh;
+    display: flex;
+    justify-content: center;
+    background: var(--primary);
+}
+
+.form-1 {
+    width: 32rem;
+    /* min-height: 10rem; */
+    height: auto;
+    padding: 2rem 3rem;
+    text-align: center;
+    background: var(--white-color);
+    border-radius: .2rem;
+    align-self: center;
+    box-shadow: 0 .2rem .5rem 0 rgba(51, 62, 73, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    margin-top: 20rem;
+}
+
+.form-2 {
+    width: 32rem;
+    /* min-height: 10rem; */
+    height: auto;
+    padding: 2rem 3rem;
+    text-align: center;
+    background: var(--white-color);
+    border-radius: .2rem;
+    align-self: center;
+    box-shadow: 0 .2rem .5rem 0 rgba(51, 62, 73, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20rem;
+}
+
+.form__header {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 3rem;
+}
+
+.form__heading {
+    font-size: 2.5rem;
+    font-weight: 40rem;
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+.form .heading,
+.form-2 .heading {
+    font-size: 2rem;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+.form-label,
+.form-message {
+    text-align: left;
+}
+
+.form-label {
+    font-weight: 700;
+    padding-bottom: .6rem;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+}
+
+.form-control {
+    height: 4rem;
+    padding: .8rem 1.2rem;
+    border: 1px solid var(--primary);
+    border-radius: .3rem;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.form-control:hover {
+    border-color: var(--secondary);
+}
+
+.form-group.invalid .form-control {
+    border-color: var(--danger);
+}
+
+.form-group.invalid .form-message {
+    color: var(--danger);
+}
+
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: .4rem 0 0;
+}
+
+.form-group__policy-text {
+    font-size: 1.2rem;
+}
+
+.form-group__text-link {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.form-submit {
+    outline: none;
+    background-color: var(--primary);
+    margin-top: 1.2rem;
+    padding: 1.2rem 1.6rem;
+    font-weight: 600;
+    color: var(--white-color);
+    border: none;
+    width: 100%;
+    font-size: 1.6rem;
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+.form-submit a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.form-submit:hover {
+    background-color: var(--secondary);
+}
+
+.form__switch-btn {
+    font-size: 1.3rem;
+    font-weight: 500px;
+    color: var(--black);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__switch-btn p {
+    padding: 1rem;
+}
+
+.form__switch-btn .dangky {
+    color: var(--secondary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* --------------  bằng social --------------- */
+
+.form-group__social {
+    margin: 1.5rem 1.5rem;
+}
+
+.social-text {
+    padding: 0.7rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.social-icon {
+    height: 3.6rem;
+    width: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    color: var(--black);
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--primary);
+    border-color: var(--secondary);
+}
+
+.footer {
+    height: auto;
+    margin-top: 0rem;
+}
+
+@media (min-width:576px) {
+    .form-1,
+    .form-2 {
+        width: 36rem;
+        height: auto;
+    }
+}
