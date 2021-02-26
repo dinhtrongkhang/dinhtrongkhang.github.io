@@ -1,0 +1,192 @@
+/* colors  */
+
+:root {
+    --primary: #166987;
+    --secondary: #DBA510;
+    --text-color: #333;
+    --ternary: #6C6C6C;
+    --danger: #FE4545;
+    --dark-color: #101010;
+    --white-color: #FAFAFA;
+    --gray-color: #F0F1F3;
+    --background: #ececec;
+    --light: #F0F0F0;
+    --heaven: #FFFFFF;
+    --black: #000;
+    --footer: #2D333F;
+}
+
+.margin-top {
+    margin-top: 1.5rem;
+}
+
+
+/* ------------- Trang tour chi tiết ----------------- */
+
+.tour__chitiet h2 {
+    font-size: 2rem;
+}
+
+.tour__chitiet-title,
+.tour__chitiet-box,
+.dulichnuocngoai__title {
+    /* margin: 1.5rem; */
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-top: 7rem;
+}
+
+.tour__chitiet-box {
+    margin-top: 1.5rem;
+}
+
+.tour__chitiet-box-slide-img {
+    height: 20rem;
+    width: 50rem;
+}
+
+.tour__chitiet-box-slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.tour__chitiet-box-info h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tour__chitiet-box-info h3 {
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+}
+
+.tour__chitiet-box-info-stars {
+    color: var(--secondary);
+    /* margin-left: 1.5rem; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tour__chitiet-box-info p {
+    line-height: 2rem;
+}
+
+.tour__chitiet-box-info ul li {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+.tour__chitiet-box button {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    background: var(--secondary);
+    color: var(--heaven);
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
+    display: block;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.tour__chitiet-box button:hover {
+    border: 1px solid #DBA510;
+    color: var(--secondary);
+    background: none;
+}
+
+.support__tour {
+    display: flex;
+}
+
+.support__tour-chat {
+    margin-left: 3rem;
+}
+
+.support__tour-call i,
+.support__tour-chat i {
+    font-size: 3.5rem;
+    margin: 2rem 5rem;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.tour__chitiet-box-info2 h3 {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tour__chitiet-box-info2 p {
+    line-height: 2rem;
+}
+
+.tour__chitiet-box-info2 ul li {
+    list-style: disc;
+    margin-left: 2.5rem;
+}
+
+.prev-arrow-tourchitiet,
+.next-arrow-tourchitiet {
+    position: absolute;
+    top: 45%;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-arrow-tourchitiet {
+    left: 2%;
+}
+
+.next-arrow-tourchitiet {
+    right: 2%;
+}
+
+.prev-arrow-tourchitiet i,
+.next-arrow-tourchitiet i {
+    color: var(--white-color);
+    font-size: 3rem;
+}
+
+@media all and (min-width: 768px) {
+    .tour__chitiet-box-slide-img {
+        height: 50rem;
+        width: 50rem;
+    }
+    .giatour {
+        margin-top: 2rem !important;
+    }
+    .tour__chitiet-box-info h3 {
+        margin-top: 0rem;
+    }
+    button {
+        margin-bottom: 2rem;
+    }
+    .tour__chitiet-box-info h2 {
+        margin-top: 0rem;
+    }
+    .prev-arrow-tourchitiet,
+    .next-arrow-tourchitiet {
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .prev-arrow-tourchitiet {
+        left: 2%;
+    }
+    .next-arrow-tourchitiet {
+        right: 2%;
+    }
+    .prev-arrow-tourchitiet i,
+    .next-arrow-tourchitiet i {
+        color: var(--white-color);
+        font-size: 5rem;
+    }
+}
