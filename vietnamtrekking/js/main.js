@@ -1,6 +1,5 @@
 // account đăng nhập và đăng ký
 
-
 // Get the modal dang nhap
 var modal = document.getElementById('id01');
 
@@ -231,6 +230,8 @@ $('#birthday').on('change', function() {
 
     if (year === 2021) {
         $('#money').val('0đ')
+    } else if (year === 2021 - 1) {
+        $('#money').val('1.000.000đ')
     } else {
         $('#money').val('10.000.000đ')
     }
