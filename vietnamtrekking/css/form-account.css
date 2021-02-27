@@ -121,7 +121,7 @@ body {
     /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     border-radius: .5rem;
-    width: 36rem;
+    width: 30rem;
     /* Could be more or less, depending on screen size */
 }
 
@@ -141,32 +141,6 @@ body {
 .close:focus {
     color: red;
     cursor: pointer;
-}
-
-
-/* Add Zoom Animation */
-
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-    from {
-        -webkit-transform: scale(0)
-    }
-    to {
-        -webkit-transform: scale(1)
-    }
-}
-
-@keyframes animatezoom {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1)
-    }
 }
 
 .form__header {
@@ -279,7 +253,8 @@ body {
     padding: 1rem;
 }
 
-.form__switch-btn .dangky {
+.form__switch-btn .dangky,
+.form__switch-btn .dangnhap {
     color: var(--secondary);
     font-size: 1.5rem;
     font-weight: bold;
@@ -324,15 +299,34 @@ body {
     border-color: var(--secondary);
 }
 
-.footer {
-    height: auto;
-    margin-top: 0rem;
+@media (min-width:576px) {
+    .modal-content {
+        width: 36rem;
+    }
 }
 
-@media (min-width:576px) {
-    .form-1,
-    .form-2 {
-        width: 36rem;
-        height: auto;
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
     }
 }

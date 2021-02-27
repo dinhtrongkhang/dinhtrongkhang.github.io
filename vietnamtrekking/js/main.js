@@ -1,13 +1,5 @@
 // account đăng nhập và đăng ký
 
-// function account() {
-//     var a = document.getElementById("form-1");
-//     if (a.style.display == "none") {
-//         a.style.display = "block";
-//     } else {
-//         a.style.display = "none";
-//     }
-// }
 
 // Get the modal dang nhap
 var modal = document.getElementById('id01');
@@ -28,6 +20,8 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
 
 // show menu
 const showMenu = (toggleId, navId) => {
