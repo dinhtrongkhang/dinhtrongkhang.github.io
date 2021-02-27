@@ -9,9 +9,9 @@
     <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
     <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/form-account.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/form-account.css">
 </head>
 
 <body>
@@ -120,7 +120,7 @@
         <!-- dang ky -->
         <div id="id02" class="modal">
 
-            <form class="modal-content animate" action="/action_page.php" method="post">
+            <form class="modal-content animate" action="/action_page.php" method="post" id="form-1">
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
                 </div>
@@ -714,9 +714,26 @@
     </div>
     <!-- js -->
     <script>
+        Validator({
+            form: '#form-1',
+            errorSelector: '.form-message',
+            rules: [
+                // Validator.isRequired('#fullname', 'Vui lòng nhập họ tên đầy đủ'),
+                Validator.isEmail('#email', 'Vui lòng nhập trường này'),
+                Validator.minLength('#password', 8),
+                Validator.isRequired('#password_confirmation'),
+                Validator.isCofirmed('#password_confirmation', function() {
+                    return document.querySelector('#form-1 #password').value;
+                }, 'Mật khẩu nhập lại không chính xác'),
+            ],
+            onSubmit: function(data) {
+                console.log(data);
+            }
+        });
     </script>
     <script src="libs/jquery/jquery-3.5.1.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
+    <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
 </body>
 
