@@ -74,9 +74,8 @@ ul {
     list-style-type: none;
 }
 
-.nav__logo a,
-ul li a {
-    text-decoration: none;
+a {
+    text-decoration: none !important;
 }
 
 .money {
@@ -93,7 +92,18 @@ body>table {
     margin-top: 7rem;
 }
 
+.thongtindattour__title {
+    margin-top: 7rem !important;
+}
+
+.thongtindattour__title a,
+.thongtindattour__title span {
+    font-size: 1.6rem;
+    color: var(--ternary);
+}
+
 .thongtindattour h3 {
+    margin-top: 2rem;
     font-size: 2rem;
 }
 

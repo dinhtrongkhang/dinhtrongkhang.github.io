@@ -224,20 +224,20 @@ function validate() {
     return isValid;
 }
 
-//
+// ngay sinh và tien
 $('#birthday').on('change', function() {
     const year = +$(this).val().slice(0, 4);
 
     if (year === 2021) {
         $('#money').val('0đ')
-    } else if (year === 2021 - 1) {
-        $('#money').val('1.000.000đ')
+    } else if (year > 2015 && year <= 2020) {
+        $('#money').val('5.000.000đ')
     } else {
         $('#money').val('10.000.000đ')
     }
 })
 
-//
+// thanh toan
 $('.thanhtoantour').click(function() {
     // An toan bo
     $('.thanhtoantour').children('.content').hide()
