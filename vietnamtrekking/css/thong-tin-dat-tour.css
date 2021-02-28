@@ -120,6 +120,15 @@ table.list {
     width: 100%;
 }
 
+.info {
+    margin-top: 1.5rem;
+}
+
+.info .abc {
+    background-color: var(--secondary);
+    color: var(--white-color);
+}
+
 td,
 th {
     border: 1px solid var(--primary);
