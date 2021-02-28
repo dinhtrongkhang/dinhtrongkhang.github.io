@@ -170,20 +170,26 @@
             <table class="info" id="">
                 <thead>
                     <tr class="info-dattour">
-                        <th>Họ và Tên</th>
-                        <th>Email</th>
-                        <th>Số điện thoại</th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <th><input type="text" name="" id=""></th>
-                        <th> <input type="text" name="" id=""></th>
-                        <th><input type="text" name="" id=""></th>
-                        <th>
-                            <div class="form-action-buttons">
-                                <input type="submit" value="Xác nhận">
-                            </div>
-                        </th>
+                        <td>
+                            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                                <div>
+                                    <label>Họ và Tên*</label><label class="validation-error hide" id="fullNameValidationError">Vui lòng nhập đầy đủ họ tên</label>
+                                    <input type="text" name="fullName" id="fullName">
+                                </div>
+                                <div>
+                                    <label>Email*</label><label class="validation-error hide" id="emailValidationError">Vui lòng nhập email</label>
+                                    <input type="text" name="email" id="email">
+                                </div>
+                                <div>
+                                    <div>
+                                        <label>Số điện thoại*</label><label class="validation-error hide" id="telValidationError">Vui lòng nhập số điện thoại</label>
+                                        <input type="text" name="tel" id="tel">
+                                    </div>
+                                    <div class="form-action-buttons">
+                                        <input type="submit" value="Xác nhận">
+                                    </div>
+                            </form>
+                        </td>
                     </tr>
                 </thead>
             </table>
@@ -429,70 +435,70 @@
 
             </div>
 
-        </div>
-        <!------------------- main end -------------------->
-        <!-- ---------------- footer start ------------------ -->
-        <div class="footer">
-            <div class="footer__content container">
-                <div class="footer__top">
-                    <div class="footer__top-thanhtoan">
-                        <h3>Chấp nhận thanh toán</h3>
-                        <div class="footer__top-thanhtoan-online">
-                            <div class="jcb"><img src="libs/icons/jcb.svg" alt="jcb"></div>
-                            <div class="visa"><img src="libs/icons/visa.svg" alt="visa"></div>
-                            <div class="mastercard"><img src="libs/icons/mastercard.svg" alt="mastercard"></div>
+            </div>
+            <!------------------- main end -------------------->
+            <!-- ---------------- footer start ------------------ -->
+            <div class="footer">
+                <div class="footer__content container">
+                    <div class="footer__top">
+                        <div class="footer__top-thanhtoan">
+                            <h3>Chấp nhận thanh toán</h3>
+                            <div class="footer__top-thanhtoan-online">
+                                <div class="jcb"><img src="libs/icons/jcb.svg" alt="jcb"></div>
+                                <div class="visa"><img src="libs/icons/visa.svg" alt="visa"></div>
+                                <div class="mastercard"><img src="libs/icons/mastercard.svg" alt="mastercard"></div>
+                            </div>
+                        </div>
+                        <div class="footer__top-folowus">
+                            <h3>Kết nối với Vietnamtrekking</h3>
+                            <div class="footer__top-folowus-social">
+                                <div class="facebook">
+                                    <a href="https://www.facebook.com/vietnamtrekking"><img src="libs/icons/facebook.svg" alt="fb"></a>
+                                </div>
+                                <div class="youtube">
+                                    <a href="https://www.youtube.com/channel/UC6kb8QEAD8zy-NhVpxxSvmw"><img src="libs/icons/youtube.svg" alt="youtube"></a>
+                                </div>
+                                <div class="twitter">
+                                    <a href="https://twitter.com/vietnamtrekkin1"><img src="libs/icons/twitter.svg" alt="twitter"></a>
+                                </div>
+                                <div class="pinterest">
+                                    <a href="https://www.pinterest.com/khangdinhtb"><img src="libs/icons/pinterest.svg" alt="pinterest"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer__top-folowus">
-                        <h3>Kết nối với Vietnamtrekking</h3>
-                        <div class="footer__top-folowus-social">
-                            <div class="facebook">
-                                <a href="https://www.facebook.com/vietnamtrekking"><img src="libs/icons/facebook.svg" alt="fb"></a>
-                            </div>
-                            <div class="youtube">
-                                <a href="https://www.youtube.com/channel/UC6kb8QEAD8zy-NhVpxxSvmw"><img src="libs/icons/youtube.svg" alt="youtube"></a>
-                            </div>
-                            <div class="twitter">
-                                <a href="https://twitter.com/vietnamtrekkin1"><img src="libs/icons/twitter.svg" alt="twitter"></a>
-                            </div>
-                            <div class="pinterest">
-                                <a href="https://www.pinterest.com/khangdinhtb"><img src="libs/icons/pinterest.svg" alt="pinterest"></a>
-                            </div>
+                    <div class="footer__contact">
+                        <div class="footer__contact-info">
+                            <h6>Văn phòng tại Hà Nội</h6>
+                            <p>Địa chỉ: Trung Văn - Nam Từ Liêm</p>
+                            <p>Tel: 0904339993</p>
+                            <p>Email: khangdinhtb@gmail.com</p>
+                        </div>
+                        <div class="footer__contact-info">
+                            <h6>Văn phòng tại Hà Nội</h6>
+                            <p>Địa chỉ: Trung Văn - Nam Từ Liêm</p>
+                            <p>Tel: 0904339993</p>
+                            <p>Email: khangdinhtb@gmail.com</p>
+                        </div>
+                        <div class="footer__contact-info">
+                            <h6>Văn phòng tại Hà Nội</h6>
+                            <p>Địa chỉ: Trung Văn - Nam Từ Liêm</p>
+                            <p>Tel: 0904339993</p>
+                            <p>Email: khangdinhtb@gmail.com</p>
                         </div>
                     </div>
                 </div>
-                <div class="footer__contact">
-                    <div class="footer__contact-info">
-                        <h6>Văn phòng tại Hà Nội</h6>
-                        <p>Địa chỉ: Trung Văn - Nam Từ Liêm</p>
-                        <p>Tel: 0904339993</p>
-                        <p>Email: khangdinhtb@gmail.com</p>
-                    </div>
-                    <div class="footer__contact-info">
-                        <h6>Văn phòng tại Hà Nội</h6>
-                        <p>Địa chỉ: Trung Văn - Nam Từ Liêm</p>
-                        <p>Tel: 0904339993</p>
-                        <p>Email: khangdinhtb@gmail.com</p>
-                    </div>
-                    <div class="footer__contact-info">
-                        <h6>Văn phòng tại Hà Nội</h6>
-                        <p>Địa chỉ: Trung Văn - Nam Từ Liêm</p>
-                        <p>Tel: 0904339993</p>
-                        <p>Email: khangdinhtb@gmail.com</p>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-copyright">
+                        © 2021 Toàn bộ bản quyền thuộc Vietnam Trekking
                     </div>
                 </div>
             </div>
-            <div class="footer__bottom">
-                <div class="footer__bottom-copyright">
-                    © 2021 Toàn bộ bản quyền thuộc Vietnam Trekking
-                </div>
-            </div>
-        </div>
-        <!-- ---------------- footer end ------------------ -->
-        <!-- js -->
-        <script src="libs/jquery/jquery-3.5.1.min.js"></script>
-        <script src="libs/slick/slick.min.js"></script>
-        <script src="js/main.js"></script>
+            <!-- ---------------- footer end ------------------ -->
+            <!-- js -->
+            <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+            <script src="libs/slick/slick.min.js"></script>
+            <script src="js/main.js"></script>
 </body>
 
 </html>

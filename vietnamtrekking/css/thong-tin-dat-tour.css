@@ -124,10 +124,7 @@ table.list {
     margin-top: 1.5rem;
 }
 
-.info .info-dattour {
-    background-color: var(--secondary);
-    color: var(--white-color);
-}
+.info .info-dattour {}
 
 td,
 th {
