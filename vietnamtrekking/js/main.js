@@ -145,6 +145,7 @@ $('.tour__chitiet-box-img').slick({
     }]
 });
 
+
 // thông tin đặt tour
 
 var selectedRow = null
