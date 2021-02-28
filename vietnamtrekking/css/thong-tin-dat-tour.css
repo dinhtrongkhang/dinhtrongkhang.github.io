@@ -124,7 +124,7 @@ table.list {
     margin-top: 1.5rem;
 }
 
-.info .abc {
+.info .info-dattour {
     background-color: var(--secondary);
     color: var(--white-color);
 }
