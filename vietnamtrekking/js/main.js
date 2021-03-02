@@ -116,6 +116,8 @@ $('.tour__dulichnuocngoai').slick({
 // tour chi tiet
 
 $('.tour__chitiet-box-img').slick({
+    dots: true,
+    infinite: false,
     speed: 1000,
     prevArrow: '<span class="prev-arrow-tourchitiet slide-arrow"><i class="fas fa-angle-left"></i></span>',
     nextArrow: '<span class="next-arrow-tourchitiet slide-arrow"><i class="fas fa-angle-right"></i></span>',

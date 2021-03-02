@@ -107,12 +107,17 @@
     margin-left: 3rem;
 }
 
-.support__tour-call i,
+.support__tour-call .tel,
 .support__tour-chat i {
     font-size: 3.5rem;
-    margin: 2rem 5rem;
+    margin: 2rem 0rem;
     color: var(--primary);
     cursor: pointer;
+}
+
+.support__tour-chat i {
+    margin-top: 1.5rem;
+    margin-left: 5rem;
 }
 
 .tour__chitiet-box-info2 h3 {
