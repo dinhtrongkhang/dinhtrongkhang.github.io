@@ -282,6 +282,14 @@ a {
 .dulichvietnam__city h2,
 .dulichnuocngoai h2 {
     margin-top: 5rem;
+}
+
+.tourhot-title,
+.tour h2,
+.tour h2 a,
+.dulichvietnam__city h2 a,
+.dulichnuocngoai h2 a {
+    margin-top: 5rem;
     font-size: 2.2rem;
     line-height: 2.6rem;
     color: var(--text-color);
@@ -437,12 +445,15 @@ a {
     color: var(--text-color);
 }
 
-.dulichvietnam__tour h2 {
+.dulichvietnam__tour h2 a {
     font-size: 2rem;
     line-height: 2.2rem;
     color: var(--white-color);
-    margin-bottom: 1.5rem;
     cursor: pointer;
+}
+
+.dulichvietnam__tour h2 {
+    margin-bottom: 1.5rem;
 }
 
 .dulichvietnam__tour-item {
@@ -748,7 +759,7 @@ a {
     margin-top: 5rem;
 }
 
-.tour__handbook h2 {
+.tour__handbook h2 a {
     font-size: 2rem;
     color: var(--text-color);
     cursor: pointer;
@@ -1015,9 +1026,11 @@ a {
         font-size: 1.6rem;
     }
     /* tourhot */
+    .tourhot-title,
     .tour h2,
-    .dulichvietnam__city h2,
-    .dulichnuocngoai h2 {
+    .tour h2 a,
+    .dulichvietnam__city h2 a,
+    .dulichnuocngoai h2 a {
         font-size: 3.2rem;
         line-height: 3.6rem;
     }
@@ -1057,7 +1070,7 @@ a {
         font-size: 2rem;
         line-height: 2.4rem;
     }
-    .dulichvietnam__tour h2 {
+    .dulichvietnam__tour h2 a {
         font-size: 3.2rem;
         line-height: 3.6rem;
     }
@@ -1087,7 +1100,7 @@ a {
         top: 40%;
     }
     /* Blog du lịch */
-    .tour__handbook h2 {
+    .tour__handbook h2 a {
         font-size: 3.2rem;
     }
     .tour__handbook-chitiet1 h3 {

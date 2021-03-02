@@ -79,6 +79,11 @@ body {
     }
 }
 
+.blog>p {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
 .header__banner-slogan {
     display: none;
 }
@@ -169,7 +174,7 @@ body {
     }
     .tour__handbook-chitiet1 p {
         font-size: 2rem;
-        line-height: 2.2rem;
+        line-height: 2.8rem;
     }
     .blog__tour-dicovery h3 {
         margin-top: 1.5rem;
