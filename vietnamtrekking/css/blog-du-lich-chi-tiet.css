@@ -132,13 +132,17 @@ body {
     font-size: 1.3rem;
 }
 
+.blog__tour-dicovery h3 {
+    margin-top: 3rem;
+}
+
 .blog__tour-dicovery p {
     margin-bottom: 3rem;
 }
 
-.lichtrinh a {
+.blog__tour-dicovery .lichtrinh a {
     font-size: 1.8rem;
-    line-height: 2.2rem;
+    line-height: 2rem;
     color: var(--text-color);
 }
 
@@ -179,7 +183,7 @@ body {
     .blog__tour-dicovery h3 {
         margin-top: 1.5rem;
     }
-    .lichtrinh a {
+    .blog__tour-dicovery .lichtrinh a {
         font-size: 2.2rem;
         line-height: 2.6rem;
     }
