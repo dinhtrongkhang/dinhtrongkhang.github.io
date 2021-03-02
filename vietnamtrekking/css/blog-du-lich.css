@@ -157,7 +157,7 @@ body {
 }
 
 .blog__tour-dicovery p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .blog__tour-dicovery p a,
@@ -167,7 +167,7 @@ body {
     color: var(--text-color);
 }
 
-.blog__tour-dicovery p a:hover {
+.lichtrinh a:hover {
     color: var(--secondary);
 }
 
