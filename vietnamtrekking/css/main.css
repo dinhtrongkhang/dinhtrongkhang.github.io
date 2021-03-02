@@ -282,7 +282,8 @@ a {
 .dulichvietnam__city h2,
 .dulichnuocngoai h2 {
     margin-top: 5rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
     color: var(--text-color);
 }
 
@@ -325,8 +326,8 @@ a {
 .tour__tourhot-box-name,
 .tour__tourhot-box-price {
     margin-top: 1rem;
-    font-size: 1.5rem;
-    line-height: 3rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
     font-weight: bold;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -345,7 +346,8 @@ a {
 
 .tour__tourhot-box-time,
 .tour__tourhot-box-day {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
 }
 
 .tour__tourhot-box-booking {
@@ -1007,6 +1009,22 @@ a {
         font-size: 1.6rem;
     }
     /* tourhot */
+    .tour h2,
+    .dulichvietnam__city h2,
+    .dulichnuocngoai h2 {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+    .tour__tourhot-box-name,
+    .tour__tourhot-box-price {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+    .tour__tourhot-box-time,
+    .tour__tourhot-box-day {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
     .prev-arrow,
     .prev-arrow-nuocngoai {
         left: 3%;
