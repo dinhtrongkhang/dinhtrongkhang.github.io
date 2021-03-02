@@ -824,6 +824,10 @@ a {
     color: var(--text-color);
 }
 
+.tour__handbook-chitiet1 h6 a:hover {
+    color: var(--secondary);
+}
+
 .tour__handbook-chitiet2 {
     width: 100%;
     height: 100%;
@@ -915,6 +919,13 @@ a {
 
 
 /*  footer social */
+
+.footer__top-folowus-social .facebook img:hover,
+.footer__top-folowus-social .youtube img:hover,
+.footer__top-folowus-social .twitter img:hover,
+.footer__top-folowus-social .pinterest img:hover {
+    transform: scale(1.5);
+}
 
 .footer__top-folowus-social .facebook img {
     width: 3rem;
