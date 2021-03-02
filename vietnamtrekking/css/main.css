@@ -437,8 +437,9 @@ a {
     color: var(--text-color);
 }
 
-.dulichvietnam h2 {
+.dulichvietnam__tour h2 {
     font-size: 2rem;
+    line-height: 2.2rem;
     color: var(--light);
     margin-bottom: 1.5rem;
     cursor: pointer;
@@ -503,7 +504,8 @@ a {
 .dulichvietnam__tour22 h5 a,
 .dulichvietnam__tour3 h5 a {
     color: var(--light);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
     position: absolute;
     top: 80%;
     left: 2rem;
@@ -1042,17 +1044,19 @@ a {
         font-size: 3rem;
     }
     /* du lịch Việt Nam */
+    .dulichvietnam__tour h2 {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
     .dulichvietnam__tour h5 a {
-        top: 80%;
-        font-size: 1.6rem;
+        top: 75%;
+        font-size: 2.4rem;
+        line-height: 2.6rem;
     }
     .dulichvietnam__tour3 h5 a {
         top: 90%;
-        font-size: 1.6rem;
-    }
-    .dulichvietnam__tour2 h5 a,
-    .dulichvietnam__tour22 h5 a {
-        top: 80%;
+        font-size: 2.4rem;
+        line-height: 2.6rem;
     }
     /* form ưu đãi */
     .formuudai__form {}
@@ -1134,11 +1138,13 @@ a {
     /* dulichvietnam */
     .dulichvietnam__tour h5 a {
         top: 90%;
-        font-size: 1.6rem;
     }
     .dulichvietnam__tour2 h5 a,
     .dulichvietnam__tour22 h5 a {
-        top: 80%;
+        top: 75%;
+    }
+    .dulichvietnam__tour3 h5 a {
+        top: 90%;
     }
     .dulichvietnam__tour-item {
         height: 30rem;
