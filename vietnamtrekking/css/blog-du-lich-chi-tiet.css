@@ -1,0 +1,89 @@
+/* fonts  */
+
+@font-face {
+    font-family: "Roboto-regular";
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(../font/Roboto/Roboto-Bold.ttf);
+}
+
+
+/* colors  */
+
+:root {
+    --primary: #166987;
+    --secondary: #DBA510;
+    --text-color: #333;
+    --ternary: #6C6C6C;
+    --danger: #FE4545;
+    --dark-color: #101010;
+    --white-color: #FAFAFA;
+    --gray-color: #F0F1F3;
+    --background: #ececec;
+    --light: #F0F0F0;
+    --heaven: #FFFFFF;
+    --black: #000;
+    --footer: #2D333F;
+}
+
+
+/* Reset  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto-regular", sans-serif;
+    line-height: 2.2rem;
+    color: #222;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+.tour__handbook-chitiet1 {
+    margin-top: 2rem;
+}
+
+.blog__tour-handbook p {
+    font-size: 2rem;
+    line-height: 2.2rem;
+}
