@@ -78,7 +78,7 @@
     margin-left: 1.5rem;
 }
 
-.tour__chitiet-box button {
+.tour__chitiet-box-info button {
     width: 15rem;
     height: 3rem;
     font-size: 1.6rem;
@@ -93,7 +93,7 @@
     cursor: pointer;
 }
 
-.tour__chitiet-box button:hover {
+.tour__chitiet-box-info button:hover {
     border: 1px solid #DBA510;
     color: var(--secondary);
     background: none;
@@ -105,6 +105,10 @@
 
 .support__tour-chat {
     margin-left: 3rem;
+}
+
+.support__tour-call p {
+    font-size: 1.6rem;
 }
 
 .support__tour-call .tel,
@@ -127,6 +131,7 @@
 }
 
 .tour__chitiet-box-info2 p {
+    font-size: 1.6rem;
     line-height: 2rem;
 }
 
@@ -159,17 +164,36 @@
 }
 
 @media all and (min-width: 768px) {
+    .tour__chitiet-title,
+    .tour__chitiet-box-info ul li p,
+    .tour__chitiet-box-info2 ul li p {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
     .tour__chitiet-box-slide-img {
         height: 50rem;
         width: 50rem;
+    }
+    .tour__chitiet h2,
+    .tour__chitiet-box-info2 h3 {
+        font-size: 2.4rem;
+        line-height: 2.6rem;
     }
     .giatour {
         margin-top: 2rem !important;
     }
     .tour__chitiet-box-info h3 {
         margin-top: 0rem;
+        font-size: 2.4rem;
+        line-height: 3rem;
     }
-    button {
+    .support__tour-call p {
+        font-size: 2rem;
+    }
+    .tour__chitiet-box-info button {
+        width: 15rem;
+        height: 3rem;
+        font-size: 2rem;
         margin-bottom: 2rem;
     }
     .tour__chitiet-box-info h2 {
