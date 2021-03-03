@@ -902,7 +902,7 @@ a {
 .click__chat {
     position: fixed;
     top: 85%;
-    left: 76.5%;
+    left: 80%;
     border-radius: 50%;
     background: rgb(0, 132, 255);
     color: var(--white-color);
@@ -913,7 +913,7 @@ a {
 .popup__chat {
     position: fixed;
     top: 62%;
-    left: 71.5%;
+    left: 75%;
     transform: translate(-50%, -50%);
     border-radius: .5rem;
     width: 30rem;
