@@ -1150,7 +1150,8 @@ a {
     }
     /* ----------- footer ----------- */
     .footer__bottom-copyright {
-        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
     }
 }
 
@@ -1267,6 +1268,11 @@ a {
     }
     .footer__contact-info p {
         font-size: 2rem;
+    }
+    .footer__bottom-copyright {
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 2rem;
     }
 }
 
