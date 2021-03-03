@@ -934,7 +934,7 @@ a {
 
 .form__chat-header h3 {
     font-size: 2rem;
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .cancel {
