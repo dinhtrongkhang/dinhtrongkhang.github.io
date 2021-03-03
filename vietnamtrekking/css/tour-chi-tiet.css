@@ -113,8 +113,8 @@
 
 .support__tour-call .tel,
 .support__tour-chat i {
-    font-size: 3.5rem;
-    margin: 2rem 0rem;
+    font-size: 2.5rem;
+    margin: 1.5rem 0rem;
     color: var(--primary);
     cursor: pointer;
 }
