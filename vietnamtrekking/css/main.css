@@ -906,7 +906,7 @@ a {
 .click__chat {
     position: fixed;
     top: 85%;
-    left: 93%;
+    left: 75%;
     border-radius: 50%;
     background: rgb(0, 132, 255);
     color: var(--white-color);
@@ -920,7 +920,7 @@ a {
     height: 35rem;
     position: fixed;
     top: 50%;
-    left: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
     border-radius: .5rem;
     width: 30rem;
