@@ -128,7 +128,8 @@ a {
 }
 
 .nav__link {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
     color: var(--text-color);
     font-weight: 600;
 }
@@ -138,7 +139,8 @@ a {
 }
 
 .nav__logo a {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primary);
@@ -633,13 +635,15 @@ a {
 }
 
 .formuudai h3 {
-    padding-top: 2rem;
+    padding: 2rem 1rem;
     font-size: 2rem;
+    line-height: 2.2rem;
 }
 
 .formuudai h5 {
-    padding-top: 2rem;
-    font-size: 1.3rem;
+    padding: 0rem 1rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
 }
 
 .formuudai__form {
@@ -992,6 +996,10 @@ a {
 /* ------------- Media query -------------- */
 
 @media all and (min-width: 768px) {
+    .nav__logo a {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
     /* header banner */
     .header__banner-title {
         display: flex;
@@ -1085,6 +1093,14 @@ a {
         line-height: 2.6rem;
     }
     /* form ưu đãi */
+    .formuudai h3 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+    .formuudai h5 {
+        font-size: 2.4rem;
+        line-height: 2.6rem;
+    }
     .formuudai__form button a {
         width: 12rem;
         height: 3rem;
@@ -1204,10 +1220,12 @@ a {
     }
     /* form ưu đãi */
     .formuudai h3 {
-        font-size: 3rem;
+        font-size: 3.2rem;
+        line-height: 3.6rem;
     }
     .formuudai h5 {
-        font-size: 2rem;
+        font-size: 2.6rem;
+        line-height: 2.8rem;
     }
     /* Du lịch nước ngoài */
     .prev-arrow,
@@ -1249,5 +1267,14 @@ a {
     }
     .footer__contact-info p {
         font-size: 2rem;
+    }
+}
+
+@media all and (min-width: 1170px) {
+    .nav__link {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        color: var(--text-color);
+        font-weight: 600;
     }
 }
