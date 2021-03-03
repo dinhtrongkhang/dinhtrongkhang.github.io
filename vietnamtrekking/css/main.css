@@ -920,7 +920,7 @@ a {
     height: 35rem;
     position: fixed;
     top: 50%;
-    left: 93%;
+    left: 60%;
     transform: translate(-50%, -50%);
     border-radius: .5rem;
     width: 30rem;
@@ -1402,7 +1402,7 @@ a {
     /* chat */
     .popup__chat {
         top: 60%;
-        left: 74.5%;
+        left: 87%;
     }
     /* ------------ footer ----------- */
     .footer__top {
