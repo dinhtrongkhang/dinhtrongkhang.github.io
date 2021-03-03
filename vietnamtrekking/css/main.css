@@ -965,6 +965,11 @@ a {
     margin-left: 1rem;
 }
 
+.form__chat-header .cancel img {
+    width: 3.5rem;
+    height: 3rem;
+}
+
 .cancel {
     font-size: 7rem;
     font-weight: bold;
