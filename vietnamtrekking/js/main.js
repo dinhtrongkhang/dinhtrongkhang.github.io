@@ -247,3 +247,14 @@ $('.thanhtoantour').click(function() {
     // Hien cai dang duoc click
     $(this).children('.content').show();
 })
+
+// chat
+
+$(document).ready(function() {
+    $('.click').click(function() {
+        $('.popup__chat').css("display", "block");
+    });
+    $('.cancel').click(function() {
+        $('.popup__chat').css("display", "none");
+    });
+});
