@@ -274,6 +274,7 @@ a {
 .header__search-title-form form button:hover {
     border: 1px solid #DBA510;
     background: none;
+    color: var(--secondary);
 }
 
 
