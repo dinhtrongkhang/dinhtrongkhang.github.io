@@ -251,7 +251,7 @@ $('.thanhtoantour').click(function() {
 // chat
 
 $(document).ready(function() {
-    $('.click').click(function() {
+    $('.click__chat').click(function() {
         $('.popup__chat').css("display", "block");
     });
     $('.cancel').click(function() {

@@ -899,7 +899,7 @@ a {
 
 /* chat */
 
-.click {
+.click__chat {
     position: fixed;
     top: 85%;
     left: 93%;
