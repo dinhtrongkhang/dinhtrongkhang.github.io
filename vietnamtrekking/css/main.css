@@ -829,6 +829,7 @@ a {
 
 .tour__handbook-chitiet1 p {
     font-size: 1.3rem;
+    line-height: 1.6rem;
 }
 
 .tour__handbook-chitiet1 a p {
@@ -872,17 +873,21 @@ a {
     margin-top: 3rem;
 }
 
+.tour__handbook-chitiet1 h3 a,
+.tour__handbook-chitiet2-post-title h3 a {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: var(--text-color);
+}
+
+.tour__handbook-chitiet1 p,
+.tour__handbook-chitiet2-post p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
 .tour__handbook-chitiet2-post-title {
     padding-top: 1rem;
-}
-
-.tour__handbook-chitiet2-post-title h3 {
-    font-size: 1.6rem;
-    cursor: pointer;
-}
-
-.tour__handbook-chitiet2-post-title h3 a {
-    color: var(--text-color);
 }
 
 .tour__handbook-chitiet2-post-title h3 a:hover {
@@ -1268,6 +1273,16 @@ a {
         top: 40%;
     }
     /* Blog du lịch */
+    .tour__handbook-chitiet1 h3 a,
+    .tour__handbook-chitiet2-post-title h3 a {
+        font-size: 2.4rem;
+        line-height: 2.6rem;
+    }
+    .tour__handbook-chitiet1 p,
+    .tour__handbook-chitiet2-post p {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
     .tour__handbook h2 a {
         font-size: 3.2rem;
         line-height: 3.6rem;
