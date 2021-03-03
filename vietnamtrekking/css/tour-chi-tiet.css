@@ -108,7 +108,13 @@
 }
 
 .support__tour-call p {
-    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.support__tour-call a {
+    font-size: 3rem;
+    color: var(--primary);
 }
 
 .support__tour-call .tel,
