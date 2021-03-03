@@ -273,7 +273,6 @@ a {
 
 .header__search-title-form form button:hover {
     border: 1px solid #DBA510;
-    color: var(--secondary);
     background: none;
 }
 
@@ -673,6 +672,10 @@ a {
 .formuudai__form button a {
     font-size: 1.6rem;
     color: var(--white-color);
+}
+
+.formuudai__form button a:hover {
+    color: var(--primary);
 }
 
 .formuudai__form button:hover {
@@ -1249,7 +1252,7 @@ a {
     }
     .formuudai__form button a {
         width: 12rem;
-        height: 3rem;
+        /* height: 3rem; */
         font-size: 1.8rem;
         box-sizing: border-box;
     }
