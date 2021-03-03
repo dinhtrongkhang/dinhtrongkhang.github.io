@@ -118,7 +118,7 @@ a {
         position: fixed;
         top: 5rem;
         right: -100%;
-        width: 80%;
+        width: 60%;
         height: 100%;
         padding: 2rem;
         background-color: var(--white-color);
@@ -906,7 +906,7 @@ a {
 .click__chat {
     position: fixed;
     top: 85%;
-    left: 93%;
+    left: 80%;
     border-radius: 50%;
     background: rgb(0, 132, 255);
     color: var(--white-color);
@@ -920,7 +920,7 @@ a {
     height: 35rem;
     position: fixed;
     top: 50%;
-    left: 90%;
+    left: 50%;
     transform: translate(-50%, -50%);
     border-radius: .5rem;
     width: 30rem;
@@ -1307,9 +1307,18 @@ a {
         font-size: 1.6rem;
         line-height: 1.8rem;
     }
+    /* --------- chat -------- */
+    .click__chat {
+        position: fixed;
+        top: 85%;
+        left: 90%;
+    }
+    .popup__chat {
+        position: fixed;
+        top: 50%;
+        left: 78%;
+    }
 }
-
-@media all and (min-width: 992px) {}
 
 
 /* ---------------- Desktop Menu ----------------- */
@@ -1404,7 +1413,6 @@ a {
         margin-left: 2rem;
         margin-right: 2rem;
     }
-    /* chat */
     /* ------------ footer ----------- */
     .footer__top {
         display: flex;
@@ -1453,6 +1461,17 @@ a {
         text-align: center;
         font-size: 1.8rem;
         line-height: 2.4rem;
+    }
+    /* --------- chat -------- */
+    .click__chat {
+        position: fixed;
+        top: 85%;
+        left: 93%;
+    }
+    .popup__chat {
+        position: fixed;
+        top: 50%;
+        left: 87%;
     }
 }
 
