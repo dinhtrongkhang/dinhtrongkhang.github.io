@@ -912,7 +912,7 @@ a {
 
 .popup__chat {
     position: fixed;
-    top: 55%;
+    top: 70%;
     left: 85%;
     transform: translate(-50%, -50%);
     border-radius: .5rem;
