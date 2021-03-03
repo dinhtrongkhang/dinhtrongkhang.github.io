@@ -113,7 +113,7 @@ body {
 
 .item1 {
     width: 24rem;
-    height: 20rem;
+    height: 25rem;
     margin-bottom: 1rem;
     background-color: tomato;
     background-size: cover;
@@ -130,12 +130,16 @@ body {
     display: none;
 }
 
-.blog__tour-handbook h3 {
+.blog__tour-handbook h2 {
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
 }
 
 .blog__tour-handbook-share h5 a {
-    font-size: 8rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
     margin-bottom: .6rem;
     cursor: pointer;
     color: var(--text-color);
@@ -147,21 +151,30 @@ body {
 
 .blog__tour-handbook-share span {
     font-size: 1.4rem;
+    line-height: 2.2rem;
     color: var(--ternary);
 }
 
-.blog__tour-handbook-share p a {
-    font-size: 2rem;
-    line-height: 2.6rem;
-    cursor: pointer;
+.blog__tour-handbook-share h5 {
+    margin-bottom: 1rem;
+}
+
+.blog__tour-handbook-share p {
+    margin-top: 1rem;
     margin-bottom: 3rem;
+}
+
+.blog__tour-handbook-share p a {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    cursor: pointer;
     color: var(--text-color);
 }
 
 .blog__tour-dicovery h3 {
     margin-top: 1.5rem;
-    font-size: 2rem;
-    line-height: 2.2rem;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
 }
 
 .blog__tour-dicovery p {
@@ -171,7 +184,7 @@ body {
 .blog__tour-dicovery .lichtrinh a {
     font-size: 1.8rem;
     line-height: 2rem;
-    color: var(--text-color);
+    color: var(--primary);
 }
 
 .blog__tour-dicovery .lichtrinh a:hover {
@@ -198,6 +211,19 @@ body {
         line-height: 4rem;
         color: var(--white-color);
         text-shadow: 0 .3rem .5rem #000;
+    }
+    /* blog tour */
+    .blog__tour-handbook h2 {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+    .blog__tour-handbook-share span {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    .blog__tour-handbook-share p a {
+        font-size: 2rem;
+        line-height: 2.8rem;
     }
     .blog__tour h3,
     .blog__tour-dicovery h3 {

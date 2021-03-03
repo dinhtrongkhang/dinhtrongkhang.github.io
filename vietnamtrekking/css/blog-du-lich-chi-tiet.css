@@ -150,6 +150,10 @@ body {
     color: var(--secondary);
 }
 
+.tour__handbook-chitiet1-dayandview i {
+    margin-top: .3rem;
+}
+
 @media (min-width: 768px) {
     .header__banner {
         display: block;

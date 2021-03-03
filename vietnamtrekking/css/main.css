@@ -819,8 +819,8 @@ a {
 
 .tour__handbook-chitiet1-dayandview i {
     margin-left: 3rem;
-    font-size: 1.3rem;
-    margin-top: .25rem;
+    font-size: 1.5rem;
+    margin-top: 1.7rem;
 }
 
 .tour__handbook-chitiet1-dayandview p:last-child {
@@ -1276,12 +1276,13 @@ a {
     .tour__handbook-chitiet1 h3 a,
     .tour__handbook-chitiet2-post-title h3 a {
         font-size: 2.4rem;
-        line-height: 2.6rem;
+        line-height: 3.6rem;
     }
     .tour__handbook-chitiet1 p,
     .tour__handbook-chitiet2-post p {
         font-size: 1.8rem;
         line-height: 2rem;
+        margin-top: 1.5rem;
     }
     .tour__handbook h2 a {
         font-size: 3.2rem;
