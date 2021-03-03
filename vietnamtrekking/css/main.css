@@ -902,7 +902,7 @@ a {
 .click__chat {
     position: fixed;
     top: 85%;
-    left: 78.5%;
+    left: 79%;
     border-radius: 50%;
     background: rgb(0, 132, 255);
     color: var(--white-color);
@@ -913,7 +913,7 @@ a {
 .popup__chat {
     position: fixed;
     top: 62%;
-    left: 72.5%;
+    left: 73%;
     transform: translate(-50%, -50%);
     border-radius: .5rem;
     width: 30rem;
@@ -938,7 +938,8 @@ a {
 }
 
 .cancel {
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .cancel:hover {
