@@ -941,6 +941,10 @@ a {
     display: flex;
 }
 
+.form__chat-header-acc img {
+    margin-top: .2rem;
+}
+
 .form__chat-header h3 {
     font-size: 2rem;
     color: var(--white-color);
