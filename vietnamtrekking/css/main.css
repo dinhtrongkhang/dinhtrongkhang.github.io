@@ -454,6 +454,10 @@ a {
     cursor: pointer;
 }
 
+.dulichvietnam__tour.pagenuocngoai h2 a {
+    color: var(--text-color);
+}
+
 .dulichvietnam__tour h2 {
     margin-bottom: 1.5rem;
 }
@@ -670,13 +674,9 @@ a {
     background-color: var(--secondary);
 }
 
-.formuudai__form button a {
-    font-size: 1.6rem;
+.formuudai__form button {
+    font-size: 1.8rem;
     color: var(--white-color);
-}
-
-.formuudai__form button a:hover {
-    color: var(--primary);
 }
 
 .formuudai__form button:hover {
