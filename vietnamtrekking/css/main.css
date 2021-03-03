@@ -970,6 +970,68 @@ a {
     color: var(--danger);
 }
 
+#form__chat-content {
+    width: 100%;
+    height: 250px;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.user1 {
+    font-size: 1.6rem;
+    padding: 10px;
+    float: left;
+    margin: 5px;
+    max-width: 90%;
+    display: table;
+    clear: both;
+    margin-left: 15px;
+    background-color: #edefed;
+    border-radius: 10px;
+}
+
+.user2 {
+    font-size: 1.6rem;
+    padding: 10px;
+    float: right;
+    max-width: 70%;
+    background-color: #0077fb;
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
+    margin-right: 15px;
+    display: table;
+    clear: both;
+}
+
+#btm {
+    width: 100%;
+    height: 50px;
+    background-color: #0077fb
+}
+
+#text {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.chatandsent {
+    display: flex;
+}
+
+.chatandsent img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+}
+
 
 /* footer*/
 
