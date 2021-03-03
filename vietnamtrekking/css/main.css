@@ -912,8 +912,8 @@ a {
 
 .popup__chat {
     position: fixed;
-    top: 80%;
-    left: 95%;
+    top: 62%;
+    left: 88%;
     transform: translate(-50%, -50%);
     border-radius: .5rem;
     width: 30rem;
