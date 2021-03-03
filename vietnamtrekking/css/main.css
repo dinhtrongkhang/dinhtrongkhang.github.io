@@ -1076,13 +1076,13 @@ a {
 .footer__top-folowus-social .youtube,
 .footer__top-folowus-social .twitter,
 .footer__top-folowus-social .pinterest {
-    margin-left: 1.5rem;
+    margin-left: 2.5rem;
 }
 
 .footer__top-thanhtoan-online .mastercard {
     width: 5rem;
     height: 5rem;
-    margin-left: 1.5rem;
+    margin-left: 2.5rem;
     margin-top: .5rem;
 }
 
@@ -1096,7 +1096,8 @@ a {
 .footer__top-folowus-social .facebook img:hover,
 .footer__top-folowus-social .youtube img:hover,
 .footer__top-folowus-social .twitter img:hover,
-.footer__top-folowus-social .pinterest img:hover {
+.footer__top-folowus-social .pinterest img:hover,
+.footer__top-thanhtoan-online img:hover {
     transform: scale(1.5);
     transition: 0.3s;
 }

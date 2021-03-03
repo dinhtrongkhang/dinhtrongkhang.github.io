@@ -135,7 +135,7 @@ body {
 }
 
 .blog__tour-handbook-share h5 a {
-    font-size: 1.8rem;
+    font-size: 8rem;
     margin-bottom: .6rem;
     cursor: pointer;
     color: var(--text-color);
@@ -150,10 +150,12 @@ body {
     color: var(--ternary);
 }
 
-.blog__tour-handbook-share p {
-    font-size: 1.4rem;
+.blog__tour-handbook-share p a {
+    font-size: 2rem;
+    line-height: 2.6rem;
     cursor: pointer;
     margin-bottom: 3rem;
+    color: var(--text-color);
 }
 
 .blog__tour-dicovery h3 {
