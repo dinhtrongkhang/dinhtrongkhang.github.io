@@ -227,48 +227,6 @@
                 </tr>
             </table>
         </div>
-
-        <!-- -------- chat start -------- -->
-        <div class="support">
-            <i class="fab fa-facebook-messenger click__chat"></i>
-            <div class="popup__chat">
-                <div class="form__chat">
-                    <div class="form__chat-header">
-                        <div class="form__chat-header-acc">
-                            <img src="img/logo-chinh-vietnamtrekking.jpg" alt="">
-                            <div class="header-account">
-                                <h3 class="">Vietnamtrekking</h3>
-                                <span>online</span>
-                            </div>
-                        </div>
-                        <a href="#" class="cancel"><img src="libs/icons/remove.svg" alt="#"></a>
-                    </div>
-                    <div id="form__chat-content">
-                        <div class="user1">xin chào</div>
-                        <div class="user2">xin chào</div>
-                        <div class="user1">Bạn đang làm gì đấy</div>
-                        <div class="user2">Mình đang ngồi chơi</div>
-                        <div class="user1">Lorem, ipsum dolor.</div>
-                        <div class="user2">Lorem, ipsum dolor.</div>
-                        <div class="user1">Lorem, ipsum dolor.</div>
-                        <div class="user2">Lorem, ipsum dolor.</div>
-                        <div class="user1">Lorem, ipsum dolor.</div>
-                        <div class="user1">Lorem, ipsum dolor.</div>
-                        <div class="user2">Lorem, ipsum dolor.</div>
-                        <div class="user1">Lorem, ipsum dolor.</div>
-                        <div class="user2">Lorem, ipsum dolor.</div>
-                        <div class="user1">Lorem, ipsum dolor.</div>
-                    </div>
-                    <div id="btm">
-                        <form id="" class="chatandsent">
-                            <input type="text" id="chat" name="" placeholder="Bạn cần hỏi gì..." autocomplete="off">
-                            <img src="libs/icons/send.svg" alt="">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ---------- chat end --------- -->
         <!------------------- main end -------------------->
         <!-- ---------------- footer start ------------------ -->
         <div class="footer">
@@ -332,6 +290,30 @@
         <script src="libs/jquery/jquery-3.5.1.min.js"></script>
         <script src="libs/slick/slick.min.js"></script>
         <script src="js/main.js"></script>
+
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    xfbml: true,
+                    version: 'v10.0'
+                });
+            };
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat" attribution="setup_tool" page_id="115474952735686">
+        </div>
 </body>
 
 </html>
