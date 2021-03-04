@@ -27,13 +27,20 @@
     font-size: 2rem;
 }
 
-.tour__chitiet-title,
 .tour__chitiet-box,
 .dulichnuocngoai__title {
-    /* margin: 1.5rem; */
     color: var(--text-color);
     font-size: 1.6rem;
     margin-top: 7rem;
+}
+
+.tour__chitiet-title {
+    margin-top: 7rem;
+}
+
+.tour__chitiet-title a {
+    font-size: 1.6rem;
+    color: var(--ternary);
 }
 
 .tour__chitiet-box {
