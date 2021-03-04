@@ -9,7 +9,7 @@
     --dark-color: #101010;
     --white-color: #FAFAFA;
     --gray-color: #F0F1F3;
-    --background: #ececec;
+    --background: #f8f8f8;
     --light: #F0F0F0;
     --heaven: #FFFFFF;
     --black: #000;
@@ -140,6 +140,7 @@ body>table {
 }
 
 .formthongtin {
+    background-color: var(--background);
     margin: 2rem 0rem;
     box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
 }
