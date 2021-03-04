@@ -78,6 +78,10 @@ a {
     text-decoration: none !important;
 }
 
+.margin-top {
+    margin-top: .8rem;
+}
+
 .money {
     opacity: 1;
     cursor: not-allowed;
@@ -252,8 +256,9 @@ label.validation-error {
     cursor: pointer;
 }
 
-.margin-top {
-    margin-top: 2rem;
+.thongtinthanhtoan label {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
 }
 
 .padding {
@@ -323,17 +328,20 @@ label.validation-error {
 .dieukhoanthanhtoan h3,
 .thongtinthanhtoan h3 {
     font-size: 2rem;
+    line-height: 2.6rem;
 }
 
 .dieukien label {
-    font-size: 1.3rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
     margin-left: .5rem;
 }
 
 .example h4,
 .example p,
 .example li {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
 }
 
 @media all and (min-width: 1024px) {}
