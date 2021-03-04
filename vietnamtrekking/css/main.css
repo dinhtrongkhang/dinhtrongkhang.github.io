@@ -958,7 +958,7 @@ a {
 .footer__top-folowus-social .pinterest img:hover,
 .footer__top-thanhtoan-online img:hover {
     transform: scale(1.5);
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .footer__top-folowus-social .facebook img {
