@@ -88,6 +88,28 @@ body>table {
     width: 100%;
 }
 
+.thongtindattour__title {
+    margin-top: 7rem;
+}
+
+.thongtinnguoidattour {
+    background: #f8f8f8;
+    max-width: 36rem;
+    margin: 8rem auto;
+    height: auto;
+    padding: 3.5rem;
+    padding-top: 5rem;
+    border-radius: .5rem;
+    position: relative;
+}
+
+.thongtinnguoidattour h2 {
+    font-size: 2.2rem;
+    letter-spacing: .2rem;
+    margin-bottom: 4rem;
+    color: var(--secondary);
+}
+
 .thongtindattour {
     margin-top: 7rem;
 }
@@ -100,6 +122,16 @@ body>table {
 .thongtindattour__title span {
     font-size: 1.6rem;
     color: var(--ternary);
+}
+
+.thongtinnguoidattour__title {
+    margin-top: 7rem !important;
+}
+
+.thongtinnguoidattour__title a,
+.thongtinnguoidattour__title span {
+    font-size: 1.6rem;
+    color: var(--text-color);
 }
 
 .thongtindattour h3 {
