@@ -466,7 +466,7 @@ a {
     width: 100%;
     height: calc(15rem - 2rem);
     position: relative;
-    background-image: url(../img/da-nang-1.jpg);
+    background-image: url(../img/da-nang-4.jpg);
     background-size: cover;
     background-position: center;
     margin-bottom: 2rem;
@@ -476,7 +476,7 @@ a {
 .dulichvietnam__tour3 {
     width: 100%;
     height: 15rem;
-    background-image: url(../img/nha-trang-1.jpg);
+    background-image: url(../img/nha-trang-2.jpg);
     background-size: cover;
     background-position: center;
     cursor: pointer;
