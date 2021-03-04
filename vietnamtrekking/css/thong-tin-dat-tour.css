@@ -337,7 +337,11 @@ label.validation-error {
     margin-left: .5rem;
 }
 
-.example h4,
+.example h4 {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+
 .example p,
 .example li {
     font-size: 1.6rem;

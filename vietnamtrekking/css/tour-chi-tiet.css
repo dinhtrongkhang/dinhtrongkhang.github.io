@@ -137,6 +137,8 @@
 }
 
 .tour__chitiet-box-info2 h3 {
+    font-size: 2.4rem;
+    line-height: 3rem;
     margin-top: 2rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
@@ -144,7 +146,7 @@
 
 .tour__chitiet-box-info2 p {
     font-size: 1.6rem;
-    line-height: 2rem;
+    line-height: 2.6rem;
 }
 
 .tour__chitiet-box-info2 ul li {
@@ -179,8 +181,8 @@
     .tour__chitiet-title,
     .tour__chitiet-box-info ul li p,
     .tour__chitiet-box-info2 ul li p {
-        font-size: 2rem;
-        line-height: 2.8rem;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
     }
     .tour__chitiet-box-slide-img {
         height: 50rem;
