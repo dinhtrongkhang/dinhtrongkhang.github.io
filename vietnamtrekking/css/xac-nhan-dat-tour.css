@@ -45,7 +45,8 @@ html {
 body {
     -webkit-font-smoothing: antialiased;
     font-family: "Roboto-regular", sans-serif;
-    line-height: 2.2rem;
+    line-height: 3rem;
+    background: url("../img/banner1.jpg") no-repeat top center;
 }
 
 .container {
