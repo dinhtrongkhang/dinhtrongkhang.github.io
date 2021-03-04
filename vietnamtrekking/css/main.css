@@ -1173,6 +1173,9 @@ a {
         width: 20rem;
         margin-top: 0;
     }
+    .tour__handbook-chitiet1-dayandview i {
+        margin-top: 1.7rem;
+    }
     /* ----------- footer ----------- */
     .footer__bottom-copyright {
         font-size: 1.6rem;
