@@ -50,7 +50,6 @@ body {
 
 .container {
     width: 100%;
-    /* padding: 0 15px; */
     margin: 0 auto;
 }
 
@@ -78,57 +77,39 @@ body {
     }
 }
 
-
-/* .xacnhandattour {
-    height: 50vh;
-} */
-
-.xacnhandattour h3 {
-    text-align: center;
+.xacnhandattour {
     margin-top: 7rem;
-    font-size: 2rem;
 }
 
-.xacnhandattour h4 {
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 2rem;
-}
-
-.xacnhandattour .confirm {
-    margin-top: 2rem;
-}
-
-.xacnhandattour p {
-    text-align: center;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-}
-
-.formthongtin__danhsach,
-.formthongtin__dattour {
-    margin: 3rem auto;
-}
-
-.list__title {
-    margin-bottom: 1rem;
-}
-
-table {
+#customers {
     border-collapse: collapse;
+    width: 60%;
+    margin: auto;
 }
 
-table.list {
-    width: 100%;
-}
-
-td,
-th {
-    border: 1px solid var(--primary);
-    text-align: left;
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
     padding: 8px;
 }
 
-table.list thead>tr {
-    color: var(--text-color);
+#customers tr:nth-child(even) {
+    background-color: var(--background);
+}
+
+#customers tr:hover {
+    background-color: var(--secondary);
+}
+
+
+/* #customers tr td:hover {
+    color: var(--white-color);
+} */
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--primary);
+    color: var(--white-color);
 }
