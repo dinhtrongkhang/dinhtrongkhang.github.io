@@ -81,10 +81,32 @@ body {
     margin-top: 7rem;
 }
 
+.xacnhandattour h3 {
+    text-align: center;
+    margin-top: 7rem;
+    font-size: 2rem;
+}
+
+.xacnhandattour h4 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.xacnhandattour .confirm {
+    margin-top: 2rem;
+}
+
+.xacnhandattour p {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
 #customers {
     border-collapse: collapse;
     width: 60%;
-    margin: auto;
+    margin: 3rem auto;
 }
 
 #customers td,
@@ -100,11 +122,6 @@ body {
 #customers tr:hover {
     background-color: var(--secondary);
 }
-
-
-/* #customers tr td:hover {
-    color: var(--white-color);
-} */
 
 #customers th {
     padding-top: 12px;
