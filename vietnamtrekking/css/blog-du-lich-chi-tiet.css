@@ -51,7 +51,7 @@ body {
 
 .container {
     width: 100%;
-    padding: 0 15px;
+    /* padding: 0 15px; */
     margin: 0 auto;
 }
 
@@ -104,7 +104,7 @@ body {
 
 .blog__tour h3 {
     font-size: 2.4rem;
-    line-height: 2.6rem;
+    line-height: 3rem;
     margin-bottom: 1.5rem;
 }
 
@@ -114,16 +114,19 @@ body {
 
 .tour__handbook-chitiet1 img {
     margin-top: 1.5rem;
+    margin-bottom: .5rem;
 }
 
 .tour__handbook-chitiet1 h4 {
     font-size: 2.4rem;
     line-height: 2.8rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 .tour__handbook-chitiet1 p {
     font-size: 1.4rem;
-    line-height: 2rem;
+    line-height: 2.4rem;
 }
 
 .tour__handbook-chitiet1-dayandview span,

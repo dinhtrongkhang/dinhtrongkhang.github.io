@@ -647,7 +647,7 @@ a {
 .formuudai h5 {
     padding: 0rem 1rem;
     font-size: 1.6rem;
-    line-height: 2rem;
+    line-height: 2.6rem;
 }
 
 .formuudai__form {
@@ -1176,6 +1176,9 @@ a {
     .footer__bottom-copyright {
         font-size: 1.6rem;
         line-height: 1.8rem;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     /* --------- chat -------- */
     .click__chat {
@@ -1331,6 +1334,9 @@ a {
         text-align: center;
         font-size: 1.8rem;
         line-height: 2.4rem;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     /* --------- chat -------- */
     .click__chat {
