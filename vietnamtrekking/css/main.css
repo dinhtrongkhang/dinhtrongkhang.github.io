@@ -1006,7 +1006,8 @@ a {
         margin-bottom: 5rem;
     }
     .header__search-title-form form h3 {
-        font-size: 2rem;
+        font-size: 3rem;
+        line-height: 4rem;
     }
     .header__search-title-form form input[type="submit"] {
         width: 12rem;
