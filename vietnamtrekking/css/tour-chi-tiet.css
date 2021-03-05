@@ -23,9 +23,8 @@
 
 /* ------------- Trang tour chi tiết ----------------- */
 
-.tour__chitiet h2 {
-    font-size: 3rem;
-    line-height: 3.8rem;
+.tour.tour__chitiet-box-info h2 {
+    margin-top: 0rem;
 }
 
 .tour__chitiet-box,
