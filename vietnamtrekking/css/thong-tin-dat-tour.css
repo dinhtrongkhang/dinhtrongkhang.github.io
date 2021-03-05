@@ -203,18 +203,8 @@ label.validation-error {
     line-height: 3rem;
 }
 
-.thongtinthanhtoan button {
-    width: 10rem;
-    height: 3rem;
-    font-size: 1.5rem;
-    background: var(--secondary);
-    color: var(--light);
-    border: none;
-    outline: none;
-    border-radius: .5rem;
-    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
-    margin-top: 1.5rem;
-    cursor: pointer;
+.button {
+    margin: 2rem 0rem;
 }
 
 .thongtinthanhtoan label {
