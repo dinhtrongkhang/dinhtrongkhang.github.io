@@ -277,6 +277,9 @@ a {
     color: var(--secondary);
 }
 
+
+/* css mobile chung */
+
 .tour h2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -991,6 +994,13 @@ a {
 /* ------------- Media query -------------- */
 
 @media all and (min-width: 768px) {
+    /* css chung */
+    .tour h2 a,
+    .footer__content h2 {
+        font-size: 5rem;
+        line-height: 8rem;
+    }
+    /* header top */
     .nav__logo a {
         font-size: 3rem;
         line-height: 3.2rem;
@@ -1029,11 +1039,6 @@ a {
         font-size: 1.6rem;
     }
     /* tourhot */
-    .tour h2 a,
-    .footer__content h2 {
-        font-size: 5rem;
-        line-height: 7rem;
-    }
     .tour__tourhot-box-name,
     .tour__tourhot-box-price {
         font-size: 2rem;
