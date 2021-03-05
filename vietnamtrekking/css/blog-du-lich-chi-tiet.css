@@ -102,12 +102,6 @@ body {
     padding: 0 .5rem;
 }
 
-.blog__tour h3 {
-    font-size: 2.4rem;
-    line-height: 3rem;
-    margin-bottom: 1.5rem;
-}
-
 .header__banner {
     display: none;
 }
@@ -117,25 +111,23 @@ body {
     margin-bottom: .5rem;
 }
 
-.tour__handbook-chitiet1 h4 {
-    font-size: 2.4rem;
+.tour__handbook-chitiet1 h3 {
+    font-size: 2.2rem;
     line-height: 2.8rem;
     margin-bottom: 1rem;
     margin-top: 1.5rem;
 }
 
-.tour__handbook-chitiet1 p {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+.tour__handbook-chitiet1 p,
+.blog__tour-dicovery .lichtrinh a {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
 }
 
 .tour__handbook-chitiet1-dayandview span,
 .tour__handbook-chitiet1-view i {
-    font-size: 1.3rem;
-}
-
-.blog__tour-dicovery h3 {
-    margin-top: 3rem;
+    font-size: 1.6rem;
+    line-height: 2.6;
 }
 
 .blog__tour-dicovery p {
@@ -143,8 +135,6 @@ body {
 }
 
 .blog__tour-dicovery .lichtrinh a {
-    font-size: 1.8rem;
-    line-height: 2rem;
     color: var(--primary);
 }
 
@@ -177,20 +167,13 @@ body {
         color: var(--white-color);
         text-shadow: 0 .3rem .5rem #000;
     }
-    .blog__tour h3 {
+    .tour__handbook-chitiet1 h3 {
         font-size: 3rem;
-        line-height: 3.2rem;
-        margin-bottom: 1.5rem;
+        line-height: 3.8rem;
     }
-    .tour__handbook-chitiet1 p {
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-    .blog__tour-dicovery h3 {
-        margin-top: 1.5rem;
-    }
+    .tour__handbook-chitiet1 p,
     .blog__tour-dicovery .lichtrinh a {
-        font-size: 2.2rem;
-        line-height: 2.6rem;
+        font-size: 2.6rem;
+        line-height: 3.6rem;
     }
 }
