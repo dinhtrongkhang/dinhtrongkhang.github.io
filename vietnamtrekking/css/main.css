@@ -172,7 +172,7 @@ button {
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
     display: block;
     margin: auto;
-    /* margin-top: 1.5rem; */
+    margin-top: 1.5rem;
     cursor: pointer;
 }
 
@@ -598,7 +598,8 @@ button:hover {
     padding: 1rem;
     border: none;
     outline: none;
-    margin: 2rem 0rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
 }
 
 .formuudai__form button {
