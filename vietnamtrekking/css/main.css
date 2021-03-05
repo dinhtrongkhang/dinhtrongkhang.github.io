@@ -162,7 +162,7 @@ a {
 
 button {
     width: 12rem;
-    height: 3rem;
+    height: 3.5rem;
     font-size: 1.6rem;
     background: var(--secondary);
     color: var(--white-color);
@@ -593,7 +593,7 @@ button:hover {
 
 .formuudai__form input:first-child {
     width: 20rem;
-    height: 3rem;
+    height: 3.5rem;
     border-radius: .5rem;
     padding: 1rem;
     border: none;
