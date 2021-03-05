@@ -292,6 +292,18 @@ a {
     color: var(--text-color);
 }
 
+.formuudai h2 {
+    padding: 2rem 1rem;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+}
+
+.formuudai h3 {
+    padding: 0rem 1rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+
 
 /* tourhot */
 
@@ -618,18 +630,6 @@ a {
 .formuudai h3 {
     color: var(--white-color);
     text-align: center;
-}
-
-.formuudai h2 {
-    padding: 2rem 1rem;
-    font-size: 2rem;
-    line-height: 2.2rem;
-}
-
-.formuudai h3 {
-    padding: 0rem 1rem;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
 }
 
 .formuudai__form {
@@ -1000,6 +1000,17 @@ a {
         font-size: 3.5rem;
         line-height: 5rem;
     }
+    /* form ưu đãi */
+    .formuudai h2 {
+        padding: 2rem 1rem;
+        font-size: 3.5rem;
+        line-height: 5rem;
+    }
+    .formuudai h3 {
+        padding: 0rem 1rem;
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
     /* header top */
     .nav__logo a {
         font-size: 3rem;
@@ -1086,14 +1097,6 @@ a {
         line-height: 2.6rem;
     }
     /* form ưu đãi */
-    .formuudai h2 {
-        font-size: 5rem;
-        line-height: 6.2rem;
-    }
-    .formuudai h3 {
-        font-size: 2.4rem;
-        line-height: 2.6rem;
-    }
     .formuudai__form button a {
         width: 12rem;
         /* height: 3rem; */
@@ -1237,15 +1240,6 @@ a {
     .dulichvietnam__tour22 {
         width: 100%;
         margin-left: 0;
-    }
-    /* form ưu đãi */
-    .formuudai h3 {
-        font-size: 3.2rem;
-        line-height: 3.6rem;
-    }
-    .formuudai h5 {
-        font-size: 2.6rem;
-        line-height: 2.8rem;
     }
     /* Du lịch nước ngoài */
     .prev-arrow,
