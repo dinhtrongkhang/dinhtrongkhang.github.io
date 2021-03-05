@@ -162,12 +162,12 @@
     .support__tour-call p {
         font-size: 2rem;
     }
-    .tour__chitiet-box-info button {
+    /* .tour__chitiet-box-info button {
         width: 15rem;
         height: 3.5rem;
         font-size: 2rem;
         margin-bottom: 2rem;
-    }
+    } */
     .tour__chitiet-box-info h2 {
         margin-top: 0rem;
     }
