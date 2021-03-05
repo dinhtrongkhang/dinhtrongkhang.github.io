@@ -78,20 +78,6 @@ body {
     }
 }
 
-.dulichnuocngoai__title {
-    margin-top: 5rem !important;
-}
-
-.dulichnuocngoai__title a,
-.dulichnuocngoai__title span {
-    font-size: 1.6rem;
-    color: var(--ternary);
-}
-
-.dulichnuocngoai__title span {
-    padding: 0 .5rem;
-}
-
 .tour h2 {
     margin-top: 1.5rem;
     color: var(--black);

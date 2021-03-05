@@ -78,20 +78,6 @@ body {
     }
 }
 
-.dulichvietnam__title {
-    margin-top: 5rem !important;
-}
-
-.dulichvietnam__title a,
-.dulichvietnam__title span {
-    font-size: 1.6rem;
-    color: var(--ternary);
-}
-
-.dulichvietnam__title span {
-    padding: 0 .5rem;
-}
-
 .tour h2 {
     margin-top: 1.5rem;
     color: var(--black);

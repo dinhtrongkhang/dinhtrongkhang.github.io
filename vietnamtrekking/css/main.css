@@ -1010,9 +1010,16 @@ a {
 
 /* ----------- tour chi tiết ----------- */
 
-.tour__chitiet-title,
-.tour__chitiet-title a {
+.tour__title,
+.tour__title a {
+    margin-top: 7rem !important;
     font-size: 2rem;
+    line-height: 2.6rem;
+    color: var(--ternary);
+}
+
+.tour__title span {
+    padding: 0 .5rem;
 }
 
 

@@ -92,20 +92,6 @@ body {
     margin-top: 5rem;
 }
 
-.blogdulich__title {
-    margin-top: 5rem !important;
-}
-
-.blogdulich__title a,
-.blogdulich__title span {
-    font-size: 1.6rem;
-    color: var(--ternary);
-}
-
-.blogdulich__title span {
-    padding: 0 .5rem;
-}
-
 .blog__tour h3 {
     font-size: 3rem;
     margin-bottom: 1.5rem;

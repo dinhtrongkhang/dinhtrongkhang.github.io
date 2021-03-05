@@ -35,15 +35,6 @@
     margin-top: 7rem;
 }
 
-.tour__chitiet-title {
-    margin-top: 7rem;
-}
-
-.tour__chitiet-title a {
-    font-size: 1.6rem;
-    color: var(--ternary);
-}
-
 .tour__chitiet-box {
     margin-top: 1.5rem;
 }
