@@ -1194,6 +1194,11 @@ a {
         top: 50%;
         left: 78%;
     }
+    /* ----------- tour chi tiết ----------- */
+    .tour__chitiet-title,
+    .tour__chitiet-title a {
+        font-size: 2rem;
+    }
 }
 
 

@@ -24,7 +24,8 @@
 /* ------------- Trang tour chi tiết ----------------- */
 
 .tour__chitiet h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+    line-height: 3.8rem;
 }
 
 .tour__chitiet-box,
@@ -64,19 +65,24 @@
     margin-bottom: 1.5rem;
 }
 
-.tour__chitiet-box-info h3 {
-    margin-bottom: .5rem;
-    margin-top: 2rem;
-}
-
 .tour__chitiet-box-info-stars {
     color: var(--secondary);
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
+.tour__chitiet-box-info2 p,
 .tour__chitiet-box-info p {
-    line-height: 2rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.tour__chitiet-box-info2 h3,
+.tour__chitiet-box-info h3 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 .tour__chitiet-box-info ul li {
@@ -136,19 +142,6 @@
     margin-left: 5rem;
 }
 
-.tour__chitiet-box-info2 h3 {
-    font-size: 2.4rem;
-    line-height: 3rem;
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-}
-
-.tour__chitiet-box-info2 p {
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-}
-
 .tour__chitiet-box-info2 ul li {
     list-style: disc;
     margin-left: 2.5rem;
@@ -178,7 +171,6 @@
 }
 
 @media all and (min-width: 768px) {
-    .tour__chitiet-title,
     .tour__chitiet-box-info ul li p,
     .tour__chitiet-box-info2 ul li p {
         font-size: 2.4rem;
@@ -188,18 +180,11 @@
         height: 63rem;
         width: 50rem;
     }
-    .tour__chitiet h2,
-    .tour__chitiet-box-info2 h3 {
-        font-size: 2.4rem;
-        line-height: 2.6rem;
-    }
     .giatour {
         margin-top: 2rem !important;
     }
     .tour__chitiet-box-info h3 {
         margin-top: 0rem;
-        font-size: 2.4rem;
-        line-height: 3rem;
     }
     .support__tour-call p {
         font-size: 2rem;
