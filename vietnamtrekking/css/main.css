@@ -997,8 +997,8 @@ a {
     /* css chung */
     .tour h2 a,
     .footer__content h2 {
-        font-size: 5rem;
-        line-height: 8rem;
+        font-size: 3.5rem;
+        line-height: 5rem;
     }
     /* header top */
     .nav__logo a {
