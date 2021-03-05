@@ -81,24 +81,7 @@
 }
 
 .tour__chitiet-box-info button {
-    width: 15rem;
-    height: 3rem;
-    font-size: 1.6rem;
-    background: var(--secondary);
-    color: var(--heaven);
-    border: none;
-    outline: none;
-    border-radius: .5rem;
-    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
-    display: block;
-    margin-top: 1.5rem;
-    cursor: pointer;
-}
-
-.tour__chitiet-box-info button:hover {
-    border: 1px solid #DBA510;
-    color: var(--secondary);
-    background: none;
+    margin-top: 2rem;
 }
 
 .support__tour {
