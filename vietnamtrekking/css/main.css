@@ -160,6 +160,43 @@ a {
     margin-top: .5rem;
 }
 
+button {
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    background: var(--secondary);
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
+    display: block;
+    margin: auto;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid #DBA510;
+    color: var(--secondary);
+    background: var(--white-color);
+}
+
+
+/* tour chi tiết */
+
+.tour__title,
+.tour__title a {
+    margin-top: 7rem !important;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: var(--ternary);
+}
+
+.tour__title span {
+    padding: 0 .5rem;
+}
+
 
 /* ---------------- css riêng -------------- */
 
@@ -293,28 +330,6 @@ a {
 
 .form-control:hover {
     border-color: var(--secondary);
-}
-
-.header__search-title-form form button {
-    width: 10rem;
-    height: 3rem;
-    font-size: 1.5rem;
-    background: var(--secondary);
-    color: var(--white-color);
-    border: none;
-    outline: none;
-    border-radius: .5rem;
-    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
-    display: block;
-    margin: auto;
-    margin-top: 1.5rem;
-    cursor: pointer;
-}
-
-.header__search-title-form form button:hover {
-    border: 1px solid #DBA510;
-    background: none;
-    color: var(--secondary);
 }
 
 
@@ -545,33 +560,6 @@ a {
     top: 80%;
 }
 
-.dulichvietnam button,
-.tour__handbook button,
-.dulichnuocngoai button {
-    width: 12rem;
-    height: 3rem;
-    font-size: 1.6rem;
-    background: var(--secondary);
-    color: var(--white-color);
-    border: none;
-    outline: none;
-    border-radius: .5rem;
-    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
-    display: block;
-    margin: auto;
-    margin-top: 1.5rem;
-    cursor: pointer;
-}
-
-.dulichvietnam button:hover,
-.tour__handbook button:hover,
-.dulichnuocngoai button:hover,
-.thongtinthanhtoan button:hover {
-    border: 1px solid #DBA510;
-    color: var(--secondary);
-    background: var(--white-color);
-}
-
 
 /* form đăng ký nhận ưu đãi */
 
@@ -598,10 +586,11 @@ a {
     text-align: center;
 }
 
-.formuudai__form {
+
+/* .formuudai__form {
     text-align: center;
     padding: 2rem 0;
-}
+} */
 
 .formuudai__form input:first-child {
     width: 20rem;
@@ -613,25 +602,22 @@ a {
 }
 
 .formuudai__form button {
-    width: 10rem;
+    /* width: 10rem;
     height: 3rem;
     border: none;
     outline: none;
     border-radius: .5rem;
     margin-left: 0.5rem;
     background-color: var(--secondary);
-}
-
-.formuudai__form button {
     font-size: 1.8rem;
-    color: var(--white-color);
+    color: var(--white-color); */
 }
 
 .formuudai__form button:hover {
-    border: 1px solid #DBA510;
+    /* border: 1px solid #DBA510;
     background-color: var(--white-color);
     color: var(--secondary);
-    cursor: pointer;
+    cursor: pointer; */
 }
 
 
@@ -936,21 +922,6 @@ a {
 }
 
 
-/* ----------- tour chi tiết ----------- */
-
-.tour__title,
-.tour__title a {
-    margin-top: 7rem !important;
-    font-size: 2rem;
-    line-height: 2.6rem;
-    color: var(--ternary);
-}
-
-.tour__title span {
-    padding: 0 .5rem;
-}
-
-
 /* ------------- Media query -------------- */
 
 @media all and (min-width: 768px) {
@@ -974,6 +945,9 @@ a {
     .footer__contact-info p {
         font-size: 2.4rem;
         line-height: 3.6rem;
+    }
+    button {
+        font-size: 2rem;
     }
     /* ------------ css riêng -------------- */
     /* header top */
@@ -1046,12 +1020,6 @@ a {
         font-size: 2rem;
     }
     /* du lịch Việt Nam */
-    .dulichvietnam button,
-    .tour__handbook button,
-    .dulichnuocngoai button {
-        font-size: 2rem;
-        line-height: 2.4rem;
-    }
     .dulichvietnam__tour h5 a {
         top: 75%;
         font-size: 2.4rem;
@@ -1063,12 +1031,6 @@ a {
         line-height: 2.6rem;
     }
     /* form ưu đãi */
-    .formuudai__form button a {
-        width: 12rem;
-        /* height: 3rem; */
-        font-size: 1.8rem;
-        box-sizing: border-box;
-    }
     /* Du lịch nước ngoài */
     .tour__dulichnuocngoai-box-name {
         font-size: 2.4rem;
