@@ -78,7 +78,6 @@ body {
     }
 }
 
-.tour h2 {
-    margin-top: 1.5rem;
-    color: var(--black);
+.dulichvietnam__tour h2 a {
+    color: var(--text-color);
 }
