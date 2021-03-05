@@ -83,31 +83,25 @@ body {
     margin-top: 7rem;
 }
 
-.xacnhandattour h3 {
+.xacnhandattour h2 {
     text-align: center;
-    margin-top: 3rem;
-    font-size: 2rem;
-}
-
-.xacnhandattour h4 {
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 2rem;
 }
 
 .xacnhandattour .confirm {
     margin-top: 2rem;
 }
 
-.xacnhandattour p {
+.xacnhandattour h3 {
+    font-size: 3rem;
+    line-height: 3.6rem;
     text-align: center;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+    margin-top: 3rem;
 }
 
-#customers .list__title h4 {
-    font-size: 3rem;
+.xacnhandattour p {
     text-align: center;
+    font-size: 2.6rem;
+    line-height: 3.2rem;
 }
 
 #customers {
