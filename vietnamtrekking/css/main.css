@@ -172,7 +172,7 @@ button {
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
     display: block;
     margin: auto;
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
     cursor: pointer;
 }
 
@@ -586,11 +586,10 @@ button:hover {
     text-align: center;
 }
 
-
-/* .formuudai__form {
-    text-align: center;
-    padding: 2rem 0;
-} */
+.formuudai__form {
+    display: flex;
+    justify-content: center;
+}
 
 .formuudai__form input:first-child {
     width: 20rem;
@@ -599,25 +598,11 @@ button:hover {
     padding: 1rem;
     border: none;
     outline: none;
+    margin: 2rem 0rem;
 }
 
 .formuudai__form button {
-    /* width: 10rem;
-    height: 3rem;
-    border: none;
-    outline: none;
-    border-radius: .5rem;
-    margin-left: 0.5rem;
-    background-color: var(--secondary);
-    font-size: 1.8rem;
-    color: var(--white-color); */
-}
-
-.formuudai__form button:hover {
-    /* border: 1px solid #DBA510;
-    background-color: var(--white-color);
-    color: var(--secondary);
-    cursor: pointer; */
+    margin: 2rem 1rem;
 }
 
 
