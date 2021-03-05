@@ -315,7 +315,7 @@ label.validation-error {
 
 .thongtinnguoidattour h2 {
     font-size: 2.6rem;
-    line-height: 3.2rem;
+    line-height: 3.6rem;
     letter-spacing: .2rem;
     margin-bottom: 4rem;
     color: var(--secondary);
@@ -324,5 +324,12 @@ label.validation-error {
 @media all and (min-width: 768px) {
     .thongtinthanhtoan button {
         margin: 2rem 0rem;
+    }
+    .thongtinnguoidattour {
+        max-width: 36rem;
+    }
+    .thongtinnguoidattour h2 {
+        font-size: 3rem;
+        line-height: 3.8rem;
     }
 }
