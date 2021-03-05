@@ -915,8 +915,9 @@ a {
 .footer__top-thanhtoan h3,
 .footer__top-folowus h3 {
     color: var(--white-color);
-    font-size: 1.5rem;
-    padding-top: 2rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    padding-top: 3rem;
 }
 
 .footer__top-thanhtoan-online .jcb,
@@ -925,8 +926,8 @@ a {
 .footer__top-folowus-social .twitter,
 .footer__top-folowus-social .pinterest,
 .footer__top-folowus-social .facebook {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     margin-top: 1.5rem;
 }
 
@@ -938,8 +939,8 @@ a {
 }
 
 .footer__top-thanhtoan-online .mastercard {
-    width: 5rem;
-    height: 5rem;
+    width: 6.5rem;
+    height: 6.5rem;
     margin-left: 2.5rem;
     margin-top: .5rem;
 }
@@ -961,8 +962,8 @@ a {
 }
 
 .footer__top-folowus-social .facebook img {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .footer__top-folowus-social {
@@ -978,11 +979,14 @@ a {
 }
 
 .footer__contact-info h6 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-top: 3rem;
 }
 
 .footer__contact-info p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
     margin-top: .5rem;
 }
 
@@ -1001,6 +1005,14 @@ a {
 .footer__bottom {
     background-color: #000000;
     margin-top: 2rem;
+}
+
+
+/* ----------- tour chi tiết ----------- */
+
+.tour__chitiet-title,
+.tour__chitiet-title a {
+    font-size: 2rem;
 }
 
 
@@ -1194,11 +1206,6 @@ a {
         top: 50%;
         left: 78%;
     }
-    /* ----------- tour chi tiết ----------- */
-    .tour__chitiet-title,
-    .tour__chitiet-title a {
-        font-size: 2rem;
-    }
 }
 
 
@@ -1299,7 +1306,7 @@ a {
         display: flex;
     }
     .footer__top-folowus {
-        margin-left: 13rem;
+        margin-left: 8rem;
     }
     .footer__top-thanhtoan-online .jcb,
     .footer__top-thanhtoan-online .visa,
@@ -1307,32 +1314,31 @@ a {
     .footer__top-folowus-social .twitter,
     .footer__top-folowus-social .pinterest,
     .footer__top-folowus-social .facebook img {
-        width: 4rem;
-        height: 4rem;
-    }
-    .footer__top-folowus-social .twitter,
-    .footer__top-folowus-social .pinterest {
-        margin-left: 2rem;
-    }
-    .footer__top-folowus-social .youtube {
-        margin-left: 3rem;
-    }
-    .footer__top-thanhtoan-online .mastercard {
         width: 6rem;
         height: 6rem;
+    }
+    .footer__top-thanhtoan-online .mastercard {
+        width: 9rem;
+        height: 9rem;
+    }
+    .footer__top-folowus-social .twitter {
+        margin-left: 7rem;
+    }
+    .footer__top-folowus-social .pinterest,
+    .footer__top-folowus-social .youtube,
+    .footer__top-thanhtoan-online .visa,
+    .footer__top-thanhtoan-online .mastercard {
+        margin-left: 5rem;
     }
     .footer__contact {
         display: flex;
         justify-content: space-between;
     }
     .footer__top-thanhtoan h3,
-    .footer__top-folowus h3 {
-        font-size: 3rem;
-        line-height: 3.6rem;
-    }
+    .footer__top-folowus h3,
     .footer__contact-info h6 {
-        font-size: 2.4rem;
-        line-height: 3rem;
+        font-size: 2.8rem;
+        line-height: 3.6rem;
     }
     .footer__contact-info p {
         font-size: 2rem;
