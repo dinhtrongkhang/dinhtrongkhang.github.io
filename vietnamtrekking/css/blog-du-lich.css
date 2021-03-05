@@ -92,11 +92,6 @@ body {
     margin-top: 5rem;
 }
 
-.blog__tour h3 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-}
-
 .item1 {
     width: 24rem;
     height: 25rem;
@@ -116,11 +111,8 @@ body {
     display: none;
 }
 
-.blog__tour-handbook h2 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 2.4rem;
-    line-height: 2.6rem;
+.blog__tour-handbook-share h5 {
+    margin-bottom: 1rem;
 }
 
 .blog__tour-handbook-share h5 a {
@@ -141,10 +133,6 @@ body {
     color: var(--ternary);
 }
 
-.blog__tour-handbook-share h5 {
-    margin-bottom: 1rem;
-}
-
 .blog__tour-handbook-share p {
     margin-top: 1rem;
     margin-bottom: 5rem;
@@ -155,12 +143,6 @@ body {
     line-height: 2.2rem;
     cursor: pointer;
     color: var(--text-color);
-}
-
-.blog__tour-dicovery h3 {
-    margin-top: 1.5rem;
-    font-size: 2.4rem;
-    line-height: 2.6rem;
 }
 
 .blog__tour-dicovery p {
@@ -199,10 +181,6 @@ body {
         text-shadow: 0 .3rem .5rem #000;
     }
     /* blog tour */
-    .blog__tour-handbook h2 {
-        font-size: 3.2rem;
-        line-height: 3.6rem;
-    }
     .blog__tour-handbook-share span {
         font-size: 1.8rem;
         line-height: 2.2rem;
@@ -210,11 +188,6 @@ body {
     .blog__tour-handbook-share p a {
         font-size: 2rem;
         line-height: 2.8rem;
-    }
-    .blog__tour h3,
-    .blog__tour-dicovery h3 {
-        font-size: 3.2rem;
-        line-height: 3.6rem;
     }
     .blog__tour-handbook-share h5 a {
         font-size: 2.4rem;
