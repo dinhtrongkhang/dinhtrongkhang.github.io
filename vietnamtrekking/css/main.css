@@ -282,7 +282,8 @@ a {
     margin-bottom: 2rem;
 }
 
-.tour h2 a {
+.tour h2 a,
+.footer__content h2 {
     font-size: 2.2rem;
     line-height: 2.6rem;
     color: var(--text-color);
@@ -885,12 +886,9 @@ a {
     margin-top: 5rem;
 }
 
-.footer__top-thanhtoan h3,
-.footer__top-folowus h3 {
+.footer__content h2 {
+    padding-top: 2rem;
     color: var(--white-color);
-    font-size: 2rem;
-    line-height: 2.6rem;
-    padding-top: 3rem;
 }
 
 .footer__top-thanhtoan-online .jcb,
@@ -949,12 +947,6 @@ a {
 .footer__contact-info {
     color: var(--white-color);
     margin-top: 2rem;
-}
-
-.footer__contact-info h6 {
-    font-size: 2rem;
-    line-height: 2.6rem;
-    margin-top: 3rem;
 }
 
 .footer__contact-info p {
@@ -1037,9 +1029,10 @@ a {
         font-size: 1.6rem;
     }
     /* tourhot */
-    .tour h2 a {
+    .tour h2 a,
+    .footer__content h2 {
         font-size: 5rem;
-        line-height: 6rem;
+        line-height: 7rem;
     }
     .tour__tourhot-box-name,
     .tour__tourhot-box-price {
