@@ -272,7 +272,8 @@ a {
 
 .header__search-title-form form h3 {
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
     text-align: center;
 }
 
