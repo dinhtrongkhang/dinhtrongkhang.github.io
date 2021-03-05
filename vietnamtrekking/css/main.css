@@ -127,6 +127,39 @@ a {
     }
 }
 
+
+/* --------- css mobile chung ------------- */
+
+.tour h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tour h2 a,
+.footer__content h2 {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    color: var(--text-color);
+}
+
+.formuudai h2 {
+    padding: 2rem 1rem;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+}
+
+.formuudai h3 {
+    padding: 0rem 1rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+
+
+/* ---------------- css riêng -------------- */
+
+
+/* header top */
+
 .nav__link {
     font-size: 1.8rem;
     line-height: 2rem;
@@ -170,7 +203,7 @@ a {
 }
 
 
-/* ----------- show menu ----------- */
+/* show menu */
 
 .show {
     right: 0;
@@ -181,7 +214,7 @@ a {
 }
 
 
-/* Header banner */
+/* header banner */
 
 .header__banner-cover img {
     position: absolute;
@@ -275,33 +308,6 @@ a {
     border: 1px solid #DBA510;
     background: none;
     color: var(--secondary);
-}
-
-
-/* css mobile chung */
-
-.tour h2 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.tour h2 a,
-.footer__content h2 {
-    font-size: 2.2rem;
-    line-height: 2.6rem;
-    color: var(--text-color);
-}
-
-.formuudai h2 {
-    padding: 2rem 1rem;
-    font-size: 2.2rem;
-    line-height: 2.6rem;
-}
-
-.formuudai h3 {
-    padding: 0rem 1rem;
-    font-size: 2rem;
-    line-height: 2.6rem;
 }
 
 
@@ -994,7 +1000,7 @@ a {
 /* ------------- Media query -------------- */
 
 @media all and (min-width: 768px) {
-    /* css chung */
+    /* --------- css chung ----------- */
     .tour h2 a,
     .footer__content h2 {
         font-size: 3.5rem;
@@ -1011,6 +1017,7 @@ a {
         font-size: 3rem;
         line-height: 3.6rem;
     }
+    /* ------------ css riêng -------------- */
     /* header top */
     .nav__logo a {
         font-size: 3rem;
