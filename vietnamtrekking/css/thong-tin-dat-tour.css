@@ -322,7 +322,7 @@ label.validation-error {
 }
 
 @media all and (min-width: 768px) {
-    .thongtinthanhtoan>button {
+    .thongtinthanhtoan button {
         margin: 2rem 0rem;
     }
 }
