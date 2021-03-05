@@ -321,4 +321,8 @@ label.validation-error {
     color: var(--secondary);
 }
 
-@media all and (min-width: 1024px) {}
+@media all and (min-width: 768px) {
+    .thongtinthanhtoan button {
+        margin: 2rem 0rem;
+    }
+}
