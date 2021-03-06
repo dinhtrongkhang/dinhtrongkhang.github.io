@@ -194,7 +194,7 @@ function validate() {
     return isValid;
 }
 
-// ngay sinh và tien
+// thong tin dat tour - ngay sinh và tien
 $('#birthday').on('change', function() {
     const year = +$(this).val().slice(0, 4);
 
@@ -207,7 +207,7 @@ $('#birthday').on('change', function() {
     }
 })
 
-// thanh toan
+// thong tin dat tour - thanh toan
 $('.thanhtoantour').click(function() {
     // An toan bo
     $('.thanhtoantour').children('.content').hide()
