@@ -226,6 +226,7 @@ button:hover {
 .nav__user i {
     color: var(--secondary);
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .nav__user {
