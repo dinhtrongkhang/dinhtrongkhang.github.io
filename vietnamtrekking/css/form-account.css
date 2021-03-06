@@ -210,6 +210,7 @@ body {
     width: 100%;
     background-color: var(--primary);
     height: 3.5rem;
+    margin-top: 2rem;
 }
 
 .form-submit a,
@@ -233,6 +234,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .form__switch-btn p {
