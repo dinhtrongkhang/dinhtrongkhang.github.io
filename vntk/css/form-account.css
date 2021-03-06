@@ -89,25 +89,15 @@ body {
 
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
+    height: auto;
     overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
-    padding-top: 60px;
-    z-index: 10;
+    padding-top: 6rem;
 }
 
 
@@ -115,18 +105,17 @@ body {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto;
-    /* 5% from the top, 15% from the bottom and centered */
+    margin: 0 auto;
     border: 1px solid #888;
     border-radius: .5rem;
     width: 30rem;
-    /* Could be more or less, depending on screen size */
 }
 
 
 /* The Close Button (x) */
 
-.close {
+.close,
+.close-register {
     position: absolute;
     right: 25px;
     top: 0;
@@ -136,7 +125,9 @@ body {
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.close-register:hover,
+.close-register:focus {
     color: red;
     cursor: pointer;
 }
@@ -217,7 +208,6 @@ body {
 .form-submit {
     width: 100%;
     background-color: var(--primary);
-    margin-top: 3rem;
     height: 3.5rem;
 }
 
@@ -259,7 +249,7 @@ body {
 /* --------------  bằng social --------------- */
 
 .form-group__social {
-    margin: 1.5rem 1.5rem;
+    margin: 1rem 1.5rem;
 }
 
 .social-text {
