@@ -79,10 +79,6 @@ $('.tour__slide').slick({
     }]
 });
 
-
-
-
-
 // tour chi tiet
 
 $('.tour__chitiet-box-img').slick({
