@@ -3,17 +3,14 @@
 :root {
     --primary: #166987;
     --secondary: #DBA510;
+    --white-color: #FAFAFA;
     --text-color: #333;
-    --ternary: #6C6C6C;
-    --table-background: #d4d4d4;
+    --sub-title: #6C6C6C;
+    --background: #f8f8f8;
+    --footer: #2D333F;
     --danger: #FE4545;
     --dark-color: #101010;
-    --white-color: #FAFAFA;
-    --gray-color: #F0F1F3;
-    --background: #f8f8f8;
-    --light: #F0F0F0;
-    --black: #000;
-    --footer: #2D333F;
+    --table-background: #d4d4d4;
 }
 
 
