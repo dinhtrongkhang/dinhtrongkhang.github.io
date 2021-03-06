@@ -1,3 +1,28 @@
+// account đăng nhập và đăng ký
+
+// login
+
+document.getElementById("popup__account").addEventListener("click", function() {
+    document.querySelector("#form__dangnhap").style.display = "flex";
+})
+document.querySelector(".close").addEventListener("click", function() {
+    document.querySelector("#form__dangnhap").style.display = "none";
+})
+
+// register
+
+document.getElementById("popup__account-register").addEventListener("click", function() {
+    document.querySelector("#form__dangky").style.display = "flex";
+    document.querySelector("#form__dangnhap").style.display = "none";
+})
+document.querySelector(".close-register").addEventListener("click", function() {
+    document.querySelector("#form__dangky").style.display = "none";
+})
+document.getElementById("popup__account-login").addEventListener("click", function() {
+    document.querySelector("#form__dangnhap").style.display = "flex";
+    document.querySelector("#form__dangky").style.display = "none";
+})
+
 // show menu
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
@@ -188,30 +213,4 @@ $('.thanhtoantour').click(function() {
 
     // Hien cai dang duoc click
     $(this).children('.content').show();
-})
-
-
-// account đăng nhập và đăng ký
-
-// login
-
-document.getElementById("popup__account").addEventListener("click", function() {
-    document.querySelector("#form__dangnhap").style.display = "flex";
-})
-document.querySelector(".close").addEventListener("click", function() {
-    document.querySelector("#form__dangnhap").style.display = "none";
-})
-
-// register
-
-document.getElementById("popup__account-register").addEventListener("click", function() {
-    document.querySelector("#form__dangky").style.display = "flex";
-    document.querySelector("#form__dangnhap").style.display = "none";
-})
-document.querySelector(".close-register").addEventListener("click", function() {
-    document.querySelector("#form__dangky").style.display = "none";
-})
-document.getElementById("popup__account-login").addEventListener("click", function() {
-    document.querySelector("#form__dangnhap").style.display = "flex";
-    document.querySelector("#form__dangky").style.display = "none";
 })
