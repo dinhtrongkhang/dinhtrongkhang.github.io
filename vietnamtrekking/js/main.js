@@ -1,7 +1,7 @@
 // account đăng nhập và đăng ký
 
 // Get the modal dang nhap
-var modal = document.getElementById('id01');
+var modal = document.getElementById('form__dangnhap');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -11,7 +11,7 @@ window.onclick = function(event) {
 }
 
 // Get the modal dang ky
-var modal = document.getElementById('id02');
+var modal = document.getElementById('form__dangky');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
