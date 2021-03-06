@@ -18,7 +18,10 @@ document.getElementById("popup__account-register").addEventListener("click", fun
 document.querySelector(".close-register").addEventListener("click", function() {
     document.querySelector("#form__dangky").style.display = "none";
 })
-
+document.getElementById("popup__account-login").addEventListener("click", function() {
+    document.querySelector("#form__dangnhap").style.display = "flex";
+    document.querySelector("#form__dangky").style.display = "none";
+})
 
 
 // show menu
