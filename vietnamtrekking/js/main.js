@@ -1,24 +1,23 @@
 // account đăng nhập và đăng ký
 
-// Get the modal dang nhap
-var modal = document.getElementById('form__dangnhap');
+// login
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+document.getElementById("popup__account").addEventListener("click", function() {
+    document.querySelector("#form__dangnhap").style.display = "flex";
+})
+document.querySelector(".close").addEventListener("click", function() {
+    document.querySelector("#form__dangnhap").style.display = "none";
+})
 
-// Get the modal dang ky
-var modal = document.getElementById('form__dangky');
+// register
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+document.getElementById("popup__account-register").addEventListener("click", function() {
+    document.querySelector("#form__dangky").style.display = "flex";
+    document.querySelector("#form__dangnhap").style.display = "none";
+})
+document.querySelector(".close-register").addEventListener("click", function() {
+    document.querySelector("#form__dangky").style.display = "none";
+})
 
 
 
@@ -213,17 +212,3 @@ $('.thanhtoantour').click(function() {
     // Hien cai dang duoc click
     $(this).children('.content').show();
 })
-
-
-
-// dang ky và dang nhap
-
-
-onclick = "document.getElementById('id01').style.display='none'"
-onclick = "document.getElementById('id02').style.display='block'"
-
-
-
-
-onclick = "document.getElementById('id02').style.display='none'"
-onclick = "document.getElementById('id01').style.display='block'"
