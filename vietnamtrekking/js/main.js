@@ -1,27 +1,34 @@
 // account đăng nhập và đăng ký
 
-// login
-
+// bat login
 document.getElementById("popup__account").addEventListener("click", function() {
     document.querySelector("#form__dangnhap").style.display = "flex";
 })
+
+// tat login
 document.querySelector(".close").addEventListener("click", function() {
     document.querySelector("#form__dangnhap").style.display = "none";
 })
 
 // register
 
+// bat register va tat login
 document.getElementById("popup__account-register").addEventListener("click", function() {
     document.querySelector("#form__dangky").style.display = "flex";
     document.querySelector("#form__dangnhap").style.display = "none";
 })
+
+// tat register
 document.querySelector(".close-register").addEventListener("click", function() {
     document.querySelector("#form__dangky").style.display = "none";
 })
+
+// bat login va tat register
 document.getElementById("popup__account-login").addEventListener("click", function() {
     document.querySelector("#form__dangnhap").style.display = "flex";
     document.querySelector("#form__dangky").style.display = "none";
 })
+
 
 // show menu
 const showMenu = (toggleId, navId) => {
