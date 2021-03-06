@@ -2,7 +2,7 @@
 
 // bat login
 document.getElementById("popup__account").addEventListener("click", function() {
-    document.querySelector("#form__dangnhap").style.display = "flex";
+    document.querySelector("#form__dangnhap").style.display = "block";
 })
 
 // tat login
@@ -14,7 +14,7 @@ document.querySelector(".close").addEventListener("click", function() {
 
 // bat register va tat login
 document.getElementById("popup__account-register").addEventListener("click", function() {
-    document.querySelector("#form__dangky").style.display = "flex";
+    document.querySelector("#form__dangky").style.display = "block";
     document.querySelector("#form__dangnhap").style.display = "none";
 })
 
@@ -25,7 +25,7 @@ document.querySelector(".close-register").addEventListener("click", function() {
 
 // bat login va tat register
 document.getElementById("popup__account-login").addEventListener("click", function() {
-    document.querySelector("#form__dangnhap").style.display = "flex";
+    document.querySelector("#form__dangnhap").style.display = "block";
     document.querySelector("#form__dangky").style.display = "none";
 })
 
