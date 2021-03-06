@@ -213,3 +213,17 @@ $('.thanhtoantour').click(function() {
     // Hien cai dang duoc click
     $(this).children('.content').show();
 })
+
+
+
+// dang ky và dang nhap
+
+
+onclick = "document.getElementById('id01').style.display='none'"
+onclick = "document.getElementById('id02').style.display='block'"
+
+
+
+
+onclick = "document.getElementById('id02').style.display='none'"
+onclick = "document.getElementById('id01').style.display='block'"
