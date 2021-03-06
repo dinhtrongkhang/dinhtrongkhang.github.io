@@ -1,0 +1,176 @@
+/* fonts  */
+
+@font-face {
+    font-family: "Roboto-regular";
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(../font/Roboto/Roboto-Bold.ttf);
+}
+
+
+/* colors  */
+
+:root {
+    --primary: #166987;
+    --secondary: #DBA510;
+    --white-color: #FAFAFA;
+    --text-color: #333;
+    --sub-title: #6C6C6C;
+    --background: #f8f8f8;
+    --footer: #2D333F;
+    --danger: #FE4545;
+    --dark-color: #101010;
+    --table-background: #d4d4d4;
+}
+
+
+/* Reset  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto-regular", sans-serif;
+    line-height: 2.2rem;
+    color: #222;
+}
+
+.container {
+    width: 100%;
+    /* padding: 0 15px; */
+    margin: 0 auto;
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+.blog>p {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.header__banner-slogan {
+    display: none;
+}
+
+.blogdulich__title {
+    margin-top: 8rem !important;
+}
+
+.blogdulich__title a,
+.blogdulich__title span {
+    font-size: 1.6rem;
+    color: var(--sub-title);
+}
+
+.blogdulich__title span {
+    padding: 0 .5rem;
+}
+
+.header__banner {
+    display: none;
+}
+
+.tour__handbook-chitiet1 img {
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.tour__handbook-chitiet1 h3 {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.tour__handbook-chitiet1 p,
+.blog__tour-dicovery .lichtrinh a {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+
+.tour__handbook-chitiet1-dayandview span,
+.tour__handbook-chitiet1-view i {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.blog__tour-dicovery p {
+    margin-bottom: 3rem;
+}
+
+.blog__tour-dicovery .lichtrinh a {
+    color: var(--primary);
+}
+
+.blog__tour-dicovery .lichtrinh a:hover {
+    color: var(--secondary);
+}
+
+.tour__handbook-chitiet1-dayandview i {
+    margin-top: -2rem;
+}
+
+@media (min-width: 768px) {
+    .header__banner {
+        display: block;
+    }
+    .header__banner-slogan {
+        display: block;
+        text-align: center;
+        margin-top: 13rem;
+    }
+    .header__banner-slogan h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+        color: var(--white-color);
+        text-shadow: 0 .3rem .5rem #000;
+    }
+    .header__banner-slogan p {
+        font-size: 3rem;
+        line-height: 4rem;
+        color: var(--white-color);
+        text-shadow: 0 .3rem .5rem #000;
+    }
+    .tour__handbook-chitiet1 h3 {
+        font-size: 3rem;
+        line-height: 3.8rem;
+    }
+    .tour__handbook-chitiet1 p,
+    .blog__tour-dicovery .lichtrinh a {
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+    }
+}

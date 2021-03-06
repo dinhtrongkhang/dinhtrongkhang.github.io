@@ -1,0 +1,1192 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Du lịch trong nước | Vietnam Trekking</title>
+    <link rel="shortcut icon" href="img/logo vietnamtrekking.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/du-lich-trong-nuoc.css">
+    <link rel="stylesheet" href="css/form-account.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- --------------- header start------------- -->
+        <header class="l-header">
+            <nav class="nav container">
+                <div class="nav__logo"><a href="index.html">Vietnamtrekking</a></div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Trang chủ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="du-lich-trong-nuoc.html" class="nav__link active">Du lịch trong nước</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="du-lich-nuoc-ngoai.html" class="nav__link">Du lịch nước ngoài</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="blog-du-lich.html" class="nav__link">Blog du lịch</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__user">
+                    <i class="fas fa-user " onclick="document.getElementById('id01').style.display='block'"></i>
+                </div>
+                <div class="nav__toggle">
+                    <i class="fas fa-bars " id="nav-toggle"></i>
+                </div>
+            </nav>
+        </header>
+        <!-- header banner  -->
+        <section class="header__banner">
+            <div class="header__banner-cover">
+                <img src="img/banner.jpg" alt="banner">
+            </div>
+            <div class="header__banner-title container">
+                <div class="header__banner-title-slogan">
+                    <h1>Vì cuộc đời là những chuyến đi</h1>
+                    <p>Hãy cùng Vietnam Trekking khám phá và lưu giữ lại những kỷ niệm</p>
+                </div>
+                <div class="header__search-title-form">
+                    <form action="">
+                        <h3>Tìm Kiếm</h3>
+                        <input type="text" placeholder="Nơi khởi hành">
+                        <input type="text" placeholder="Nơi đến">
+                        <input type="number" placeholder="Số khách">
+                        <input type="date">
+                        <button type="button">Tìm tour</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- --------- account start ---------- -->
+        <!-- dang nhap -->
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+
+                <div class="container">
+
+                    <h3 class="form__heading">Đăng nhập</h3>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email__dk" name="email" type="text" placeholder="Nhập email" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Mật khẩu</label>
+                        <input id="password__dk" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <button class="form-submit"><a href="index.html">Đăng nhập</a></button>
+
+                    <div class="form-group__social">
+                        <p class="social-text">Hoặc đăng nhập bằng</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="form__switch-btn">
+                        <p>Bạn chưa có tài khoản?</p>
+                        <p class="dangky" onclick="document.getElementById('id02').style.display='block'">Đăng ký</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- dang ky -->
+        <div id="id02" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+
+                <div class="container">
+
+                    <h3 class="form__heading">Đăng ký</h3>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email" name="email" type="text" placeholder="Nhập email" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Mật khẩu</label>
+                        <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                        <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="form-group__policy-text">
+                            Bằng việc đăng ký bạn đã đồng ý với Vietnam Trekking về
+                            <a href="" class="form-group__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="form-group__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <button class="form-submit">Đăng ký</button>
+
+                    <div class="form-group__social">
+                        <p class="social-text">Hoặc đăng ký bằng</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="form__switch-btn">
+                        <p>Bạn đã tài khoản?</p>
+                        <p class="dangnhap" onclick="document.getElementById('id01').style.display='block'">Đăng nhập</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- ---------- account end ------------ -->
+        <!-- --------------- header end ------------- -->
+
+        <!-- -------------- main start---------------- -->
+        <div class="main">
+
+            <!-- du lich Việt Nam start -->
+            <div class="dulichvietnam">
+                <div class="tour__title container">
+                    <a href="index.html"><strong>Trang chủ</strong></a> <span>></span> <a href="du-lich-trong-nuoc.html">Du lịch trong nước</a>
+                </div>
+
+                <div class="tour container">
+                    <h2><a href="#">Đà Nẵng - Hội An</a></h2>
+                    <div class="tour__tourhot tour__slide">
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/da-nang-1.jpg" alt="dulichvietnam11">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">HÀ NỘI - ĐÀ NẴNG - BÀ NÀ - HỘI AN - HÀ NỘI</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">9.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/da-nang-2.jpg" alt="dulichvietnam12">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">HÀ NỘI - ĐÀ NẴNG - BÀ NÀ - HỘI AN - HÀ NỘI HÈ 2021</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>6 ngày 5 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">11.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/da-nang-3.jpg" alt="dulichvietnam13">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">DU LỊCH ĐÀ NẴNG - HỘI AN - BÀ NÀ - ĐẢO CÙ LAO CHÀM</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">6.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/da-nang-4.jpg" alt="dulichvietnam14">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">HÀ NỘI - ĐÀ NẴNG - BÁN ĐẢO SƠN TRÀ - BÀ NÀ - HỘI AN</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>5 ngày 4 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">10.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/da-nang-5.jpg" alt="dulichvietnam15">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">HÀ NỘI - ĐÀ NẴNG - PHỐ CỔ HỘI AN</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">8.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/da-nang-6.jpg" alt="dulichvietnam16">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">DU LỊCH ĐÀ NẴNG - BÀ NÀ - HỘI AN - CÙ LAO CHÀM</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">5.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/da-nang-7.jpg" alt="dulichvietnam17">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">DU LỊCH HUẾ - ĐÀ NẴNG - HỘI AN - BÀ NÀ</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">5.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/da-nang-8.jpg" alt="dulichvietnam18">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">ĐÀ NẴNG - HỘI AN - BÁN ĐẢO SƠN TRÀ - BÀ NÀ - HUẾ</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">5.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/da-nang-9.jpg" alt="dulichvietnam19">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">DU LỊCH ĐÀ NẴNG - NGŨ HÀNH SƠN - HỘI AN - BÀ NÀ</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">5.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/da-nang-10.jpg" alt="dulichvietnam20">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">DU LỊCH ĐÀ NẴNG - NGŨ HÀNH SƠN - HỘI AN - BÁN ĐẢO SƠN TRÀ - BÀ NÀ</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">5.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour container">
+                    <h2><a href="#">Nha Trang</a></h2>
+                    <div class="tour__tourhot tour__slide">
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/nha-trang-1.jpg" alt="dulichvietnam1">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">HÀ NỘI - ĐÀ LẠT - NHA TRANG - HÀ NỘI</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>5 ngày 4 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">9.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/nha-trang-2.jpg" alt="dulichvietnam2">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">HÀ NỘI - CAM RANH - NINH THUẬN - NHA TRANG - HÀ NỘI</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">5.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/nha-trang-3.jpg" alt="dulichvietnam3">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">BIỂN NHA TRANG - HOA ĐÀ LẠT</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">7.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/nha-trang-4.jpg" alt="dulichvietnam4">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">HÀ NỘI - CAM RANH - NINH THUẬN - NHA TRANG - HÀ NỘI</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>5 ngày 4 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">10.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/nha-trang-5.jpg" alt="dulichvietnam5">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">HÀ NỘI - NHA TRANG - ĐÀ LẠT - HÀ NỘI 2021</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>5 ngày 4 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">12.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/nha-trang-6.jpg" alt="dulichvietnam6">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">HÀ NỘI - ĐÀ LẠT - NHA TRANG - TUY HÒA - QUY NHƠN - HÀ NỘI</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">5.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/nha-trang-7.jpg" alt="dulichvietnam7">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">TP HỒ CHÍ MINH - ĐÀ LẠT - NHA TRANG - TUY HÒA - QUY NHƠN - TP HỒ CHÍ MINH</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">5.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/nha-trang-8.jpg" alt="dulichvietnam8">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">TP HỒ CHÍ MINH - NHA TRANG - ĐÀ LẠT - TP HỒ CHÍ MINH</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">5.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/nha-trang-9.jpg" alt="dulichvietnam9">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">TP HỒ CHÍ MINH - NHA TRANG - NINH THUẬN - TP HỒ CHÍ MINH</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">5.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/nha-trang-10.jpg" alt="dulichvietnam10">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">TP HỒ CHÍ MINH - NHA TRANG - PHÚ YÊN - TP HỒ CHÍ MINH</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">5.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour container">
+                    <h2><a href="#">Phú Quốc</a></h2>
+                    <div class="tour__tourhot tour__slide">
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/phu-quoc-1.jpg" alt="dulichvietnam11">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">HÀ NỘI - PHÚ QUỐC - VINPERL - SAFARI - HÀ NỘI</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>6 ngày 5 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">12.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/phu-quoc-2.jpg" alt="dulichvietnam12">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">[HỒ CHÍ MINH] KHÁM PHÁ PHÚ QUỐC 3 NGÀY 3 ĐÊM (2020): TPHCM - VIẾNG MIẾU BÀ CHÚA XỨ - HÀ TIÊN - PHÚ QUỐC</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>5 ngày 4 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">9.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/phu-quoc-3.jpg" alt="dulichvietnam13">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">PHÚ QUỐC: NẮNG VÀNG - CÁT TRẮNG - BIỂN XANH - CÂU CÁ - NGẮM SAN HÔ</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>5 ngày 4 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">8.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/phu-quoc-4.jpg" alt="dulichvietnam14">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">HÀ NỘI - PHÚ QUỐC VINPEARL LAND</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">6.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/phu-quoc-5.jpg" alt="dulichvietnam15">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">TOUR PHÚ QUỐC - NƠI CON NGƯỜI VÀ THIÊN NHIÊN HỘI NGỘ</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">5.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/phu-quoc-6.jpg" alt="dulichvietnam16">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">HÀ NỘI - PHÚ QUỐC - THIÊN ĐƯỜNG BIỂN ĐẢO - HÀ NỘI</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>4 ngày 3 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">5.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/phu-quoc-7.jpg" alt="dulichvietnam17">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">DU LỊCH PHÚ QUỐC: NAM ĐẢO - BÃI SAO</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>6 ngày 5 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">8.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/phu-quoc-8.jpg" alt="dulichvietnam18">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">PHÚ QUỐC - RẠCH GIÁ - CÀ MAU - SÓC TRĂNG - BẠC LIÊU - CẦN THƠ - MỸ THO - HỒ CHÍ MINH</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>7 ngày 6 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">10.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/phu-quoc-9.jpg" alt="dulichvietnam19">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">PHÚ QUỐC - RẠCH GIÁ - CÀ MAU - BẠC LIÊU - SÓC TRĂNG - CẦN THƠ - MỸ THO - TP. HỒ CHÍ MINH - KDL. ĐẠI NAM</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>8 ngày 7 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">12.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="tour__tourhot-box">
+                            <div class="tour__tourhot-box-slide-img">
+                                <img src="img/phu-quoc-10.jpg" alt="dulichvietnam20">
+                            </div>
+                            <div class="tour__tourhot-box-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="tour__tourhot-box-name">
+                                <a href="tour-chi-tiet.html">COMBO SIÊU KHUYẾN MẠI TỪ VINPEARL PHÚ QUỐC RESORT</a>
+                            </div>
+                            <div class="tour__tourhot-box-time">
+                                <span>5 ngày 4 đêm</span>
+                            </div>
+                            <div class="tour__tourhot-box-day">
+                                <span>Ngày khởi hành: 30-01-2021</span>
+                            </div>
+                            <div class="tour__tourhot-box-price">
+                                <a href="#">9.000.000đ</a>
+                            </div>
+                            <div class="tour__tourhot-box-booking">
+                                <a href="tour-chi-tiet.html" class="book-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#"><button type="button">Xem thêm</button></a>
+            </div>
+            <!-- du lịch Việt Nam end -->
+
+            <!-- form uu dai start -->
+            <div class="formuudai">
+                <div class="overlay">
+                    <h2>Tiết kiệm thời gian và tiền bạc</h2>
+                    <h3>Hãy đăng ký và chúng tôi sẽ gửi những ưu đãi tốt nhất cho bạn</h3>
+                    <div class="formuudai__form">
+                        <input type="text" placeholder="Địa chỉ Email của ban">
+                        <a href="#"><button type="button">Đăng ký</button></a>
+                    </div>
+                </div>
+            </div>
+            <!-- form ưu đãi end -->
+
+            <!-- Du lịch nước ngoài start-->
+            <div class="tour container">
+                <h2><a href="du-lich-nuoc-ngoai.html">Du lịch nước ngoài</a></h2>
+                <div class="tour__dulichnuocngoai tour__slide">
+                    <div class="tour__dulichnuocngoai-box">
+                        <div class="tour__dulichnuocngoai-box-slide-img">
+                            <a href="du-lich-nuoc-ngoai.html"><img src="img/nhat-ban-1.jpg" alt="dulichnuocngoai1"></a>
+                        </div>
+                        <div class="tour__dulichnuocngoai-box-name">
+                            <a href="du-lich-nuoc-ngoai.html">Nhật Bản</a>
+                        </div>
+                    </div>
+                    <div class="tour__dulichnuocngoai-box">
+                        <div class="tour__dulichnuocngoai-box-slide-img">
+                            <a href="du-lich-nuoc-ngoai.html"> <img src="img/han-quoc-1.jpg" alt="dulichnuocngoai2"></a>
+                        </div>
+                        <div class="tour__dulichnuocngoai-box-name">
+                            <a href="du-lich-nuoc-ngoai.html">Hàn Quốc</a>
+                        </div>
+                    </div>
+                    <div class="tour__dulichnuocngoai-box">
+                        <div class="tour__dulichnuocngoai-box-slide-img">
+                            <a href="du-lich-nuoc-ngoai.html"> <img src="img/singapore-1.jpg" alt="dulichnuocngoai3"></a>
+                        </div>
+                        <div class="tour__dulichnuocngoai-box-name">
+                            <a href="du-lich-nuoc-ngoai.html">Singapore</a>
+                        </div>
+                    </div>
+                    <div class="tour__dulichnuocngoai-box">
+                        <div class="tour__dulichnuocngoai-box-slide-img">
+                            <a href="du-lich-nuoc-ngoai.html"> <img src="img/trung-quoc-1.png" alt="dulichnuocngoai4"></a>
+                        </div>
+                        <div class="tour__dulichnuocngoai-box-name">
+                            <a href="du-lich-nuoc-ngoai.html">Trung Quốc</a>
+                        </div>
+                    </div>
+                    <div class="tour__dulichnuocngoai-box">
+                        <div class="tour__dulichnuocngoai-box-slide-img">
+                            <a href="du-lich-nuoc-ngoai.html"> <img src="img/thai-lan-1.jpg" alt="dulichnuocngoai5"></a>
+                        </div>
+                        <div class="tour__dulichnuocngoai-box-name">
+                            <a href="du-lich-nuoc-ngoai.html">Thái Lan</a>
+                        </div>
+                    </div>
+                    <div class="tour__dulichnuocngoai-box">
+                        <div class="tour__dulichnuocngoai-box-slide-img">
+                            <a href="du-lich-nuoc-ngoai.html"> <img src="img/philippin-1.jpg" alt="dulichnuocngoai6"></a>
+                        </div>
+                        <div class="tour__dulichnuocngoai-box-name">
+                            <a href="du-lich-nuoc-ngoai.html">Philippines</a>
+                        </div>
+                    </div>
+                    <div class="tour__dulichnuocngoai-box">
+                        <div class="tour__dulichnuocngoai-box-slide-img">
+                            <a href="du-lich-nuoc-ngoai.html"> <img src="img/myanmar-1.jpg" alt="dulichnuocngoai7"></a>
+                        </div>
+                        <div class="tour__dulichnuocngoai-box-name">
+                            <a href="du-lich-nuoc-ngoai.html">Myanmar</a>
+                        </div>
+                    </div>
+                    <div class="tour__dulichnuocngoai-box">
+                        <div class="tour__dulichnuocngoai-box-slide-img">
+                            <a href="du-lich-nuoc-ngoai.html"> <img src="img/malaysia-1.jpg" alt="dulichnuocngoai8"></a>
+                        </div>
+                        <div class="tour__dulichnuocngoai-box-name">
+                            <a href="du-lich-nuoc-ngoai.html">Malaysia</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Du lịch nước ngoài end -->
+
+        </div>
+        <!------------------ main end ------------------>
+
+        <!-- ---------------- footer start ------------------ -->
+        <div class="footer">
+            <div class="footer__content container">
+                <div class="footer__top">
+                    <div class="footer__top-thanhtoan">
+                        <h2>Chấp nhận thanh toán</h2>
+                        <div class="footer__top-thanhtoan-online">
+                            <div class="jcb"><img src="libs/icons/jcb.svg" alt="jcb"></div>
+                            <div class="visa"><img src="libs/icons/visa.svg" alt="visa"></div>
+                            <div class="mastercard"><img src="libs/icons/mastercard.svg" alt="mastercard"></div>
+                        </div>
+                    </div>
+                    <div class="footer__top-folowus">
+                        <h2>Kết nối với Vietnamtrekking</h2>
+                        <div class="footer__top-folowus-social">
+                            <div class="facebook">
+                                <a href="https://www.facebook.com/vietnamtrekking"><img src="libs/icons/facebook.svg" alt="fb"></a>
+                            </div>
+                            <div class="youtube">
+                                <a href="https://www.youtube.com/channel/UC6kb8QEAD8zy-NhVpxxSvmw"><img src="libs/icons/youtube.svg" alt="youtube"></a>
+                            </div>
+                            <div class="twitter">
+                                <a href="https://twitter.com/vietnamtrekkin1"><img src="libs/icons/twitter.svg" alt="twitter"></a>
+                            </div>
+                            <div class="pinterest">
+                                <a href="https://www.pinterest.com/khangdinhtb"><img src="libs/icons/pinterest.svg" alt="pinterest"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__contact">
+                    <div class="footer__contact-info">
+                        <h2>Văn phòng tại Hà Nội</h2>
+                        <p>Địa chỉ: Số 9 - Trung Văn - Nam Từ Liêm</p>
+                        <p>Tel: 0904339993</p>
+                        <p>Email: sales@vietnamtrekking.vn</p>
+                    </div>
+
+                    <div class="footer__contact-info">
+                        <h2>Văn phòng tại TP Hồ Chí Minh</h2>
+                        <p>Địa chỉ: Số 9 - Đồng Khởi - Q.1</p>
+                        <p>Tel: 0904339993</p>
+                        <p>Email: sales@vietnamtrekking.vn</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-copyright container">
+                    © 2021 Toàn bộ bản quyền thuộc Vietnam Trekking
+                </div>
+            </div>
+        </div>
+        <!-- ---------------- footer end ------------------ -->
+    </div>
+    <!-- js -->
+    <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="115474952735686" logged_in_greeting="Xin chào, tôi có thể giúp gì cho bạn?" logged_out_greeting="Xin chào, tôi có thể giúp gì cho bạn?">
+    </div>
+</body>
+
+</html>
