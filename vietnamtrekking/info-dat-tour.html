@@ -159,7 +159,7 @@
                     </div>
                     <div class="form-control-1">
                         <label for="username">Email</label>
-                        <input type="email" placeholder="sales@vietnamtrekking.vn" id="email-1" onkeyup="handleChangeProfile()" />
+                        <input type="text" placeholder="sales@vietnamtrekking.vn" id="email-1" onkeyup="handleChangeProfile()" />
                         <small>Error message</small>
                     </div>
                     <div class="form-control-1">
@@ -167,8 +167,11 @@
                         <input type="text" placeholder="Số điện thoại" id="tel" onkeyup="handleChangeProfile()" />
                         <small>Error message</small>
                     </div>
-                    <a id="profile_submit_btn" href="thong-tin-dat-tour.html">
-                        <button disabled>Xác nhận</button></a>
+
+                    <a disabled id="profile_submit_btn" href="./thong-tin-dat-tour.html">
+                        <button disabled>Xác nhận</button>
+                    </a>
+
                 </form>
             </div>
         </div>
@@ -241,7 +244,12 @@
             let emailText = $("input#email-1").val();
             let telText = $("input#tel").val();
             // Display submit button when user enter all the values
-            $("#profile_submit_btn button").attr("disabled", !(usernameText && emailText && telText));
+            $("#profile_submit_btn").attr(
+                "disabled", !(usernameText && emailText && telText)
+            );
+            $("#profile_submit_btn button").attr(
+                "disabled", !(usernameText && emailText && telText)
+            );
         }
     </script>
 
