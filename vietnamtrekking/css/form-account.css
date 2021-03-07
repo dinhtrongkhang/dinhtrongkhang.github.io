@@ -169,8 +169,7 @@ body {
     font-size: 1.4rem;
 }
 
-
-/* .form-control {
+.form-control {
     height: 4rem;
     padding: .8rem 1.2rem;
     border: 1px solid var(--primary);
@@ -181,7 +180,7 @@ body {
 
 .form-control:hover {
     border-color: var(--secondary);
-} */
+}
 
 .form-group.invalid .form-control {
     border-color: var(--danger);
