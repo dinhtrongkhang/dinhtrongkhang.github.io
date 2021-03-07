@@ -78,49 +78,50 @@ body {
     margin-top: 7rem;
 }
 
-.info__dattour {
+.modal__thongtin {
     background-color: var(--white-color);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     width: 40rem;
+    max-width: 100%;
     margin: 0 auto;
 }
 
-.header__info {
+.header__thongtin {
     border-bottom: 2px solid var(--secondary);
     background-color: var(--primary);
-    padding: 1rem;
+    padding: 2rem;
 }
 
-.header__info h2 {
+.header__thongtin>h2 {
     margin: 0;
     font-size: 3rem;
     line-height: 3.6rem;
     color: var(--white-color);
 }
 
-.form__info {
+.form__thongtin {
     padding: 2rem;
 }
 
-.form__info label {
+.form__thongtin label {
     font-size: 2.4rem;
     line-height: 3.6rem;
 }
 
-.form__info .form-control-1 {
+.form-control-1 {
     margin-bottom: 1rem;
     padding-bottom: 2.5rem;
     position: relative;
 }
 
-.form__info .form-control-1 label {
+.form-control-1 label {
     display: inline-block;
     margin-bottom: .5rem;
 }
 
-.form__info .form-control-1 input {
+.form-control-1>input {
     border: 1px solid var(--secondary);
     border-radius: .4rem;
     display: block;
@@ -130,27 +131,27 @@ body {
     width: 100%;
 }
 
-.form__info .form-control-1 input:focus {
+.form-control-1>input:focus {
     outline: 0;
     border-color: var(--primary);
 }
 
-.form__info .form-control-1.success input {
+.form-control-1.success>input {
     border-color: #2ecc71;
 }
 
-.form__info .form-control-1.error input {
+.form-control-1.error>input {
     border-color: #e74c3c;
 }
 
-.form__info .form-control-1 i {
+.form-control-1>i {
     visibility: hidden;
     position: absolute;
     top: 4rem;
     right: 1rem;
 }
 
-.form__info .form-control-1 small {
+.form-control-1 small {
     font-size: 1.4rem;
     line-height: 2.6rem;
     color: #e74c3c;
@@ -160,10 +161,10 @@ body {
     visibility: hidden;
 }
 
-.form__info .form-control-1.error small {
+.form-control-1.error small {
     visibility: visible;
 }
 
-.form__info button {
+.form__thongtin button {
     width: 100% !important;
 }
