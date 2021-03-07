@@ -109,18 +109,18 @@ body {
     line-height: 3.6rem;
 }
 
-.form-control {
+.form__info .form-control-1 {
     margin-bottom: 1rem;
     padding-bottom: 2.5rem;
     position: relative;
 }
 
-.form-control label {
+.form__info .form-control-1 label {
     display: inline-block;
     margin-bottom: .5rem;
 }
 
-.form-control>input {
+.form__info .form-control-1 input {
     border: 1px solid var(--secondary);
     border-radius: .4rem;
     display: block;
@@ -130,27 +130,27 @@ body {
     width: 100%;
 }
 
-.form-control>input:focus {
+.form__info .form-control-1 input:focus {
     outline: 0;
     border-color: var(--primary);
 }
 
-.form-control.success>input {
+.form__info .form-control-1.success input {
     border-color: #2ecc71;
 }
 
-.form-control.error>input {
+.form__info .form-control-1.error input {
     border-color: #e74c3c;
 }
 
-.form-control>i {
+.form__info .form-control-1 i {
     visibility: hidden;
     position: absolute;
     top: 4rem;
     right: 1rem;
 }
 
-.form-control small {
+.form__info .form-control-1 small {
     font-size: 1.4rem;
     line-height: 2.6rem;
     color: #e74c3c;
@@ -160,7 +160,7 @@ body {
     visibility: hidden;
 }
 
-.form-control.error small {
+.form__info .form-control-1.error small {
     visibility: visible;
 }
 
