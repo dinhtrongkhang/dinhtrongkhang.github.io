@@ -24,6 +24,7 @@
     --danger: #FE4545;
     --dark-color: #101010;
     --table-background: #d4d4d4;
+    --font-family-sans-serif: "Open Sans", (-apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
 }
 
 
@@ -42,7 +43,6 @@ html {
 body {
     -webkit-font-smoothing: antialiased;
     font-family: "Roboto-regular", sans-serif;
-    line-height: 2.2rem;
 }
 
 .container {
@@ -217,6 +217,7 @@ button:hover {
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primary);
+    font-family: var(--font-family-sans-serif);
 }
 
 .nav {
@@ -954,6 +955,7 @@ button:hover {
         line-height: 5rem;
         color: var(--white-color);
         text-shadow: 0 .3rem .5rem #000;
+        font-family: var(--font-family-sans-serif);
     }
     .header__banner-title-slogan p {
         font-size: 2rem;
@@ -961,6 +963,7 @@ button:hover {
         line-height: 3rem;
         text-shadow: 0 .3rem .5rem #000;
         margin-top: 1rem;
+        font-family: var(--font-family-sans-serif);
     }
     .header__search-title-form form {
         width: 30rem;

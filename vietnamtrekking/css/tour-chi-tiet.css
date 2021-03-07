@@ -13,6 +13,56 @@
     --table-background: #d4d4d4;
 }
 
+
+/* Reset  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto-regular", sans-serif;
+    /* background: url("../img/banner.jpg") no-repeat top center; */
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    /* padding: 0 15px; */
+    margin: 0 auto;
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
 .margin-top {
     margin-top: 1.5rem;
 }
