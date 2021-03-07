@@ -106,8 +106,8 @@ body {
 }
 
 .form__thongtin label {
-    font-size: 2.4rem;
-    line-height: 3.6rem;
+    font-size: 2rem;
+    line-height: 3rem;
 }
 
 .form-control-1 {
@@ -180,6 +180,10 @@ body {
 
 @media all and (min-width: 768px) {
     .header__thongtin h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .form__thongtin label {
         font-size: 3rem;
         line-height: 4rem;
     }
