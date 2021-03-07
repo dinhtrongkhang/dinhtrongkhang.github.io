@@ -1,6 +1,6 @@
 const form = document.getElementById('thongtin');
-const username = document.getElementById('username');
-const email = document.getElementById('email');
+const username = document.getElementById('username-1');
+const email = document.getElementById('email-1');
 const password = document.getElementById('tel');
 
 
