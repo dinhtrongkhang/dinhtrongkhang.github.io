@@ -96,8 +96,8 @@ body {
 
 .header__thongtin>h2 {
     margin: 0;
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
     color: var(--white-color);
 }
 
@@ -176,4 +176,11 @@ body {
 
 .card-item {
     width: 48%;
+}
+
+@media (min-width: 768px) {
+    .header__thongtin>h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
 }
