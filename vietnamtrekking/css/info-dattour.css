@@ -90,7 +90,7 @@ body {
 .header__info {
     border-bottom: 2px solid var(--secondary);
     background-color: var(--primary);
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .header__info>h2 {
