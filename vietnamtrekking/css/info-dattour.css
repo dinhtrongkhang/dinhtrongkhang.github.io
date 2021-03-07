@@ -178,9 +178,10 @@ body {
     width: 48%;
 }
 
-a#profile_submit_btn {
+
+/* a#profile_submit_btn {
     display: none;
-}
+} */
 
 @media all and (min-width: 768px) {
     .header__thongtin h2 {
