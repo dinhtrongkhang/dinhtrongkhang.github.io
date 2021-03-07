@@ -93,7 +93,7 @@ body {
     padding: 1rem;
 }
 
-.header__info>h2 {
+.header__info h2 {
     margin: 0;
     font-size: 3rem;
     line-height: 3.6rem;
@@ -109,18 +109,18 @@ body {
     line-height: 3.6rem;
 }
 
-.form__info .form-control-1 {
+.form__info .form-control {
     margin-bottom: 1rem;
     padding-bottom: 2.5rem;
     position: relative;
 }
 
-.form__info .form-control-1 label {
+.form__info .form-control label {
     display: inline-block;
     margin-bottom: .5rem;
 }
 
-.form__info .form-control-1 input {
+.form__info .form-control input {
     border: 1px solid var(--secondary);
     border-radius: .4rem;
     display: block;
@@ -130,27 +130,27 @@ body {
     width: 100%;
 }
 
-.form__info .form-control-1 input:focus {
+.form__info .form-control input:focus {
     outline: 0;
     border-color: var(--primary);
 }
 
-.form__info .form-control-1.success input {
+.form__info .form-control.success input {
     border-color: #2ecc71;
 }
 
-.form__info .form-control-1.error input {
+.form__info .form-control.error input {
     border-color: #e74c3c;
 }
 
-.form__info .form-control-1 i {
+.form__info .form-control i {
     visibility: hidden;
     position: absolute;
     top: 4rem;
     right: 1rem;
 }
 
-.form__info .form-control-1 small {
+.form__info .form-control small {
     font-size: 1.4rem;
     line-height: 2.6rem;
     color: #e74c3c;
@@ -160,7 +160,7 @@ body {
     visibility: hidden;
 }
 
-.form__info .form-control-1.error small {
+.form__info .form-control.error small {
     visibility: visible;
 }
 
