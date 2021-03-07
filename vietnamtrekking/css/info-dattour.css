@@ -87,24 +87,24 @@ body {
     margin: 0 auto;
 }
 
-.header__thongtin {
+.header__info {
     border-bottom: 2px solid var(--secondary);
     background-color: var(--primary);
     padding: 2rem;
 }
 
-.header__thongtin>h2 {
+.header__info>h2 {
     margin: 0;
     font-size: 3rem;
     line-height: 3.6rem;
     color: var(--white-color);
 }
 
-.form__thongtin {
+.form__info {
     padding: 2rem;
 }
 
-.form__thongtin label {
+.form__info label {
     font-size: 2.4rem;
     line-height: 3.6rem;
 }
@@ -164,6 +164,6 @@ body {
     visibility: visible;
 }
 
-.form__thongtin button {
+.form__info button {
     width: 100% !important;
 }
