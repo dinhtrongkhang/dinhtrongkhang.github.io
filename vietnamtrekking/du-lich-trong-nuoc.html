@@ -1162,6 +1162,7 @@
     <!-- js -->
     <script src="libs/jquery/jquery-3.5.1.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
+    <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Load Facebook SDK for JavaScript -->
@@ -1187,6 +1188,25 @@
     <!-- Your Chat Plugin code -->
     <div class="fb-customerchat" attribution="setup_tool" page_id="115474952735686" logged_in_greeting="Xin chào, tôi có thể giúp gì cho bạn?" logged_out_greeting="Xin chào, tôi có thể giúp gì cho bạn?">
     </div>
+
+    <script>
+        Validator({
+            form: '#form__dangky',
+            errorSelector: '.form-message',
+            rules: [
+                // Validator.isRequired('#fullname', 'Vui lòng nhập họ tên đầy đủ'),
+                Validator.isEmail('#email', 'Vui lòng nhập trường này'),
+                Validator.minLength('#password', 8),
+                Validator.isRequired('#password_confirmation'),
+                Validator.isCofirmed('#password_confirmation', function() {
+                    return document.querySelector('#form__dangky #password').value;
+                }, 'Mật khẩu nhập lại không chính xác'),
+            ],
+            onSubmit: function(data) {
+                console.log(data);
+            }
+        });
+    </script>
 </body>
 
 </html>
