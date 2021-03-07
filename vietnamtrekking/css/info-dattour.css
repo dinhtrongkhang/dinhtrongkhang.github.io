@@ -97,6 +97,7 @@ body {
 .header__thongtin>h2 {
     margin: 0;
     font-size: 3rem;
+    line-height: 4rem;
     color: var(--white-color);
 }
 
