@@ -178,7 +178,7 @@ body {
     width: 48%;
 }
 
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
     .header__thongtin>h2 {
         font-size: 3rem;
         line-height: 4rem;
