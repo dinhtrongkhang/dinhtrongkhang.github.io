@@ -154,17 +154,17 @@
                 <form id="thongtin" class="form__thongtin">
                     <div class="form-control-1">
                         <label for="username">Họ và tên</label>
-                        <input type="text" placeholder="vietnamtrekking" id="username-1" />
+                        <input type="text" placeholder="vietnamtrekking" id="username-1" onkeyup="handleChangeProfile()" />
                         <small>Error message</small>
                     </div>
                     <div class="form-control-1">
                         <label for="username">Email</label>
-                        <input type="email" placeholder="sales@vietnamtrekking.vn" id="email-1" />
+                        <input type="email" placeholder="sales@vietnamtrekking.vn" id="email-1" onkeyup="handleChangeProfile()" />
                         <small>Error message</small>
                     </div>
                     <div class="form-control-1">
                         <label for="username">Số điện thoại</label>
-                        <input type="text" placeholder="Số điện thoại" id="tel" />
+                        <input type="text" placeholder="Số điện thoại" id="tel" onkeyup="handleChangeProfile()" />
                         <small>Error message</small>
                     </div>
                     <a href="thong-tin-dat-tour.html"> <button>Xác nhận</button></a>
@@ -233,7 +233,19 @@
     <script src="libs/slick/slick.min.js"></script>
     <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
-
+    <script>
+        function handleChangeProfile() {
+            let usernameText = $("input#username-1").val();
+            let emailText = $("input#email-1").val();
+            let telText = $("input#tel").val();
+            // Display submit button when user enter all the values
+            if (usernameText && emailText && telText) {
+                $("#profile_submit_btn").show();
+            } else {
+                $("#profile_submit_btn").hide();
+            }
+        }
+    </script>
 </body>
 
 </html>
