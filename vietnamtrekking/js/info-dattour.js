@@ -36,6 +36,9 @@ function checkInputs() {
     } else {
         setSuccessFor(password);
     }
+    if (usernameValue && isEmail(emailValue) && passwordValue) {
+        window.location.href = "./thong-tin-dat-tour.html";
+    }
 
 }
 
