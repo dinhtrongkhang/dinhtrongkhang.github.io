@@ -26,7 +26,7 @@ function checkInputs() {
     if (emailValue === '') {
         setErrorFor(email, 'Email không đúng');
     } else if (!isEmail(emailValue)) {
-        setErrorFor(email, 'Not a valid email');
+        setErrorFor(email, 'Email không đúng');
     } else {
         setSuccessFor(email);
     }
