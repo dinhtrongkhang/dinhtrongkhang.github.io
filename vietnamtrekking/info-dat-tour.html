@@ -154,7 +154,8 @@
                 <form id="thongtin" class="form__thongtin">
                     <div class="form-control-1">
                         <label for="username">Họ và tên</label>
-                        <input type="text" placeholder="vietnamtrekking" id="username-1" onkeyup="handleChangeProfile()" />
+                        <input type="text" placeholder="vietnamtrekking" id="username-1" onkeyup="handleChangeProfile()" maxlength="85" pattern="^(?:((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-.\s])){1,}(['’,\-\.]){0,1}){2,}(([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-. ]))*(([ ]+){0,1}(((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){1,})(['’\-,\.]){0,1}){2,}((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){2,})?)*)$"
+                            title="Please enter your FULL name." required/>
                         <small>Error message</small>
                     </div>
                     <div class="form-control-1">
@@ -299,3 +300,14 @@
 </body>
 
 </html>
+
+
+<form action="#" method="post" onsubmit="checkName('full_name');return false;">
+
+    <label for="full_name">Your Name: </label>
+    <input type="text" name="full_name" id="full_name" maxlength="85" pattern="^(?:((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-.\s])){1,}(['’,\-\.]){0,1}){2,}(([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-. ]))*(([ ]+){0,1}(((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){1,})(['’\-,\.]){0,1}){2,}((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){2,})?)*)$"
+        title="Please enter your FULL name." style='width:200px;height:auto;' required>
+    <br><br>
+    <button type="submit">Submit</button> &nbsp;&nbsp;
+    <button type="reset">Reset</button>
+</form>
