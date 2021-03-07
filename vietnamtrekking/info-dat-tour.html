@@ -243,6 +243,25 @@
             $("#profile_submit_btn button").attr("disabled", !(usernameText && emailText && telText));
         }
     </script>
+
+    <script>
+        Validator({
+            form: '#form__dangky',
+            errorSelector: '.form-message',
+            rules: [
+                // Validator.isRequired('#fullname', 'Vui lòng nhập họ tên đầy đủ'),
+                Validator.isEmail('#email', 'Vui lòng nhập trường này'),
+                Validator.minLength('#password', 8),
+                Validator.isRequired('#password_confirmation'),
+                Validator.isCofirmed('#password_confirmation', function() {
+                    return document.querySelector('#form__dangky #password').value;
+                }, 'Mật khẩu nhập lại không chính xác'),
+            ],
+            onSubmit: function(data) {
+                console.log(data);
+            }
+        });
+    </script>
 </body>
 
 </html>
