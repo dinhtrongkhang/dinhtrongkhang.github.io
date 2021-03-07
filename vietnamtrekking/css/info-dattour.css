@@ -168,3 +168,12 @@ body {
 .form__thongtin button {
     width: 100% !important;
 }
+
+.card-grp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-item {
+    width: 48%;
+}
