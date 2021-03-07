@@ -1,0 +1,170 @@
+/* fonts  */
+
+@font-face {
+    font-family: "Roboto-regular";
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(../font/Roboto/Roboto-Bold.ttf);
+}
+
+
+/* colors  */
+
+:root {
+    --primary: #166987;
+    --secondary: #DBA510;
+    --white-color: #FAFAFA;
+    --text-color: #333;
+    --sub-title: #6C6C6C;
+    --background: #f8f8f8;
+    --footer: #2D333F;
+    --danger: #FE4545;
+    --dark-color: #101010;
+    --table-background: #d4d4d4;
+}
+
+
+/* Reset  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto-regular", sans-serif;
+    background-image: url(../img/banner.jpg);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+.thongtin {
+    margin-top: 7rem;
+}
+
+.modal__thongtin {
+    background-color: var(--white-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 40rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header__thongtin {
+    border-bottom: 2px solid var(--secondary);
+    background-color: var(--primary);
+    padding: 2rem;
+}
+
+.header__thongtin>h2 {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    color: var(--white-color);
+}
+
+.form__thongtin {
+    padding: 2rem;
+}
+
+.form__thongtin label {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.form-control>input {
+    border: 1px solid var(--secondary);
+    border-radius: .4rem;
+    display: block;
+    font-family: inherit;
+    font-size: 1.6rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.form-control>input:focus {
+    outline: 0;
+    border-color: var(--primary);
+}
+
+.form-control.success>input {
+    border-color: #2ecc71;
+}
+
+.form-control.error>input {
+    border-color: #e74c3c;
+}
+
+.form-control>i {
+    visibility: hidden;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+}
+
+.form-control small {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form__thongtin button {
+    width: 100% !important;
+}
