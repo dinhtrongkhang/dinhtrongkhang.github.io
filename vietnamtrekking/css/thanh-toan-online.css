@@ -393,13 +393,13 @@ button {
     }
     .form fieldset input,
     .form fieldset .select {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .credit-card-box .number {
         font-size: 3.8rem;
     }
     .credit-card-box .ccv {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .credit-card-box .ccv label {
         margin: -3.2rem 0 1.4rem;
