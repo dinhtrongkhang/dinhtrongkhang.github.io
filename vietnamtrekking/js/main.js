@@ -222,8 +222,8 @@ $('.thanhtoantour').click(function() {
     $(this).children('.content').show();
 })
 
-// thanh toan online
 
+// thanh toan online
 
 $('.input-cart-number').on('keyup change', function() {
     $t = $(this);
@@ -273,3 +273,15 @@ setTimeout(function() {
         $(this).blur().dequeue();
     });
 }, 500);
+
+// tinh tong tien
+
+var table = document.getElementById("employeeList"),
+    sumVal = 0;
+
+for (var i = 1; i < table.rows.length; i++) {
+    sumVal = sumVal + parseInt(table.rows[i].cells[2].innerHTML);
+}
+
+document.getElementById("val").innerHTML = "Sum Value = " + sumVal;
+console.log(sumVal);
