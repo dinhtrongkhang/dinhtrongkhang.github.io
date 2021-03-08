@@ -86,7 +86,7 @@ body {
 input[type=text] {
     width: 100%;
     margin-bottom: 2rem;
-    padding: .5rem;
+    padding: .5rem 1rem;
     border: .1rem solid var(--primary);
     outline: none;
     color: var(--dark-color);
