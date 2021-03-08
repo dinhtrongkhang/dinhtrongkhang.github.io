@@ -7,8 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanh toán online | Vietnamtrekking</title>
     <link rel="shortcut icon" href="img/logo vietnamtrekking.png" type="image/x-icon">
+
+    <!-- -------- libs --------- -->
     <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
     <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+
+    <!-- --------- css ---------- -->
     <link rel="stylesheet" href="css/form-account.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
@@ -260,33 +264,14 @@
         </div>
         <!-- ---------------- footer end ------------------ -->
     </div>
+
     <!-- js -->
     <script src="libs/jquery/jquery-3.5.1.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/validator.js"></script>
 
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-
     <script>
-        // chat messenger
-        window.fbAsyncInit = function() {
-            FB.init({
-                xfbml: true,
-                version: 'v10.0'
-            });
-        };
-
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-
         // validator form dang ky
         Validator({
             form: '#form__dangky',
@@ -333,6 +318,26 @@
                 cvv: "Vui lòng nhập cvv*",
             },
         });
+    </script>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
 
     <!-- Your Chat Plugin code -->
