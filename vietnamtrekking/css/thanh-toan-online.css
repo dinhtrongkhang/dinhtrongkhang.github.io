@@ -73,14 +73,14 @@ body {
 
 .form__thanhtoan h3,
 .form__thanhtoan h4 {
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 2rem;
+    line-height: 3rem;
 }
 
 .form__thanhtoan label,
 .form__thanhtoan p {
-    font-size: 2rem;
-    line-height: 3.6rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
 }
 
 input[type=text] {
@@ -126,4 +126,19 @@ button {
     width: 100%;
 }
 
-@media all and (min-width: 768px) {}
+@media all and (min-width: 768px) {
+    .form__thanhtoan h3,
+    .form__thanhtoan h4 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .form__thanhtoan label,
+    .form__thanhtoan p {
+        font-size: 2rem;
+        line-height: 3.6rem;
+    }
+    input[type=text] {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+}
