@@ -506,16 +506,20 @@
     <div class="fb-customerchat" attribution="setup_tool" page_id="115474952735686" logged_in_greeting="Xin chào, tôi có thể giúp gì cho bạn?" logged_out_greeting="Xin chào, tôi có thể giúp gì cho bạn?">
     </div>
 
-    <script>
+    <!-- <script>
         $(document).ready(function() {
             $('th').each(function() {
-                var tomarkss = 0;
+                var totmarks = 0;
                 $(this).find('.subjects').each(function() {
-
-                })
-            })
-        })
-    </script>
+                    var marks = $(this).text();
+                    if (marks.length !== 0) {
+                        totmarks += parseFloat(marks);
+                    }
+                });
+                $(this).find('#TotMarks').html('=' + totmarks);
+            });
+        });
+    </script> -->
 </body>
 
 </html>
