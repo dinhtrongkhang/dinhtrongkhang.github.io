@@ -133,6 +133,7 @@ function onFormSubmit() {
             insertNewRecord(formData);
         else
             updateRecord(formData);
+        updateTotalPrice();
         resetForm();
     }
 }
@@ -184,6 +185,7 @@ function onDelete(td) {
         row = td.parentElement.parentElement;
         document.getElementById("employeeList").deleteRow(row.rowIndex);
         resetForm();
+        updateTotalPrice();
     }
 }
 
@@ -276,12 +278,21 @@ setTimeout(function() {
 
 // tinh tong tien
 
-var table = document.getElementById("employeeList"),
-    sumVal = 0;
-
-for (var i = 1; i < table.rows.length; i++) {
-    sumVal = sumVal + parseInt(table.rows[i].cells[2].innerHTML);
+function updateTotalPrice() {
+    function formatSum(s) {
+        return s
+            .toString()
+            .split("")
+            .map((c, i, a) =>
+                i < a.length - 1 && !((a.length - i - 1) % 3) ? c + "." : c
+            )
+            .join("");
+    }
+    let sum = 0;
+    $("#employeeList tbody tr td:nth-child(3)").text(function(idx, txt) {
+        sum += Number(txt.replaceAll(/[^0-9]/g, ""));
+        return txt;
+    });
+    let sumTxt = sum ? formatSum(sum) + "đ" : "";
+    $("#employeeList tfoot tr th:nth-child(2)").text(sumTxt);
 }
-
-document.getElementById("val").innerHTML = sumVal;
-console.log(sumVal);
