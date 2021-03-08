@@ -228,13 +228,13 @@
                 </fieldset>
                 <fieldset>
                     <label for="card-holder">Họ tên chủ thẻ</label>
-                    <input type="text" id="card-holder" />
+                    <input type="text" id="card-holder" name="fullname" />
                 </fieldset>
                 <fieldset class="card-expire">
                     <label for="expire-month">Tháng năm hết hạn</label>
                     <div class="expire">
                         <div class="select">
-                            <select id="expire-month">
+                            <select id="expire-month" name="expmonth">  
               <option></option>
               <option>01</option>
               <option>02</option>
@@ -251,7 +251,7 @@
             </select>
                         </div>
                         <div class="select">
-                            <select id="expire-year">
+                            <select id="expire-year" name="expyear">
               <option></option>
               <option>2021</option>
               <option>2022</option>
@@ -269,11 +269,12 @@
                 </fieldset>
                 <fieldset class="fieldset-ccv">
                     <label for="card-ccv">CCV</label>
-                    <input type="text" id="card-ccv" maxlength="3" />
+                    <input type="text" id="card-ccv" name="cvv" maxlength="3" />
                 </fieldset>
                 <a href="xac-nhan-dat-tour.html">
                     <button>Xác nhận</button>
                 </a>
+            </form>
             </form>
         </div>
         <!-- --------------- thanh toan online ------------- -->
@@ -382,7 +383,6 @@
     <!-- Your Chat Plugin code -->
     <div class="fb-customerchat" attribution="setup_tool" page_id="115474952735686" logged_in_greeting="Xin chào, tôi có thể giúp gì cho bạn?" logged_out_greeting="Xin chào, tôi có thể giúp gì cho bạn?">
     </div>
-
 </body>
 
 </html>
