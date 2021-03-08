@@ -283,5 +283,5 @@ for (var i = 1; i < table.rows.length; i++) {
     sumVal = sumVal + parseInt(table.rows[i].cells[2].innerHTML);
 }
 
-document.getElementById("val").innerHTML = "Sum Value = " + sumVal;
+document.getElementById("val").innerHTML = sumVal;
 console.log(sumVal);
