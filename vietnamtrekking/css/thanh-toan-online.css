@@ -104,6 +104,15 @@ label {
     font-size: 24px;
 }
 
+.icon-container i {
+    cursor: pointer;
+}
+
+.icon-container i:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
 hr {
     border: 1px solid var(--secondary);
 }
