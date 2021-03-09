@@ -279,6 +279,14 @@ label.validation-error {
     margin-left: 1rem;
 }
 
+#vehicle1,
+#thanhtoanonline,
+#chuyenkhoan,
+#thanhtoantaivp {
+    width: 2rem;
+    height: 2rem;
+}
+
 .example h4 {
     font-size: 1.8rem;
     line-height: 2.6rem;
