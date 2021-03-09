@@ -80,4 +80,7 @@ body {
     font-size: 3rem;
     line-height: 4rem;
     text-align: center;
+    color: var(--white-color);
 }
+
+.header__banner-cover img {}

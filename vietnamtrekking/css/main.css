@@ -635,7 +635,8 @@ button:hover {
 
 .tour__dulichnuocngoai-box-name {
     margin: 1.5rem 2rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
     font-weight: bold;
 }
 
