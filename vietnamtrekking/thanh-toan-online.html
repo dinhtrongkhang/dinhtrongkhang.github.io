@@ -171,7 +171,7 @@
                 </div>
                 <div class="col c-12 m-6 l-6">
                     <div class="form__thanhtoan" id="validate">
-                        <form action="xac-nhan-dat-tour.html">
+                        <form action="xac-nhan-dat-tour.html" id="myform">
                             <div class="row">
                                 <div class="col c-12 m-12 l-12">
                                     <h3>Thanh toán</h3>
@@ -202,7 +202,7 @@
                             </div>
                             <label>
                         </label>
-                            <button value="Continue to checkout" class="btn">Xác nhận</button>
+                            <button value="Continue to checkout" class="btn" id="submit">Xác nhận</button>
                         </form>
                     </div>
                 </div>
@@ -343,6 +343,36 @@
     <!-- Your Chat Plugin code -->
     <div class="fb-customerchat" attribution="setup_tool" page_id="115474952735686" logged_in_greeting="Xin chào, tôi có thể giúp gì cho bạn?" logged_out_greeting="Xin chào, tôi có thể giúp gì cho bạn?">
     </div>
+
+    <script>
+        $('#submit').click(function() {
+            var month = parseInt($('#expmonth').val());
+            var year = parseInt($('#expyear').val());
+            if (isNaN(month) || isNaN(year)) {
+                alert('Vui lòng kiểm tra lại');
+                return false;
+            } else {
+                if ((month == 4 || month == 6 || month == 9 || month == 11) && date == 31) {
+                    alert('Vui lòng kiểm tra lại');
+                    return false;
+                } else if (month == 2) {
+                    var isleap = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+                    if (date > 29 || (date == 29 && !isleap))
+                        alert('Vui lòng kiểm tra lại');
+                    return false;
+                }
+                if (month > 12 || month < 1) {
+                    alert('Vui lòng kiểm tra lại');
+                    return false;
+                }
+                if (year > 2030 || year < 2021) {
+                    alert('Vui lòng kiểm tra lại');
+                    return false;
+                }
+            }
+            $('#myform').submit();
+        });
+    </script>
 </body>
 
 </html>
