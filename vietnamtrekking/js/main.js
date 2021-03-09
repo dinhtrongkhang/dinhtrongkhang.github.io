@@ -225,7 +225,7 @@ $('.thanhtoantour').click(function() {
 })
 
 // check thong tin
-function changeTourBtn() {
+function change_tour_btn() {
     let checks = 0
     var nameInput = document.getElementById("fullName");
     if (nameInput && nameInput.value) checks++
@@ -239,9 +239,10 @@ function changeTourBtn() {
                     $('#btn').prop('disabled', true)
                 }
 }
-$('#fullName').on('change', changeTourBtn)
-$('#birthday').on('change', changeTourBtn)
-$('#vehicle1').on('change', changeTourBtn)
+$('#fullName').on('change', change_tour_btn)
+$('#birthday').on('change', change_tour_btn)
+$('#vehicle1').on('change', change_tour_btn)
+$('#vehicle1').on('change', change_tour_btn)
 
 
 // tinh tong tien
