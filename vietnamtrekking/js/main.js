@@ -241,7 +241,7 @@ function change_tour_btn() {
 }
 $('#fullname').on('change', change_tour_btn)
 $('#birthday').on('change', change_tour_btn)
-$('#vehicle1').on('change', change_tour_btn)
+$('#thanhtoantaivp').on('change', change_tour_btn)
 $('#vehicle1').on('change', change_tour_btn)
 
 
