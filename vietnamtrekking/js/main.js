@@ -224,7 +224,7 @@ $('.thanhtoantour').click(function() {
     $(this).children('.content').show();
 })
 
-// check thong tin
+// check thong tin dat tour
 function change_tour_btn() {
     let checks = 0
     var nameInput = document.getElementById("fullName");
