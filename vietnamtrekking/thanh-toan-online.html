@@ -349,7 +349,7 @@
             var month = parseInt($('#expmonth').val());
             var year = parseInt($('#expyear').val());
             if (isNaN(month) || isNaN(year)) {
-                alert('Vui lòng kiểm tra lại');
+                alert('Vui lòng nhập thông tin');
                 return false;
             } else {
                 if ((month == 4 || month == 6 || month == 9 || month == 11) && date == 31) {
@@ -362,11 +362,11 @@
                     return false;
                 }
                 if (month > 12 || month < 1) {
-                    alert('Vui lòng kiểm tra lại');
+                    alert('Tháng nhập vào không đúng');
                     return false;
                 }
                 if (year > 2030 || year < 2021) {
-                    alert('Vui lòng kiểm tra lại');
+                    alert('Năm nhập vào không đúng');
                     return false;
                 }
             }
