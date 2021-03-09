@@ -224,6 +224,24 @@ $('.thanhtoantour').click(function() {
     $(this).children('.content').show();
 })
 
+// check thong tin
+function changeTourBtn() {
+    let checks = 0
+    var nameInput = document.getElementById("fullName");
+    if (nameInput && nameInput.value) checks++
+        var birthdayInput = document.getElementById("birthday");
+    if (birthdayInput && birthdayInput.value) checks++
+        if ($('input[name=gender]:checked').length > 0) checks++
+            if ($('#vehicle1').is(":checked")) checks++
+                if (checks === 4) {
+                    $('#btn').prop('disabled', false)
+                } else {
+                    $('#btn').prop('disabled', true)
+                }
+}
+$('#fullName').on('change', changeTourBtn)
+$('#birthday').on('change', changeTourBtn)
+$('#vehicle1').on('change', changeTourBtn)
 
 // thanh toan online
 
