@@ -29,7 +29,7 @@ html {
 body {
     -webkit-font-smoothing: antialiased;
     font-family: "Roboto-regular", sans-serif;
-    background: url("../img/banner.jpg") no-repeat top center;
+    /* background: url("../img/banner.jpg") no-repeat top center; */
     background-size: cover;
 }
 
@@ -117,7 +117,7 @@ td,
 th {
     border: 1px solid var(--primary);
     text-align: left;
-    padding: 8px;
+    padding: 2px;
     font-size: 1.6rem;
     line-height: 2.6rem;
 }
@@ -474,6 +474,9 @@ button:hover {
         line-height: 3.6rem;
     }
     /* thong tin dat tour */
+    .formthongtin {
+        padding: 1.5rem;
+    }
     .thongtindattour h3 {
         font-size: 3rem;
         line-height: 4rem;
@@ -486,6 +489,7 @@ button:hover {
     th {
         font-size: 2rem;
         line-height: 3rem;
+        padding: 1rem;
     }
     /* thong tin thanh toan */
     .thongtinthanhtoan button {
