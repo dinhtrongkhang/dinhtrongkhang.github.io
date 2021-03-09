@@ -397,6 +397,15 @@ button:hover {
     color: var(--white-color);
 }
 
+a#btn[disabled] button {
+    opacity: 0.4;
+}
+
+a#btn[disabled] button:hover {
+    background: var(--secondary);
+    color: var(--white-color);
+}
+
 
 /* ------------ xac nhan dat tour ------------ */
 
