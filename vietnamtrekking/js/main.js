@@ -208,7 +208,7 @@ $('#birthday').on('change', function() {
 
     if (year === 2021) {
         $('#money').val('0đ')
-    } else if (year > 2015 && year <= 2020) {
+    } else if (year >= 2008 && year <= 2020) {
         $('#money').val('5.000.000đ')
     } else {
         $('#money').val('10.000.000đ')
