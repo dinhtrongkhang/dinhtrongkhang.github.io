@@ -88,6 +88,7 @@ a {
 
 body .formthongtin {
     width: 100%;
+    border-radius: .5rem;
 }
 
 .thongtindattour h3 {
