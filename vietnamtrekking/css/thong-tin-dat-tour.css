@@ -86,31 +86,30 @@ a {
     pointer-events: none;
 }
 
-body>table {
+body .formthongtin {
     width: 100%;
 }
 
 .thongtindattour h3 {
     margin-top: 2rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
+}
+
+label {
     font-size: 2rem;
+    line-height: 3rem;
 }
 
 .formthongtin {
     background-color: var(--background);
     margin: 2rem 0rem;
     box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-table {
-    border-collapse: collapse;
+    padding: .5rem;
 }
 
 table.list {
     width: 100%;
-}
-
-.info {
-    margin-top: 1.5rem;
 }
 
 td,
@@ -118,6 +117,8 @@ th {
     border: 1px solid var(--primary);
     text-align: left;
     padding: 8px;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
 }
 
 table.list thead>tr {
@@ -175,8 +176,9 @@ label.validation-error {
 }
 
 .list__title {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 3rem;
 }
 
 .thongtinthanhtoan h3 {
@@ -184,7 +186,7 @@ label.validation-error {
 }
 
 .thanhtoantour label {
-    font-size: 1.5rem;
+    line-height: 3rem;
     margin-left: 1rem;
     cursor: pointer;
 }
@@ -201,11 +203,6 @@ label.validation-error {
 
 .button {
     margin: 2rem;
-}
-
-.thongtinthanhtoan label {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
 }
 
 .padding {
@@ -279,9 +276,7 @@ label.validation-error {
 }
 
 .dieukien label {
-    font-size: 2rem;
-    line-height: 2.6rem;
-    margin-left: .5rem;
+    margin-left: 1rem;
 }
 
 .example h4 {
@@ -339,7 +334,7 @@ label.validation-error {
 }
 
 .form .label {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     display: block;
     color: #555555;
     margin-bottom: .6rem;
@@ -463,6 +458,25 @@ button:hover {
 }
 
 @media all and (min-width: 768px) {
+    /* css chung */
+    label {
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+    }
+    /* thong tin dat tour */
+    .thongtindattour h3 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .list__title {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    td,
+    th {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
     /* thong tin thanh toan */
     .thongtinthanhtoan button {
         margin: 2rem 0rem;
@@ -473,6 +487,13 @@ button:hover {
     .thongtinnguoidattour h2 {
         font-size: 3rem;
         line-height: 3.8rem;
+    }
+    .thanhtoantour label {
+        line-height: 5rem;
+    }
+    .thanhtoantour p {
+        font-size: 2rem;
+        line-height: 3rem;
     }
     /* xac nhan dat tour */
     .xacnhandattour h3 {
