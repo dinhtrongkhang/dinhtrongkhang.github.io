@@ -1162,11 +1162,11 @@ button:hover {
     /* Du lịch nước ngoài */
     .prev-arrow,
     .prev-arrow-nuocngoai {
-        left: -2%;
+        left: -3%;
     }
     .next-arrow,
     .next-arrow-nuocngoai {
-        right: -2%;
+        right: -3%;
     }
     .prev-arrow i,
     .next-arrow i,
@@ -1176,8 +1176,8 @@ button:hover {
     }
     .tour__tourhot,
     .tour__dulichnuocngoai {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: -1rem;
+        margin-right: -1rem;
     }
     /* ------------ footer ----------- */
     .footer__top {
