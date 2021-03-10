@@ -246,7 +246,6 @@ $('#vehicle1').on('change', change_tour_btn)
 
 
 // tinh tong tien
-
 function updateTotalPrice() {
     function formatSum(s) {
         return s
@@ -267,7 +266,6 @@ function updateTotalPrice() {
 }
 
 // thanh toan online 
-
 $('#submit').click(function() {
     var month = parseInt($('#expmonth').val());
     var year = parseInt($('#expyear').val());
