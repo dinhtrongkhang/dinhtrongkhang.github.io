@@ -239,21 +239,6 @@
     <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
 
-    <script>
-        function handleChangeProfile() {
-            let usernameText = $("input#username-1").val();
-            let emailText = $("input#email-1").val();
-            let telText = $("input#tel").val();
-            // hien thi button khi nguoi dung nhap 3 o input
-            $("#profile_submit_btn").attr(
-                "disabled", !(usernameText && emailText && telText)
-            );
-            $("#profile_submit_btn button").attr(
-                "disabled", !(usernameText && emailText && telText)
-            );
-        }
-    </script>
-
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
 
@@ -292,6 +277,21 @@
                 console.log(data);
             }
         });
+
+        // thong tin nguoi dat tour
+
+        function handleChangeProfile() {
+            let usernameText = $("input#username-1").val();
+            let emailText = $("input#email-1").val();
+            let telText = $("input#tel").val();
+            // hien thi button khi nguoi dung nhap 3 o input
+            $("#profile_submit_btn").attr(
+                "disabled", !(usernameText && emailText && telText)
+            );
+            $("#profile_submit_btn button").attr(
+                "disabled", !(usernameText && emailText && telText)
+            );
+        }
     </script>
 
     <!-- Your Chat Plugin code -->

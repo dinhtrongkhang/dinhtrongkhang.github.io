@@ -265,3 +265,33 @@ function updateTotalPrice() {
     let sumTxt = sum ? formatSum(sum) + "đ" : "";
     $("#employeeList tfoot tr th:nth-child(2)").text(sumTxt);
 }
+
+// thanh toan online 
+
+$('#submit').click(function() {
+    var month = parseInt($('#expmonth').val());
+    var year = parseInt($('#expyear').val());
+    if (isNaN(month) || isNaN(year)) {
+        alert('Vui lòng nhập thông tin');
+        return false;
+    } else {
+        if ((month == 4 || month == 6 || month == 9 || month == 11) && date == 31) {
+            alert('Vui lòng kiểm tra lại');
+            return false;
+        } else if (month == 2) {
+            var isleap = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+            if (date > 29 || (date == 29 && !isleap))
+                alert('Vui lòng kiểm tra lại');
+            return false;
+        }
+        if (month > 12 || month < 1) {
+            alert('Tháng nhập vào không đúng');
+            return false;
+        }
+        if (year > 2030 || year < 2021) {
+            alert('Năm nhập vào không đúng');
+            return false;
+        }
+    }
+    $('#form__thanhtoan').submit();
+});

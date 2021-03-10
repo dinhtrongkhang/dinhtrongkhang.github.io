@@ -289,35 +289,6 @@
                 console.log(data);
             }
         });
-
-        // validator form thanh toan
-        $('#validate').validate({
-            roles: {
-                cardname: {
-                    required: true,
-                },
-                cardnumber: {
-                    required: true,
-                },
-                expmonth: {
-                    required: true,
-                },
-                expyear: {
-                    required: true,
-                },
-                cvv: {
-                    required: true,
-                },
-
-            },
-            messages: {
-                cardname: "Vui lòng nhập họ tên trên thẻ*",
-                cardnumber: "Vui lòng nhập số thẻ*",
-                expmonth: "Vui lòng nhập tháng hết hạn*",
-                expyear: "Vui lòng nhập năm hết hạn*",
-                cvv: "Vui lòng nhập cvv*",
-            },
-        });
     </script>
 
     <!-- Load Facebook SDK for JavaScript -->
@@ -343,36 +314,6 @@
     <!-- Your Chat Plugin code -->
     <div class="fb-customerchat" attribution="setup_tool" page_id="115474952735686" logged_in_greeting="Xin chào, tôi có thể giúp gì cho bạn?" logged_out_greeting="Xin chào, tôi có thể giúp gì cho bạn?">
     </div>
-
-    <script>
-        $('#submit').click(function() {
-            var month = parseInt($('#expmonth').val());
-            var year = parseInt($('#expyear').val());
-            if (isNaN(month) || isNaN(year)) {
-                alert('Vui lòng nhập thông tin');
-                return false;
-            } else {
-                if ((month == 4 || month == 6 || month == 9 || month == 11) && date == 31) {
-                    alert('Vui lòng kiểm tra lại');
-                    return false;
-                } else if (month == 2) {
-                    var isleap = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
-                    if (date > 29 || (date == 29 && !isleap))
-                        alert('Vui lòng kiểm tra lại');
-                    return false;
-                }
-                if (month > 12 || month < 1) {
-                    alert('Tháng nhập vào không đúng');
-                    return false;
-                }
-                if (year > 2030 || year < 2021) {
-                    alert('Năm nhập vào không đúng');
-                    return false;
-                }
-            }
-            $('#form__thanhtoan').submit();
-        });
-    </script>
 </body>
 
 </html>
