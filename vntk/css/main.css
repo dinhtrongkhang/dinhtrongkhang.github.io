@@ -481,6 +481,32 @@ button:hover {
     color: var(--white-color);
 }
 
+.card-img {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.card-content h1,
+.card-content p {
+    margin-top: 2rem;
+}
+
+.card-content h1 a {
+    font-size: 3rem;
+    line-height: 4rem;
+    color: var(--white-color);
+}
+
+.card-content p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--white-color);
+}
+
+
+/* 
 .dulichvietnam__tour-item {
     width: 100%;
     height: calc(15rem - 2rem);
@@ -555,7 +581,7 @@ button:hover {
 .dulichvietnam__tour2 h5 a,
 .dulichvietnam__tour22 h5 a {
     top: 80%;
-}
+} */
 
 
 /* form đăng ký nhận ưu đãi */

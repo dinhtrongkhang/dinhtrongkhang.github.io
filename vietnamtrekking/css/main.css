@@ -47,7 +47,7 @@ body {
 
 .container {
     width: 100%;
-    /* padding: 0 15px; */
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -483,81 +483,23 @@ button:hover {
     color: var(--white-color);
 }
 
-.dulichvietnam__tour-item {
+.card-img {
+    display: block;
     width: 100%;
-    height: calc(15rem - 2rem);
-    position: relative;
-    background-image: url(../img/da-nang-4.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 2rem;
-    cursor: pointer;
+    height: 20rem;
+    object-fit: cover;
 }
 
-.dulichvietnam__tour3 {
-    width: 100%;
-    height: 15rem;
-    background-image: url(../img/nha-trang-1.jpg);
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
+.card-content h3 {
+    margin-top: 2rem;
 }
 
-.dulichvietnam__tour2 {
-    width: 100%;
-    height: calc(15rem - 2rem);
-    background-image: url(../img/phu-quoc-1.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 2rem;
-    cursor: pointer;
-}
-
-.dulichvietnam__tour22 {
-    width: 100%;
-    height: calc(15rem - 2rem);
-    background-image: url(../img/quang-binh-1.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 2rem;
-    cursor: pointer;
-}
-
-.dulichvietnam__tour-item .overlay,
-.dulichvietnam__tour3 .overlay,
-.dulichvietnam__tour2 .overlay,
-.dulichvietnam__tour22 .overlay {
-    height: 100%;
-    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 0.4042659300048145) 0%, rgba(0, 0, 0, 0) 100%);
-}
-
-.dulichvietnam__tour-subtour,
-.dulichvietnam__tour2,
-.dulichvietnam__tour22 {
-    position: relative;
-}
-
-.dulichvietnam__tour-item h5 a,
-.dulichvietnam__tour2 h5 a,
-.dulichvietnam__tour22 h5 a,
-.dulichvietnam__tour3 h5 a {
+.card-content h3 a {
+    font-size: 2rem;
+    line-height: 3rem;
     color: var(--white-color);
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    position: absolute;
-    top: 80%;
-    left: 2rem;
-    cursor: pointer;
 }
 
-.dulichvietnam__tour3 h5 a {
-    top: 94%;
-}
-
-.dulichvietnam__tour2 h5 a,
-.dulichvietnam__tour22 h5 a {
-    top: 80%;
-}
 
 
 /* form đăng ký nhận ưu đãi */
@@ -1010,16 +952,12 @@ button:hover {
         font-size: 2rem;
     }
     /* du lịch Việt Nam */
-    .dulichvietnam__tour h5 a {
-        top: 75%;
+    .card-content h3 a {
         font-size: 2.4rem;
-        line-height: 2.6rem;
+        line-height: 3.4rem;
+        color: var(--white-color);
     }
-    .dulichvietnam__tour3 h5 a {
-        top: 90%;
-        font-size: 2.4rem;
-        line-height: 2.6rem;
-    }
+    
     /* form ưu đãi */
     /* Du lịch nước ngoài */
     .tour__dulichnuocngoai-box-name {
@@ -1142,23 +1080,7 @@ button:hover {
         line-height: 4rem;
     }
     /* dulichvietnam */
-    .dulichvietnam__tour h5 a {
-        top: 90%;
-    }
-    .dulichvietnam__tour2 h5 a,
-    .dulichvietnam__tour22 h5 a {
-        top: 75%;
-    }
-    .dulichvietnam__tour3 h5 a {
-        top: 90%;
-    }
-    .dulichvietnam__tour-item {
-        height: 30rem;
-    }
-    .dulichvietnam__tour22 {
-        width: 100%;
-        margin-left: 0;
-    }
+    
     /* Du lịch nước ngoài */
     .prev-arrow,
     .prev-arrow-nuocngoai {
