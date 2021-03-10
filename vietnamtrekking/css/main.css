@@ -992,7 +992,7 @@ button:hover {
     }
     .prev-arrow,
     .prev-arrow-nuocngoai {
-        left: 3%;
+        left: -3%;
     }
     .prev-arrow i,
     .prev-arrow-nuocngoai i {
@@ -1000,7 +1000,7 @@ button:hover {
     }
     .next-arrow,
     .next-arrow-nuocngoai {
-        right: 3%;
+        right: -3%;
     }
     .next-arrow i,
     .next-arrow-nuocngoai i {
