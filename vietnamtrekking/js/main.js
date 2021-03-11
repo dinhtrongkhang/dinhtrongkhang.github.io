@@ -140,7 +140,7 @@ function onFormSubmit() {
 
 function readFormData() {
     var formData = {};
-    formData["fullName"] = document.getElementById("fullName").value;
+    formData["fullname"] = document.getElementById("fullname").value;
     formData["birthday"] = document.getElementById("birthday").value;
     formData["money"] = document.getElementById("money").value;
     return formData;
@@ -150,7 +150,7 @@ function insertNewRecord(data) {
     var table = document.getElementById("employeeList").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
     cell1 = newRow.insertCell(0);
-    cell1.innerHTML = data.fullName;
+    cell1.innerHTML = data.fullname;
     cell2 = newRow.insertCell(1);
     cell2.innerHTML = data.birthday;
     cell3 = newRow.insertCell(2);
@@ -161,7 +161,7 @@ function insertNewRecord(data) {
 }
 
 function resetForm() {
-    document.getElementById("fullName").value = "";
+    document.getElementById("fullname").value = "";
     document.getElementById("birthday").value = "";
     document.getElementById("money").value = "";
     selectedRow = null;
@@ -169,13 +169,13 @@ function resetForm() {
 
 function onEdit(td) {
     selectedRow = td.parentElement.parentElement;
-    document.getElementById("fullName").value = selectedRow.cells[0].innerHTML;
+    document.getElementById("fullname").value = selectedRow.cells[0].innerHTML;
     document.getElementById("birthday").value = selectedRow.cells[1].innerHTML;
     document.getElementById("money").value = selectedRow.cells[2].innerHTML;
 }
 
 function updateRecord(formData) {
-    selectedRow.cells[0].innerHTML = formData.fullName;
+    selectedRow.cells[0].innerHTML = formData.fullname;
     selectedRow.cells[1].innerHTML = formData.birthday;
     selectedRow.cells[2].innerHTML = formData.money;
 }
@@ -191,7 +191,7 @@ function onDelete(td) {
 
 function validate() {
     isValid = true;
-    if (document.getElementById("fullName").value == "") {
+    if (document.getElementById("fullname").value == "") {
         isValid = false;
         document.getElementById("fullNameValidationError").classList.remove("hide");
     } else {
@@ -238,11 +238,13 @@ function change_tour_btn() {
                 } else {
                     $('#btn').prop('disabled', true)
                 }
+
 }
 $('#fullname').on('change', change_tour_btn)
 $('#birthday').on('change', change_tour_btn)
 $('#thanhtoantaivp').on('change', change_tour_btn)
 $('#vehicle1').on('change', change_tour_btn)
+
 
 
 // tinh tong tien

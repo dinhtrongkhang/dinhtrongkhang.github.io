@@ -160,7 +160,7 @@
                                 <form class="formhanhkhach" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                                     <div>
                                         <label>Họ và Tên*</label><label class="validation-error hide" id="fullNameValidationError">Vui lòng nhập đầy đủ họ tên</label>
-                                        <input type="text" name="fullName" id="fullName">
+                                        <input type="text" name="fullname" id="fullname">
                                     </div>
                                     <div>
                                         <label>Ngày sinh</label>
@@ -514,6 +514,22 @@
     <!-- Your Chat Plugin code -->
     <div class="fb-customerchat" attribution="setup_tool" page_id="115474952735686" logged_in_greeting="Xin chào, tôi có thể giúp gì cho bạn?" logged_out_greeting="Xin chào, tôi có thể giúp gì cho bạn?">
     </div>
+
+
+    <script>
+         function handleChangeProfile() {
+            let usernameText = $("input#username-1").val();
+            let emailText = $("input#email-1").val();
+            let telText = $("input#tel").val();
+            // hien thi button khi nguoi dung nhap 3 o input
+            $("#profile_submit_btn").attr(
+                "disabled", !(usernameText && emailText && telText)
+            );
+            $("#profile_submit_btn button").attr(
+                "disabled", !(usernameText && emailText && telText)
+            );
+        }
+    </script>
 </body>
 
 </html>
