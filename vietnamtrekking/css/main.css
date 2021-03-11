@@ -1027,6 +1027,7 @@ button:hover {
         margin-top: 1.7rem;
     }
     /* ----------- footer ----------- */
+   
     .footer__bottom-copyright {
         font-size: 1.6rem;
         line-height: 1.8rem;
@@ -1120,7 +1121,7 @@ button:hover {
         display: flex;
     }
     .footer__top-folowus {
-        margin-left: 28rem;
+        margin-left: 22rem;
     }
     .footer__top-thanhtoan-online .jcb,
     .footer__top-thanhtoan-online .visa,
@@ -1183,5 +1184,8 @@ button:hover {
         line-height: 2.2rem;
         color: var(--text-color);
         font-weight: 600;
+    }
+    .footer__top-folowus {
+        margin-left: 27rem;
     }
 }
