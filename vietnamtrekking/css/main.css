@@ -492,6 +492,7 @@ button:hover {
 
 .card-content h3 {
     margin-top: 1rem;
+    margin-bottom: 5rem;
 }
 
 .card-content h3 a {
@@ -500,7 +501,9 @@ button:hover {
     color: var(--white-color);
 }
 
-
+.dulichvietnam__tour button {
+    margin-top: 0;
+}
 
 /* form đăng ký nhận ưu đãi */
 
