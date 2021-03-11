@@ -482,6 +482,13 @@ button:hover {
 .dulichvietnam__tour h2 a {
     color: var(--white-color);
 }
+.card:hover {
+    border-radius: 0.4rem;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 
 .card-img {
     display: block;
@@ -552,7 +559,12 @@ button:hover {
 
 
 /* Du lịch nước ngoài */
-
+.tour__dulichnuocngoai-box:hover {
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 .tour__tourhot-box.tournuocngoai {
     height: 42rem;
 }
