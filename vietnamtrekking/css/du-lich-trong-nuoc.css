@@ -73,3 +73,7 @@ body {
         max-width: 1152px;
     }
 }
+
+.tour img {
+    cursor: pointer;
+}
