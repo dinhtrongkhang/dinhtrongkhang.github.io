@@ -160,7 +160,7 @@ a {
 button {
     width: 20rem;
     height: 5rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
     background: var(--secondary);
     color: var(--white-color);
     border: none;
@@ -321,7 +321,7 @@ button:hover {
     padding: 0 1rem;
     margin: 1rem 0;
     height: 4rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     background: var(--white-color);
     border: .1rem solid var(--primary);
     outline: none;
@@ -524,7 +524,7 @@ button:hover {
 }
 
 .formuudai__form input:first-child {
-    width: 30rem;
+    width: 22rem;
     height: 5rem;
     border-radius: .5rem;
     padding: 1rem;
@@ -532,10 +532,13 @@ button:hover {
     outline: none;
     margin-top: 3rem;
     margin-left: 1rem;
+    font-size: 1.6rem;
 }
 
 .formuudai__form button {
     margin: 3rem 1rem;
+    width: 8rem;
+    height: 5rem;
 }
 
 
@@ -863,6 +866,16 @@ button:hover {
         font-size: 3rem;
         line-height: 3.6rem;
     }
+    .formuudai__form input:first-child {
+        width: 30rem;
+        height: 5rem;
+        font-size: 2rem;
+    }
+    
+    .formuudai__form button {
+        width: 15rem;
+        height: 5rem;
+    }
     /* footer */
     .footer__contact-info p {
         font-size: 2.4rem;
@@ -909,11 +922,11 @@ button:hover {
         font-size: 3rem;
         line-height: 4rem;
     }
-    .header__search-title-form form input[type="submit"] {
+    /* .header__search-title-form form input[type="submit"] {
         width: 12rem;
         height: 3rem;
-        font-size: 1.6rem;
-    }
+        font-size: 10rem;
+    } */
     /* tourhot */
     .tour__tourhot-box-name,
     .tour__tourhot-box-price {
