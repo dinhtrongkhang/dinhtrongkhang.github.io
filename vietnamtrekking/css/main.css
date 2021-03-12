@@ -1084,7 +1084,6 @@ button:hover {
         padding-right: 8rem;
         line-height: 4rem;
     }
-    /* dulichvietnam */
     
     /* Du lịch nước ngoài */
     .prev-arrow,
@@ -1106,6 +1105,12 @@ button:hover {
         margin-left: -1rem;
         margin-right: -1rem;
     }
+
+      /* blog du lich */
+      .tour__handbook-chitiet-share {
+        margin-top: 0rem;
+    }
+    
     /* ------------ footer ----------- */
     .footer__top {
         display: flex;
