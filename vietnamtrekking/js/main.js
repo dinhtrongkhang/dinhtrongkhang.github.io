@@ -297,3 +297,15 @@ $('#submit').click(function() {
     }
     $('#form__thanhtoan').submit();
 });
+
+
+//password
+
+function mouseoverPass(obj) {
+    var obj = document.getElementById('password__dk');
+    obj.type = "text";
+  }
+  function mouseoutPass(obj) {
+    var obj = document.getElementById('password__dk');
+    obj.type = "password";
+  }

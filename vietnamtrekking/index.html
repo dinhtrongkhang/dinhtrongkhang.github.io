@@ -89,7 +89,9 @@
 
                     <div class="form-group">
                         <label for="password" class="form-label">Mật khẩu</label>
-                        <input id="password__dk" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                        <input id="password__dk" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control" onmousedown="this.type='text'"
+                        onmouseup="this.type='password'"
+                        onmousemove="this.type='password'">
                         <span class="form-message"></span>
                     </div>
 
@@ -137,13 +139,17 @@
 
                     <div class="form-group">
                         <label for="password" class="form-label">Mật khẩu</label>
-                        <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                        <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control" onmousedown="this.type='text'"
+                        onmouseup="this.type='password'"
+                        onmousemove="this.type='password'">
                         <span class="form-message"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
-                        <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+                        <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control" onmousedown="this.type='text'"
+                        onmouseup="this.type='password'"
+                        onmousemove="this.type='password'">
                         <span class="form-message"></span>
                     </div>
 
