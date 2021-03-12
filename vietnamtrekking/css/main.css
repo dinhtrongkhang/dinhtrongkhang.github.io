@@ -1083,7 +1083,10 @@ button:hover {
         padding-right: 8rem;
         line-height: 4rem;
     }
-    
+     /* Blog du lịch */
+     .tour__handbook-chitiet-share {
+        margin-top: 5rem;
+    }
     /* Du lịch nước ngoài */
     .prev-arrow,
     .prev-arrow-nuocngoai {
@@ -1178,7 +1181,7 @@ button:hover {
     .tour__handbook-chitiet-share {
             margin-top: 0rem;
     }
-    
+
     .footer__top-folowus {
         margin-left: 27rem;
     }
