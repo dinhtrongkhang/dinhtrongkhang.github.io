@@ -226,31 +226,6 @@ $('.thanhtoantour').click(function() {
 
 // check thong tin dat tour
 
-
-function change_tour_btn() {
-    let checks = 0
-    var nameInput = document.getElementById("fullname");
-    if (nameInput && nameInput.value) checks++
-        var birthdayInput = document.getElementById("birthday");
-    if (birthdayInput && birthdayInput.value) checks++
-        if ($('input[name=gender]:checked').length > 0) checks++
-            if ($('#vehicle1').is(":checked")) checks++
-                if (checks === 4) {
-                    $("#accept-tour-btn").prop("disabled", false);
-                    $("#accept-tour-btn button").prop("disabled", false);
-                } else {
-                    $("#accept-tour-btn").prop("disabled", true);
-                    $("#accept-tour-btn button").prop("disabled", true);
-                }
-
-}
-$('#fullname').on('change', change_tour_btn)
-$('#birthday').on('change', change_tour_btn)
-$('#thanhtoantaivp').on('change', change_tour_btn)
-$('#vehicle1').on('change', change_tour_btn)
-
-
-
 // tinh tong tien
 function updateTotalPrice() {
     function formatSum(s) {
@@ -270,6 +245,32 @@ function updateTotalPrice() {
     let sumTxt = sum ? formatSum(sum) + "đ" : "";
     $("#employeeList tfoot tr th:nth-child(2)").text(sumTxt);
 }
+
+
+// check dieu kien
+function change_tour_btn() {
+    let checks = 0
+    var nameInput = document.getElementById("fullname");
+    if (nameInput && nameInput.value) checks++
+        var birthdayInput = document.getElementById("birthday");
+    if (birthdayInput && birthdayInput.value) checks++
+        if ($('input[name=gender]:checked').length > 0) checks++
+            if ($('#vehicle1').is(":checked")) checks++
+            if ($('#val').html().length > 0) checks++
+                if (checks === 5) {
+                    $("#accept-tour-btn").prop("disabled", false);
+                    $("#accept-tour-btn button").prop("disabled", false);
+                } else {
+                    $("#accept-tour-btn").prop("disabled", true);
+                    $("#accept-tour-btn button").prop("disabled", true);
+                }
+
+}
+$('#fullname').on('change', change_tour_btn)
+$('#birthday').on('change', change_tour_btn)
+$('#thanhtoantaivp').on('change', change_tour_btn)
+$('#vehicle1').on('change', change_tour_btn)
+
 
 // thanh toan online 
 $('#submit').click(function() {
