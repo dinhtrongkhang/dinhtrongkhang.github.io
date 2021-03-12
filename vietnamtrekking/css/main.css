@@ -1105,11 +1105,6 @@ button:hover {
         margin-right: -1rem;
     }
 
-      /* blog du lich */
-      .tour__handbook-chitiet-share {
-        margin-top: 0rem;
-    }
-
     /* ------------ footer ----------- */
     .footer__top {
         display: flex;
@@ -1179,6 +1174,11 @@ button:hover {
         color: var(--text-color);
         font-weight: 600;
     }
+    /* blog du lich */
+    .tour__handbook-chitiet-share {
+            margin-top: 0rem;
+    }
+    
     .footer__top-folowus {
         margin-left: 27rem;
     }
