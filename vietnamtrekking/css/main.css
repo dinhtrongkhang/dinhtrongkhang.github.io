@@ -177,6 +177,7 @@ button:hover {
     border: 1px solid #DBA510;
     color: var(--secondary);
     background: var(--white-color);
+    transition: all ease 0.3s;
 }
 
 .tour img {
@@ -407,28 +408,9 @@ button:hover {
     font-size: 1.6rem;
 }
 
-/* .book-btn {
-    width: 20rem;
-    height: 3rem;
-    display: block;
-    margin: auto;
-    text-align: center;
-    line-height: 3rem;
-    background-color: var(--secondary);
-    color: var(--white-color);
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, .2);
-    outline: none;
+.book-btn {
+    width: 40rem;
 }
-
-.book-btn:hover {
-    color: var(--secondary);
-    background-color: var(--white-color);
-    border: 1px solid #DBA510;
-    transition: all ease 0.3s;
-} */
 
 .tour__tourhot,
 .tour__dulichnuocngoai {
