@@ -225,18 +225,7 @@ $('.thanhtoantour').click(function() {
 })
 
 // check thong tin dat tour
-function handleChangeProfile() {
-    let usernameText = $("input#username-1").val();
-    let emailText = $("input#email-1").val();
-    let telText = $("input#tel").val();
-    // hien thi button khi nguoi dung nhap 3 o input
-    $("#profile_submit_btn").attr(
-        "disabled", !(usernameText && emailText && telText)
-    );
-    $("#profile_submit_btn button").attr(
-        "disabled", !(usernameText && emailText && telText)
-    );
-}
+
 
 function change_tour_btn() {
     let checks = 0
