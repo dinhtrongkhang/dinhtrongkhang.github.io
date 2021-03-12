@@ -921,11 +921,7 @@ button:hover {
         font-size: 3rem;
         line-height: 4rem;
     }
-    /* .header__search-title-form form input[type="submit"] {
-        width: 12rem;
-        height: 3rem;
-        font-size: 10rem;
-    } */
+
     /* tourhot */
     .tour__tourhot-box-name,
     .tour__tourhot-box-price {
@@ -973,6 +969,9 @@ button:hover {
         top: 40%;
     }
     /* Blog du lịch */
+    .tour__handbook-chitiet-share {
+        margin-top: 5rem;
+    }
     .tour__handbook-chitiet1 h3 a,
     .tour__handbook-chitiet2-post-title h3 a {
         font-size: 2.4rem;
