@@ -160,11 +160,11 @@
                                 <form class="formhanhkhach" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                                     <div>
                                         <label>Họ và Tên*</label><label class="validation-error hide" id="fullNameValidationError">Vui lòng nhập đầy đủ họ tên</label>
-                                        <input type="text" name="fullname" id="fullname">
+                                        <input type="text" name="fullname" id="fullname" minlength="2">
                                     </div>
                                     <div>
                                         <label>Ngày sinh</label>
-                                        <input type="date" name="ngaysinh" id="birthday">
+                                        <input type="date" name="ngaysinh" id="birthday" required>
                                     </div>
                                     <div>
                                         <label>Thành tiền</label>
