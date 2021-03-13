@@ -63,7 +63,7 @@ $('.tour__slide').slick({
     nextArrow: '<span class="next-arrow slide-arrow"><i class="fas fa-angle-right"></i></span>',
     infinite: false,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 2,
     responsive: [{
         breakpoint: 1024,
