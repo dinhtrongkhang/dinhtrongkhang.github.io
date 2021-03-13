@@ -200,7 +200,8 @@ button:hover {
 .tour__tourhot-box-price .price-discount{
     text-decoration-line: line-through;
     font-size: 1.8rem;
-    color: var(--danger);
+    font-weight: normal;
+    color: var(--sub-title);
     margin-left: 2rem;
   }
 
