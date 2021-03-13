@@ -181,7 +181,7 @@ button:hover {
 .tour img {
     cursor: pointer;
 }
-.tour__tourhot {
+.tour__tourhot-box {
     position: relative;
 }
 .tour .tour__tourhot .discount {
@@ -1201,3 +1201,6 @@ button:hover {
         margin-left: 27rem;
     }
 }
+
+
+
