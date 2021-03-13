@@ -146,30 +146,7 @@ input[type=date]:hover {
     border: 1px solid var(--secondary);
 }
 
-#input {
-    width: 12rem;
-    height: 3.5rem;
-    font-size: 1.6rem;
-    background: var(--secondary);
-    color: var(--white-color);
-    border: none;
-    outline: none;
-    border-radius: .5rem;
-    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
-    display: block;
-    margin: auto;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    cursor: pointer;
-}
-
-#input:hover {
-    border: 1px solid #DBA510;
-    color: var(--secondary);
-    background: var(--white-color);
-}
-
-form div.form-action-buttons {
+form div.form-action-button {
     text-align: center;
 }
 
@@ -387,14 +364,14 @@ label.validation-error {
     margin-bottom: 2rem;
 }
 
-a#btn[disabled] button {
+/* a#btn[disabled] button {
     opacity: 0.4;
 }
 
 a#btn[disabled] button:hover {
     background: var(--secondary);
     color: var(--white-color);
-}
+} */
 
 
 /* ------------ xac nhan dat tour ------------ */
@@ -485,9 +462,6 @@ a#btn[disabled] button:hover {
         line-height: 3.6rem;
     }
     /* thong tin dat tour */
-    #input {
-        font-size: 2rem;
-    }
     .formthongtin {
         padding: 1.5rem;
     }

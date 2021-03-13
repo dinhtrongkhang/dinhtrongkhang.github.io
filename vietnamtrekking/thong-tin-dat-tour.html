@@ -160,7 +160,7 @@
                                 <form class="formhanhkhach" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                                     <div>
                                         <label>Họ và Tên*</label><label class="validation-error hide" id="fullNameValidationError">Vui lòng nhập đầy đủ họ tên</label>
-                                        <input type="text" name="fullname" id="fullname" minlength="2">
+                                        <input type="text" name="fullname" id="fullname" required minlength="2">
                                     </div>
                                     <div>
                                         <label>Ngày sinh</label>
@@ -171,7 +171,8 @@
                                         <input class="money" type="text" name="money" id="money" value="">
                                     </div>
                                     <div class="form-action-buttons">
-                                        <input id="input" type="submit" value="Xác nhận">
+                                        <button id="input" type="submit" value="Xác nhận">Xác nhận</button>
+                                        <!-- <input > -->
                                     </div>
 
                                 </form>

@@ -257,7 +257,7 @@ function change_tour_btn() {
         if ($('input[name=gender]:checked').length > 0) checks++
             if ($('#vehicle1').is(":checked")) checks++
             if ($('#val').html().length > 0) checks++
-                if (checks === 5) {
+                if (checks === 3) {
                     $("#accept-tour-btn").prop("disabled", false);
                     $("#accept-tour-btn button").prop("disabled", false);
                 } else {
