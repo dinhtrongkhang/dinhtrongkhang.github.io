@@ -207,8 +207,9 @@ body {
 .form-submit {
     width: 100%;
     background-color: var(--primary);
-    height: 3.5rem;
+    height: 4.5rem;
     margin-top: 2rem;
+    border-radius: .5rem;
 }
 
 .form-submit a,
