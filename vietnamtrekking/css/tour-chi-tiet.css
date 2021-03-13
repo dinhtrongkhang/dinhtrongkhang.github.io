@@ -125,10 +125,9 @@ body {
     margin-left: 1.5rem;
 }
 
-.tour__chitiet-box-info button {
-    margin: 2rem 0rem;
+.book-btn.dattour {
+    margin: 3rem 0;
 }
-
 .support__tour {
     display: flex;
 }

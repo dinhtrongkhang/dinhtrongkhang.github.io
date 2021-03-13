@@ -166,8 +166,8 @@ a {
     margin: 3rem auto;
     cursor: pointer;
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
 }
 .book-btn a {
     text-align: center;
