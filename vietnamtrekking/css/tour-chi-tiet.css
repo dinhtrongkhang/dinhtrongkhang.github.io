@@ -101,10 +101,9 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.tour__chitiet-box-info-stars {
-    color: var(--secondary);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.tour__tourhot-box-stars {
+    margin-bottom: 2rem;
+    margin-left: 0 !important;
 }
 
 .tour__chitiet-box-info2 p,
