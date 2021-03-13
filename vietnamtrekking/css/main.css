@@ -186,7 +186,7 @@ button:hover {
 }
 .tour .tour__tourhot .discount {
     position: absolute;
-    top: 2rem; left: 2rem;
+    top: 1rem; left: 1rem;
     display: block;
     height: 5rem;
     width: 8rem;
@@ -375,6 +375,7 @@ button:hover {
     margin-top: 1.5rem;
     margin-left: 2rem;
     color: var(--secondary);
+    font-size: 2rem;
 }
 
 .tour__tourhot-box-name,
