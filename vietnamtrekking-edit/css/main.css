@@ -530,24 +530,21 @@ a {
 }
 
 .formuudai__form input:first-child {
-    width: 22rem;
+    width: 18rem;
     height: 5rem;
     border-radius: .5rem;
     padding: 1rem;
     border: none;
     outline: none;
     margin-top: 3rem;
-    margin-left: 1rem;
     font-size: 1.6rem;
 }
-.formuudai__form input{
-    margin: 3rem 0rem;
-}
-.formuudai__form .button {
-    /* margin: 3rem 1rem; */
-    margin-left: 2rem;
-    width: 8rem;
+
+.formuudai__form .book-btn.btn-mobile {
+    margin-left: 1rem;
+    width: 8rem !important;
     height: 5rem;
+    font-size: 2rem;
 }
 
 
@@ -880,8 +877,8 @@ a {
         font-size: 2rem;
     }
     
-    .formuudai__form .book-btn {
-        width: 15rem;
+    .formuudai__form .book-btn.btn-mobile {
+        width: 15rem !important;
         height: 5rem;
     }
     /* footer */
@@ -1149,7 +1146,7 @@ a {
         display: flex;
     }
     .footer__contact-info:last-child {
-        margin-left: 20rem;
+        margin-left: 10rem;
     }
     .footer__top-thanhtoan h3,
     .footer__top-folowus h3,
@@ -1192,6 +1189,9 @@ a {
 
     .footer__top-folowus {
         margin-left: 27rem;
+    }
+    .footer__contact-info:last-child {
+        margin-left: 15rem;
     }
 }
 
