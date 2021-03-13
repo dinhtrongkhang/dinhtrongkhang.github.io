@@ -190,7 +190,7 @@ button:hover {
     display: block;
     height: 4rem;
     width: 7rem;
-    background: var(--primary);
+    background: var(--danger);
     color:var(--white-color);
     line-height: 4rem;
     text-align: center;
