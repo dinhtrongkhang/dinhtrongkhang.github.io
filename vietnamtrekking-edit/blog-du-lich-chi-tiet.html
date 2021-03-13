@@ -1,0 +1,379 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog du lịch chi tiết | Vietnam Trekking</title>
+    <link rel="shortcut icon" href="img/logo vietnamtrekking.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form-account.css">
+    <link rel="stylesheet" href="css/blog-du-lich-chi-tiet.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- --------------- header start------------- -->
+        <header class="l-header">
+            <nav class="nav container">
+                <div class="nav__logo"><a href="index.html">Vietnamtrekking</a></div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Trang chủ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="du-lich-trong-nuoc.html" class="nav__link">Du lịch trong nước</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="du-lich-nuoc-ngoai.html" class="nav__link">Du lịch nước ngoài</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="blog-du-lich.html" class="nav__link active">Blog du lịch</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__user">
+                    <i class="fas fa-user" id="popup__account"></i>
+
+                </div>
+                <div class="nav__toggle">
+                    <i class="fas fa-bars" id="nav-toggle"></i>
+                </div>
+            </nav>
+        </header>
+        <!-- ----------- header end -------------- -->
+
+        <!-- --------- account start ---------- -->
+        <!-- dang nhap -->
+        <div id="form__dangnhap" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span class="close" title="Close Modal">&times;</span>
+                </div>
+
+                <div class="container">
+
+                    <h3 class="form__heading">Đăng nhập</h3>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email__dk" name="email" type="text" placeholder="Nhập email" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Mật khẩu</label>
+                        <input id="password__dk" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <button class="form-submit"><a href="index.html">Đăng nhập</a></button>
+
+                    <div class="form-group__social">
+                        <p class="social-text">Hoặc đăng nhập bằng</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="form__switch-btn">
+                        <p>Bạn chưa có tài khoản?</p>
+                        <p class="dangky" id="popup__account-register">Đăng ký</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- dang ky -->
+        <div id="form__dangky" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post" id="form-1">
+                <div class="imgcontainer">
+                    <span class="close-register" title="Close Modal">&times;</span>
+                </div>
+
+                <div class="container">
+
+                    <h3 class="form__heading">Đăng ký</h3>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email" name="email" type="text" placeholder="Nhập email" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Mật khẩu</label>
+                        <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                        <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="form-group__policy-text">
+                            Bằng việc đăng ký bạn đã đồng ý với Vietnam Trekking về
+                            <a href="" class="form-group__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="form-group__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <button class="form-submit">Đăng ký</button>
+
+                    <!-- <div class="form-group__social">
+                        <p class="social-text">Hoặc đăng ký bằng</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </div> -->
+
+                    <div class="form__switch-btn">
+                        <p>Bạn đã có tài khoản?</p>
+                        <p class="dangnhap" id="popup__account-login">Đăng nhập</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- ---------- account end ------------ -->
+
+        <!------- header banner start --------->
+        <section class="header__banner">
+            <div class="header__banner-cover">
+                <img src="img/banner.jpg" alt="banner">
+                <div class="header__banner-slogan">
+                    <h1>Vì cuộc đời là những chuyến đi</h1>
+                    <p>Hãy cùng Vietnam Trekking khám phá và lưu giữ lại những kỷ niệm</p>
+                </div>
+            </div>
+        </section>
+        <!-- ------ header banner end ------- -->
+        <!-- --------------- header end ------------- -->
+
+
+        <!-- -------------- main start---------------- -->
+        <div class="main">
+
+            <!-- Blog du lịch start -->
+            <div class="blog">
+                <div class="blog__tour container">
+                    <div class="tour__title">
+                        <a href="index.html"><strong>Trang chủ</strong></a> <span>></span> <a href="blog-du-lich.html">Blog du lịch</a>
+                    </div>
+                    <div class="row">
+                        <div class="col c-12 m-7 l-8">
+                            <div class="blog__tour-handbook">
+                                <div class="tour tour__handbook-chitiet1">
+                                    <h2><a href="blog-du-lich.html">Nha Trang - Thành phố biển xinh đẹp</a></h2>
+                                    <div class="tour__handbook-chitiet1-dayandview">
+                                        <span>Ngày 08 Th1, 2021</span>
+                                        <div class="tour__handbook-chitiet1-view">
+                                            <i class="far fa-eye"></i>
+                                            <span> 999 lượt xem</span>
+                                        </div>
+                                    </div>
+                                    <img src="img/nha-trang-1.jpg" alt="">
+                                    <p>Nằm bên bờ vịnh Cam Ranh (Khánh Hoà), Nha Trang được ví như một “viên ngọc quý của biển Đông” với những bãi biển trải dài hấp dẫn làm say đắm biết bao du khách.</p><br>
+                                    <p>Nha Trang là một trong những bãi biển được nhiều khách du lịch lựa chọn là điểm đến nghỉ ngơi lý tưởng. Sỡ hữu những hòn đảo xinh đẹp với nhiều rặng san hô cũng như với nhiều loài cá phong phú đầy màu sắc cùng với bãi
+                                        biển xanh ngắt trải dài tới cuối chân trời. Không chỉ đắm mình trong nắng gió biển trời, làn nước trong xanh của Nha Trang mà hoạt động vui chơi dưới nước đang thu hút bất kể ai tới đây, nhất là hành trình lặn ngắm
+                                        biển Nha Trang.
+                                    </p>
+                                    <div class="blog">
+                                        <img src="img/nha-trang-2.jpg" alt="">
+                                        <p>Biển Nha Trang, Khánh Hoà</p>
+                                    </div>
+                                    <p>Hoạt động lặn biển Nha Trang đang ngày càng thu hút du khách trong nước và quốc tế, đặc biệt là với những ai thích khám phá, mạo hiểm và tìm hiểu về đại dương. Nhưng để lặn biển Nha Trang không phải là điều dễ dàng
+                                        mà cần có người hướng dẫn cũng như có một chút kinh nghiệm khi lặn.</p><br>
+                                    <div class="blog">
+                                        <img src="img/lan-bien-6.jpg" alt="">
+                                        <p>Dắt túi ngay kinh nghiệm lặn biển Nha Trang</p>
+                                    </div>
+                                    <h3>Chuẩn bị gì cho việc lặn ngắm biển đây?</h3>
+                                    <p>Sở hữu bãi biển tuyệt đẹp với nhiều hòn đảo lớn nhỏ đã là món quà mà thiên nhiên ban tặng cho Nha Trang rồi. Cũng chính vì thế mà dịch vụ lặn ngắm biển ở đây phát triển. Nhưng không phải cứ thế mà lao xuống lặn như
+                                        bạn nghĩ mà hãy dành lấy 5 – 10 phút làm quen với mặt biển, tâm trạng thoải mái, không căng thẳng, tập hít thở đều và chuẩn bị một tâm lý thật vững vàng trước khi sẵn sàng cho việc lặn.</p>
+                                    <div class="blog">
+                                        <img src="img/lan-bien-4.jpg" alt="">
+                                        <p class="margin-bottom">Những vật dụng cần thiết khi lặn biển</p>
+                                    </div>
+                                    <p>Nhưng quan trọng hơn là bạn cũng cần có 5 vật dụng cần thiết khi lặn gồm có: bộ áo lặn vừa với cơ thể, kính lặn chuyên dụng, mặt nạ vừa khuôn mặt, ống thông hơi đảm bảo việc thở khi lặn và không thể quên chân vịt vừa
+                                        với cỡ chân. Chuẩn bị đủ những vật dụng trên chắc chắn là bạn đã yên tâm được một phần nào rồi.</p> <br>
+                                    <h3>Ghi nhớ thời điểm lặn ngắm biển như thế nào?</h3>
+                                    <p>Càng xuống sâu dưới biển, áp suất càng lớn nên để đảm bảo an toàn, du khách không nên lặn biển khi ăn quá no hoặc quá đói vì sẽ rất khó chịu, cảm giác buồn nôn và cơ thể mệt mỏi, khi đó lặn sẽ rất nguy hiểm. Nên nếu
+                                        có kế hoạch đi lặn biển thì bạn nên lựa chọn chế độ ăn vừa phải.</p>
+                                    <div class="blog">
+                                        <img src="img/lan-bien-5.jpg" alt="">
+                                        <p>“..Sau khi ăn khoảng 2 giờ đồng hồ thì nên lặn”</p>
+                                    </div>
+                                    <p>Thời điểm thích hợp để lặn biển Nha Trang là sau khi ăn khoảng 2 giờ đồng hồ thì nên lặn. Nhưng nếu cơ thể quá mệt mỏi hay quá sợ thì không nên lặn.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col c-12 m-5 l-4">
+                            <div class="tour blog__tour-dicovery">
+                                <h2><a href="blog-du-lich.html">Lịch trình du lịch A- Z</a></h2>
+                                <p class="lichtrinh">
+                                    <a href="blog-du-lich-chi-tiet.html">Vịnh Hạ Long – Khám phá du lịch và ẩm thực độc đáo.</a>
+                                </p>
+                                <p class="lichtrinh">
+                                    <a href="blog-du-lich-chi-tiet.html">Du lịch Đà Lạt: Địa điểm vui chơi, kinh nghiệm từ A-Z.</a>
+                                </p>
+                                <p class="lichtrinh">
+                                    <a href="blog-du-lich-chi-tiet.html">Du lịch Nha Trang 2020: Kinh nghiệm toàn tập từ A đến Z.</a>
+                                </p>
+                                <p class="lichtrinh">
+                                    <a href="blog-du-lich-chi-tiet.html">Du lịch Đà Nẵng: Thành phố đáng đến nhất Việt Nam.</a>
+                                </p>
+                                <p class="lichtrinh"><a href="blog-du-lich-chi-tiet.html">Kinh nghiệm du lịch Ninh Thuận tự túc từ A đến Z.</a>
+                                </p>
+                                <p class="lichtrinh"><a href="blog-du-lich-chi-tiet.html">Du lịch Điện Biên từ A tới Z.</a></p>
+                            </div>
+                            <div class="tour blog__tour-dicovery">
+                                <h2><a href="blog-du-lich.html">Vui chơi - giải trí</a></h2>
+                                <p class="lichtrinh"><a href="blog-du-lich-chi-tiet.html">Kinh nghiệm du lịch Sapa cho gia đình vui và an toàn</a></p>
+                                <p class="lichtrinh"> <a href="blog-du-lich-chi-tiet.html">Những điểm lặn ngắm san hô đẹp mùa hè này</a></p>
+                                <p class="lichtrinh"><a href="blog-du-lich-chi-tiet.html">Có nên mua combo du lịch giá rẻ?</a></p>
+                                <p class="lichtrinh"> <a href="blog-du-lich-chi-tiet.html">Kinh nghiệm du lịch Hà Nội – Đà Nẵng 3 ngày 2 đêm siêu chi tiết</a></p>
+                                <p class="lichtrinh"> <a href="blog-du-lich-chi-tiet.html">Bí quyết để có một chuyến du lịch giá rẻ thật sự</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog du lịch end -->
+    </div>
+    <!------------------ main end ------------------>
+
+    <!-- ---------------- footer start ------------------ -->
+    <div class="footer">
+        <div class="footer__content container">
+            <div class="footer__top">
+                <div class="footer__top-thanhtoan">
+                    <h2>Chấp nhận thanh toán</h2>
+                    <div class="footer__top-thanhtoan-online">
+                        <div class="jcb"><img src="libs/icons/jcb.svg" alt="jcb"></div>
+                        <div class="visa"><img src="libs/icons/visa.svg" alt="visa"></div>
+                        <div class="mastercard"><img src="libs/icons/mastercard.svg" alt="mastercard"></div>
+                    </div>
+                </div>
+                <div class="footer__top-folowus">
+                    <h2>Kết nối với Vietnamtrekking</h2>
+                    <div class="footer__top-folowus-social">
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/vietnamtrekking"><img src="libs/icons/facebook.svg" alt="fb"></a>
+                        </div>
+                        <div class="youtube">
+                            <a href="https://www.youtube.com/channel/UC6kb8QEAD8zy-NhVpxxSvmw"><img src="libs/icons/youtube.svg" alt="youtube"></a>
+                        </div>
+                        <div class="twitter">
+                            <a href="https://twitter.com/vietnamtrekkin1"><img src="libs/icons/twitter.svg" alt="twitter"></a>
+                        </div>
+                        <div class="pinterest">
+                            <a href="https://www.pinterest.com/khangdinhtb"><img src="libs/icons/pinterest.svg" alt="pinterest"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <div class="footer__contact-info">
+                    <h2>Văn phòng tại Hà Nội</h2>
+                    <p>Địa chỉ: Số 9 - Trung Văn - Nam Từ Liêm</p>
+                    <p>Tel: 0904339993</p>
+                    <p>Email: sales@vietnamtrekking.vn</p>
+                </div>
+
+                <div class="footer__contact-info">
+                    <h2>Văn phòng tại TP Hồ Chí Minh</h2>
+                    <p>Địa chỉ: Số 9 - Đồng Khởi - Q.1</p>
+                    <p>Tel: 0904339993</p>
+                    <p>Email: sales@vietnamtrekking.vn</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-copyright container">
+                © 2021 Toàn bộ bản quyền thuộc Vietnam Trekking
+            </div>
+        </div>
+    </div>
+    <!-- ---------------- footer end ------------------ -->
+    </div>
+    <!-- js -->
+    <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        // validator form dang ky
+
+        Validator({
+            form: '#form__dangky',
+            errorSelector: '.form-message',
+            rules: [
+                // Validator.isRequired('#fullname', 'Vui lòng nhập họ tên đầy đủ'),
+                Validator.isEmail('#email', 'Vui lòng nhập trường này'),
+                Validator.minLength('#password', 8),
+                Validator.isRequired('#password_confirmation'),
+                Validator.isCofirmed('#password_confirmation', function() {
+                    return document.querySelector('#form__dangky #password').value;
+                }, 'Mật khẩu nhập lại không chính xác'),
+            ],
+            onSubmit: function(data) {
+                console.log(data);
+            }
+        });
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="115474952735686" logged_in_greeting="Xin chào, tôi có thể giúp gì cho bạn?" logged_out_greeting="Xin chào, tôi có thể giúp gì cho bạn?">
+    </div>
+
+</body>
+
+</html>
