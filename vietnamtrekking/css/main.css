@@ -201,6 +201,7 @@ button:hover {
     text-decoration-line: line-through;
     font-size: 1.8rem;
     color: var(--danger);
+    margin-left: 2rem;
   }
 
 /* tour chi tiết */
