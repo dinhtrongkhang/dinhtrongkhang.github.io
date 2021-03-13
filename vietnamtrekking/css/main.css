@@ -156,22 +156,23 @@ a {
     margin-top: .5rem;
 }
 
-button {
+.book-btn {
     width: 20rem;
     height: 5rem;
-    font-size: 2rem;
+    font-size: 3rem;
     background: var(--secondary);
     color: var(--white-color);
-    border: none;
-    outline: none;
     border-radius: .5rem;
-    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
-    display: block;
     margin: 3rem auto;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
-
-button:hover {
+.book-btn a {
+    text-align: center;
+}
+.book-btn:hover {
     border: 1px solid #DBA510;
     color: var(--secondary);
     background: var(--white-color);
@@ -427,10 +428,6 @@ button:hover {
     margin-bottom: 2rem;
 }
 
-.tour__tourhot-box-booking a {
-    font-size: 1.6rem;
-}
-
 
 .tour__tourhot,
 .tour__dulichnuocngoai {
@@ -480,7 +477,6 @@ button:hover {
     width: 100%;
     height: auto;
     margin-top: 5rem;
-    padding: 2rem 0rem;
 }
 
 .dulichvietnam__tour h2 a {
@@ -512,18 +508,12 @@ button:hover {
     color: var(--white-color);
 }
 
-.dulichvietnam__tour button {
+.dulichvietnam__tour .book-btn {
     margin-top: 0;
 }
 
 /* form đăng ký nhận ưu đãi */
 
-
-/* .formuudai {
-    background-image: url(../img/hoa-dao-1.jpg);
-    background-size: cover;
-    background-position: center;
-} */
 
 .formuudai {
     background-color: var(--primary);
@@ -531,7 +521,6 @@ button:hover {
     height: auto;
     display: block;
     margin: auto;
-    margin-top: 5rem;
     align-items: center;
 }
 
@@ -557,9 +546,12 @@ button:hover {
     margin-left: 1rem;
     font-size: 1.6rem;
 }
-
-.formuudai__form button {
-    margin: 3rem 1rem;
+.formuudai__form input{
+    margin: 3rem 0rem;
+}
+.formuudai__form .button {
+    /* margin: 3rem 1rem; */
+    margin-left: 2rem;
     width: 8rem;
     height: 5rem;
 }
@@ -828,8 +820,7 @@ button:hover {
 .footer__top-folowus-social .facebook img:hover,
 .footer__top-folowus-social .youtube img:hover,
 .footer__top-folowus-social .twitter img:hover,
-.footer__top-folowus-social .pinterest img:hover,
-.footer__top-thanhtoan-online img:hover {
+.footer__top-folowus-social .pinterest img:hover {
     transform: scale(1.5);
     transition: 0.5s;
 }
@@ -895,7 +886,7 @@ button:hover {
         font-size: 2rem;
     }
     
-    .formuudai__form button {
+    .formuudai__form .book-btn {
         width: 15rem;
         height: 5rem;
     }
@@ -905,9 +896,9 @@ button:hover {
         line-height: 3.6rem;
     }
     /* button */
-    button {
+    /* .book-btn {
         font-size: 3rem;
-    }
+    } */
     /* ------------ css riêng -------------- */
     /* header top */
     .nav__logo a {
@@ -973,9 +964,7 @@ button:hover {
     .next-arrow-nuocngoai i {
         font-size: 3rem;
     }
-    .tour__tourhot-box-booking a {
-        font-size: 2rem;
-    }
+
     /* du lịch Việt Nam */
     .card-content h3 a {
         font-size: 2.4rem;
