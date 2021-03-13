@@ -160,7 +160,8 @@
                                 <form class="formhanhkhach" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                                     <div>
                                         <label>Họ và Tên*</label><label class="validation-error hide" id="fullNameValidationError">Vui lòng nhập đầy đủ họ tên</label>
-                                        <input type="text" name="fullname" id="fullname" required minlength="2">
+                                        <input type="text" name="fullname" id="fullname" required pattern="^(?:((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-.\s])){1,}(['’,\-\.]){0,1}){2,}(([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-. ]))*(([ ]+){0,1}(((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){1,})(['’\-,\.]){0,1}){2,}((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){2,})?)*)$"
+                                        title="Xin vui lòng nhập đúng họ tên." required minlength="2">
                                     </div>
                                     <div>
                                         <label>Ngày sinh</label>

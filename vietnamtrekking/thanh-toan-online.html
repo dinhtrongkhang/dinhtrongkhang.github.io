@@ -181,10 +181,14 @@
                                         <i class="fab fa-cc-jcb" style="color:orange; margin-left: 2rem;"></i>
                                         <i class="fab fa-cc-mastercard" style="color:red; margin-left: 2rem;"></i>
                                     </div>
+
                                     <label for="cname">Họ và tên trên thẻ</label>
-                                    <input type="text" id="cname" name="cardname" placeholder="Đinh Trọng Khang" required minlength="2">
+                                    <input type="text" id="cname" name="cardname" placeholder="Đinh Trọng Khang" required minlength="2" maxlength="30" pattern="^(?:((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-.\s])){1,}(['’,\-\.]){0,1}){2,}(([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-. ]))*(([ ]+){0,1}(((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){1,})(['’\-,\.]){0,1}){2,}((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){2,})?)*)$"
+                                    title="Xin vui lòng nhập đúng họ tên.">
+
                                     <label for="ccnum">Số thẻ</label>
                                     <input type="text" id="ccnum" name="cardnumber" placeholder="1111222233334444" required maxlength="16">
+                                    
                                     <div class="row">
                                         <div class="col c-6 m-6 l-4">
                                             <label for="expmonth">Tháng hết hạn</label>
