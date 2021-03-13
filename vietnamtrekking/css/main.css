@@ -188,14 +188,21 @@ button:hover {
     position: absolute;
     top: 1rem; left: 1rem;
     display: block;
-    height: 5rem;
-    width: 8rem;
-    background: var(--danger);
+    height: 4rem;
+    width: 7rem;
+    background: var(--primary);
     color:var(--white-color);
-    line-height: 6rem;
+    line-height: 4rem;
     text-align: center;
     font-size: 3rem;
   }
+
+.tour__tourhot-box-price .price-discount{
+    text-decoration-line: line-through;
+    font-size: 1.8rem;
+    color: var(--danger);
+  }
+
 /* tour chi tiết */
 
 .tour__title,
