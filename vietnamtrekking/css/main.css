@@ -181,7 +181,9 @@ button:hover {
 .tour img {
     cursor: pointer;
 }
-
+.tour__tourhot {
+    position: relative;
+}
 .tour .tour__tourhot .discount {
     position: absolute;
     top: 2rem; left: 2rem;
