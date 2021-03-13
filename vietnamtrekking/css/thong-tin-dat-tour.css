@@ -387,16 +387,6 @@ label.validation-error {
     margin-bottom: 2rem;
 }
 
-button {
-    width: 100%;
-    background: var(--primary);
-}
-
-button:hover {
-    background-color: var(--secondary);
-    color: var(--white-color);
-}
-
 a#btn[disabled] button {
     opacity: 0.4;
 }
