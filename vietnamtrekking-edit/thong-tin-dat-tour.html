@@ -46,7 +46,7 @@
             </nav>
         </header>
         <!-- --------- account start ---------- -->
-        
+
         <!-- dang nhap -->
         <div id="form__dangnhap" class="modal">
 
@@ -67,14 +67,12 @@
 
                     <div class="form-group">
                         <label for="password" class="form-label">Mật khẩu</label>
-                        <input id="password__dk" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control" onmousedown="this.type='text'"
-                        onmouseup="this.type='password'"
-                        onmousemove="this.type='password'">
+                        <input id="password__dk" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control" onmousedown="this.type='text'" onmouseup="this.type='password'" onmousemove="this.type='password'">
                         <span class="form-message"></span>
                     </div>
 
                     <a href="index.html" class="form-submit book-btn">Đăng nhập</a></button>
-                
+
                     <div class="form-group__social">
                         <p class="social-text">Hoặc đăng nhập bằng</p>
                         <div class="social-media">
@@ -171,144 +169,152 @@
             <!-- thong tin hanh khach -->
             <h3 class="">Xin quý khách vui lòng nhập thông tin hành khách</h3>
             <div class="info__khach">
-                <div class="row">
-                    <div class="col c-12 m-6 l-6">
-                        <div class="formthongtin">
-                            <td>
-                                <form class="formhanhkhach" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
-                                    <div>
-                                        <label>Họ và Tên*</label><label class="validation-error hide" id="fullNameValidationError">Vui lòng nhập đầy đủ họ tên</label>
-                                        <input type="text" name="fullname" id="fullname" required pattern="^(?:((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-.\s])){1,}(['’,\-\.]){0,1}){2,}(([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-. ]))*(([ ]+){0,1}(((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){1,})(['’\-,\.]){0,1}){2,}((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){2,})?)*)$"
-                                        title="Xin vui lòng nhập đúng họ tên." required minlength="2">
-                                    </div>
-                                    <div>
-                                        <label>Ngày sinh</label>
-                                        <input type="date" name="ngaysinh" id="birthday" required>
-                                    </div>
-                                    <div>
-                                        <label>Thành tiền</label>
-                                        <input class="money" type="text" name="money" id="money" value="">
-                                    </div>
-                                    <div class="form-action-buttons">
-                                        <button id="input" type="submit" value="Xác nhận">Xác nhận</button>
-                                    </div>
+                <div class="form__a">
+                    <div class="row">
+                        <div class="col c-12 m-6 l-6">
+                            <div class="">
+                                <div class="list__title">Vui lòng nhập thông tin hành khách</div>
+                                <td>
+                                    <form class="formhanhkhach" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                                        <div>
+                                            <label>Họ và Tên*</label><label class="validation-error hide" id="fullNameValidationError">Vui lòng nhập đầy đủ họ tên</label>
+                                            <input type="text" name="fullname" id="fullname" required pattern="^(?:((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-.\s])){1,}(['’,\-\.]){0,1}){2,}(([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-. ]))*(([ ]+){0,1}(((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){1,})(['’\-,\.]){0,1}){2,}((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){2,})?)*)$"
+                                                title="Xin vui lòng nhập đúng họ tên." required minlength="2">
+                                        </div>
+                                        <div>
+                                            <label>Ngày sinh</label>
+                                            <input type="date" name="ngaysinh" id="birthday" required>
+                                        </div>
+                                        <div>
+                                            <label>Thành tiền</label>
+                                            <input class="money" type="text" name="money" id="money" value="">
+                                        </div>
+                                        <div class="form-action-buttons">
+                                            <a href="" class="book-btn" id="input" type="submit" value="xác nhận">Xác nhận</a>
+                                            <!-- <button id="input" type="submit" value="Xác nhận">Xác nhận</button> -->
+                                        </div>
 
-                                </form>
-                            </td>
+                                    </form>
+                                </td>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col c-12 m-6 l-6">
-                        <div class="formthongtin">
-                            <td>
-                                <table class="list" id="employeeList">
-                                    <div class="list__title">Danh sách hành khách</div>
-                                    <thead>
-                                        <tr>
-                                            <th>Họ và Tên</th>
-                                            <th>Ngày sinh</th>
-                                            <th>Thành tiền</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
+                        <div class="col c-12 m-6 l-6">
+                            <div class="">
+                                <td>
+                                    <table class="list" id="employeeList">
+                                        <div class="list__title">Danh sách hành khách</div>
+                                        <thead>
+                                            <tr>
+                                                <th>Họ và Tên</th>
+                                                <th>Ngày sinh</th>
+                                                <th>Thành tiền</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
 
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th colspan="2" style="text-align: center;">Tổng tiền</th>
-                                            <th id="val"></th>
-                                            <th></th>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </td>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th colspan="2" style="text-align: center;">Tổng tiền</th>
+                                                <th id="val"></th>
+                                                <th></th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </td>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="thongtinthanhtoan">
-                <h3>Xin quý khách vui lòng chọn hình thức thanh toán</h3>
-                <div class="thanhtoantour">
-                    <input type="radio" id="thanhtoantaivp" name="gender" value="thanhtoantaivp" onclick="myFunction1()">
-                    <label for="thanhtoantaivp">Thanh toán tại văn phòng chúng tôi</label>
-                    <div class="content" id="thanhtoan1">
-                        <ul style="list-style: disc; margin-left: 1.5rem;">
-                            <li>
-                                <p>Quý khách vui lòng thanh toán tại bất kỳ văn phòng Vietnamtrekking trên toàn quốc và các chi nhánh ngoài nước. Chi tiết Xin lưu ý, Quý khách nên liên lạc trước khi đến để biết rõ hơn về giờ làm việc và các hồ sơ cần chuẩn
-                                    bị khi thanh toán.
-                                </p>
-                            </li>
-                        </ul>
+                <div class="form__a">
+                    <h3>Xin quý khách vui lòng chọn hình thức thanh toán</h3>
+                    <div class="thanhtoantour">
+                        <input type="radio" id="thanhtoantaivp" name="gender" value="thanhtoantaivp" onclick="myFunction1()">
+                        <label for="thanhtoantaivp">Thanh toán tại văn phòng chúng tôi</label>
+                        <div class="content" id="thanhtoan1">
+                            <ul style="list-style: disc; margin-left: 1.5rem;">
+                                <li>
+                                    <p>Quý khách vui lòng thanh toán tại bất kỳ văn phòng Vietnamtrekking trên toàn quốc và các chi nhánh ngoài nước. Chi tiết Xin lưu ý, Quý khách nên liên lạc trước khi đến để biết rõ hơn về giờ làm việc và các hồ sơ cần
+                                        chuẩn bị khi thanh toán.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="thanhtoantour">
+                        <input type="radio" id="chuyenkhoan" name="gender" value="chuyenkhoan" onclick="myFunction2()">
+                        <label for="chuyenkhoan">Chuyển khoản qua ngân hàng</label><br>
+                        <div class="content" id="thanhtoan2">
+
+                            <ul style="list-style: disc; margin-left: 1.5rem;">
+                                <li>
+                                    <p>Vietnamtrekking chấp nhận thanh toán chuyển khoản từ ATM / Internet Banking / Quầy giao dịch khách hàng. </p>
+                                </li>
+                                <li>
+                                    <p>Quý khách sau khi thực hiện việc chuyển khoản vui lòng gửi email đến sales@Vietnamtrekking.vn hoặc gọi tổng đài 0904339993 để được xác nhận từ công ty chúng tôi.</p>
+                                </li>
+                                <li>
+                                    <p>Vietnamtrekking xin gửi thông tin chuyển khoản như bên dưới để Quý khách thanh toán trước thời hạn ghi trên Thông tin đặt tour. Sau thời gian trên nếu Quý khách không chuyển khoản thanh toán, booking sẽ tự động huỷ
+                                        ra.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Vietnamtrekking sẽ không giải quyết các trường hợp booking tự động hủy nếu quý khách không thực hiện đúng các hướng dẫn trên.</p>
+                                </li>
+                                <li>
+                                    <p>Thông tin chuyển khoản:</p>
+                                </li>
+                                <p><strong> - Tên Tài Khoản : Công ty CP Du lịch và dịch vụ Vietnamtrekking.</strong></p>
+                                <p><strong> - Tên tài khoản viết tắt : VIETNAMTREKKING</strong></p>
+                                <p><strong> - Số Tài khoản : 111111111</strong></p>
+                                <p><strong> - Ngân hàng: Techcombank chi nhánh Hà Nội</strong></p>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="thanhtoantour">
+                        <input type="radio" id="thanhtoanonline" name="gender" value="thanhtoanonline" onclick="myFunction3()">
+                        <label for="thanhtoanonline">Thanh toán bằng thẻ tín dụng</label>
+                        <div class="content" id="thanhtoan3">
+                            <ul style="list-style: disc; margin-left: 1.5rem;">
+                                <li>
+                                    <p>Quý khách vui lòng chọn loại thẻ:</p>
+                                </li>
+                                <div class="thanhtoan-online">
+                                    <div class="jcb"><img src="libs/icons/jcb.svg" alt="jcb"></div>
+                                    <div class="visa"><img src="libs/icons/visa.svg" alt="visa"></div>
+                                    <div class="mastercard"><img src="libs/icons/mastercard.svg" alt="mastercard"></div>
+                                </div>
+                                <li>
+                                    <p>THANH TOÁN BẰNG THẺ TÍN DỤNG VÀ GHI NỢ QUỐC TẾ</p>
+                                </li>
+                                <li>
+                                    <p>Quý khách sử dụng Thẻ tín dụng hoặc Thẻ ghi nợ quốc tế được phát hành bởi các Ngân hàng, Công ty tài chính và các tổ chức thẻ quốc tế Visa, MasterCard, JCB. Giao dịch thanh toán của quý khách được xử lý an toàn bởi
+                                        CyberSource, công ty con của tổ chức thẻ quốc tế VISA.</p>
+                                </li>
+                                <li>
+                                    <p>CyberSource đạt chuẩn PCI DSS là một tiêu chuẩn an ninh thông tin bắt buộc dành cho các doanh nghiệp lưu trữ, truyền tải và xử lý thẻ thanh toán, được quản lý bởi Hội đồng Tiêu chuẩn An toàn Ngành thanh toán thẻ PCI
+                                        SSC được thành lập bởi các tổ chức thẻ quốc tế. Vietnamtrekking sử dụng giao thức HTTPS (giao thức kết hợp giữa giao thức HTTP và giao thức bảo mật SSL) cho toàn bộ website, ứng dụng di động, cùng với CyberSource
+                                        nhằm đảm bảo thông tin thanh toán của Quý khách được mã hóa trong quá trình truyền tải, xử lý thanh toán thẻ, ngăn cản sự xâm nhập trái phép, giả mạo thông tin.</p>
+                                </li>
+                                <li>
+                                    <p>Vietnamtrekking phối hợp với các tổ chức thẻ triển khai thành công dịch vụ xác thực chủ thẻ giao dịch trực tuyến 3-D Secure bao gồm: Verified by Visa, MasterCard SecureCode, J/Secure nhằm gia tăng bảo mật, hạn chế gian
+                                        lận thanh toán thẻ trực tuyến.</p>
+                                </li>
+                                <li>
+                                    <p>Sau khi thanh toán thành công, Quý khách sẽ nhận được vé điện tử qua email tự động, nhanh chóng và vẫn đảm bảo an toàn tuyệt đối trong quá trình thanh toán.</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-                <div class="thanhtoantour">
-                    <input type="radio" id="chuyenkhoan" name="gender" value="chuyenkhoan" onclick="myFunction2()">
-                    <label for="chuyenkhoan">Chuyển khoản qua ngân hàng</label><br>
-                    <div class="content" id="thanhtoan2">
-
-                        <ul style="list-style: disc; margin-left: 1.5rem;">
-                            <li>
-                                <p>Vietnamtrekking chấp nhận thanh toán chuyển khoản từ ATM / Internet Banking / Quầy giao dịch khách hàng. </p>
-                            </li>
-                            <li>
-                                <p>Quý khách sau khi thực hiện việc chuyển khoản vui lòng gửi email đến sales@Vietnamtrekking.vn hoặc gọi tổng đài 0904339993 để được xác nhận từ công ty chúng tôi.</p>
-                            </li>
-                            <li>
-                                <p>Vietnamtrekking xin gửi thông tin chuyển khoản như bên dưới để Quý khách thanh toán trước thời hạn ghi trên Thông tin đặt tour. Sau thời gian trên nếu Quý khách không chuyển khoản thanh toán, booking sẽ tự động huỷ ra.
-                                </p>
-                            </li>
-                            <li>
-                                <p>Vietnamtrekking sẽ không giải quyết các trường hợp booking tự động hủy nếu quý khách không thực hiện đúng các hướng dẫn trên.</p>
-                            </li>
-                            <li>
-                                <p>Thông tin chuyển khoản:</p>
-                            </li>
-                            <p><strong> - Tên Tài Khoản : Công ty CP Du lịch và dịch vụ Vietnamtrekking.</strong></p>
-                            <p><strong> - Tên tài khoản viết tắt : VIETNAMTREKKING</strong></p>
-                            <p><strong> - Số Tài khoản : 111111111</strong></p>
-                            <p><strong> - Ngân hàng: Techcombank chi nhánh Hà Nội</strong></p>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="thanhtoantour">
-                    <input type="radio" id="thanhtoanonline" name="gender" value="thanhtoanonline" onclick="myFunction3()">
-                    <label for="thanhtoanonline">Thanh toán bằng thẻ tín dụng</label>
-                    <div class="content" id="thanhtoan3">
-                        <ul style="list-style: disc; margin-left: 1.5rem;">
-                            <li>
-                                <p>Quý khách vui lòng chọn loại thẻ:</p>
-                            </li>
-                            <div class="thanhtoan-online">
-                                <div class="jcb"><img src="libs/icons/jcb.svg" alt="jcb"></div>
-                                <div class="visa"><img src="libs/icons/visa.svg" alt="visa"></div>
-                                <div class="mastercard"><img src="libs/icons/mastercard.svg" alt="mastercard"></div>
-                            </div>
-                            <li>
-                                <p>THANH TOÁN BẰNG THẺ TÍN DỤNG VÀ GHI NỢ QUỐC TẾ</p>
-                            </li>
-                            <li>
-                                <p>Quý khách sử dụng Thẻ tín dụng hoặc Thẻ ghi nợ quốc tế được phát hành bởi các Ngân hàng, Công ty tài chính và các tổ chức thẻ quốc tế Visa, MasterCard, JCB. Giao dịch thanh toán của quý khách được xử lý an toàn bởi CyberSource,
-                                    công ty con của tổ chức thẻ quốc tế VISA.</p>
-                            </li>
-                            <li>
-                                <p>CyberSource đạt chuẩn PCI DSS là một tiêu chuẩn an ninh thông tin bắt buộc dành cho các doanh nghiệp lưu trữ, truyền tải và xử lý thẻ thanh toán, được quản lý bởi Hội đồng Tiêu chuẩn An toàn Ngành thanh toán thẻ PCI SSC
-                                    được thành lập bởi các tổ chức thẻ quốc tế. Vietnamtrekking sử dụng giao thức HTTPS (giao thức kết hợp giữa giao thức HTTP và giao thức bảo mật SSL) cho toàn bộ website, ứng dụng di động, cùng với CyberSource nhằm đảm
-                                    bảo thông tin thanh toán của Quý khách được mã hóa trong quá trình truyền tải, xử lý thanh toán thẻ, ngăn cản sự xâm nhập trái phép, giả mạo thông tin.</p>
-                            </li>
-                            <li>
-                                <p>Vietnamtrekking phối hợp với các tổ chức thẻ triển khai thành công dịch vụ xác thực chủ thẻ giao dịch trực tuyến 3-D Secure bao gồm: Verified by Visa, MasterCard SecureCode, J/Secure nhằm gia tăng bảo mật, hạn chế gian
-                                    lận thanh toán thẻ trực tuyến.</p>
-                            </li>
-                            <li>
-                                <p>Sau khi thanh toán thành công, Quý khách sẽ nhận được vé điện tử qua email tự động, nhanh chóng và vẫn đảm bảo an toàn tuyệt đối trong quá trình thanh toán.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="dieukhoanthanhtoan margin-top">
+            </div>
+            <div class="dieukhoanthanhtoan margin-top">
+                <div class="form__a">
                     <h3>Điều khoản bắt buộc khi thanh toán online</h3>
                     <ul class="example margin-top padding">
                         <h4>Điều kiện bán vé các chương trình du lịch trong nước</h4>
@@ -412,19 +418,18 @@
                             không được giải quyết hoặc một trong hai bên không đồng ý với kết quả thương lượng thì có quyền đưa tranh chấp ra giải quyết tại Tòa án thẩm quyền.
                             <br>
                             <strong> * Vé du lịch được xem như Hợp đồng lữ hành và được lập thành 2 bản, mỗi bên giữ một bản, có
-                                giá trị như nhau.</strong>
+                            giá trị như nhau.</strong>
                         </li>
                     </ul>
                 </div>
-
-                <form class="dieukien margin-top">
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> Tôi đồng ý với các điều kiện trên</label>
-                </form>
-                <a disabled class="btn" type="button" id="accept-tour-btn" href="./thanh-toan-online.html">
-                    <button disabled>Đặt tour</button>
-                </a>
             </div>
+            <form class="dieukien margin-top">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1" style="color: #fff;"> Tôi đồng ý với các điều kiện trên</label>
+            </form>
+            <a disabled class="book-btn btn" type="button" id="accept-tour-btn" href="./thanh-toan-online.html">
+                Đặt tour
+            </a>
         </div>
 
         <!------------------- main end -------------------->
