@@ -242,6 +242,20 @@ body {
     font-weight: bold;
 }
 
+.password__login {
+    position: relative;
+}
+
+.eye i {
+    font-size: 1.6rem;
+}
+
+.eye {
+    position: absolute;
+    top: 3.6rem;
+    right: 1rem;
+}
+
 
 /* --------------  bằng social --------------- */
 
