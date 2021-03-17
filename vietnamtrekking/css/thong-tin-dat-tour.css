@@ -192,7 +192,7 @@ label.validation-error {
     background-color: var(--white-color);
 }
 
-.form__dieukien {
+.form__dieukhoan {
     width: 100%;
     height: 20rem;
     border: 1px solid var(--text-color);
