@@ -192,9 +192,9 @@ label.validation-error {
     background-color: var(--white-color);
 }
 
-.example {
+.form__dieukien {
     width: 100%;
-    height: 200px;
+    height: 20rem;
     border: 1px solid var(--text-color);
     overflow-y: scroll;
     /* Add the ability to scroll */
@@ -424,7 +424,9 @@ label.validation-error {
     color: var(--white-color);
 }
 
-.form__a {
+.form__khach,
+.form__thanhtoan,
+.form__dieukien {
     background-color: var(--background);
     padding: 2rem;
     border: 1px solid var(--white-color);

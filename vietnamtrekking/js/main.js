@@ -256,14 +256,14 @@ function change_tour_btn() {
     if (birthdayInput && birthdayInput.value) checks++
         if ($('input[name=gender]:checked').length > 0) checks++
             if ($('#vehicle1').is(":checked")) checks++
-            if ($('#val').html().length > 0) checks++
-                if (checks === 3) {
-                    $("#accept-tour-btn").prop("disabled", false);
-                    $("#accept-tour-btn button").prop("disabled", false);
-                } else {
-                    $("#accept-tour-btn").prop("disabled", true);
-                    $("#accept-tour-btn button").prop("disabled", true);
-                }
+                if ($('#val').html().length > 0) checks++
+                    if (checks === 3) {
+                        $("#accept-tour-btn").prop("disabled", false);
+                        $("#accept-tour-btn button").prop("disabled", false);
+                    } else {
+                        $("#accept-tour-btn").prop("disabled", true);
+                        $("#accept-tour-btn button").prop("disabled", true);
+                    }
 
 }
 $('#fullname').on('change', change_tour_btn)
@@ -302,4 +302,3 @@ $('#submit').click(function() {
     }
     $('#form__thanhtoan').submit();
 });
-
