@@ -207,9 +207,10 @@ body {
 .form-submit.book-btn {
     width: 100% !important;
     background-color: var(--primary);
-    height: 5rem;
+    height: 4rem;
     margin-top: 2rem;
     border-radius: .5rem;
+    font-size: 2.4rem;
 }
 
 .form-submit.book-btnt a {
