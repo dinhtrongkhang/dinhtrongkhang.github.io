@@ -88,6 +88,7 @@ a {
     text-decoration: none;
 }
 
+
 /* ------ header ------ */
 
 .l-header {
@@ -156,22 +157,26 @@ a {
     margin-top: .5rem;
 }
 
-button {
+.book-btn {
     width: 20rem;
     height: 5rem;
-    font-size: 2rem;
+    font-size: 3rem;
     background: var(--secondary);
     color: var(--white-color);
-    border: none;
-    outline: none;
     border-radius: .5rem;
-    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
-    display: block;
     margin: 3rem auto;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
 
-button:hover {
+.book-btn a {
+    text-align: center;
+}
+
+.book-btn:hover {
     border: 1px solid #DBA510;
     color: var(--secondary);
     background: var(--white-color);
@@ -181,28 +186,33 @@ button:hover {
 .tour img {
     cursor: pointer;
 }
+
 .tour__tourhot-box {
     position: relative;
 }
+
 .tour .tour__tourhot .discount {
     position: absolute;
-    top: 1rem; left: 1rem;
+    top: 1rem;
+    left: 1rem;
     display: block;
     height: 4rem;
     width: 7rem;
     background: var(--danger);
-    color:var(--white-color);
+    color: var(--white-color);
     line-height: 4rem;
     text-align: center;
     font-size: 3rem;
-  }
+}
 
-.tour__tourhot-box-price .price-discount{
+.tour__tourhot-box-price .price-discount {
     text-decoration-line: line-through;
     font-size: 1.8rem;
-    color: var(--danger);
+    font-weight: normal;
+    color: var(--sub-title);
     margin-left: 2rem;
-  }
+}
+
 
 /* tour chi tiết */
 
@@ -360,7 +370,7 @@ button:hover {
 
 .tour__tourhot-box {
     width: 30rem;
-    height: 50rem;
+    height: 55rem;
     box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
     overflow: hidden;
@@ -379,24 +389,18 @@ button:hover {
     box-sizing: border-box;
 }
 
+.tour__tourhot-box-info {
+    margin: 3rem;
+}
+
 .tour__tourhot-box-stars {
-    margin-top: 1.5rem;
-    margin-left: 2rem;
     color: var(--secondary);
     font-size: 2rem;
 }
 
 .tour__tourhot-box-name,
-.tour__tourhot-box-time,
-.tour__tourhot-box-day,
 .tour__tourhot-box-price {
-    margin-top: 0.5rem;
-    margin-left: 2rem;
-}
-
-.tour__tourhot-box-name,
-.tour__tourhot-box-price {
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 1.6rem;
     line-height: 2rem;
     font-weight: bold;
@@ -417,19 +421,10 @@ button:hover {
 
 .tour__tourhot-box-time,
 .tour__tourhot-box-day {
+    margin-top: 2rem;
     font-size: 1.6rem;
     line-height: 2rem;
 }
-
-.tour__tourhot-box-booking {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.tour__tourhot-box-booking a {
-    font-size: 1.6rem;
-}
-
 
 .tour__tourhot,
 .tour__dulichnuocngoai {
@@ -479,15 +474,14 @@ button:hover {
     width: 100%;
     height: auto;
     margin-top: 5rem;
-    padding: 2rem 0rem;
 }
 
 .dulichvietnam__tour h2 a {
     color: var(--white-color);
 }
+
 .card:hover {
     border-radius: 0.4rem;
-    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.5s;
@@ -511,18 +505,12 @@ button:hover {
     color: var(--white-color);
 }
 
-.dulichvietnam__tour button {
+.dulichvietnam__tour .book-btn {
     margin-top: 0;
 }
 
+
 /* form đăng ký nhận ưu đãi */
-
-
-/* .formuudai {
-    background-image: url(../img/hoa-dao-1.jpg);
-    background-size: cover;
-    background-position: center;
-} */
 
 .formuudai {
     background-color: var(--primary);
@@ -530,7 +518,6 @@ button:hover {
     height: auto;
     display: block;
     margin: auto;
-    margin-top: 5rem;
     align-items: center;
 }
 
@@ -546,31 +533,33 @@ button:hover {
 }
 
 .formuudai__form input:first-child {
-    width: 22rem;
+    width: 18rem;
     height: 5rem;
     border-radius: .5rem;
     padding: 1rem;
     border: none;
     outline: none;
     margin-top: 3rem;
-    margin-left: 1rem;
     font-size: 1.6rem;
 }
 
-.formuudai__form button {
-    margin: 3rem 1rem;
-    width: 8rem;
+.formuudai__form .book-btn.btn-mobile {
+    margin-left: 1rem;
+    width: 8rem !important;
     height: 5rem;
+    font-size: 2rem;
 }
 
 
 /* Du lịch nước ngoài */
+
 .tour__dulichnuocngoai-box:hover {
     border-radius: 0.4rem;
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.5s;
 }
+
 .tour__tourhot-box.tournuocngoai {
     height: 42rem;
 }
@@ -827,9 +816,8 @@ button:hover {
 .footer__top-folowus-social .facebook img:hover,
 .footer__top-folowus-social .youtube img:hover,
 .footer__top-folowus-social .twitter img:hover,
-.footer__top-folowus-social .pinterest img:hover,
-.footer__top-thanhtoan-online img:hover {
-    transform: scale(1.5);
+.footer__top-folowus-social .pinterest img:hover {
+    transform: scale(1.2);
     transition: 0.5s;
 }
 
@@ -874,8 +862,8 @@ button:hover {
     /* --------- css chung ----------- */
     .tour h2 a,
     .footer__content h2 {
-        font-size: 3.5rem;
-        line-height: 5rem;
+        font-size: 3rem;
+        line-height: 4rem;
     }
     /* form ưu đãi */
     .formuudai h2 {
@@ -893,19 +881,14 @@ button:hover {
         height: 5rem;
         font-size: 2rem;
     }
-    
-    .formuudai__form button {
-        width: 15rem;
+    .formuudai__form .book-btn.btn-mobile {
+        width: 15rem !important;
         height: 5rem;
     }
     /* footer */
     .footer__contact-info p {
         font-size: 2.4rem;
         line-height: 3.6rem;
-    }
-    /* button */
-    button {
-        font-size: 3rem;
     }
     /* ------------ css riêng -------------- */
     /* header top */
@@ -944,7 +927,6 @@ button:hover {
         font-size: 3rem;
         line-height: 4rem;
     }
-
     /* tourhot */
     .tour__tourhot-box-name,
     .tour__tourhot-box-price {
@@ -972,16 +954,12 @@ button:hover {
     .next-arrow-nuocngoai i {
         font-size: 3rem;
     }
-    .tour__tourhot-box-booking a {
-        font-size: 2rem;
-    }
     /* du lịch Việt Nam */
     .card-content h3 a {
         font-size: 2.4rem;
         line-height: 3.4rem;
         color: var(--white-color);
     }
-    
     /* form ưu đãi */
     /* Du lịch nước ngoài */
     .tour__dulichnuocngoai-box-name {
@@ -1040,7 +1018,6 @@ button:hover {
         margin-top: 1.7rem;
     }
     /* ----------- footer ----------- */
-   
     .footer__bottom-copyright {
         font-size: 1.6rem;
         line-height: 1.8rem;
@@ -1094,21 +1071,21 @@ button:hover {
         margin-right: 0rem;
     }
     /* header banner */
-    .header__banner-title-slogan h1 {
-        font-size: 6rem;
+    .header__banner-title-slogan {
         padding-left: 0rem;
         padding-right: 8rem;
+    }
+    .header__banner-title-slogan h1 {
+        font-size: 6rem;
         line-height: 8rem;
     }
     .header__banner-title-slogan p {
         font-size: 3rem;
         margin-top: 2rem;
-        padding-left: 0rem;
-        padding-right: 8rem;
         line-height: 4rem;
     }
-     /* Blog du lịch */
-     .tour__handbook-chitiet-share {
+    /* Blog du lịch */
+    .tour__handbook-chitiet-share {
         margin-top: 5rem;
     }
     /* Du lịch nước ngoài */
@@ -1131,7 +1108,6 @@ button:hover {
         margin-left: -1rem;
         margin-right: -1rem;
     }
-
     /* ------------ footer ----------- */
     .footer__top {
         display: flex;
@@ -1145,12 +1121,12 @@ button:hover {
     .footer__top-folowus-social .twitter,
     .footer__top-folowus-social .pinterest,
     .footer__top-folowus-social .facebook img {
-        width: 6rem;
-        height: 6rem;
+        width: 5rem;
+        height: 5rem;
     }
     .footer__top-thanhtoan-online .mastercard {
-        width: 9rem;
-        height: 9rem;
+        width: 8rem;
+        height: 8rem;
     }
     .footer__top-folowus-social .youtube {
         margin-left: 7rem;
@@ -1165,7 +1141,7 @@ button:hover {
         display: flex;
     }
     .footer__contact-info:last-child {
-        margin-left: 20rem;
+        margin-left: 10rem;
     }
     .footer__top-thanhtoan h3,
     .footer__top-folowus h3,
@@ -1203,13 +1179,12 @@ button:hover {
     }
     /* blog du lich */
     .tour__handbook-chitiet-share {
-            margin-top: 0rem;
+        margin-top: 0rem;
     }
-
     .footer__top-folowus {
         margin-left: 27rem;
     }
+    .footer__contact-info:last-child {
+        margin-left: 15rem;
+    }
 }
-
-
-

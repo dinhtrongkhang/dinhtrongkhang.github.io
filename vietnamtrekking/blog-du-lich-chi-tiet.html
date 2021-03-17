@@ -49,6 +49,7 @@
         <!-- ----------- header end -------------- -->
 
         <!-- --------- account start ---------- -->
+        
         <!-- dang nhap -->
         <div id="form__dangnhap" class="modal">
 
@@ -69,12 +70,14 @@
 
                     <div class="form-group">
                         <label for="password" class="form-label">Mật khẩu</label>
-                        <input id="password__dk" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                        <input id="password__dk" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control" onmousedown="this.type='text'"
+                        onmouseup="this.type='password'"
+                        onmousemove="this.type='password'">
                         <span class="form-message"></span>
                     </div>
 
-                    <button class="form-submit"><a href="index.html">Đăng nhập</a></button>
-
+                    <a href="index.html" class="form-submit book-btn">Đăng nhập</a></button>
+                
                     <div class="form-group__social">
                         <p class="social-text">Hoặc đăng nhập bằng</p>
                         <div class="social-media">
@@ -100,7 +103,7 @@
         <!-- dang ky -->
         <div id="form__dangky" class="modal">
 
-            <form class="modal-content animate" action="/action_page.php" method="post" id="form-1">
+            <form class="modal-content animate" action="index.html" method="post" id="form-1">
                 <div class="imgcontainer">
                     <span class="close-register" title="Close Modal">&times;</span>
                 </div>
@@ -135,7 +138,7 @@
                         </p>
                     </div>
 
-                    <button class="form-submit">Đăng ký</button>
+                    <a class="form-submit book-btn" value="Continue to checkout">Đăng ký</a></button>
 
                     <!-- <div class="form-group__social">
                         <p class="social-text">Hoặc đăng ký bằng</p>

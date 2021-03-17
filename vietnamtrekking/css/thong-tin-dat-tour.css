@@ -29,7 +29,7 @@ html {
 body {
     -webkit-font-smoothing: antialiased;
     font-family: "Roboto-regular", sans-serif;
-    /* background: url("../img/banner.jpg") no-repeat top center; */
+    background: url("../img/banner.jpg") no-repeat top center;
     background-size: cover;
 }
 
@@ -86,11 +86,6 @@ a {
     pointer-events: none;
 }
 
-body .formthongtin {
-    width: 100%;
-    border-radius: .5rem;
-}
-
 .thongtindattour h3 {
     margin-top: 2rem;
     font-size: 2.4rem;
@@ -100,13 +95,6 @@ body .formthongtin {
 label {
     font-size: 2rem;
     line-height: 3rem;
-}
-
-.formthongtin {
-    background-color: var(--background);
-    margin: 2rem 0rem;
-    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
-    padding: .5rem;
 }
 
 table.list {
@@ -200,8 +188,11 @@ label.validation-error {
     padding: 1.5rem;
 }
 
+.dieukhoanthanhtoan {
+    background-color: var(--white-color);
+}
+
 .example {
-    background-color: #fff;
     width: 100%;
     height: 200px;
     border: 1px solid var(--text-color);
@@ -218,16 +209,16 @@ label.validation-error {
 /* Hide scrollbar for Chrome, Safari and Opera */
 
 .example::-webkit-scrollbar {
-    display: none;
+    display: block;
 }
 
 
 /* Hide scrollbar for IE, Edge and Firefox */
 
 .example {
-    -ms-overflow-style: none;
+    -ms-overflow-style: inherit;
     /* IE and Edge */
-    scrollbar-width: none;
+    scrollbar-width: inherit;
     /* Firefox */
 }
 
@@ -364,15 +355,6 @@ label.validation-error {
     margin-bottom: 2rem;
 }
 
-/* a#btn[disabled] button {
-    opacity: 0.4;
-}
-
-a#btn[disabled] button:hover {
-    background: var(--secondary);
-    color: var(--white-color);
-} */
-
 
 /* ------------ xac nhan dat tour ------------ */
 
@@ -442,6 +424,15 @@ a#btn[disabled] button:hover {
     color: var(--white-color);
 }
 
+.form__a {
+    background-color: var(--background);
+    padding: 2rem;
+    border: 1px solid var(--white-color);
+    border-radius: .3rem;
+    box-shadow: 0 0 2rem 0 rgba(168, 180, 194, 0.37);
+    margin-top: 3rem;
+}
+
 @media screen and (max-width: 420px) {
     .card-grp {
         flex-direction: column;
@@ -462,9 +453,6 @@ a#btn[disabled] button:hover {
         line-height: 3.6rem;
     }
     /* thong tin dat tour */
-    .formthongtin {
-        padding: 1.5rem;
-    }
     .thongtindattour h3 {
         font-size: 3rem;
         line-height: 4rem;

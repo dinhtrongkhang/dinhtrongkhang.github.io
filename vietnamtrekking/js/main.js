@@ -63,7 +63,7 @@ $('.tour__slide').slick({
     nextArrow: '<span class="next-arrow slide-arrow"><i class="fas fa-angle-right"></i></span>',
     infinite: false,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 2,
     responsive: [{
         breakpoint: 1024,
@@ -217,8 +217,8 @@ $('#birthday').on('change', function() {
 
 // thong tin dat tour - thanh toan
 $('.thanhtoantour').click(function() {
-    // An toan bo, truyen thoi gian vao se co animation
-    $('.thanhtoantour').children('.content').hide(500)
+    // An toan bo
+    $('.thanhtoantour').children('.content').hide()
 
     // Hien cai dang duoc click
     $(this).children('.content').show();
@@ -256,14 +256,14 @@ function change_tour_btn() {
     if (birthdayInput && birthdayInput.value) checks++
         if ($('input[name=gender]:checked').length > 0) checks++
             if ($('#vehicle1').is(":checked")) checks++
-                if ($('#val').html().length > 0) checks++
-                    if (checks === 3) {
-                        $("#accept-tour-btn").prop("disabled", false);
-                        $("#accept-tour-btn button").prop("disabled", false);
-                    } else {
-                        $("#accept-tour-btn").prop("disabled", true);
-                        $("#accept-tour-btn button").prop("disabled", true);
-                    }
+            if ($('#val').html().length > 0) checks++
+                if (checks === 3) {
+                    $("#accept-tour-btn").prop("disabled", false);
+                    $("#accept-tour-btn button").prop("disabled", false);
+                } else {
+                    $("#accept-tour-btn").prop("disabled", true);
+                    $("#accept-tour-btn button").prop("disabled", true);
+                }
 
 }
 $('#fullname').on('change', change_tour_btn)
@@ -302,3 +302,4 @@ $('#submit').click(function() {
     }
     $('#form__thanhtoan').submit();
 });
+
