@@ -302,3 +302,18 @@ $('#submit').click(function() {
     }
     $('#form__thanhtoan').submit();
 });
+
+
+// eye login
+
+// var state = false;
+
+// function = toggle() {
+//     if (state) {
+//         document.getElementById("password__dk").setAttribute("type", "password");
+//         state = false;
+//     } else {
+//         document.getElementById("password__dk").setAttribute("type", "text");
+//         state = true;
+//     }
+// }

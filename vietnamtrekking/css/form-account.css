@@ -242,12 +242,13 @@ body {
     font-weight: bold;
 }
 
-.password__login {
+.password__login,
+.password__signup {
     position: relative;
 }
 
 .eye i {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .eye {
