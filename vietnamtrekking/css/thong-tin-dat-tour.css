@@ -87,7 +87,7 @@ a {
 }
 
 .thongtindattour h3 {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-size: 2.4rem;
     line-height: 3rem;
 }
@@ -424,9 +424,9 @@ label.validation-error {
     color: var(--white-color);
 }
 
-.form__khach,
-.form__thanhtoan,
-.form__dieukien {
+.info__khach,
+.thongtinthanhtoan,
+.dieukhoanthanhtoan {
     background-color: var(--background);
     padding: 2rem;
     border: 1px solid var(--white-color);
