@@ -158,16 +158,12 @@ a {
 }
 
 
-/* ------- button ------- */
-
-button {
-    margin: 2rem;
-}
+/* btn */
 
 .custom-btn {
     width: 15rem;
     height: 4rem;
-    color: #fff;
+    color: var(--white-color);
     border-radius: 5px;
     font-weight: 500;
     background: transparent;
@@ -269,32 +265,6 @@ button {
 
 .btn span:hover:after {
     width: 100%;
-}
-
-.book-btn {
-    width: 20rem;
-    height: 5rem;
-    font-size: 3rem;
-    background: var(--secondary);
-    color: var(--white-color);
-    border-radius: .5rem;
-    margin: 3rem auto;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-}
-
-.book-btn a {
-    text-align: center;
-}
-
-.book-btn:hover {
-    border: 1px solid #DBA510;
-    color: var(--secondary);
-    background: var(--white-color);
-    transition: all ease 0.3s;
 }
 
 .tour img {
