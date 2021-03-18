@@ -189,6 +189,11 @@ a {
     margin: 0 auto;
 }
 
+.btn-login {
+    background: linear-gradient(0deg, rgba(22, 105, 135, 1) 0%, rgba(56, 125, 150, 2) 100%);
+    width: 100%;
+}
+
 .custom-btn.btn.btn-booking {
     margin-left: 0;
 }
