@@ -306,14 +306,15 @@ $('#submit').click(function() {
 
 // eye login
 
-// var state = false;
+var pwd = document.getElementById('password__dk');
+var password = document.getElementById('password');
+var password_confirmation = document.getElementById('password_confirmation');
+var eye = document.getElementById('eye');
+eye.addEventListener('click', togglePass);
 
-// function = toggle() {
-//     if (state) {
-//         document.getElementById("password__dk").setAttribute("type", "password");
-//         state = false;
-//     } else {
-//         document.getElementById("password__dk").setAttribute("type", "text");
-//         state = true;
-//     }
-// }
+function togglePass() {
+    eye.classList.toggle('active');
+    (password__dk.type == 'password') ? password__dk.type = 'text': password__dk.type = 'password';
+    (password.type == 'password') ? password.type = 'text': password.type = 'password';
+    (password_confirmation.type == 'password') ? password_confirmation.type = 'text': password_confirmation.type = 'password';
+}
