@@ -161,12 +161,12 @@ a {
 /* ------- button ------- */
 
 button {
-    margin: 20px;
+    margin: 2rem;
 }
 
 .custom-btn {
-    width: 130px;
-    height: 40px;
+    width: 15rem;
+    height: 4rem;
     color: #fff;
     border-radius: 5px;
     font-weight: 500;
@@ -175,89 +175,97 @@ button {
     transition: all 0.3s ease;
     outline: none;
     position: relative;
-    display: flex;
-    justify-content: center;
 }
 
-.btn-3 {
-    background: rgb(0, 172, 238);
-    background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
-    width: 130px;
-    height: 40px;
+.btn {
+    background: linear-gradient(0deg, rgba(219, 165, 16, 1) 0%, rgba(222, 150, 10, 1) 100%);
+    width: 15rem;
+    height: 4rem;
     line-height: 42px;
     padding: 0;
     border: none;
+    display: block;
+    margin: 3rem auto;
 }
 
-.btn-3 span {
+.btn.btn-3 {
+    margin: 0 auto;
+}
+
+.custom-btn.btn.btn-booking {
+    margin-left: 0;
+}
+
+.btn span {
     position: relative;
     display: block;
     width: 100%;
     height: 100%;
+    font-size: 2rem;
 }
 
-.btn-3:before,
-.btn-3:after {
+.btn:before,
+.btn:after {
     position: absolute;
     content: "";
     right: 0;
     top: 0;
-    background: rgba(2, 126, 251, 1);
+    background: rgba(219, 165, 16, 1);
     transition: all 0.3s ease;
 }
 
-.btn-3:before {
+.btn:before {
     height: 0%;
     width: 2px;
 }
 
-.btn-3:after {
+.btn:after {
     width: 0%;
     height: 2px;
 }
 
-.btn-3:hover {
+.btn:hover {
     background: transparent;
     box-shadow: none;
 }
 
-.btn-3:hover:before {
+.btn:hover:before {
     height: 100%;
 }
 
-.btn-3:hover:after {
+.btn:hover:after {
     width: 100%;
 }
 
-.btn-3 span:hover {
-    color: rgba(2, 126, 251, 1);
+.btn span:hover {
+    color: rgba(219, 165, 16, 1);
 }
 
-.btn-3 span:before,
-.btn-3 span:after {
+.btn span:before,
+.btn span:after {
     position: absolute;
     content: "";
     left: 0;
     bottom: 0;
-    background: rgba(2, 126, 251, 1);
+    background: rgba(219, 165, 16, 1);
     transition: all 0.3s ease;
 }
 
-.btn-3 span:before {
+.btn span:before {
     width: 2px;
     height: 0%;
 }
 
-.btn-3 span:after {
+.btn span:after {
     width: 0%;
     height: 2px;
 }
 
-.btn-3 span:hover:before {
+.btn span:hover:before {
     height: 100%;
 }
 
-.btn-3 span:hover:after {
+.btn span:hover:after {
     width: 100%;
 }
 
@@ -458,11 +466,10 @@ button {
     height: 4rem;
     font-size: 2rem;
     background: var(--white-color);
-    border: .1rem solid var(--primary);
     outline: none;
     color: var(--dark-color);
-    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
-    border-radius: .5rem;
+    border: none;
+    border-bottom: 1px solid var(--primary);
 }
 
 .form-control:hover {
@@ -638,7 +645,7 @@ button {
 
 .formuudai__form input:first-child {
     width: 18rem;
-    height: 5rem;
+    height: 4rem;
     border-radius: .5rem;
     padding: 1rem;
     border: none;
@@ -647,11 +654,9 @@ button {
     font-size: 1.6rem;
 }
 
-.formuudai__form .book-btn.btn-mobile {
+.formuudai__form .custom-btn.btn.btn-mobile {
     margin-left: 1rem;
-    width: 8rem !important;
-    height: 5rem;
-    font-size: 2rem;
+    width: 10rem !important;
 }
 
 
@@ -982,12 +987,8 @@ button {
     }
     .formuudai__form input:first-child {
         width: 30rem;
-        height: 5rem;
+        height: 4rem;
         font-size: 2rem;
-    }
-    .formuudai__form .book-btn.btn-mobile {
-        width: 15rem !important;
-        height: 5rem;
     }
     /* footer */
     .footer__contact-info p {
