@@ -173,14 +173,14 @@
             <div class="info__khach">
                 <div class="">
                     <div class="row">
-                        <div class="col c-12 m-6 l-6">
+                        <div class="col c-12 m-6 l-4">
                             <div class="formthongtin">
                                 <td>
                                     <form class="formhanhkhach" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                                         <div>
                                             <label>Họ và Tên*</label><label class="validation-error hide" id="fullNameValidationError">Vui lòng nhập đầy đủ họ tên</label>
                                             <input type="text" name="fullname" id="fullname" required pattern="^(?:((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-.\s])){1,}(['’,\-\.]){0,1}){2,}(([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-. ]))*(([ ]+){0,1}(((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){1,})(['’\-,\.]){0,1}){2,}((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){2,})?)*)$"
-                                                title="Xin vui lòng nhập đúng họ tên." required minlength="2">
+                                                title="Xin vui lòng nhập đúng họ tên." required minlength="2" placeholder="Họ và tên">
                                         </div>
                                         <div>
                                             <label>Ngày sinh</label>
@@ -188,7 +188,7 @@
                                         </div>
                                         <div>
                                             <label>Thành tiền</label>
-                                            <input class="money" type="text" name="money" id="money" value="">
+                                            <input class="money" type="text" name="money" id="money" value="" placeholder="Thành tiền">
                                         </div>
                                         <div class="form-action-buttons">
                                             <!-- <button id="input" type="submit" value="Xác nhận" class="book-btn">Xác nhận</button> -->
@@ -199,7 +199,7 @@
                                 </td>
                             </div>
                         </div>
-                        <div class="col c-12 m-6 l-6">
+                        <div class="col c-12 m-6 l-8">
                             <div class="formthongtin">
                                 <td>
                                     <table class="list" id="employeeList">
