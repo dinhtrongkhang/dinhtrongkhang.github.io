@@ -310,8 +310,8 @@ var pwd = document.getElementById('password__dk');
 var password = document.getElementById('password');
 var password_confirmation = document.getElementById('password_confirmation');
 var eye = document.getElementById('eye');
-var eye = document.getElementById('eye2');
-var eye = document.getElementById('eye3');
+var eye2 = document.getElementById('eye2');
+var eye3 = document.getElementById('eye3');
 eye.addEventListener('click', togglePass);
 
 function togglePass() {
