@@ -428,7 +428,7 @@ a {
     color: var(--white-color);
     background: var(--primary);
     cursor: pointer;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     transition: .2s linear;
     display: block;
     margin: auto;
