@@ -259,10 +259,8 @@ function change_tour_btn() {
                 if ($('#val').html().length > 0) checks++
                     if (checks === 3) {
                         $("#accept-tour-btn").prop("disabled", false);
-                        $("#accept-tour-btn button").prop("disabled", false);
                     } else {
                         $("#accept-tour-btn").prop("disabled", true);
-                        $("#accept-tour-btn button").prop("disabled", true);
                     }
 
 }
