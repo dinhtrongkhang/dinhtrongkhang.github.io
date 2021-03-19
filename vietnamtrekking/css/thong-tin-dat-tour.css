@@ -120,13 +120,13 @@ input[type=text],
 input[type=number],
 input[type=date] {
     width: 100%;
-    padding: 1.2rem 2rem;
+    padding: 1.2rem 1rem;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid var(--primary);
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 2rem;
+    font-size: 1.2rem;
     background: transparent;
 }
 
