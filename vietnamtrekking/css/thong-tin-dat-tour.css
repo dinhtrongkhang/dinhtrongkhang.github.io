@@ -116,9 +116,9 @@ table.list thead>tr {
     color: var(--white-color);
 }
 
-input[type=text],
-input[type=number],
-input[type=date] {
+.formhanhkhach input[type=text],
+.formhanhkhach input[type=number],
+.formhanhkhach input[type=date] {
     width: 100%;
     padding: 1.2rem 1rem;
     margin: 8px 0;
@@ -130,9 +130,9 @@ input[type=date] {
     background: transparent;
 }
 
-input[type=text]:hover,
-input[type=number]:hover,
-input[type=date]:hover {
+.formhanhkhach input[type=text]:hover,
+.formhanhkhach input[type=number]:hover,
+.formhanhkhach input[type=date]:hover {
     border: 1px solid var(--secondary);
 }
 

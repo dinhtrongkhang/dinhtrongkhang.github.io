@@ -83,7 +83,7 @@ body {
     line-height: 2.6rem;
 }
 
-input[type=text] {
+.form__thanhtoan input[type=text] {
     width: 100%;
     margin-bottom: 2rem;
     padding: .5rem 1rem;
@@ -96,7 +96,7 @@ input[type=text] {
     line-height: 2.8rem;
 }
 
-input[type=text]:hover {
+.form__thanhtoan input[type=text]:hover {
     border-color: var(--secondary);
 }
 
