@@ -108,6 +108,8 @@ body {
 
 .tour__chitiet-box-info2 {
     background: var(--background);
+    box-shadow: 0 0 2rem 0 rgb(168 180 194 / 37%);
+    padding: 1.5rem;
 }
 
 .tour__chitiet-box-info2 p,
