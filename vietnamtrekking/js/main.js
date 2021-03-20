@@ -247,7 +247,7 @@ function updateTotalPrice() {
 }
 
 
-// check dieu kien
+// check dieu kien dat tour
 function change_tour_btn() {
     let checks = 0
     var nameInput = document.getElementById("fullname");
