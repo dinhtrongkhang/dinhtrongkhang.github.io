@@ -247,15 +247,23 @@ body {
     position: relative;
 }
 
-.eye i {
+.password__login span {
+    position: absolute;
+    right: 1.5rem;
+    top: 70%;
+    transform: translateY(-50%);
     font-size: 1.2rem;
+    color: var(--secondary);
+    cursor: pointer;
+    display: none;
 }
 
-.eye {
-    position: absolute;
-    top: 55%;
-    right: 1rem;
-    cursor: pointer;
+.password__login input:valid~span {
+    display: block;
+}
+
+.password__login span i.hide-btn::before {
+    content: "\f070";
 }
 
 

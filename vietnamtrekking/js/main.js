@@ -300,21 +300,3 @@ $('#submit').click(function() {
     }
     $('#form__thanhtoan').submit();
 });
-
-
-// eye login
-
-var pwd = document.getElementById('password__dk');
-var password = document.getElementById('password');
-var password_confirmation = document.getElementById('password_confirmation');
-var eye = document.getElementById('eye');
-var eye2 = document.getElementById('eye2');
-var eye3 = document.getElementById('eye3');
-eye.addEventListener('click', togglePass);
-
-function togglePass() {
-    eye.classList.toggle('active');
-    (password__dk.type == 'password') ? password__dk.type = 'text': password__dk.type = 'password';
-    (password.type == 'password') ? password.type = 'text': password.type = 'password';
-    (password_confirmation.type == 'password') ? password_confirmation.type = 'text': password_confirmation.type = 'password';
-}
