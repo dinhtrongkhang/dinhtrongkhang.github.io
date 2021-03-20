@@ -507,8 +507,7 @@ a {
     color: var(--text-color);
 }
 
-.tour__tourhot-box-name a:hover,
-.tour__tourhot-box-price a:hover {
+.tour__tourhot-box-name a:hover {
     color: var(--secondary);
 }
 
