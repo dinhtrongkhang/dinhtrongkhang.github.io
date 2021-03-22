@@ -993,11 +993,12 @@ a {
     }
     .header__banner-title-slogan p {
         font-size: 2rem;
+        font-family: var(--font-family-sans-serif);
         color: var(--white-color);
         line-height: 3rem;
         text-shadow: 0 .3rem .5rem #000;
         margin-top: 1rem;
-        font-family: var(--font-family-sans-serif);
+        margin-right: 25rem;
     }
     .header__search-title-form form {
         width: 30rem;
