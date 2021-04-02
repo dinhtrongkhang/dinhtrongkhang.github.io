@@ -15,7 +15,7 @@
 
 :root {
     --primary: #166987;
-    --secondary: #DBA510;
+    --secondary: #ff8917;
     --white-color: #FAFAFA;
     --text-color: #333;
     --sub-title: #6C6C6C;
@@ -180,7 +180,7 @@ a {
 }
 
 .btn {
-    background: linear-gradient(0deg, rgba(219, 165, 16, 1) 0%, rgba(222, 150, 10, 1) 100%);
+    background: linear-gradient(0deg, rgba(255, 137, 23, 1) 0%, rgba(220, 150, 10, 1) 100%);
     width: 15rem;
     height: 4rem;
     line-height: 42px;
@@ -218,7 +218,7 @@ a {
     content: "";
     right: 0;
     top: 0;
-    background: rgba(219, 165, 16, 1);
+    background: rgba(255, 137, 23, 1);
     transition: all 0.3s ease;
 }
 
@@ -246,7 +246,7 @@ a {
 }
 
 .btn span:hover {
-    color: rgba(219, 165, 16, 1);
+    color: rgba(255, 137, 23, 1);
 }
 
 .btn span:before,
@@ -255,7 +255,7 @@ a {
     content: "";
     left: 0;
     bottom: 0;
-    background: rgba(219, 165, 16, 1);
+    background: rgba(255, 137, 23, 1);
     transition: all 0.3s ease;
 }
 
