@@ -32,9 +32,9 @@ button {
 a {
   text-decoration: none;
 }
-.header-logo img, .footer-logo img {
+/* .header-logo img, .footer-logo img {
   max-width: 35%;
-}
+} */
 img {
   display: block;
   max-width: 100%;
