@@ -10,6 +10,11 @@
     src: url(../font/Roboto/Roboto-Bold.ttf);
 }
 
+@font-face {
+    font-family: "Roboto-Italic";
+    src: url(../font/Roboto/Roboto-Italic.ttf);
+}
+
 
 /* colors  */
 
