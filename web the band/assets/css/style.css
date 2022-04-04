@@ -143,10 +143,10 @@ html {
     display: block;
 }
 
-#nav>li:hover>a, #nav .subnav li:hover {
+/* #nav>li:hover>a, #nav .subnav li:hover {
     color: #000;
     background-color: #ccc;
-}
+} */
 
 #nav .subnav {
     min-width: 160px;
