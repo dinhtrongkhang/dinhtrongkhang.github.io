@@ -517,11 +517,11 @@ header.modal-header {
 
 /* Responsive */
 
-/* PC */
-@media (min-width: 1024px) {}
+/* PC 1024px*/
+@media (min-width: 64em) {}
 
-/* Tablet & Mobile */
-@media (max-width: 1023px) {
+/* Tablet & Mobile 1023pz*/
+@media (max-width: 63.9375em) {
     .btn {
         padding: 1.5rem 1.6rem;
     }
@@ -547,11 +547,11 @@ header.modal-header {
     }
 }
 
-/* Tablet */
-@media (min-width: 740px) and (max-width: 1023px) {}
+/* Tablet 740px - 1023px*/
+@media (min-width: 46.25em) and (max-width: 63.9375em) {}
 
-/* Mobile */
-@media (max-width: 739px) {
+/* Mobile 739px*/
+@media (max-width: 46.1875em) {
 
     .s-col-full, .s-full-width {
         width: 100% !important;
