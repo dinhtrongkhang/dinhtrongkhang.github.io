@@ -551,7 +551,7 @@ header.modal-header {
 @media (min-width: 740px) and (max-width: 1023px) {}
 
 /* Mobile */
-@media (max-width: 740px) {
+@media (min-width: 740px) {
 
     .s-col-full, .s-full-width {
         width: 100% !important;
