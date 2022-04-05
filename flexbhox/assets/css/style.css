@@ -1,0 +1,226 @@
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: rgb(19, 20, 19);
+    --secondary-color: rgb(238, 76, 76);
+    --white-color: #fff;
+    --background-primary: orangered;
+    --background-color: #ccc;
+    --primary-font: 3rem;
+}
+
+
+.nav {
+    min-height: 4.2rem;
+    background-color: var(--background-primary);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .nav-list {
+    padding-left: 0;
+    margin: auto 1.6rem;
+}
+
+.nav-list .nav-item {
+    color: var(--white-color);
+    list-style: none;
+    margin: 0 .8rem;
+    display: inline-block;
+}
+
+.form-container {
+    max-width: 72rem;
+    padding: 3.2rem;
+    margin: 3.6rem auto 0 auto;
+    background-color: var(--background-color);
+}
+
+.form-row {
+    padding: .8rem 0;
+    display: flex;
+}
+
+.form-label {
+    min-width: 9rem;
+}
+
+.form-input {
+    flex: 1;
+    /* cho thẻ input chiếm hết khoảng trống còn lại */
+}
+
+/* colum layout */
+
+.colum-layout {
+    margin-top: 3.6rem;
+    padding: 1.2rem 0;
+    background-color: var(--background-color);
+    display: flex;
+}
+
+.colum-item {
+    padding: 0 1.6rem;
+}
+
+.sidebar-one {
+    flex: 1;
+}
+
+.sidebar-two {
+    flex: 1;
+}
+
+.main-colum {
+    flex: 3;
+}
+
+/* feature layout */
+
+.feature-layout {
+    background-color: var(--background-color);
+    margin-top: 3.6rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-item {
+    padding: 1.2rem 1.6rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    flex-basis: 30%;
+}
+
+.feature-item:nth-child(1) {
+    background-color: rgb(85, 85, 193);
+}
+
+.feature-item:nth-child(2) {
+    background-color: rgb(104, 233, 24);
+}
+
+.feature-item:nth-child(3) {
+    background-color: rgb(19, 218, 240);
+}
+
+/* wrap layout */
+
+.wrap-layout {
+    margin-top: 3.6rem;
+    background-color: var(--background-color);
+    padding: 1.2rem 0 3.2rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.wrap-item {
+    width: 14.8rem;
+    height: 9rem;
+    color: var(--white-color);
+    text-align: center;
+    line-height: 9rem;
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    background-color: var(--background-primary);
+}
+
+/* center-layout */
+
+.center-layout {
+    background-color: var(--background-color);
+    margin: 3.6rem auto 0 auto;
+    padding: 3.6rem 0;
+    max-width: 64rem;
+    height: 36rem;
+    display: flex;
+}
+
+.center-layout__item {
+    font-size: 4.2rem;
+    font-weight: 700;
+    margin: auto;
+}
+
+/* chart-layout */
+
+.chart-layout {
+    margin: 3.6rem auto 0 auto;
+    padding: 3.2rem 0;
+    height: 32rem;
+    background-color: var(--background-color);
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: space-around;
+    animation: growth ease-in 0.2s;
+}
+
+
+.chart-layout__item {
+    align-self: flex-end;
+    width: 6rem;
+    color: var(--white-color);
+    text-align: center;
+    height: var(--percent);
+    background-color: var(--background-primary);
+}
+
+@keyframes growth {
+    from {
+        opacity: 0;
+        height: calc(var(--percent) - 50%);
+    }
+
+    to {
+        opacity: 1;
+        height: var(--percent);
+    }
+}
+
+/* the end */
+
+.the-end {
+    margin: 1.2rem auto 4.8rem auto;
+    padding: 3.2rem 0;
+    max-width: 74rem;
+    min-height: 36rem;
+    display: flex;
+}
+
+.the-end__first {
+    padding: .4rem 1.6rem;
+    background-color: var(--background-color);
+    flex: 1;
+}
+
+.the-end__second {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.the-end__second-one {
+    flex: 1;
+    padding: .4rem 1.6rem;
+    background-color: var(--background-primary);
+    }
+
+.the-end__second-two {
+    flex: 1;
+    padding: .4rem 1.6rem;
+    background-color: rgb(19, 218, 240);
+}
