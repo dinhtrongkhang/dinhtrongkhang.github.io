@@ -33,6 +33,7 @@ html {
 .nav .nav-list {
     padding-left: 0;
     margin: auto 1.6rem;
+    cursor: pointer;
 }
 
 .nav-list .nav-item {
