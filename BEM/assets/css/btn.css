@@ -16,8 +16,8 @@ body>div {
 }
 
 .btn {
-    /* display: inline-block; */
-    display: block;
+    display: inline-block;
+    /* display: block; */
     border: none;
     outline: none;
     background-color: transparent;
@@ -61,6 +61,20 @@ body>div {
 
 .btn--danger {
     background-color: #ff623d;
+}
+
+.btn--home {
+    background-color: #ccc;
+    margin-top: 30px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #000;
 }
 
  /* disable button */
