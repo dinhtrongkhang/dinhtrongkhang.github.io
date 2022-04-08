@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+body>div {
+    margin: 0 100px;
+}
+
+.btn {
+    /* display: inline-block; */
+    display: block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 12px 38px;
+    border-radius: 50px;
+    /* text-transform: uppercase; */
+    cursor: pointer;
+    min-width: 120px;
+    transition: opacity 0.2s ease;
+}
+
+.btn + .btn {
+    /* margin-left: 16px; */
+    margin-top: 20px;
+}
+
+.btn--size-s {
+    padding: 8px 32px;
+}
+
+.btn--size-l {
+    padding: 16px 56px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn--success {
+    background-color: #71be34;
+}
+
+.btn--info {
+    background-color: #2f86eb;
+}
+
+.btn--warn {
+    background-color: #ffb702;
+}
+
+.btn--danger {
+    background-color: #ff623d;
+}
+
+ /* disable button */
+ .btn--disabled {
+    opacity: 0.5 !important;
+    cursor: default;
+}
+

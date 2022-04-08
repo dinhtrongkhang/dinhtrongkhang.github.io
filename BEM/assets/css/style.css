@@ -1,0 +1,57 @@
+
+.card {
+    background-color: #ccc;
+    max-width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.card--succsess .card__btn {}
+
+.card--error .card__btn {}
+
+.card__heading {
+    padding-top: 30px;
+}
+
+.card__desc {}
+
+
+
+.card__btn {
+    /* display: inline-block; */
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 12px 38px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.card__btn:hover {
+    opacity: 0.8;
+}
+
+.btn--succsess {
+    background-color: #71be34;
+}
+
+.btn--warn {
+    background-color: #ffb702;
+}
+
+.btn--danger {
+    background-color: #ff623d;
+}
+
+ /* disable button */
+.card--disabled {
+    opacity: 0.5 !important;
+    cursor: default;
+}
