@@ -3,24 +3,9 @@
     justify-content: center;
 }
 
-.btn--home {
-    border: none;
-    outline: none;
-    background-color: #ccc;
-    padding: 12px 38px;
-    border-radius: 50px;
-    margin-left: 10px;
-}
-
-
-.btn a {
-    text-decoration: none;
-    color: #000;
-}
-
 .card {
     background-color: #ccc;
-    max-width: 300px;
+    max-width: 50%;
     height: 200px;
     margin: 0 auto;
     text-align: center;
@@ -40,11 +25,11 @@
 
 
 
-.card__btn {
+.btn {
     /* display: inline-block; */
     border: none;
     outline: none;
-    background-color: transparent;
+    background-color: #ccc;
     color: #fff;
     padding: 12px 38px;
     border-radius: 50px;
@@ -53,8 +38,17 @@
     transition: opacity 0.2s ease;
 }
 
-.card__btn:hover {
+.btn a {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn:hover {
     opacity: 0.8;
+}
+
+.btn + .btn {
+    margin-left: 16px;
 }
 
 .btn--succsess {
@@ -70,7 +64,7 @@
 }
 
  /* disable button */
-.card--disabled {
+.btn--disabled {
     opacity: 0.5 !important;
     cursor: default;
 }
