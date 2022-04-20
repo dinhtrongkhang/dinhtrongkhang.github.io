@@ -342,7 +342,7 @@
     background-color: var(--white-color);
     margin: 0;
     padding-left: 0;
-    z-index: 2;
+    /* z-index: 2; */
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     display: none;
@@ -552,6 +552,7 @@
     background-color: var(--white-color);
     display: flex;
     align-items: center;
+    z-index: 2;
 }
 
 .navbar__search-checkbox:checked~.navbar__search {
@@ -984,7 +985,9 @@
     color: var(--primary-color);
 }
 
-.mobile-category {}
+.mobile-category {
+    display: none;
+}
 
 .mobile-category__list {
     display: flex;
@@ -1044,6 +1047,7 @@
     padding: 12px 22px;
     border-radius: 2px;
     z-index: 1;
+    width: 100%;
 }
 
 .home-filter__label {
