@@ -34,6 +34,3 @@ h1.addEventListener("copy", function(){
 });
 
 
-h1.addEventListener("click", function(){
-    
-});
