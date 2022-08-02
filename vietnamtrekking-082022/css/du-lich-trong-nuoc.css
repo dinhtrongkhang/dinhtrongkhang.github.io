@@ -1,0 +1,75 @@
+/* fonts  */
+
+@font-face {
+    font-family: "Roboto-regular";
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(../font/Roboto/Roboto-Bold.ttf);
+}
+
+
+/* colors  */
+
+:root {
+    --primary: rgb(22, 105, 135);
+    --secondary: #DBA510;
+    --white-color: #FAFAFA;
+    --text-color: #333;
+    --sub-title: #6C6C6C;
+    --background: #f8f8f8;
+    --footer: #2D333F;
+    --danger: #FE4545;
+    --dark-color: #101010;
+    --table-background: #d4d4d4;
+}
+
+
+/* Reset  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto-regular", sans-serif;
+}
+
+.container {
+    width: 100%;
+    /* padding: 0 15px; */
+    margin: 0 auto;
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
