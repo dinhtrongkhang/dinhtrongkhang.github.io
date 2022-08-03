@@ -26,7 +26,22 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-sm-12 com-md-12 col-lg-12">
-
+                            <div class="wrap-top-bar">
+                                <div class="top-bar">
+                                    <a class="top-bar-icon" href=""><i class="fa-solid fa-bars"></i></a>
+                                    <h6 class="top-bar-title">Danh Mục Sản Phẩm</h6>
+                                </div>
+                                <div class="top-logo">
+                                    <a href=""><img src="./assets/image/logo vietnamtrekking.png" alt="logo"></a>
+                                </div>
+                                <div class="search-wrapper">
+                                    <div class="input-holder">
+                                        <input type="text" class="search-input" placeholder="Type to search" />
+                                        <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                                    </div>
+                                    <span class="close" onclick="searchToggle(this, event);"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -53,7 +68,7 @@
     <script src="./libs/OwlCarousel/owl.carousel.min.js"></script>
 
     <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/menumobile.js"></script>
+    <script src="./assets/js/search.js"></script>
 </body>
 
 </html>
