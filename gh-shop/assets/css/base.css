@@ -1,13 +1,13 @@
 /* Reset css */
 
 :root {
-    --primary-color: #0685aa;
-    --secondary-color: #dba510;
+    --primary-color: rgb(6, 133, 170);
+    --secondary-color: rgba(246, 197, 63, 0.94);
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
-    --star-gold-color: #FFCE3E;
+    --star-gold-color: #ffce3e;
     --primary-hover: #37a8c9;
 
     --header-height: 120px;
