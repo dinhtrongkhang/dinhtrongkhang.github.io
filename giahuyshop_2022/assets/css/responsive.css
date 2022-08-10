@@ -57,6 +57,10 @@
         width: 80px;
         text-align: right;
     }
+
+    .navbar_menu {
+        display: none;
+    }
 }
 
 /* Mobile */
@@ -78,7 +82,8 @@
         justify-content: space-between;
     }
 
-    .navbar__logo, .navbar__cart {
+    .navbar__logo,
+    .navbar__cart {
         width: unset;
     }
 
@@ -92,6 +97,10 @@
         z-index: 3;
         padding: 0 12px;
         animation: mobileSearchSideIn linear 0.3s;
+        display: none;
+    }
+
+    .navbar_menu {
         display: none;
     }
 
@@ -137,7 +146,8 @@
         text-align: center;
     }
 
-    .footer-item__link, .footer__download {
+    .footer-item__link,
+    .footer__download {
         justify-content: center;
     }
 

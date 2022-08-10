@@ -1,7 +1,7 @@
 /* Reset css */
 
 :root {
-    --primary-color: rgb(6, 133, 170);
+    --primary-color: rgba(6, 133, 170, 0.9);
     --secondary-color: rgba(246, 197, 63, 0.94);
     --white-color: #fff;
     --black-color: #000;

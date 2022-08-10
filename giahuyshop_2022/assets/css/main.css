@@ -580,7 +580,7 @@
 .navbar_menu .menu_list {
     display: flex;
     list-style: none;
-    margin-left: 160px;
+    margin: 0 160px 0;
     padding-bottom: 10px;
 }
 
@@ -1330,7 +1330,7 @@ i.product-item__like-icon-fill {
 }
 
 .product-item__sale-off-percent {
-    color: #EE4D2D;
+    color: #ff2a00;
     font-weight: 600;
     font-size: 1.2rem;
     line-height: 1.2rem;
