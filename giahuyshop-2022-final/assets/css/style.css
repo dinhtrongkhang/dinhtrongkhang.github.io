@@ -28,6 +28,10 @@ a {
     padding: 0 20px;
 }
 
+.brand {
+    height: 70px;
+}
+
 .brand a {
     font-size: 3rem;
     font-weight: bold;
@@ -40,9 +44,10 @@ a {
 
 .wrap__search {
     position: relative;
+    height: 70px;
 }
 
-.wrap__search svg {
+.wrap__search img, svg {
     position: absolute;
     left: 2px;
     bottom: 32px;
@@ -66,36 +71,28 @@ a {
 
 .nav__right {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    line-height: 70px;
 }
 
-.nav__right .like a:hover,
-.nav__right .cart a:hover,
-.nav__right .user a:hover {
-    color: var(--secondary-color);
-    transition: ease-in 0.02s;
-}
-
-.nav__right .cart {
+.nav__right .cart,
+.nav__right .like,
+.nav__right .user {
     padding: 0 20px;
+    height: 70px;
 }
 
+.nav__right img, svg {
+    width: 24px;
+    height: 24px;
+}
+
+.nav__right a:hover {
+    color: var(--secondary-color);
+}
 .nav__line {
     border-bottom: 1px solid #999999;
     width: 100%;
-}
-
-.nav__right .like a,
-.nav__right .cart a,
-.nav__right .user a {
-    color: var(--primary-color);
-}
-
-.nav__right .like a svg,
-.nav__right .cart a svg,
-.nav__right .user a svg {
-    width: 24px;
-    height: 24px;
 }
 
 .menu {
@@ -269,12 +266,15 @@ a {
     background-color: aqua;
     min-height: 320px;
     margin-bottom: 24px;
-}
-
-.item-product {
     position: relative;
     display: block;
     margin-bottom: 86px;
+}
+
+.item-product a img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
 }
 
 .produc-title {
