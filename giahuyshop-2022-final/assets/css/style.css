@@ -273,6 +273,8 @@ a {
 
 .item-product {
     position: relative;
+    display: block;
+    margin-bottom: 86px;
 }
 
 .produc-title {
