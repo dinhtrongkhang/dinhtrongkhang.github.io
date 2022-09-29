@@ -157,7 +157,7 @@ a {
 .slider-img img {
     border: 1px solid #ff2850;
     width: 100%;
-    height: 500px;
+    max-height: 400px;
 }
 
 .prev-arrow {
