@@ -194,18 +194,21 @@ a {
 }
 
 .item .title {
+    max-width: ;
     position: absolute;
-    top: 68%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .item .title h3 {
-    font-size: 50px;
+    font-size: 80px;
+    color: #fff;
 }
 
 .item .title h5 {
-    font-size: 30px;
+    font-size: 50px;
+    color: #fff;
 }
 
 .item .title h5 {
@@ -217,7 +220,7 @@ a {
 
 .item .btn {
     position: absolute;
-    top: 84%;
+    top: 88%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -246,7 +249,7 @@ a {
 
 .owl-dots {
     position: absolute;
-    top: 92%;
+    top: 94%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -263,8 +266,7 @@ a {
 }
 
 .item-product {
-    background-color: aqua;
-    min-height: 320px;
+    height: 600px;
     margin-bottom: 24px;
     position: relative;
     display: block;
@@ -273,7 +275,7 @@ a {
 
 .item-product a img {
     width: 100%;
-    height: 320px;
+    height: 100%;
     object-fit: cover;
 }
 
