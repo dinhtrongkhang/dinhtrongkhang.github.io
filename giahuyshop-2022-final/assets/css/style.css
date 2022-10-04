@@ -47,7 +47,8 @@ a {
     height: 70px;
 }
 
-.wrap__search img, svg {
+.wrap__search img,
+svg {
     position: absolute;
     left: 2px;
     bottom: 32px;
@@ -79,18 +80,12 @@ a {
 .nav__right .like,
 .nav__right .user {
     padding: 0 12px;
-    /* width: 70px;
-    height: 70px; */
 }
-
-/* .nav__right img, svg {
-    width: 24px;
-    height: 24px;
-} */
 
 .nav__right a:hover {
     color: var(--secondary-color);
 }
+
 .nav__line {
     border-bottom: 1px solid #636363;
     width: 100%;
