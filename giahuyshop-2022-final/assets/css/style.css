@@ -78,14 +78,15 @@ a {
 .nav__right .cart,
 .nav__right .like,
 .nav__right .user {
-    padding: 0 20px;
-    height: 70px;
+    padding: 0 12px;
+    /* width: 70px;
+    height: 70px; */
 }
 
-.nav__right img, svg {
+/* .nav__right img, svg {
     width: 24px;
     height: 24px;
-}
+} */
 
 .nav__right a:hover {
     color: var(--secondary-color);
@@ -202,12 +203,12 @@ a {
 }
 
 .item .title h3 {
-    font-size: 80px;
+    font-size: 60px;
     color: #fff;
 }
 
 .item .title h5 {
-    font-size: 50px;
+    font-size: 30px;
     color: #fff;
 }
 
