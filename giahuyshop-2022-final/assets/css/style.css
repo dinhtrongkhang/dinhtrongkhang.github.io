@@ -17,7 +17,6 @@ html {
 
 a {
     text-decoration: none;
-    color: #fff;
 }
 
 .header .nav {
@@ -206,10 +205,12 @@ svg:hover {
     cursor: pointer;
 }
 
+.btn a {
+    color: #fff;
+}
 
 .btn:hover {
     background-color: var(--secondary-color);
-    color: #ffffff;
 }
 
 /* main */
