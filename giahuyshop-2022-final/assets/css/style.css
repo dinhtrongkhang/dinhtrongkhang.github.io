@@ -113,9 +113,9 @@ svg:hover {
 }
 
 
-.active a {
+/* .active a {
     color: var(--secondary-color);
-}
+} */
 
 .header .menu ul li {
     list-style: none;
