@@ -277,8 +277,20 @@ svg:hover {
 }
 
 .price-product {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.actual-price {
+    font-size: 1.6rem; 
+    text-decoration: line-through;
+}
+
+.old-price {
     font-size: 2rem;
     font-weight: bold;
+    margin-left: 24px;
 }
 
 .item-product a img {
