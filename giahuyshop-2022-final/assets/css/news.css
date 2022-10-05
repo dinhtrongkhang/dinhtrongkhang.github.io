@@ -1,7 +1,13 @@
+.main {
+    margin: 24px 0;
+}
+
 .news1 {
-    background-color: aquamarine;
+    height: 100vh;
+    background-color: rgb(197, 204, 201);
 }
 
 .news2 {
-    background-color: brown;
+    height: 100vh;
+    background-color: rgb(168, 166, 166);
 }
