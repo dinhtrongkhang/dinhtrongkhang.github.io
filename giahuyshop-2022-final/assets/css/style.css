@@ -175,15 +175,16 @@ svg:hover {
 }
 
 .item .title h5 {
-    font-size: 30px;
-    color: #fff;
-}
-
-.item .title h5 {
     position: absolute;
     top: 95%;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 30px;
+    color: #fff;
+}
+
+.title h3 a {
+    color: #636363;
 }
 
 .item .btn {
