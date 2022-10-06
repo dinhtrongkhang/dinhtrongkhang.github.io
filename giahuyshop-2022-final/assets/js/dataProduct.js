@@ -146,3 +146,34 @@ const newProduct = [
         id: 20
     },
 ];
+
+const womenProduct = [
+    {
+        src: "./assets/image/gh-baby-1.webp",
+        Title: "T-shirt",
+        ActualPrice: "$10.00",
+        OldPrice: "$11.00",
+        id: 21
+    },
+    {
+        src: "./assets/image/gh-baby-2.webp",
+        Title: "T-shirt",
+        ActualPrice: "$10.00",
+        OldPrice: "$11.00",
+        id: 22
+    },
+    {
+        src: "./assets/image/gh-baby-3.webp",
+        Title: "T-shirt",
+        ActualPrice: "$10.00",
+        OldPrice: "$11.00",
+        id: 23
+    },
+    {
+        src: "./assets/image/gh-baby-4.webp",
+        Title: "T-shirt",
+        ActualPrice: "$10.00",
+        OldPrice: "$11.00",
+        id: 24
+    },
+];

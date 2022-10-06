@@ -219,10 +219,6 @@ svg:hover {
     color: #fff;
 }
 
-.title h3 a {
-    color: #636363;
-}
-
 /* main */
 .item .box-img {
     r min-height: 500px;
@@ -275,6 +271,7 @@ svg:hover {
 
 .wrap-title h3 {
     font-size: 3rem;
+    margin-bottom: 8px;
 }
 
 .wrap-title h5 {
@@ -290,7 +287,7 @@ svg:hover {
 }
 
 .title h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 
