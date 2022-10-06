@@ -84,5 +84,41 @@ $(document).ready(function () {
         `
     ).join('');
 
+    // women Product
+    document.querySelector(`#women-product--js`).innerHTML = womenProduct.map((value, key) =>
+        // console.log(value, "value");
+        // console.log(key, "key")
+        `<div class="col-12 col-sm-3 col-md-3 col-lg-3">
+            <div class="list-product">
+            <img class="product-img" src=${value.src} />
+            <div class="product-title">${value.Title}</div>
+            <div class="product-price">
+                <div class="actual-price">${value.ActualPrice}</div>
+                <div class="old-price">${value.OldPrice}</div>
+            </div>
+            <button class="add-to-cart btn">Add To Cart</button>
+            </div>
+        </div>
+        `
+    ).join('');
+
+      // men Product
+      document.querySelector(`#men-product--js`).innerHTML = menProduct.map((value, key) =>
+      // console.log(value, "value");
+      // console.log(key, "key")
+      `<div class="col-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="list-product">
+          <img class="product-img" src=${value.src} />
+          <div class="product-title">${value.Title}</div>
+          <div class="product-price">
+              <div class="actual-price">${value.ActualPrice}</div>
+              <div class="old-price">${value.OldPrice}</div>
+          </div>
+          <button class="add-to-cart btn">Add To Cart</button>
+          </div>
+      </div>
+      `
+  ).join('');
+
 });
 
