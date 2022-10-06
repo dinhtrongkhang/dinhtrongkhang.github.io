@@ -81,7 +81,7 @@ const babyProduct = [
         Title: "T-shirt",
         ActualPrice: "$10.00",
         OldPrice: "$11.00",
-        id: 11
+        id: 12
     },
 ];
 
@@ -91,28 +91,28 @@ const collectionProduct = [
         Title: "T-shirt",
         ActualPrice: "$10.00",
         OldPrice: "$11.00",
-        id: 1
+        id: 13
     },
     {
         src: "./assets/image/gh-baby-2.webp",
         Title: "T-shirt",
         ActualPrice: "$10.00",
         OldPrice: "$11.00",
-        id: 2
+        id: 14
     },
     {
         src: "./assets/image/gh-baby-3.webp",
         Title: "T-shirt",
         ActualPrice: "$10.00",
         OldPrice: "$11.00",
-        id: 3
+        id: 15
     },
     {
         src: "./assets/image/gh-baby-4.webp",
         Title: "T-shirt",
         ActualPrice: "$10.00",
         OldPrice: "$11.00",
-        id: 4
+        id: 16
     },
 ];
 
@@ -122,27 +122,27 @@ const newProduct = [
         Title: "T-shirt",
         ActualPrice: "$10.00",
         OldPrice: "$11.00",
-        id: 1
+        id: 17
     },
     {
         src: "./assets/image/gh-baby-2.webp",
         Title: "T-shirt",
         ActualPrice: "$10.00",
         OldPrice: "$11.00",
-        id: 2
+        id: 18
     },
     {
         src: "./assets/image/gh-baby-3.webp",
         Title: "T-shirt",
         ActualPrice: "$10.00",
         OldPrice: "$11.00",
-        id: 3
+        id: 19
     },
     {
         src: "./assets/image/gh-baby-4.webp",
         Title: "T-shirt",
         ActualPrice: "$10.00",
         OldPrice: "$11.00",
-        id: 4
+        id: 20
     },
 ];
