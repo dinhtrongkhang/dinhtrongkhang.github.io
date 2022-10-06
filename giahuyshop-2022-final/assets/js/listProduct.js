@@ -34,7 +34,7 @@ $(document).ready(function () {
     document.querySelector(`#list-product--js`).innerHTML = babyProduct.map((value, key) =>
         // console.log(value, "value");
         // console.log(key, "key")
-        `<div class="col-12 col-sm-3 col-md-3 col-lg-3">
+        `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="list-product">
                 <img class="product-img" src=${value.src} />
                 <div class="product-title">${value.Title}</div>
@@ -52,7 +52,7 @@ $(document).ready(function () {
     document.querySelector(`#collection-product--js`).innerHTML = collectionProduct.map((value, key) =>
         // console.log(value, "value");
         // console.log(key, "key")
-        `<div class="col-12 col-sm-3 col-md-3 col-lg-3">
+        `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="list-product">
             <img class="product-img" src=${value.src} />
             <div class="product-title">${value.Title}</div>
@@ -70,7 +70,7 @@ $(document).ready(function () {
     document.querySelector(`#new-product--js`).innerHTML = newProduct.map((value, key) =>
         // console.log(value, "value");
         // console.log(key, "key")
-        `<div class="col-12 col-sm-3 col-md-3 col-lg-3">
+        `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="list-product">
             <img class="product-img" src=${value.src} />
             <div class="product-title">${value.Title}</div>
@@ -88,7 +88,7 @@ $(document).ready(function () {
     document.querySelector(`#women-product--js`).innerHTML = womenProduct.map((value, key) =>
         // console.log(value, "value");
         // console.log(key, "key")
-        `<div class="col-12 col-sm-3 col-md-3 col-lg-3">
+        `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="list-product">
             <img class="product-img" src=${value.src} />
             <div class="product-title">${value.Title}</div>
@@ -106,7 +106,7 @@ $(document).ready(function () {
       document.querySelector(`#men-product--js`).innerHTML = menProduct.map((value, key) =>
       // console.log(value, "value");
       // console.log(key, "key")
-      `<div class="col-12 col-sm-3 col-md-3 col-lg-3">
+      `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="list-product">
           <img class="product-img" src=${value.src} />
           <div class="product-title">${value.Title}</div>
