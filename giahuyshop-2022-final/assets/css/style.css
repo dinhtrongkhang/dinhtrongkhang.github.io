@@ -32,7 +32,7 @@ a {
 /* button */
 .item .btn {
     position: absolute;
-    top: 86%;
+    top: 88%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -198,7 +198,6 @@ svg:hover {
 }
 
 .item .title {
-    max-width: ;
     position: absolute;
     top: 70%;
     left: 50%;
@@ -212,7 +211,7 @@ svg:hover {
 
 .item .title h5 {
     position: absolute;
-    top: 95%;
+    top: 110%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 30px;
@@ -375,9 +374,75 @@ svg:hover {
     line-height: 1.4rem;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 1440px) {
+    .item .title {
+        top: 60%;
+    }
+
+    .item .title h3 {
+        font-size: 50px;
+    }
+
+    .item .title h5 {
+        font-size: 30px;
+    }
+
+    .item .btn {
+        top: 80%;
+    }
+
+    .owl-dots {
+        top: 90%;
+    }
+
+    .wrap-title {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .item .title {
+        top: 60%;
+    }
+
+    .item .title h3 {
+        font-size: 46px;
+    }
+
+    .item .title h5 {
+        font-size: 30px;
+    }
+
+    .item .btn {
+        top: 80%;
+    }
+
+    .owl-dots {
+        top: 90%;
+    }
+
+    .wrap-title {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
     .section-banner {
         display: none;
+    }
+
+    .wrap-title {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-banner {
+        display: none;
+    }
+
+    .wrap-title {
+        width: 250px;
     }
 
     .footer-title,
