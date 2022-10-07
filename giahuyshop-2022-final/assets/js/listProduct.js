@@ -1,22 +1,22 @@
-$(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    })
+// $(document).ready(function () {
+//     $('.owl-carousel').owlCarousel({
+//         loop: true,
+//         margin: 0,
+//         nav: false,
+//         autoplay: true,
+//         autoplayTimeout: 2000,
+//         responsive: {
+//             0: {
+//                 items: 1
+//             },
+//             600: {
+//                 items: 1
+//             },
+//             1000: {
+//                 items: 1
+//             }
+//         }
+//     })
 
     $("#four-col-jq").on("click", function () {
         alert("click vào ra 4 cột");

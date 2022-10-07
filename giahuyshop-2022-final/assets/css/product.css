@@ -40,6 +40,7 @@ html {
 }
 
 .product-title {
+    margin-top: 12px;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
@@ -51,6 +52,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin: 12px 0;
 }
 
 .actual-price {

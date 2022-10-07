@@ -231,8 +231,16 @@ svg:hover {
 }
 
 .owl-theme .owl-dots .owl-dot span {
-    width: 18px !important;
-    height: 18px !important;
+    display: none !important;
+}
+
+.owl-theme .owl-nav {
+    position: absolute;
+    top: 30%;
+    font-size: 5rem;
+}
+
+.owl-next span {
 }
 
 /* List Product */
@@ -442,7 +450,7 @@ svg:hover {
     }
 
     .wrap-title {
-        width: 250px;
+        width: 220px;
     }
 
     .footer-title,
