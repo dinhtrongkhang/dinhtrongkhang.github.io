@@ -240,7 +240,8 @@ svg:hover {
     font-size: 5rem;
 }
 
-.owl-next span {
+button span {
+    background-color: red;
 }
 
 /* List Product */
