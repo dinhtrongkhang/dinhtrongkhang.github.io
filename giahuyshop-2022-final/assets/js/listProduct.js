@@ -1,22 +1,22 @@
-// $(document).ready(function () {
-//     $('.owl-carousel').owlCarousel({
-//         loop: true,
-//         margin: 0,
-//         nav: false,
-//         autoplay: true,
-//         autoplayTimeout: 2000,
-//         responsive: {
-//             0: {
-//                 items: 1
-//             },
-//             600: {
-//                 items: 1
-//             },
-//             1000: {
-//                 items: 1
-//             }
-//         }
-//     })
+$(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
 
     $("#four-col-jq").on("click", function () {
         alert("click vào ra 4 cột");
@@ -35,7 +35,7 @@
         // console.log(value, "value");
         // console.log(key, "key")
         `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <div class="list-product">
+            <div class="box-item">
                 <img class="product-img" src=${value.src} />
                 <div class="product-title">${value.Title}</div>
                 <div class="product-price">
@@ -53,7 +53,7 @@
         // console.log(value, "value");
         // console.log(key, "key")
         `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <div class="list-product">
+            <div class="box-item">
             <img class="product-img" src=${value.src} />
             <div class="product-title">${value.Title}</div>
             <div class="product-price">
@@ -71,7 +71,7 @@
         // console.log(value, "value");
         // console.log(key, "key")
         `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <div class="list-product">
+            <div class="box-item">
             <img class="product-img" src=${value.src} />
             <div class="product-title">${value.Title}</div>
             <div class="product-price">
@@ -89,7 +89,7 @@
         // console.log(value, "value");
         // console.log(key, "key")
         `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <div class="list-product">
+            <div class="box-item">
             <img class="product-img" src=${value.src} />
             <div class="product-title">${value.Title}</div>
             <div class="product-price">
@@ -107,7 +107,7 @@
       // console.log(value, "value");
       // console.log(key, "key")
       `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="list-product">
+          <div class="box-item">
           <img class="product-img" src=${value.src} />
           <div class="product-title">${value.Title}</div>
           <div class="product-price">
