@@ -32,12 +32,13 @@ $(document).ready(function () {
     })
 
     // Render List Product
-    document.querySelector(`#list-product--js`).innerHTML = babyProduct.map((value, key) =>
-        // console.log(value, "value");
-        // console.log(key, "key")
-        `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+    if (document.querySelector(`#list-product--js`)) {
+        document.querySelector(`#list-product--js`).innerHTML = babyProduct.map((value, key) =>
+            // console.log(value, "value");
+            // console.log(key, "key")
+            `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="box-item">
-                <img class="product-img" src=${value.src} />
+            <a href=""><img class="product-img" src=${value.src} /></a>
                 <div class="product-title">${value.Title}</div>
                 <div class="product-price">
                     <div class="actual-price">${value.ActualPrice}</div>
@@ -47,15 +48,18 @@ $(document).ready(function () {
             </div>
             </div>
         `
-    ).join('');
+        ).join('');
+    }
+
 
     // Colletion Product
-    document.querySelector(`#collection-product--js`).innerHTML = collectionProduct.map((value, key) =>
-        // console.log(value, "value");
-        // console.log(key, "key")
-        `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+    if (document.querySelector(`#collection-product--js`)) {
+        document.querySelector(`#collection-product--js`).innerHTML = collectionProduct.map((value, key) =>
+            // console.log(value, "value");
+            // console.log(key, "key")
+            `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="box-item">
-            <img class="product-img" src=${value.src} />
+            <a href=""><img class="product-img" src=${value.src} /></a>
             <div class="product-title">${value.Title}</div>
             <div class="product-price">
                 <div class="actual-price">${value.ActualPrice}</div>
@@ -65,15 +69,18 @@ $(document).ready(function () {
             </div>
             </div>
         `
-    ).join('');
+        ).join('');
+    }
+
 
     // New Product
-    document.querySelector(`#new-product--js`).innerHTML = newProduct.map((value, key) =>
-        // console.log(value, "value");
-        // console.log(key, "key")
-        `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+    if (document.querySelector(`#new-product--js`)) {
+        document.querySelector(`#new-product--js`).innerHTML = newProduct.map((value, key) =>
+            // console.log(value, "value");
+            // console.log(key, "key")
+            `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="box-item">
-            <img class="product-img" src=${value.src} />
+            <a href=""><img class="product-img" src=${value.src} /></a>
             <div class="product-title">${value.Title}</div>
             <div class="product-price">
                 <div class="actual-price">${value.ActualPrice}</div>
@@ -83,15 +90,18 @@ $(document).ready(function () {
             </div>
             </div>
         `
-    ).join('');
+        ).join('');
+    }
+
 
     // women Product
-    document.querySelector(`#women-product--js`).innerHTML = womenProduct.map((value, key) =>
-        // console.log(value, "value");
-        // console.log(key, "key")
-        `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+    if (document.querySelector(`#women-product--js`)) {
+        document.querySelector(`#women-product--js`).innerHTML = womenProduct.map((value, key) =>
+            // console.log(value, "value");
+            // console.log(key, "key")
+            `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="box-item">
-            <img class="product-img" src=${value.src} />
+            <a href=""><img class="product-img" src=${value.src} /></a>
             <div class="product-title">${value.Title}</div>
             <div class="product-price">
                 <div class="actual-price">${value.ActualPrice}</div>
@@ -101,15 +111,18 @@ $(document).ready(function () {
             </div>
         </div>
         `
-    ).join('');
+        ).join('');
+    }
+
 
     // men Product
-    document.querySelector(`#men-product--js`).innerHTML = menProduct.map((value, key) =>
-        // console.log(value, "value");
-        // console.log(key, "key")
-        `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+    if (document.querySelector(`#men-product--js`)) {
+        document.querySelector(`#men-product--js`).innerHTML = menProduct.map((value, key) =>
+            // console.log(value, "value");
+            // console.log(key, "key")
+            `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="box-item">
-          <img class="product-img" src=${value.src} />
+          <a href=""><img class="product-img" src=${value.src} /></a>
           <div class="product-title">${value.Title}</div>
           <div class="product-price">
               <div class="actual-price">${value.ActualPrice}</div>
@@ -119,7 +132,9 @@ $(document).ready(function () {
           </div>
       </div>
       `
-    ).join('');
+        ).join('');
+    }
+
 
 });
 
