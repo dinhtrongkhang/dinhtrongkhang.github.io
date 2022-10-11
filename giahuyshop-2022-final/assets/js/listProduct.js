@@ -3,8 +3,8 @@ $(document).ready(function () {
         loop: true,
         margin: 0,
         nav: false,
-        autoplay: false,
-        autoplayTimeout: 2000,
+        prevArrow: `<button type='button' class='slick-prev slick-arrow'><ion-icon name="arrow-back-outline"></ion-icon></button>`,
+        nextArrow: `<button type='button' class='slick-next slick-arrow'><ion-icon name="arrow-forward-outline"></ion-icon></button>`,
         responsive: {
             0: {
                 items: 1
@@ -16,7 +16,8 @@ $(document).ready(function () {
                 items: 4
             }
         }
-    })
+    });
+
 
     $("#four-col-jq").on("click", function () {
         alert("click vào ra 4 cột");
@@ -102,11 +103,11 @@ $(document).ready(function () {
         `
     ).join('');
 
-      // men Product
-      document.querySelector(`#men-product--js`).innerHTML = menProduct.map((value, key) =>
-      // console.log(value, "value");
-      // console.log(key, "key")
-      `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+    // men Product
+    document.querySelector(`#men-product--js`).innerHTML = menProduct.map((value, key) =>
+        // console.log(value, "value");
+        // console.log(key, "key")
+        `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="box-item">
           <img class="product-img" src=${value.src} />
           <div class="product-title">${value.Title}</div>
@@ -118,7 +119,7 @@ $(document).ready(function () {
           </div>
       </div>
       `
-  ).join('');
+    ).join('');
 
 });
 
