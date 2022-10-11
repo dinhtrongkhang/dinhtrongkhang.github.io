@@ -80,7 +80,21 @@
     padding: 0 12px;
 }
 
-.footer-news{
+.footer-news {
     display: flex;
     justify-content: space-between;
+}
+
+.share {
+    display: flex;
+}
+
+.share a {
+    margin: 0 6px;
+}
+
+.footer-news p,
+.footer-news .share a {
+    color: #636363;
+    font-size: 1.6rem;
 }

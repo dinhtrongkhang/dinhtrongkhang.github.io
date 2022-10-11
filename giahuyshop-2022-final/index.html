@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/product.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -42,15 +43,15 @@
                 </div>
 
                 <div class="nav-right">
-                    <div class="wishlist"><a href="">
-                        <i class="fa-solid fa-heart"></i>
+                    <div class="wishlist-icon"><a href="">
+                            <i class="fa-solid fa-heart"></i>
                         </a></div>
-                    <div class="cart">
+                    <div class="cart-icon">
                         <a href="">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </a>
                     </div>
-                    <div class="user">
+                    <div class="user-icon">
                         <a href="">
                             <i class="fa-solid fa-user"></i>
                         </a>
@@ -69,6 +70,13 @@
                     <li class="list-item"><a href="./productmen.html">Men</a></li>
                     <li class="list-item"><a href="./news.html">News</a></li>
                 </ul>
+            </div>
+
+            <div class="whole-cart-window hide">
+                <h2>Shopping Bag</h2>
+                <div class="subtotal">Subtotal: $0.00</div>
+                <div class="checkout">Checkout</div>
+                <div class="view-cart">View Cart</div>
             </div>
         </div>
     </div>
@@ -110,42 +118,50 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="item-product">
-                            <a href=""><img src="./assets/image/gh-baby-1.webp" alt=""></a>
-                            <div class="wrap-title">
-                                <h3>Baby</h3>
-                                <h5>Discover now</h5>
-                                <button class="btn"><a href="./productbaby.html">Shopping Now</a></button>
+                        <div class="card-wrapper">
+                            <div id="1" class="card-item">
+                                <a href=""><img src="./assets/image/gh-baby-1.webp" alt=""></a>
+                                <div class="wrap-title">
+                                    <h3>Baby</h3>
+                                    <h5>Discover now</h5>
+                                    <button class="btn"><a href="./productbaby.html">Shopping Now</a></button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="item-product">
-                            <a href=""><img src="./assets/image/gh-baby-khoac-1.webp" alt=""></a>
-                            <div class="wrap-title">
-                                <h3>Jacket</h3>
-                                <h5>Discover now</h5>
-                                <button class="btn"><a href="./productjacket.html">Shopping Now</a></button>
+                        <div class="card-wrapper">
+                            <div id="2" class="card-item">
+                                <a href=""><img src="./assets/image/gh-baby-khoac-1.webp" alt=""></a>
+                                <div class="wrap-title">
+                                    <h3>Jacket</h3>
+                                    <h5>Discover now</h5>
+                                    <button class="btn"><a href="./productjacket.html">Shopping Now</a></button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="item-product">
-                            <a href=""><img src="./assets/image/gh-wm-1.webp" alt=""></a>
-                            <div class="wrap-title">
-                                <h3>WOMEN</h3>
-                                <h5>Discover now</h5>
-                                <button class="btn"><a href="./productwomen.html">Shopping Now</a></button>
+                        <div class="card-wrapper">
+                            <div id="3" class="card-item">
+                                <a href=""><img src="./assets/image/gh-wm-1.webp" alt=""></a>
+                                <div class="wrap-title">
+                                    <h3>WOMEN</h3>
+                                    <h5>Discover now</h5>
+                                    <button class="btn"><a href="./productwomen.html">Shopping Now</a></button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="item-product">
-                            <a href=""><img src="./assets/image/gh-men-1.webp" alt=""></a>
-                            <div class="wrap-title">
-                                <h3>MEN</h3>
-                                <h5>Discover now</h5>
-                                <button class="btn"><a href="./productmen.html">Shopping Now</a></button>
+                        <div class="card-wrapper">
+                            <div id="4" class="card-item">
+                                <a href=""><img src="./assets/image/gh-men-1.webp" alt=""></a>
+                                <div class="wrap-title">
+                                    <h3>MEN</h3>
+                                    <h5>Discover now</h5>
+                                    <button class="btn"><a href="./productmen.html">Shopping Now</a></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -164,25 +180,25 @@
                     <div class="box-item">
                         <a href=""><img class="product-img" src="./assets/image/gh-baby-1.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
                         <button class="add-to-cart btn">Add To Cart</button>
                     </div>
                     <div class="box-item">
-                        <a href=""><img class="product-img" src="./assets/image/gh-baby-2.webp" alt=""></a>
+                        <a href=""><img class="product-img" src="./assets/image/gh-wm-3.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
                         <button class="add-to-cart btn">Add To Cart</button>
                     </div>
                     <div class="box-item">
-                        <a href=""><img class="product-img" src="./assets/image/gh-baby-3.webp" alt=""></a>
+                        <a href=""><img class="product-img" src="./assets/image/gh-men-2.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
@@ -191,25 +207,25 @@
                     <div class="box-item">
                         <a href=""><img class="product-img" src="./assets/image/gh-baby-4.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
                         <button class="add-to-cart btn">Add To Cart</button>
                     </div>
                     <div class="box-item">
-                        <a href=""><img class="product-img" src="./assets/image/gh-baby-5.webp" alt=""></a>
+                        <a href=""><img class="product-img" src="./assets/image/gh-wm-5.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
                         <button class="add-to-cart btn">Add To Cart</button>
                     </div>
                     <div class="box-item">
-                       <a href=""> <img class="product-img" src="./assets/image/gh-baby-6.webp" alt=""></a>
+                        <a href=""> <img class="product-img" src="./assets/image/gh-men-6.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
@@ -218,16 +234,16 @@
                     <div class="box-item">
                         <a href=""><img class="product-img" src="./assets/image/gh-baby-7.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
                         <button class="add-to-cart btn">Add To Cart</button>
                     </div>
                     <div class="box-item">
-                       <a href=""><img class="product-img" src="./assets/image/gh-baby-8.webp" alt=""></a>
+                        <a href=""><img class="product-img" src="./assets/image/gh-baby-8.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
@@ -249,7 +265,7 @@
                     <div class="box-item">
                         <a href=""><img class="product-img" src="./assets/image/gh-baby-1.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
@@ -258,7 +274,7 @@
                     <div class="box-item">
                         <a href=""><img class="product-img" src="./assets/image/gh-baby-2.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
@@ -267,7 +283,7 @@
                     <div class="box-item">
                         <a href=""><img class="product-img" src="./assets/image/gh-baby-3.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
@@ -276,7 +292,7 @@
                     <div class="box-item">
                         <a href=""><img class="product-img" src="./assets/image/gh-baby-4.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
@@ -285,7 +301,7 @@
                     <div class="box-item">
                         <a href=""><img class="product-img" src="./assets/image/gh-baby-5.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
@@ -294,7 +310,7 @@
                     <div class="box-item">
                         <a href=""><img class="product-img" src="./assets/image/gh-baby-6.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
@@ -303,7 +319,7 @@
                     <div class="box-item">
                         <a href=""><img class="product-img" src="./assets/image/gh-baby-7.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
@@ -312,7 +328,7 @@
                     <div class="box-item">
                         <a href=""><img class="product-img" src="./assets/image/gh-baby-8.webp" alt=""></a>
                         <div class="product-title">T-Shirt</div>
-                        <div class="product-price">
+                        <div class="price">
                             <div class="actual-price">$45.00</div>
                             <div class="old-price">$50.00</div>
                         </div>
