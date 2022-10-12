@@ -97,4 +97,25 @@ function addcart(productImg, productName, productPrice) {
     var cartTable = document.querySelector("tbody")
     // console.log(cartTable)
     cartTable.append(addtr)
+
+    carttotal()
 } 
+
+
+// ------------ total price ----------------
+
+function carttotal () {
+    var cartItem = document.querySelectorAll("tbody tr")
+    // console.log(cartItem.length)
+    for (var i = 0; i<cartItem.length; i++) {
+        // console.log(i)
+        var inputValue = cartItem[i].querySelector("input").value
+        // console.log(inputValue)
+        var productPrice = cartItem[i].querySelector("span").innerHTML
+        // console.log(productPrice)
+        totalA = inputValue*productPrice*1000
+        console.log(totalA)
+    }
+   
+
+}
