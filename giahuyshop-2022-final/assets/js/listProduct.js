@@ -41,10 +41,10 @@ $(document).ready(function () {
             <a href=""><img class="product-img" src=${value.src} /></a>
                 <div class="product-title">${value.Title}</div>
                 <div class="product-price">
-                    <div class="actual-price">${value.ActualPrice}</div>
                     <div class="old-price">${value.OldPrice}</div>
+                    <div class="actual-price">${value.ActualPrice}</div>
                 </div>
-                <button class="add-to-cart btn">Add To Cart</button>
+                <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
             </div>
             </div>
         `
@@ -62,10 +62,10 @@ $(document).ready(function () {
             <a href=""><img class="product-img" src=${value.src} /></a>
             <div class="product-title">${value.Title}</div>
             <div class="product-price">
-                <div class="actual-price">${value.ActualPrice}</div>
                 <div class="old-price">${value.OldPrice}</div>
+                <div class="actual-price">${value.ActualPrice}</div>
             </div>
-            <button class="add-to-cart btn">Add To Cart</button>
+            <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
             </div>
             </div>
         `
@@ -83,10 +83,10 @@ $(document).ready(function () {
             <a href=""><img class="product-img" src=${value.src} /></a>
             <div class="product-title">${value.Title}</div>
             <div class="product-price">
-                <div class="actual-price">${value.ActualPrice}</div>
                 <div class="old-price">${value.OldPrice}</div>
+                <div class="actual-price">${value.ActualPrice}</div>
             </div>
-            <button class="add-to-cart btn">Add To Cart</button>
+            <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
             </div>
             </div>
         `
@@ -104,10 +104,10 @@ $(document).ready(function () {
             <a href=""><img class="product-img" src=${value.src} /></a>
             <div class="product-title">${value.Title}</div>
             <div class="product-price">
-                <div class="actual-price">${value.ActualPrice}</div>
                 <div class="old-price">${value.OldPrice}</div>
+                <div class="actual-price">${value.ActualPrice}</div>
             </div>
-            <button class="add-to-cart btn">Add To Cart</button>
+            <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
             </div>
         </div>
         `
@@ -125,10 +125,10 @@ $(document).ready(function () {
           <a href=""><img class="product-img" src=${value.src} /></a>
           <div class="product-title">${value.Title}</div>
           <div class="product-price">
-              <div class="actual-price">${value.ActualPrice}</div>
               <div class="old-price">${value.OldPrice}</div>
+              <div class="actual-price">${value.ActualPrice}</div>
           </div>
-          <button class="add-to-cart btn">Add To Cart</button>
+          <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
           </div>
       </div>
       `
