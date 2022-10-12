@@ -25,7 +25,7 @@ a {
     text-decoration: none;
 }
 
-/* button */
+/* ------------ button ------------------ */
 .item .btn {
     position: absolute;
     top: 88%;
@@ -54,9 +54,9 @@ a {
     color: #fff;
 }
 
-/* slide */
+/* ----------------- slide ------------------ */
 
-/* banner */
+/* --------------------- banner ----------------------- */
 
 .image {
     height: 500px;
@@ -157,7 +157,7 @@ a {
     display: block;
 }
 
-/* header */
+/* ------------------ header ------------------- */
 
 .header .nav {
     width: 100%;
@@ -225,7 +225,7 @@ svg {
     color: var(--secondary-color);
 }
 
-/* menu nav */
+/* ----------------------- menu nav --------------------------- */
 
 .nav-line {
     border-bottom: 1px solid #636363;
@@ -281,7 +281,7 @@ svg {
     width: 100%;
 }
 
-/* Banner */
+/* ------------------------ Banner --------------------- */
 .banner {
     display: flex;
 }
@@ -312,7 +312,7 @@ svg {
 }
 
 
-/* main */
+/* --------------------- main ------------------------ */
 .item .box-img {
     min-height: 500px;
 }
@@ -321,7 +321,7 @@ svg {
     display: none !important;
 }
 
-/* List Product */
+/* -------------------- List Product ---------------------- */
 .section-product {
     margin-top: 24px;
     margin-bottom: 36px;
@@ -363,7 +363,7 @@ svg {
     font-size: 2rem;
 }
 
-/* Product */
+/* --------------------- Product --------------------- */
 .title {
     display: flex;
     align-items: center;
@@ -382,7 +382,7 @@ svg {
     font-size: 2rem;
 }
 
-/* new product */
+/* ----------------------- new product ------------------------ */
 .new-product,
 .new {
     margin-bottom: 24px;
@@ -401,7 +401,7 @@ svg {
     line-height: 4rem;
 }
 
-/* news */
+/* ------------------- Tin tức ---------------------- */
 .wrap-new {
     padding: 12px;
     line-height: 12px;
@@ -419,7 +419,7 @@ svg {
     color: #636363;
 }
 
-/* footer */
+/* --------------- footer --------------------- */
 .footer {
     background-color: var(--primary-color);
     width: 100%;
@@ -457,7 +457,7 @@ svg {
 }
 
 .footer-social a .fa-instagram:hover {
-color: #c0485e;
+    color: #c0485e;
 }
 
 .footer-social a .fa-youtube:hover {
@@ -476,6 +476,54 @@ color: #c0485e;
     line-height: 1.4rem;
 }
 
+/* cart */
+.cart {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.cart h2 {
+    margin-bottom: 20px;
+}
+
+.cart table {
+    width: 100%;
+}
+
+.cart table thead tr th {
+    font-size: 16px;
+}
+
+.cart table tbody tr {
+    font-size: 14px;
+}
+
+.cart table thead tr th:first-child {
+    text-align: left;
+}
+
+.cart table tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+
+.cart table thead tr th:last-child,
+.cart table tbody tr td:last-child {
+    text-align: right;
+}
+
+.price-total {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.price-total p span {
+    margin-left: 8px;
+}
+
+/* ----------------- Responsive ---------------- */
 @media only screen and (max-width: 1440px) {
     .item .title {
         top: 60%;
