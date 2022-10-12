@@ -374,6 +374,7 @@ svg {
 .title h2 {
     font-size: 4rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .title span a {
@@ -438,6 +439,7 @@ svg {
 .footer-name {
     color: #bdbdbd;
     font-size: 1.6rem;
+    cursor: pointer;
 }
 
 .footer-name span {
