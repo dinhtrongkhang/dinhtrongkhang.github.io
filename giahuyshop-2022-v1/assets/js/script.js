@@ -113,7 +113,7 @@ function carttotal() {
         // console.log(inputValue)
         var productPrice = cartItem[i].querySelector("span").innerHTML
         // console.log(productPrice)
-        totalA = inputValue * productPrice
-        console.log(total)
+        totalA = inputValue*productPrice
+        console.log(totalA)
     }
 }
