@@ -71,7 +71,7 @@ btn.forEach(function (button, index) {
             // console.log(product)
             var productImg = product.querySelector("img").src
             // console.log(productImg)
-            var productName = product.querySelector(".product-name").innerText
+            var productName = product.querySelector(".product-name")
             // console.log(productName)
             var productPrice = product.querySelector(".actual-price").innerText
             // console.log(productImg, productName, productPrice)
@@ -110,10 +110,11 @@ function carttotal() {
     for (var i = 0; i < cartItem.length; i++) {
         // console.log(i)
         var inputValue = cartItem[i].querySelector("input").value
-        // console.log(inputValue)
+        console.log(inputValue)
         var productPrice = cartItem[i].querySelector("span").innerHTML
-        // console.log(productPrice)
-        totalA = inputValue*productPrice
-        console.log(totalA)
+        console.log(productPrice)
+        totalA = inputValue * productPrice*1000
+        totalB = totalA.toLocaleString('de-DE')
+        console.log(totalB)
     }
 }
