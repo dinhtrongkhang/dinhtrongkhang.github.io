@@ -83,15 +83,23 @@ btn.forEach(function (button, index) {
 
 function addcart(productImg, productName, productPrice) {
     var addtr = document.createElement("tr")
+    var cartItem = document.querySelectorAll("tbody tr")
+    for (var i = 0; i < cartItem.length; i++) {
+        var productT = document.querySelectorAll(".product-name")
+        // console.log(productT)
+        if (productT[i].innerHTML == productName)
+            alert("Sản phẩm của bạn đã có trong giỏ hàng")
+
+    }
     var trcontent =
         `<tr>
         <td style="display: flex; align-items: center;"><img style="width: 70px; margin-right: 12px"
-            src="`+ productImg + `" alt="ghbaby1">` + productName + `</td>
+            src="`+ productImg + `" alt="ghbaby1"><span class="product-name">` + productName + `</span></td>
         <td>
-        <p><span >`+ productPrice + `</span><sup>đ</sup></p>
+        <p><span class="prices">`+ productPrice + `</span><sup>đ</sup></p>
         </td>
-        <td><input class="inputvalue" style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
-        <td style="cursor: pointer;">Xóa</td>
+        <td><input class="inputvalue" style="width: 50px; outline: none;" type="number" value="1" min="1"></td>
+        <td style="cursor: pointer;"><span class="cart-delete">Xóa</span></td>
         </tr>`
     addtr.innerHTML = trcontent
     var cartTable = document.querySelector("tbody")
@@ -99,6 +107,7 @@ function addcart(productImg, productName, productPrice) {
     cartTable.append(addtr)
 
     carttotal()
+    delteCart()
 }
 
 
@@ -112,16 +121,43 @@ function carttotal() {
         // console.log(i)
         var inputValue = cartItem[i].querySelector(".inputvalue").value
         // console.log(inputValue)
-        var productPrice = cartItem[i].querySelector("span").innerHTML
+        var productPrice = cartItem[i].querySelector(".prices").innerHTML
         // console.log(productPrice)
         totalA = inputValue * productPrice * 1000;
         totalC = totalC + totalA
         // console.log(totalC)
-        totalD = totalC.toLocaleString('de-DE')
+        // totalD = totalC.toLocaleString('de-DE')
     }
 
     var cartTotalA = document.querySelector(".price-total span")
-    cartTotalA.innerHTML = totalD
+    cartTotalA.innerHTML = totalC.toLocaleString('de-DE')
+    inputChange()
+    // console.log(cartTotalA)
+}
 
-    console.log(cartTotalA)
+// -------------------- delete card --------------------t
+
+function delteCart() {
+    var cartItem = document.querySelectorAll("tbody tr")
+    for (var i = 0; i < cartItem.length; i++) {
+        var productT = document.querySelectorAll(".cart-delete")
+        productT[i].addEventListener("click", function (event) {
+            var cartDelete = event.target
+            var cartItemR = cartDelete.parentElement.parentElement
+            cartItemR.remove()
+            carttotal()
+            // console.log(cartItemR)
+        })
+
+    }
+}
+
+function inputChange() {
+    var cartItem = document.querySelectorAll("tbody tr")
+    for (var i = 0; i < cartItem.length; i++) {
+        var inputValue = cartItem[i].querySelector(".inputvalue")
+        inputValue.addEventListener("change", function () {
+            carttotal()
+        })
+    }
 }
