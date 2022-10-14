@@ -137,7 +137,7 @@ a {
 .slick-dots {
     position: absolute;
     bottom: 0;
-    top: 74%;
+    top: 82%;
     left: 50%;
     transform: translate(-50%, 0);
     display: flex !important;
