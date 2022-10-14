@@ -195,3 +195,13 @@ p {
 .price-total p span {
     margin-left: 8px;
 }
+
+/* detail product */
+
+.product-right {
+    background-color: #636363;
+}
+
+.product-left {
+    background-color: #ff2850;
+}
