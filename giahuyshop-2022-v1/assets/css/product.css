@@ -95,6 +95,7 @@ html {
     border-radius: 10px;
     overflow-y: scroll;
     z-index: 6;
+    transition: all 0.3s ease;
 }
 
 .cart img {

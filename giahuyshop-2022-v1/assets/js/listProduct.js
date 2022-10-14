@@ -39,7 +39,7 @@ $(document).ready(function () {
             `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="box-item">
             <a href=""><img class="product-img" src=${value.src} /></a>
-                <div class="product-title">${value.Title}</div>
+                <div class="product-name">${value.Title}</div>
                 <div class="product-price">
                     <div class="old-price">${value.OldPrice}</div>
                     <div class="actual-price">${value.ActualPrice}</div>
@@ -60,7 +60,7 @@ $(document).ready(function () {
             `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="box-item">
             <a href=""><img class="product-img" src=${value.src} /></a>
-            <div class="product-title">${value.Title}</div>
+            <div class="product-name">${value.Title}</div>
             <div class="product-price">
                 <div class="old-price">${value.OldPrice}</div>
                 <div class="actual-price">${value.ActualPrice}</div>
@@ -81,7 +81,7 @@ $(document).ready(function () {
             `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="box-item">
             <a href=""><img class="product-img" src=${value.src} /></a>
-            <div class="product-title">${value.Title}</div>
+            <div class="product-name">${value.Title}</div>
             <div class="product-price">
                 <div class="old-price">${value.OldPrice}</div>
                 <div class="actual-price">${value.ActualPrice}</div>
@@ -102,7 +102,7 @@ $(document).ready(function () {
             `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="box-item">
             <a href=""><img class="product-img" src=${value.src} /></a>
-            <div class="product-title">${value.Title}</div>
+            <div class="product-name">${value.Title}</div>
             <div class="product-price">
                 <div class="old-price">${value.OldPrice}</div>
                 <div class="actual-price">${value.ActualPrice}</div>
@@ -123,7 +123,7 @@ $(document).ready(function () {
             `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="box-item">
           <a href=""><img class="product-img" src=${value.src} /></a>
-          <div class="product-title">${value.Title}</div>
+          <div class="product-name">${value.Title}</div>
           <div class="product-price">
               <div class="old-price">${value.OldPrice}</div>
               <div class="actual-price">${value.ActualPrice}</div>
