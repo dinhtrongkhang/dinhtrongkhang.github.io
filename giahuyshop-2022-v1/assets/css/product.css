@@ -68,10 +68,15 @@ p {
     margin-left: 24px;
 }
 
+
 .old-price {
     font-size: 1.6rem;
     text-decoration: line-through;
 }
+
+/* detail product */
+
+
 
 /* cart */
 
@@ -194,14 +199,4 @@ p {
 
 .price-total p span {
     margin-left: 8px;
-}
-
-/* detail product */
-
-.product-right {
-    background-color: #636363;
-}
-
-.product-left {
-    background-color: #ff2850;
 }
