@@ -51,7 +51,7 @@ html {
 .product-name {
     margin-top: 12px;
     font-size: 20px;
-    font-weight: bold;
+    /* font-weight: bold; */
     cursor: pointer;
 }
 
@@ -100,7 +100,7 @@ html {
 
 .cart img {
     width: 24px;
-    height: 24px;
+    height: 78px;
     display: flex;
     align-items: flex-start;
 }
