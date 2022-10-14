@@ -565,6 +565,27 @@ svg {
         width: 220px;
     }
 
+    .cart {
+        right: -170%;
+    }
+
+    .wrap-title h3 {
+        font-size: 2rem;
+    }
+
+    .title h2 {
+        font-size: 2rem;
+    }
+
+    .title span a {
+        font-size: 1.6rem;
+    }
+
+    .title-navigation h3 a,
+    .title-navigation span a {
+        font-size: 1.6rem;
+    }
+
     .footer-social {
         text-align: center;
         margin-bottom: 12px;
