@@ -115,6 +115,7 @@ function addcart(productImg, productName, productPrice) {
 
 function carttotal() {
     var cartItem = document.querySelectorAll("tbody tr")
+    var totalA = 0
     var totalC = 0
     // console.log(cartItem.length)
     for (var i = 0; i < cartItem.length; i++) {
@@ -168,10 +169,12 @@ function inputChange() {
 const cartBtn = document.querySelector(".cart-img")
 const cartShow = document.querySelector(".fa-cart-shopping")
 
-cartShow.addEventListener("click", function () {
+cartShow.addEventListener("click", function (event) {
+    event.preventDefault();
     document.querySelector(".cart").style.right = "0"
 })
 
-cartBtn.addEventListener("click", function () {
+cartBtn.addEventListener("click", function (event) {
+    event.preventDefault();
     document.querySelector(".cart").style.right = "-100%"
 })
