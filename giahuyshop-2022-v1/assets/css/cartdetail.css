@@ -116,6 +116,10 @@ img {
     font-weight: bold;
 }
 
+.product-detail {
+    margin-top: 18px;
+}
+
 .product-detail h2 {
     text-transform: capitalize;
     color: #12263a;
@@ -129,6 +133,17 @@ img {
     opacity: 0.8;
 }
 
+select,
+.product-value input {
+    height: 40px;
+    margin-right: 12px;
+    font-size: 1.4rem;
+    border-radius: 6px;
+}
+
+.product-value input {
+    width: 50px;
+}
 .product-detail ul {
     margin: 1rem 0;
     font-size: 0.9rem;
@@ -137,7 +152,7 @@ img {
 .product-detail ul li {
     margin: 0;
     list-style: none;
-    background: url(shoes_images/checked.png) left center no-repeat;
+    background: url() left center no-repeat;
     background-size: 18px;
     padding-left: 1.7rem;
     margin: 0.4rem 0;
@@ -173,12 +188,6 @@ img {
     color: #fff;
 }
 
-.btn-wishlist {
-    background-color: #fff;
-    border: 1px solid #ff2850;
-    color: #000;
-}
-
 .purchase-info .btn:first-of-type {
     background: #256eff;
 }
@@ -194,7 +203,7 @@ img {
 .social-links {
     display: flex;
     align-items: center;
-    margin-top: 12px;
+    margin-top: 18px;
 }
 
 .social-links a {
