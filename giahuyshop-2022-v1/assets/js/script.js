@@ -130,7 +130,9 @@ function carttotal() {
     }
 
     var cartTotalA = document.querySelector(".price-total span")
+    var cartPrice = document.querySelector(".cart-icon span")
     cartTotalA.innerHTML = totalC.toLocaleString('de-DE')
+    cartPrice.innerHTML = totalC.toLocaleString('de-DE')
     inputChange()
     // console.log(cartTotalA)
 }
@@ -161,3 +163,15 @@ function inputChange() {
         })
     }
 }
+
+
+const cartBtn = document.querySelector(".cart-img")
+const cartShow = document.querySelector(".fa-cart-shopping")
+
+cartShow.addEventListener("click", function () {
+    document.querySelector(".cart").style.right = "0"
+})
+
+cartBtn.addEventListener("click", function () {
+    document.querySelector(".cart").style.right = "-100%"
+})
