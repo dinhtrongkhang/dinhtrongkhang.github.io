@@ -17,9 +17,9 @@ html {
     font-size: 62.5%;
 }
 
-:root {
-    --primary-color: #000000;
-    --secondary-color: #ff2850;
+p {
+    margin: 0;
+    padding: 0;
 }
 
 .title-navigation {
@@ -49,9 +49,7 @@ html {
 }
 
 .product-name {
-    margin-top: 12px;
     font-size: 20px;
-    /* font-weight: bold; */
     cursor: pointer;
 }
 
@@ -76,10 +74,6 @@ html {
 }
 
 /* cart */
-
-.cart-icon {
-   
-}
 
 .cart {
     width: 50%;
