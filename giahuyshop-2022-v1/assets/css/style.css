@@ -331,6 +331,12 @@ svg {
     display: none !important;
 }
 
+/* slider */
+
+.slider {
+    display: flex;
+}
+
 /* -------------------- List Product ---------------------- */
 .section-product {
     margin-top: 24px;
