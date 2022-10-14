@@ -69,7 +69,7 @@ btn.forEach(function (button, index) {
             var btnItem = event.target
             var product = btnItem.parentElement
             // console.log(product)
-            var productImg = product.querySelector("img").src
+            var productImg = product.querySelector(".product-img").src
             // console.log(productImg)
             var productName = product.querySelector(".product-name").innerText;
             // console.log(productName)

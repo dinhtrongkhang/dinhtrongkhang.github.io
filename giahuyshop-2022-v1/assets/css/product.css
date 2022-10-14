@@ -75,6 +75,14 @@ p {
 
 /* cart */
 
+#counter {
+    position: absolute;
+    top: -11px;
+    left: 95.5%;color: #ff2850;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .cart {
     width: 50%;
     margin: auto;
