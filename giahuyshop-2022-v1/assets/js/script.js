@@ -71,9 +71,9 @@ btn.forEach(function (button, index) {
             // console.log(product)
             var productImg = product.querySelector("img").src
             // console.log(productImg)
-            var productName = product.querySelector(".product-name").innerText
+            var productName = product.querySelector(".product-name").innerText;
             // console.log(productName)
-            var productPrice = product.querySelector(".actual-price").innerText
+            var productPrice = product.querySelector(".actual-price").innerText;
             // console.log(productImg, productName, productPrice)
 
             addcart(productImg, productName, productPrice)
@@ -88,7 +88,7 @@ function addcart(productImg, productName, productPrice) {
         <td style="display: flex; align-items: center;"><img style="width: 70px; margin-right: 12px"
             src="`+ productImg + `" alt="ghbaby1">` + productName + `</td>
         <td>
-        <p><span>`+ productPrice + `</span><sup>đ</sup></p>
+        <p><span >`+ productPrice + `</span><sup>đ</sup></p>
         </td>
         <td><input class="inputvalue" style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
         <td style="cursor: pointer;">Xóa</td>
@@ -106,15 +106,22 @@ function addcart(productImg, productName, productPrice) {
 
 function carttotal() {
     var cartItem = document.querySelectorAll("tbody tr")
+    var totalC = 0
     // console.log(cartItem.length)
     for (var i = 0; i < cartItem.length; i++) {
         // console.log(i)
-        var inputValue = cartItem[i].querySelector("input").value
-        console.log(inputValue)
+        var inputValue = cartItem[i].querySelector(".inputvalue").value
+        // console.log(inputValue)
         var productPrice = cartItem[i].querySelector("span").innerHTML
-        console.log(productPrice)
-        totalA = inputValue * productPrice * 1000
-        totalB = totalA.toLocaleString('de-DE')
-        console.log(totalB)
+        // console.log(productPrice)
+        totalA = inputValue * productPrice * 1000;
+        totalC = totalC + totalA
+        // console.log(totalC)
+        totalD = totalC.toLocaleString('de-DE')
     }
+
+    var cartTotalA = document.querySelector(".price-total span")
+    cartTotalA.innerHTML = totalD
+
+    console.log(cartTotalA)
 }
