@@ -320,5 +320,91 @@ const menProduct = [
         id: 44
     },
 ];
+const jacketProduct = [
+    {
+        src: "./assets/image/gh-jacjet-1.webp",
+        Title: "Áo Gió Trẻ Em 3C Plus",
+        ActualPrice: "350.000",
+        OldPrice: "400.000",
+        id: 45
+    },
+    {
+        src: "./assets/image/gh-jacket-2.webp",
+        Title: "Áo Khoác Gió Cho Bé 3C Plus",
+        ActualPrice: "450.000",
+        OldPrice: "500.000",
+        id: 46
+    },
+    {
+        src: "./assets/image/gh-jacket-3.webp",
+        Title: "Áo Khoác Gió Thông Minh Trẻ Em",
+        ActualPrice: "270.000",
+        OldPrice: "400.000",
+        id: 47
+    },
+    {
+        src: "./assets/image/gh-jacket-4.webp",
+        Title: "Áo Khoác Phao Nữ 3s Plus - Siêu Nhẹ",
+        ActualPrice: "350.000",
+        OldPrice: "500.000",
+        id: 48
+    },
+    {
+        src: "./assets/image/gh-jacket-5.webp",
+        Title: "Áo Khoác Gió Thông Minh Nữ",
+        ActualPrice: "420.000",
+        OldPrice: "500.000",
+        id: 49
+    },
+    {
+        src: "./assets/image/gh-jacket-6.webp",
+        Title: "Áo Khoác Gió Nữ Thể Thao",
+        ActualPrice: "280.000",
+        OldPrice: "600.000",
+        id: 50
+    },
+    {
+        src: "./assets/image/gh-jacket-7.webp",
+        Title: "Áo Khoác Nữ Kaki Dáng Ngắn",
+        ActualPrice: "550.000",
+        OldPrice: "600.000",
+        id: 51
+    },
+    {
+        src: "./assets/image/gh-jacket-8.webp",
+        Title: "Áo Phao Nữ Dáng Dài Thời Trang",
+        ActualPrice: "450.000",
+        OldPrice: "500.000",
+        id: 52
+    },
+    {
+        src: "./assets/image/gh-jacket-9.webp",
+        Title: "Áo Phao Nữ Dáng Ngắn 3 Lớp",
+        ActualPrice: "650.000",
+        OldPrice: "700.000",
+        id: 53
+    },
+    {
+        src: "./assets/image/gh-jacjet-10.webp",
+        Title: "Áo Khoác Phao Nữ Siêu Nhẹ",
+        ActualPrice: "550.000",
+        OldPrice: "600.000",
+        id: 54
+    },
+    {
+        src: "./assets/image/gh-jacjet-12.webp",
+        Title: "Áo Phao Trẻ Em Siêu Nhẹ Có Mũ",
+        ActualPrice: "450.000",
+        OldPrice: "500.000",
+        id: 55
+    },
+    {
+        src: "./assets/image/gh-jacjet-13.webp",
+        Title: "Áo Khoác Gió Trẻ Em Chống Ngấm Nước",
+        ActualPrice: "650.000",
+        OldPrice: "700.000",
+        id: 56
+    },
+];
 
 
