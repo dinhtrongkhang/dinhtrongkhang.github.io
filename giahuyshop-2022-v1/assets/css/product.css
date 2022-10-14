@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ff2850;
+    --text-color: #171427;
+    --bg-color: #fcfcfc;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -68,4 +75,57 @@ html {
     text-decoration: line-through;
 }
 
+/* cart */
+.cart-icon {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    height: 100vh;
+    width: 600px;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    padding: 12px 20px;
+    overflow-y: scroll;
+    z-index: 6;
+}
 
+.cart-icon h2 {
+    margin-bottom: 20px;
+}
+
+.cart-icon table {
+    width: 100%;
+}
+
+.cart-icon table thead tr th {
+    font-size: 16px;
+}
+
+.cart-icon table tbody tr {
+    font-size: 14px;
+}
+
+.cart-icon table thead tr th:first-child {
+    text-align: left;
+}
+
+.cart-icon table tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+
+.cart-icon table thead tr th:last-child,
+.cart-icon table tbody tr td:last-child {
+    text-align: right;
+}
+
+.price-total {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.price-total p span {
+    margin-left: 8px;
+}
