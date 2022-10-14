@@ -132,7 +132,7 @@ function carttotal() {
     var cartTotalA = document.querySelector(".price-total span")
     var cartPrice = document.querySelector(".cart-icon span")
     cartTotalA.innerHTML = totalC.toLocaleString('de-DE')
-    cartPrice.innerHTML = totalC.toLocaleString('de-DE')
+    // cartPrice.innerHTML = totalC.toLocaleString('de-DE')
     inputChange()
     // console.log(cartTotalA)
 }
