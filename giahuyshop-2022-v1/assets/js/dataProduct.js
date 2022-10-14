@@ -337,14 +337,14 @@ const jacketProduct = [
     },
     {
         src: "./assets/image/gh-jacket-3.webp",
-        Title: "Áo Khoác Gió Thông Minh Trẻ Em",
+        Title: "Áo Khoác Gió Thông Minh",
         ActualPrice: "270.000",
         OldPrice: "400.000",
         id: 47
     },
     {
         src: "./assets/image/gh-jacket-4.webp",
-        Title: "Áo Khoác Phao Nữ 3s Plus - Siêu Nhẹ",
+        Title: "Áo Khoác Phao Nữ 3s Plus",
         ActualPrice: "350.000",
         OldPrice: "500.000",
         id: 48
@@ -372,7 +372,7 @@ const jacketProduct = [
     },
     {
         src: "./assets/image/gh-jacket-8.webp",
-        Title: "Áo Phao Nữ Dáng Dài Thời Trang",
+        Title: "Áo Phao Nữ Dáng Dài",
         ActualPrice: "450.000",
         OldPrice: "500.000",
         id: 52
@@ -393,14 +393,14 @@ const jacketProduct = [
     },
     {
         src: "./assets/image/gh-jacjet-12.webp",
-        Title: "Áo Phao Trẻ Em Siêu Nhẹ Có Mũ",
+        Title: "Áo Phao Trẻ Em Siêu Nhẹ",
         ActualPrice: "450.000",
         OldPrice: "500.000",
         id: 55
     },
     {
         src: "./assets/image/gh-jacjet-13.webp",
-        Title: "Áo Khoác Gió Trẻ Em Chống Ngấm Nước",
+        Title: "Áo Khoác Gió Trẻ Em",
         ActualPrice: "650.000",
         OldPrice: "700.000",
         id: 56
