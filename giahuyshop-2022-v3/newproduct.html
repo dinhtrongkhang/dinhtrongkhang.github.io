@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gia Huy Shop - Sản phẩm mới</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./libs/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- import carousel css -->
+    <link rel="stylesheet" href="./libs/OwlCarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel/assets/owl.theme.default.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- start header -->
+        <div class="header">
+            <div class="nav">
+                <div class="brand">
+                    <a href="./index.html"><span>GH</span>SHOP</a>
+                </div>
+                <div class="wrap-search">
+                    <img src="./assets/image/search.svg" alt="search">
+                    <input type="text">
+                </div>
+                <div class="nav-right">
+                    <div class="wishlist"><a href="">
+                            <i class="fa-solid fa-heart"></i>
+                        </a></div>
+                    <div class="cart-icon">
+                        <a href="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                    <div class="user">
+                        <a href="">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-line">
+
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="active list-item"><a href="./index.html">Trang Chủ</a></li>
+                    <li class="list-item"><a href="./productbaby.html">Trẻ Em</a></li>
+                    <li class="list-item"><a href="./productwomen.html">Nữ</a></li>
+                    <li class="list-item"><a href="./productmen.html">Nam</a></li>
+                    <li class="list-item"><a href="./news.html">Tin Tức</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end header -->
+
+        <!-- start main -->
+        <div class="main">
+
+            <!-- start cart shopping -->
+            <section class="cart">
+                <img class="cart-img" src="./assets/image/close.svg" alt="close-cart">
+                <h2>Danh mục sản phẩm</h2>
+                <form action="">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Chọn</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                        <td style="display: flex; align-items: center;"><img style="width: 70px; margin-right: 12px"
+                                src="./assets/image/gh-baby-1.webp" alt="ghbaby1">aaaaaaaaa</td>
+                        <td>
+                            <p><span>100.000</span><sup>đ</sup></p>
+                        </td>
+                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="0"></td>
+                        <td style="cursor: pointer;">Xóa</td>
+                    </tr> -->
+                        </tbody>
+                    </table>
+                    <div style="text-align: right;" class="price-total">
+                        <p style="font-weight: bold;">Tổng tiền: <span>0</span><sup>đ</sup></p>
+                    </div>
+
+                    <button class="add-to-cart btn">Thanh Toán</button>
+                </form>
+            </section>
+            <!-- end cart shopping -->
+
+            <!-- start New Product -->
+            <div class="section-product">
+                <div class="container">
+                    <div class="title-navigation">
+                        <h3><a href="./index.html">Trang chủ</a> > <a href="">Sản phẩm mới</a></h3>
+                        <span><a href="">Xem thêm ></a></span>
+                    </div>
+
+                    <div class="row" id="list-product--js">
+
+                    </div>
+                </div>
+            </div>
+            <!-- end New Product -->
+
+            <!-- start Collection -->
+            <div class="section-product">
+                <div class="container">
+                    <div class="title">
+                        <h2>Sản Phẩm Bán Chạy</h2>
+                        <span><a href="">Xem thêm ></a></span>
+                    </div>
+                    <div class="row" id="collection-product--js">
+
+                    </div>
+                </div>
+            </div>
+            <!-- end Collection -->
+        </div>
+        <!-- end main -->
+
+        <!-- start footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h3 class="footer-title">Liên hệ với chúng tôi</h3>
+                        <p class="footer-name">Email: khangdinhtb@gmail.com</p>
+                        <p class="footer-name">Giờ mở cửa:</p>
+                        <p class="footer-name"><span>Hai-Sáu:</span> 9am-5pm</p>
+                        <p class="footer-name">Cuối tuần và ngày lễ: Đóng cửa</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h3 class="footer-title">CHĂM SÓC KHÁCH HÀNG</h3>
+                        <p class="footer-name">Theo dõi đơn hàng của tôi</p>
+                        <p class="footer-name">Vận chuyển</p>
+                        <p class="footer-name">Đơn hàng</p>
+                        <p class="footer-name">Danh sách yêu thích</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h3 class="footer-title">Thông tin</h3>
+                        <p class="footer-name">Về chúng tôi</p>
+                        <p class="footer-name">Câu hỏi thường gặp</p>
+                        <p class="footer-name">Product Care</p>
+                        <p class="footer-name">Terms and Conditions</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h3 class="footer-title">Theo dõi chúng tôi</h3>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/khangdinh99/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/dinh.trong.khang/">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC6kb8QEAD8zy-NhVpxxSvmw">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="footer-copyright">
+                        <p>Copyright © 2022 by GHSHOP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+
+    </div>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="./libs/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js"
+        integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js"
+        integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO"
+        crossorigin="anonymous"></script>
+    <script src="./libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./libs/slick/slick.js"></script>
+    <script src="./libs/OwlCarousel/owl.carousel.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/dataProduct.js"></script>
+    <script src="./assets/js/listProduct.js"></script>
+
+</body>
+
+</html>
