@@ -554,6 +554,10 @@ svg {
     .wrap-title {
         width: 300px;
     }
+
+    .footer-title {
+        font-size: 1.6rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
