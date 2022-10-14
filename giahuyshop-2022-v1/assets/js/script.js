@@ -165,7 +165,7 @@ function inputChange() {
     }
 }
 
-
+// show hide list cart
 const cartBtn = document.querySelector(".cart-img")
 const cartShow = document.querySelector(".fa-cart-shopping")
 
@@ -177,4 +177,20 @@ cartShow.addEventListener("click", function (event) {
 cartBtn.addEventListener("click", function (event) {
     event.preventDefault();
     document.querySelector(".cart").style.right = "-100%"
+})
+
+
+// counter product to cart
+let count = 0;
+const counter = document.getElementById('.counter');
+document.getElementById('add-animation').addEventListener("click", event => {
+    const cl = counter.classList;
+    const c = 'animated-counter';
+    count++;
+
+    counter.innerText = count;
+    cl.remove(c, cl.contains(c));
+    setTimeout(() =>
+        counter.classList.add('animated-counter')
+        , 1)
 })
