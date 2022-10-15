@@ -26,7 +26,6 @@ img {
 }
 
 .img-select {
-    display: flex;
 }
 
 .img-item {
@@ -135,15 +134,40 @@ img {
 
 select,
 .product-value input {
-    height: 40px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 6px;
     margin-right: 12px;
     font-size: 1.4rem;
     border-radius: 6px;
 }
 
+.purchase-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.purchase-info p {
+    font-size: 1.4rem;
+    margin-right: 12px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.quantity p {
+    font-size: 1.4rem;
+}
+
 .product-value input {
     width: 50px;
+    margin-left: 12px;
 }
+
 .product-detail ul {
     margin: 1rem 0;
     font-size: 0.9rem;
@@ -164,46 +188,14 @@ select,
     font-weight: 400;
 }
 
-.purchase-info {
-    margin: 1.5rem 0;
-}
-
-.purchase-info input,
-.purchase-info .btn {
-    border: 1.5px solid #ddd;
-    /* border-radius: 25px; */
-    text-align: center;
-    padding: 0.45rem 0.8rem;
-    outline: 0;
-    margin-right: 0.2rem;
-    margin-bottom: 1rem;
-}
-
-.purchase-info input {
-    width: 60px;
-}
-
-.purchase-info .btn {
-    cursor: pointer;
-    color: #fff;
-}
-
-.purchase-info .btn:first-of-type {
-    background: #256eff;
-}
-
-.purchase-info .btn:last-of-type {
-    background: #f64749;
-}
-
-.purchase-info .btn:hover {
-    opacity: 0.9;
-}
-
 .social-links {
     display: flex;
     align-items: center;
     margin-top: 18px;
+}
+
+.social-links p {
+    font-size: 1.4rem;
 }
 
 .social-links a {

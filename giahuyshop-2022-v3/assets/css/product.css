@@ -80,7 +80,7 @@ p {
 
 /* cart */
 
-.cart-icon span {
+/* .cart-icon span {
     user-select: none;
     position: absolute;
     top: 5px;
@@ -136,7 +136,7 @@ p {
         right: .3px;
         transform: rotate(0deg);
     }
-}
+} */
 
 .cart {
     width: 50%;
