@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gia Huy Shop - Baby</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./libs/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/formaccount.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/cartdetail.css">
+    <!-- import carousel css -->
+    <link rel="stylesheet" href="./libs/OwlCarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel/assets/owl.theme.default.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!------------ start header ------------>
+        <div class="header">
+            <div class="nav">
+                <div class="brand">
+                    <a href="./index.html"><span>GH</span>SHOP</a>
+                </div>
+                <div class="wrap-search">
+                    <img src="./assets/image/search.svg" alt="search">
+                    <input type="text">
+                </div>
+                <div class="nav-right">
+                    <div class="cart-icon">
+                        <a href="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user" id="popup__account"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-line">
+
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="active list-item"><a href="./index.html">Trang Chủ</a></li>
+                    <li class="list-item"><a href="./productbaby.html">Trẻ Em</a></li>
+                    <li class="list-item"><a href="./productwomen.html">Nữ</a></li>
+                    <li class="list-item"><a href="./productmen.html">Nam</a></li>
+                    <li class="list-item"><a href="./news.html">Tin Tức</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end header -->
+
+        <!-- --------- account start ---------- -->
+
+        <!-- dang nhap -->
+        <div class="modal" id="form__dangnhap">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span class="close" title="Close Modal">&times;</span>
+                </div>
+
+                <div class="wrap-acc">
+
+                    <h3 class="form__heading">Đăng nhập</h3>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email__dk" name="email" type="text" placeholder="Nhập email" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group password__login">
+                        <label for="password" class="form-label">Mật khẩu</label>
+                        <input id="password__dk" name="password" type="password" placeholder="Nhập mật khẩu"
+                            class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <a href="index.html" class="custom-btn btn btn-login"><span>Đăng nhập</span></a>
+
+                    <div class="form-group__social">
+                        <p class="social-text">Hoặc đăng nhập bằng</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="form__switch-btn">
+                        <p>Bạn chưa có tài khoản?</p>
+                        <p class="dangky" id="popup__account-register">Đăng ký</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- dang ky -->
+        <div class="modal" id="form__dangky">
+
+            <form class="modal-content animate" action="index.html" method="post">
+                <div class="imgcontainer">
+                    <span class="close-register" title="Close Modal">&times;</span>
+                </div>
+
+                <div class="wrap-acc">
+
+                    <h3 class="form__heading">Đăng ký</h3>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email" name="email" type="text" placeholder="Nhập email" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group password__signup">
+                        <label for="password" class="form-label">Mật khẩu</label>
+                        <input id="password" name="password" type="password" placeholder="Nhập mật khẩu"
+                            class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group password__signup">
+                        <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                        <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu"
+                            type="password" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="form-group__policy-text">
+                            Bằng việc đăng ký bạn đã đồng ý với Gia Huy Shop về
+                            <a href="" class="form-group__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="form-group__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <a href="index.html" class="custom-btn btn btn-login" value="Continue to checkout"><span>Đăng
+                            ký</span></a>
+
+                    <div class="form__switch-btn">
+                        <p>Bạn đã có tài khoản?</p>
+                        <p class="dangnhap" id="popup__account-login">Đăng nhập</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- ---------- account end ------------ -->
+
+        <!-- start main -->
+        <div class="main">
+
+            <!-- start cart shopping -->
+            <section class="cart">
+                <img class="cart-img" src="./assets/image/close.svg" alt="close-cart">
+                <h2>Danh mục sản phẩm</h2>
+                <form action="">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Chọn</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                    <div style="text-align: right;" class="price-total">
+                        <p style="font-weight: bold;">Tổng tiền: <span>0</span><sup>đ</sup></p>
+                    </div>
+
+                    <button class="add-to-cart btn">Thanh Toán</button>
+                </form>
+            </section>
+            <!-- end cart shopping -->
+
+            <!-- start New Product -->
+            <div class="section-product">
+                <div class="container">
+                    <div class="title-navigation">
+                        <h3><a href="./index.html">Trang chủ</a> > <a href="">Trẻ em</a> > <a href="">Áo thun dài
+                                tay</a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                            <!-- card left -->
+                            <div class="product-imgs">
+                                <div class="row">
+                                    <div class="col-12 col-sm-10 col-md-10 col-lg-10">
+                                        <div class="img-display">
+                                            <div class="img-showcase">
+                                                <img src="./assets/image/gh-baby-1.webp" alt="baby1">
+                                                <img src="./assets/image/gh-baby-1.webp" alt="baby1">
+                                                <img src="./assets/image/gh-baby-1.webp" alt="baby1">
+                                                <img src="./assets/image/gh-baby-1.webp" alt="baby1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-2 col-md-2 col-lg-2">
+                                        <div class="img-select">
+                                            <div class="img-item">
+                                                <a href="#" data-id="1">
+                                                    <img src="./assets/image/gh-baby-1.webp" alt="baby1">
+                                                </a>
+                                            </div>
+                                            <div class="img-item">
+                                                <a href="#" data-id="2">
+                                                    <img src="./assets/image/gh-baby-2.webp" alt="baby1">
+                                                </a>
+                                            </div>
+                                            <div class="img-item">
+                                                <a href="#" data-id="3">
+                                                    <img src="./assets/image/gh-baby-3.webp" alt="baby1">
+                                                </a>
+                                            </div>
+                                            <div class="img-item">
+                                                <a href="#" data-id="4">
+                                                    <img src="./assets/image/gh-baby-1.webp" alt="baby1">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                            <!-- card right -->
+                            <div class="product-content">
+                                <h2 class="product-name">Áo thun dài tay</h2>
+
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+
+                                <div class="product-price">
+                                    <p class="new-price"><span>200.000</span><sup>đ</sup></p>
+                                </div>
+
+                                <div class="purchase-info">
+                                    <p>Size: </p>
+                                    <select>
+                                        <option>Select Size:</option>
+                                        <option>S</option>
+                                        <option>M</option>
+                                        <option>L</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="product-value">
+                                    <div class="quantity">
+                                        <p>Số lượng: </p>
+                                        <input type="number" value="1">
+                                    </div>
+                                    <button type="button" class="btn">
+                                        Thêm vào giỏ hàng <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+
+                                <div class="product-detail">
+                                    <h2>Đặc điểm sản phẩm: </h2>
+                                    <p>Áo thun dài tay dành cho bé từ 2-8 tuổi.</p>
+                                    <p>Thiết kế hình in trước ngực tạo điểm nhấn tinh nghịch đáng yêu.</p>
+                                    <p>Áo có chất liệu nỉ da cá, giữ ấm tốt, bề mặt vải mịn cùng màu sắc bắt mắt</p>
+                                    <p>Thấm hút mồ hôi tốt, co giãn nhẹ theo chuyển động của cơ thể bé</p>
+                                    <p>Có thể kết hợp cùng quần nỉ, quần kaki hoặc quần jeans</p>
+                                    <p>Sản phẩm phù hợp để bé mặc ở nhà, đi chơi và đi học</p>
+                                    <ul>
+                                        <li>Màu sắc: <span>Tomato</span></li>
+                                        <li>Giao hàng: <span>Toàn quốc</span></li>
+                                        <li>Giao hàng miễn phí: <span>Miễn phí</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- <button type="button" class="btn btn-wishlist">Yêu thích</button> -->
+
+                                <div class="social-links">
+                                    <p>Chia sẻ: </p>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end New Product -->
+
+            <!-- start Collection -->
+            <div class="section-product">
+                <div class="container">
+                    <div class="title">
+                        <h2>Sản Phẩm Bán Chạy</h2>
+                        <span><a href="./hotproduct.html">Xem thêm ></a></span>
+                    </div>
+                    <div class="row" id="collection-product--js">
+
+                    </div>
+                </div>
+            </div>
+            <!-- end Collection -->
+        </div>
+        <!-- end main -->
+
+        <!-- start footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h3 class="footer-title">Liên hệ với chúng tôi</h3>
+                        <p class="footer-name"><span>Địa chỉ: </span> An Ninh, Tiền Hải, Thái Bình</p>
+                        <p class="footer-name"><span>Hotline: </span> +84-9043 39993</p>
+                        <p class="footer-name">Email: khangdinhtb@gmail.com</p>
+                        <p class="footer-name">Giờ mở cửa: <span>Hai - Chủ Nhật:</span> 9am-7pm</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h3 class="footer-title">CHĂM SÓC KHÁCH HÀNG</h3>
+                        <p class="footer-name">Chính sách điều khoản</p>
+                        <p class="footer-name">Hướng dẫn mua hàng</p>
+                        <p class="footer-name">Chính sách thanh toán</p>
+                        <p class="footer-name">Chính sách đổi trả</p>
+                        <p class="footer-name">Chính sách bảo hành</p>
+                        <p class="footer-name">Chính sách giao nhận và vận chuyển</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h3 class="footer-title">Thông tin</h3>
+                        <p class="footer-name">Về GHSHOP</p>
+                        <p class="footer-name">Tuyển dụng</p>
+                        <p class="footer-name">Hệ thống cửa hàng</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                        <h3 class="footer-title">Theo dõi chúng tôi</h3>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/khangdinh99/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/dinh.trong.khang/">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC6kb8QEAD8zy-NhVpxxSvmw">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="footer-copyright">
+                            <p>Copyright © 2022 by GHSHOP.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+
+    </div>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="./libs/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js"
+        integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js"
+        integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO"
+        crossorigin="anonymous"></script>
+    <script src="./libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./libs/slick/slick.js"></script>
+    <script src="./libs/OwlCarousel/owl.carousel.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/dataProduct.js"></script>
+    <script src="./assets/js/listProduct.js"></script>
+
+</body>
+
+</html>
