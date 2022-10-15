@@ -145,6 +145,7 @@ select,
     width: 50px;
     margin-bottom: 12px;
     margin-left: 12px;
+    padding: 0 12px;
 }
 
 .product-value {
