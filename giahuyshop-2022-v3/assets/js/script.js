@@ -1,3 +1,33 @@
+// account đăng nhập và đăng ký
+
+// bat login
+document.getElementById("popup__account").addEventListener("click", function () {
+    document.querySelector("#form__dangnhap").style.display = "block";
+})
+
+// tat login
+document.querySelector(".close").addEventListener("click", function () {
+    document.querySelector("#form__dangnhap").style.display = "none";
+})
+
+// bat register va tat login
+document.getElementById("popup__account-register").addEventListener("click", function () {
+    document.querySelector("#form__dangky").style.display = "block";
+    document.querySelector("#form__dangnhap").style.display = "none";
+})
+
+// tat register
+document.querySelector(".close-register").addEventListener("click", function () {
+    document.querySelector("#form__dangky").style.display = "none";
+})
+
+// bat login va tat register
+document.getElementById("popup__account-login").addEventListener("click", function () {
+    document.querySelector("#form__dangnhap").style.display = "block";
+    document.querySelector("#form__dangky").style.display = "none";
+})
+//slider 
+
 $(document).ready(function () {
     $(".banner-slide").slick({
         slidesToShow: 1,
@@ -92,7 +122,8 @@ function addcart(productImg, productName, productPrice) {
 
     }
     var trcontent =
-        `<tr>
+        `
+        <tr>
         <td style="display: flex; align-items: center;"><img style="width: 70px; margin-right: 12px"
             src="`+ productImg + `" alt="ghbaby1"><span class="product-name">` + productName + `</span></td>
         <td>
@@ -100,7 +131,8 @@ function addcart(productImg, productName, productPrice) {
         </td>
         <td><input class="inputvalue" style="width: 50px; outline: none;" type="number" value="1" min="1"></td>
         <td style="cursor: pointer;"><span class="cart-delete">Xóa</span></td>
-        </tr>`
+        </tr>
+        `
     addtr.innerHTML = trcontent
     var cartTable = document.querySelector("tbody")
     // console.log(cartTable)
@@ -180,17 +212,26 @@ cartBtn.addEventListener("click", function (event) {
 })
 
 
-// counter product to cart
-let count = 0;
-const counter = document.getElementById('.counter');
-document.getElementById('add-animation').addEventListener("click", event => {
-    const cl = counter.classList;
-    const c = 'animated-counter';
-    count++;
+// product detail
 
-    counter.innerText = count;
-    cl.remove(c, cl.contains(c));
-    setTimeout(() =>
-        counter.classList.add('animated-counter')
-        , 1)
-})
+const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage() {
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+}
+
+window.addEventListener('resize', slideImage);
+
+

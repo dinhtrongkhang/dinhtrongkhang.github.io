@@ -34,7 +34,7 @@ p {
     color: #636363;
 }
 
-.box-item {
+.card-item {
     margin: 12px;
     box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2px;
     padding-bottom: 12px;
@@ -68,10 +68,15 @@ p {
     margin-left: 24px;
 }
 
+
 .old-price {
     font-size: 1.6rem;
     text-decoration: line-through;
 }
+
+/* detail product */
+
+
 
 /* cart */
 

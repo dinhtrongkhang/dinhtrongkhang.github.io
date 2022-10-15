@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./libs/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/formaccount.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- import carousel css -->
     <link rel="stylesheet" href="./libs/OwlCarousel/assets/owl.carousel.min.css">
@@ -32,9 +33,10 @@
                     <input type="text">
                 </div>
                 <div class="nav-right">
-                    <div class="wishlist"><a href="">
+                    <!-- <div class="wishlist"><a href="">
                             <i class="fa-solid fa-heart"></i>
-                        </a></div>
+                        </a>
+                    </div> -->
                     <div class="cart-icon">
                         <a href="">
                             <i class="fa-solid fa-cart-shopping"></i>
@@ -42,7 +44,7 @@
                     </div>
                     <div class="user">
                         <a href="">
-                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-user" id="popup__account"></i>
                         </a>
                     </div>
                 </div>
@@ -61,6 +63,110 @@
             </div>
         </div>
         <!-- end header -->
+
+          <!-- --------- account start ---------- -->
+
+        <!-- dang nhap -->
+        <div class="modal" id="form__dangnhap">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span class="close" title="Close Modal">&times;</span>
+                </div>
+
+                <div class="container">
+
+                    <h3 class="form__heading">Đăng nhập</h3>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email__dk" name="email" type="text" placeholder="Nhập email" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group password__login">
+                        <label for="password" class="form-label">Mật khẩu</label>
+                        <input id="password__dk" name="password" type="password" placeholder="Nhập mật khẩu"
+                            class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+                    <!-- <a href="index.html" class="form-submit book-btn">Đăng nhập</a> -->
+                    <a href="index.html" class="custom-btn btn btn-login"><span>Đăng nhập</span></a>
+
+                    <div class="form-group__social">
+                        <p class="social-text">Hoặc đăng nhập bằng</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="form__switch-btn">
+                        <p>Bạn chưa có tài khoản?</p>
+                        <p class="dangky" id="popup__account-register">Đăng ký</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- dang ky -->
+        <div class="modal" id="form__dangky">
+
+            <form class="modal-content animate" action="index.html" method="post">
+                <div class="imgcontainer">
+                    <span class="close-register" title="Close Modal">&times;</span>
+                </div>
+
+                <div class="container">
+
+                    <h3 class="form__heading">Đăng ký</h3>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email" name="email" type="text" placeholder="Nhập email" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group password__signup">
+                        <label for="password" class="form-label">Mật khẩu</label>
+                        <input id="password" name="password" type="password" placeholder="Nhập mật khẩu"
+                            class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group password__signup">
+                        <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                        <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu"
+                            type="password" class="form-control">
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="form-group__policy-text">
+                            Bằng việc đăng ký bạn đã đồng ý với Gia Huy Shop về
+                            <a href="" class="form-group__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="form-group__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <!-- <a class="form-submit book-btn" value="Continue to checkout">Đăng ký</a> -->
+                    <a href="index.html" class="custom-btn btn btn-login" value="Continue to checkout"><span>Đăng
+                            ký</span></a>
+
+                    <div class="form__switch-btn">
+                        <p>Bạn đã có tài khoản?</p>
+                        <p class="dangnhap" id="popup__account-login">Đăng nhập</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- ---------- account end ------------ -->
 
         <!-- start main -->
         <div class="main">
@@ -119,7 +225,7 @@
                 <div class="container">
                     <div class="title">
                         <h2>Sản Phẩm Bán Chạy</h2>
-                        <span><a href="">See more></a></span>
+                        <span><a href="./hotproduct.html">See more></a></span>
                     </div>
                     <div class="row" id="collection-product--js">
 

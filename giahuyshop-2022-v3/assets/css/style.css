@@ -36,6 +36,7 @@ a {
 .btn {
     width: 200px;
     height: 40px;
+    line-height: 40px;
     background-color: var(--secondary-color);
     border-radius: 8px;
     border: none;
@@ -81,7 +82,7 @@ a {
 }
 
 .image-item,
-.box-item {
+.card-item {
     position: relative;
 }
 
@@ -468,16 +469,8 @@ svg {
     padding: 0 12px;
 }
 
-.footer-social a .fa-facebook-f:hover {
-    color: #1877F2;
-}
-
-.footer-social a .fa-instagram:hover {
-    color: #c0485e;
-}
-
-.footer-social a .fa-youtube:hover {
-    color: red;
+.footer-social a i:hover {
+    color: var(--secondary-color);
 }
 
 .footer-copyright {
