@@ -92,7 +92,8 @@ function addcart(productImg, productName, productPrice) {
 
     }
     var trcontent =
-        `<tr>
+        `
+        <tr>
         <td style="display: flex; align-items: center;"><img style="width: 70px; margin-right: 12px"
             src="`+ productImg + `" alt="ghbaby1"><span class="product-name">` + productName + `</span></td>
         <td>
@@ -100,7 +101,8 @@ function addcart(productImg, productName, productPrice) {
         </td>
         <td><input class="inputvalue" style="width: 50px; outline: none;" type="number" value="1" min="1"></td>
         <td style="cursor: pointer;"><span class="cart-delete">Xóa</span></td>
-        </tr>`
+        </tr>
+        `
     addtr.innerHTML = trcontent
     var cartTable = document.querySelector("tbody")
     // console.log(cartTable)
@@ -180,21 +182,6 @@ cartBtn.addEventListener("click", function (event) {
 })
 
 
-// counter product to cart
-let count = 0;
-const counter = document.getElementById('.counter');
-document.getElementById('add-animation').addEventListener("click", event => {
-    const cl = counter.classList;
-    const c = 'animated-counter';
-    count++;
-
-    counter.innerText = count;
-    cl.remove(c, cl.contains(c));
-    setTimeout(() =>
-        counter.classList.add('animated-counter')
-        , 1)
-})
-
 // product detail
 
 const imgs = document.querySelectorAll('.img-select a');
@@ -216,3 +203,5 @@ function slideImage() {
 }
 
 window.addEventListener('resize', slideImage);
+
+
