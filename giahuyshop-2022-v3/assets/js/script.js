@@ -55,7 +55,7 @@ $(document).ready(function () {
             },
         ],
         autoplay: true,
-        autoplaySpeed: 800,
+        autoplaySpeed: 1500,
     });
 
     $(".slider").slick({
