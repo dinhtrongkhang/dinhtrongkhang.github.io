@@ -1,3 +1,33 @@
+// account đăng nhập và đăng ký
+
+// bat login
+document.getElementById("popup__account").addEventListener("click", function () {
+    document.querySelector("#form__dangnhap").style.display = "block";
+})
+
+// tat login
+document.querySelector(".close").addEventListener("click", function () {
+    document.querySelector("#form__dangnhap").style.display = "none";
+})
+
+// bat register va tat login
+document.getElementById("popup__account-register").addEventListener("click", function () {
+    document.querySelector("#form__dangky").style.display = "block";
+    document.querySelector("#form__dangnhap").style.display = "none";
+})
+
+// tat register
+document.querySelector(".close-register").addEventListener("click", function () {
+    document.querySelector("#form__dangky").style.display = "none";
+})
+
+// bat login va tat register
+document.getElementById("popup__account-login").addEventListener("click", function () {
+    document.querySelector("#form__dangnhap").style.display = "block";
+    document.querySelector("#form__dangky").style.display = "none";
+})
+//slider 
+
 $(document).ready(function () {
     $(".banner-slide").slick({
         slidesToShow: 1,
