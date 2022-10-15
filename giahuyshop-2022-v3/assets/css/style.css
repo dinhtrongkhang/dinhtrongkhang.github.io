@@ -110,8 +110,8 @@ a {
     top: 50%;
     transform: translateY(-50%);
     border: none;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,11 +128,11 @@ a {
 
 
 .slick-prev {
-    left: 10px;
+    left: 12px;
 }
 
 .slick-next {
-    right: 10px;
+    right: 12px;
 }
 
 .slick-dots {
