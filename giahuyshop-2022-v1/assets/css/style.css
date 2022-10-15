@@ -36,6 +36,7 @@ a {
 .btn {
     width: 200px;
     height: 40px;
+    line-height: 40px;
     background-color: var(--secondary-color);
     border-radius: 8px;
     border: none;
