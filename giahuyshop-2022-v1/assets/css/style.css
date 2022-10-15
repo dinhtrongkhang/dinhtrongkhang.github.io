@@ -301,6 +301,10 @@ svg {
     position: relative;
 }
 
+.banner-slide img {
+    cursor: pointer;
+}
+
 .item .title {
     position: absolute;
     top: 70%;
