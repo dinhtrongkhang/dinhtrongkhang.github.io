@@ -486,6 +486,9 @@ svg {
     color: var(--secondary-color);
 }
 
+.footer-bottom {
+    margin-top: 24px;
+}
 .footer-copyright {
     background-color: #151515;
     padding: 12px 0;
