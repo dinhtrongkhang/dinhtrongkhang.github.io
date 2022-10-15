@@ -447,6 +447,15 @@ svg {
     margin-bottom: 24px;
 }
 
+.thanksyou  h2 a{
+    color: #151515;
+    font-size: 2rem;
+}
+
+.thanksyou p {
+    font-size: 1.6rem;
+}
+
 /* --------------- footer --------------------- */
 .footer {
     background-color: var(--primary-color);
