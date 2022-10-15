@@ -440,6 +440,12 @@ svg {
     color: #636363;
 }
 
+
+/* thanh toán */
+
+.xacnhanthanhtoan {
+    margin-bottom: 24px;
+}
 /* --------------- footer --------------------- */
 .footer {
     background-color: var(--primary-color);
