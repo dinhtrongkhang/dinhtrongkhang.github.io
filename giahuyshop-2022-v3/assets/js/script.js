@@ -1,3 +1,11 @@
+// Search
+
+const icon = document.querySelector('.icon');
+const search = document.querySelector('.wrap-search');
+icon.onclick = function () {
+    search.classList.toggle('active')
+}
+
 // account đăng nhập và đăng ký
 
 // bat login
