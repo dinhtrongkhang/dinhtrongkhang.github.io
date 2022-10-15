@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/formaccount.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/cartdetail.css">
+    <link rel="stylesheet" href="./assets/css/thanhtoan.css">
     <!-- import carousel css -->
     <link rel="stylesheet" href="./libs/OwlCarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./libs/OwlCarousel/assets/owl.theme.default.css">
@@ -172,167 +173,73 @@
         <!-- start main -->
         <div class="main">
 
-            <!-- start cart shopping -->
-            <section class="cart">
-                <img class="cart-img" src="./assets/image/close.svg" alt="close-cart">
-                <h2>Danh mục sản phẩm</h2>
-                <form action="">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Sản phẩm</th>
-                                <th>Giá</th>
-                                <th>Số lượng</th>
-                                <th>Chọn</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- <tr>
-                        <td style="display: flex; align-items: center;"><img style="width: 70px; margin-right: 12px"
-                                src="./assets/image/gh-baby-1.webp" alt="ghbaby1">aaaaaaaaa</td>
-                        <td>
-                            <p><span>100.000</span><sup>đ</sup></p>
-                        </td>
-                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="0"></td>
-                        <td style="cursor: pointer;">Xóa</td>
-                    </tr> -->
-                        </tbody>
-                    </table>
-                    <div style="text-align: right;" class="price-total">
-                        <p style="font-weight: bold;">Tổng tiền: <span>0</span><sup>đ</sup></p>
-                    </div>
-
-                    <button class="add-to-cart btn">Thanh Toán</button>
-                </form>
-            </section>
-            <!-- end cart shopping -->
-
-            <!-- start New Product -->
-            <div class="section-product">
-                <div class="container">
+            <div class="thanhtoanonline container">
+                <div class="title">
                     <div class="title-navigation">
-                        <h3><a href="./index.html">Trang chủ</a> > <a href="">Trẻ em</a> > <a href="">Áo thun dài
-                                tay</a>
-                        </h3>
+                        <h3><a href="./index.html">Trang chủ</a> > <a href="">Thông tin thanh toán</a></h3>
                     </div>
-
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-7 col-lg-7">
-                            <!-- card left -->
-                            <div class="product-imgs">
-                                <div class="img-display">
-                                    <div class="img-showcase">
-                                        <img src="./assets/image/gh-baby-1.webp" alt="baby1">
-                                        <img src="./assets/image/gh-baby-1.webp" alt="baby1">
-                                        <img src="./assets/image/gh-baby-1.webp" alt="baby1">
-                                        <img src="./assets/image/gh-baby-1.webp" alt="baby1">
-                                    </div>
-                                </div>
-                                <div class="img-select">
-                                    <div class="img-item">
-                                        <a href="#" data-id="1">
-                                            <img src="./assets/image/gh-baby-1.webp" alt="baby1">
-                                        </a>
-                                    </div>
-                                    <div class="img-item">
-                                        <a href="#" data-id="2">
-                                            <img src="./assets/image/gh-baby-2.webp" alt="baby1">
-                                        </a>
-                                    </div>
-                                    <div class="img-item">
-                                        <a href="#" data-id="3">
-                                            <img src="./assets/image/gh-baby-3.webp" alt="baby1">
-                                        </a>
-                                    </div>
-                                    <div class="img-item">
-                                        <a href="#" data-id="4">
-                                            <img src="./assets/image/gh-baby-1.webp" alt="baby1">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-5 col-lg-5">
-                            <!-- card right -->
-                            <div class="product-content">
-                                <h2 class="product-name">Áo thun dài tay</h2>
-
-                                <div class="product-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-
-                                <div class="product-price">
-                                    <!-- <p class="old-price">Giá cũ: <span>250.000</span><sup>đ</sup></p> -->
-                                    <p class="new-price"><span>200.000</span><sup>đ</sup></p>
-                                </div>
-
-                                <div class="purchase-info">
-                                    <select>
-                                        <option>Select Size:</option>
-                                        <option>S</option>
-                                        <option>M</option>
-                                        <option>L</option>
-                                    </select>
-
-                                </div>
-
-                                <div class="product-value">
-                                    <div>Số lượng:<input type="number" value="1"></div>
-                                    <button type="button" class="add-to-cart btn">
-                                        Thêm vào giỏ hàng <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-
-                                <div class="product-detail">
-                                    <h2>Đặc điểm sản phẩm: </h2>
-                                    <p>Áo thun dài tay dành cho bé từ 2-8 tuổi.</p>
-                                    <p>Thiết kế hình in trước ngực tạo điểm nhấn tinh nghịch đáng yêu.</p>
-                                    <p>Áo có chất liệu nỉ da cá, giữ ấm tốt, bề mặt vải mịn cùng màu sắc bắt mắt</p>
-                                    <p>Thấm hút mồ hôi tốt, co giãn nhẹ theo chuyển động của cơ thể bé</p>
-                                    <p>Có thể kết hợp cùng quần nỉ, quần kaki hoặc quần jeans</p>
-                                    <p>Sản phẩm phù hợp để bé mặc ở nhà, đi chơi và đi học</p>
-                                    <ul>
-                                        <li>Màu sắc: <span>Tomato</span></li>
-                                        <li>Giao hàng: <span>Toàn quốc</span></li>
-                                        <li>Giao hàng miễn phí: <span>Miễn phí</span></li>
-                                    </ul>
-                                </div>
-
-                                <!-- <button type="button" class="btn btn-wishlist">Yêu thích</button> -->
-
-                                <div class="social-links">
-                                    <p>Chia sẻ: </p>
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-5">
+                        <div class="form__thanhtoan">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h4>Thông tin đơn hàng</h4>
+                                    <p>Áo Thun Dài Tay Bé Trai<span class="price">200.000</span><sup></sup></p>
+                                    <p>Áo Polo Nữ<span class="price">220.000</span><sup></sup></p>
+                                    
+                                    <hr>
+                                    <p><strong>Tổng tiền: </strong><span class="price" style="color:black"><b>440.000</b></span><sup></sup></p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-7">
+                        <div class="form__thanhtoan" id="validate">
+                            <form action="xac-nhan-dat-tour.html" id="form__thanhtoan">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h3>Thanh toán</h3>
+                                        <label for="fname">Chấp nhận thanh toán thẻ</label>
+                                        <div class="icon-container">
+                                            <i class="fab fa-cc-visa" style="color:navy;"></i>
+                                            <i class="fab fa-cc-jcb" style="color:orange; margin-left: 2rem;"></i>
+                                            <i class="fab fa-cc-mastercard" style="color:red; margin-left: 2rem;"></i>
+                                        </div>
+    
+                                        <label for="cname">Họ và tên trên thẻ</label>
+                                        <input type="text" id="cname" name="cardname" placeholder="Đinh Trọng Khang" required minlength="2" maxlength="30" pattern="^(?:((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-.\s])){1,}(['’,\-\.]){0,1}){2,}(([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-. ]))*(([ ]+){0,1}(((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){1,})(['’\-,\.]){0,1}){2,}((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){2,})?)*)$"
+                                            title="Xin vui lòng nhập đúng họ tên.">
+    
+                                        <label for="ccnum">Số thẻ</label>
+                                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111222233334444" required maxlength="16">
+    
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-6 col-lg-12">
+                                                <label for="expmonth">Tháng hết hạn</label>
+                                                <input type="text" id="expmonth" name="expmonth" placeholder="9" required maxlength="2">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-6 col-lg-12">
+                                                <label for="expyear">Năm hết hạn</label>
+                                                <input type="text" id="expyear" name="expyear" placeholder="2021" required maxlength="4">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-6 col-lg-12">
+                                                <label for="cvv">CVV</label>
+                                                <input type="text" id="cvv" name="cvv" placeholder="999" required maxlength="3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label>
+                            </label>
+                                <!-- <a href="xac-nhan-dat-tour.html" value="Continue to checkout" class="book-btn" id="submit">Xác nhận</a> -->
+                                <a href="" type="button" value="Continue to checkout" id="submit" class="custom-btn btn"><span>Xác nhận</span></a>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- end New Product -->
 
-            <!-- start Collection -->
-            <div class="section-product">
-                <div class="container">
-                    <div class="title">
-                        <h2>Sản Phẩm Bán Chạy</h2>
-                        <span><a href="./hotproduct.html">Xem thêm ></a></span>
-                    </div>
-                    <div class="row" id="collection-product--js">
-
-                    </div>
-                </div>
-            </div>
-            <!-- end Collection -->
         </div>
         <!-- end main -->
 

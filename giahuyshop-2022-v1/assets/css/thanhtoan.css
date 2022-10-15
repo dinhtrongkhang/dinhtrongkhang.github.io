@@ -1,0 +1,92 @@
+.thanhtoanonline {
+    margin-bottom: 24px;
+}
+
+
+.form__thanhtoan {
+    background-color: var(--background);
+    padding: 2rem;
+    border: 1px solid var(--white-color);
+    border-radius: .3rem;
+    box-shadow: 0 0 2rem 0 rgba(168, 180, 194, 0.37);
+    margin-top: 3rem;
+}
+
+.form__thanhtoan h3,
+.form__thanhtoan h4 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.form__thanhtoan label,
+.form__thanhtoan p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.form__thanhtoan input[type=text] {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: .5rem 1rem;
+    border: .1rem solid var(--primary);
+    outline: none;
+    color: var(--dark-color);
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+.form__thanhtoan input[type=text]:hover {
+    border-color: var(--secondary);
+}
+
+label {
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 2rem;
+    padding: .7rem 0;
+    font-size: 5rem;
+}
+
+.icon-container i {
+    cursor: pointer;
+}
+
+.icon-container i:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+hr {
+    border: 1px solid var(--secondary);
+}
+
+span.price {
+    float: right;
+    color: var(--text-color);
+}
+
+button {
+    width: 100%;
+}
+
+@media all and (min-width: 768px) {
+    .form__thanhtoan h3,
+    .form__thanhtoan h4 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .form__thanhtoan label,
+    .form__thanhtoan p {
+        font-size: 2rem;
+        line-height: 3.6rem;
+    }
+    input[type=text] {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+}
