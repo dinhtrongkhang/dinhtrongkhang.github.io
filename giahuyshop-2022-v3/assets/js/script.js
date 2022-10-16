@@ -63,7 +63,7 @@ $(document).ready(function () {
             },
         ],
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 2000,
     });
 });
 
