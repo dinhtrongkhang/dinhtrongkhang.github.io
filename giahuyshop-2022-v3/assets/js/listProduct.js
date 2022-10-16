@@ -37,17 +37,18 @@ $(document).ready(function () {
             // console.log(value, "value");
             // console.log(key, "key")
             `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <div class="box-item">
-            <a href=""><img class="product-img" src=${value.src} /></a>
-                <div class="product-name">${value.Title}</div>
-                <div class="product-price">
-                    <div class="old-price">${value.OldPrice}</div>
-                    <div class="actual-price">${value.ActualPrice}</div>
+                <div class="card-wrapper">
+                    <div class="card-item">
+                        <a href=""><img class="product-img" src=${value.src} /></a>
+                        <div class="product-name">${value.Title}</div>
+                        <div class="product-price">
+                            <div class="old-price">${value.OldPrice}</div>
+                            <div class="actual-price">${value.ActualPrice}</div>
+                        </div>
+                        <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
+                    </div>
                 </div>
-                <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
-            </div>
-            </div>
-        `
+            </div>`
         ).join('');
     }
 
@@ -58,17 +59,18 @@ $(document).ready(function () {
             // console.log(value, "value");
             // console.log(key, "key")
             `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <div class="box-item">
-            <a href=""><img class="product-img" src=${value.src} /></a>
-            <div class="product-name">${value.Title}</div>
-            <div class="product-price">
-                <div class="old-price">${value.OldPrice}</div>
-                <div class="actual-price">${value.ActualPrice}</div>
-            </div>
-            <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
-            </div>
-            </div>
-        `
+                <div class="card-wrapper">
+                    <div class="card-item">
+                        <a href=""><img class="product-img" src=${value.src} /></a>
+                        <div class="product-name">${value.Title}</div>
+                        <div class="product-price">
+                            <div class="old-price">${value.OldPrice}</div>
+                            <div class="actual-price">${value.ActualPrice}</div>
+                        </div>
+                        <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>`
         ).join('');
     }
 
@@ -79,17 +81,18 @@ $(document).ready(function () {
             // console.log(value, "value");
             // console.log(key, "key")
             `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <div class="box-item">
-            <a href=""><img class="product-img" src=${value.src} /></a>
-            <div class="product-name">${value.Title}</div>
-            <div class="product-price">
-                <div class="old-price">${value.OldPrice}</div>
-                <div class="actual-price">${value.ActualPrice}</div>
-            </div>
-            <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
-            </div>
-            </div>
-        `
+                <div class="card-wrapper">
+                    <div class="card-item">
+                        <a href=""><img class="product-img" src=${value.src} /></a>
+                        <div class="product-name">${value.Title}</div>
+                        <div class="product-price">
+                            <div class="old-price">${value.OldPrice}</div>
+                            <div class="actual-price">${value.ActualPrice}</div>
+                        </div>
+                        <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>`
         ).join('');
     }
 
@@ -100,17 +103,18 @@ $(document).ready(function () {
             // console.log(value, "value");
             // console.log(key, "key")
             `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <div class="box-item">
-            <a href=""><img class="product-img" src=${value.src} /></a>
-            <div class="product-name">${value.Title}</div>
-            <div class="product-price">
-                <div class="old-price">${value.OldPrice}</div>
-                <div class="actual-price">${value.ActualPrice}</div>
-            </div>
-            <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
-            </div>
-        </div>
-        `
+                <div class="card-wrapper">
+                    <div class="card-item">
+                        <a href=""><img class="product-img" src=${value.src} /></a>
+                        <div class="product-name">${value.Title}</div>
+                        <div class="product-price">
+                            <div class="old-price">${value.OldPrice}</div>
+                            <div class="actual-price">${value.ActualPrice}</div>
+                            </div>
+                        <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>`
         ).join('');
     }
 
@@ -121,28 +125,29 @@ $(document).ready(function () {
             // console.log(value, "value");
             // console.log(key, "key")
             `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="box-item">
-          <a href=""><img class="product-img" src=${value.src} /></a>
-          <div class="product-name">${value.Title}</div>
-          <div class="product-price">
-              <div class="old-price">${value.OldPrice}</div>
-              <div class="actual-price">${value.ActualPrice}</div>
-          </div>
-          <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
-          </div>
-      </div>
-      `
+                <div class="card-wrapper">
+                    <div class="card-item">
+                        <a href=""><img class="product-img" src=${value.src} /></a>
+                        <div class="product-name">${value.Title}</div>
+                        <div class="product-price">
+                            <div class="old-price">${value.OldPrice}</div>
+                            <div class="actual-price">${value.ActualPrice}</div>
+                        </div>
+                        <button class="add-to-cart btn">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>`
         ).join('');
     }
 
 
-     // men Product
-     if (document.querySelector(`#jacket-product--js`)) {
+    // men Product
+    if (document.querySelector(`#jacket-product--js`)) {
         document.querySelector(`#jacket-product--js`).innerHTML = jacketProduct.map((value, key) =>
             // console.log(value, "value");
             // console.log(key, "key")
             `<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="box-item">
+          <div class="card-item">
           <a href=""><img class="product-img" src=${value.src} /></a>
           <div class="product-name">${value.Title}</div>
           <div class="product-price">
