@@ -177,7 +177,7 @@ function inputChange() {
 }
 
 // show hide list cart
-const cartBtn = document.querySelector(".cart-img")
+const cartBtn = document.querySelector(".close-cart")
 const cartShow = document.querySelector(".fa-cart-shopping")
 
 cartShow.addEventListener("click", function (event) {

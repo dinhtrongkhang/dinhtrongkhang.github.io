@@ -300,6 +300,16 @@ a {
     color: var(--secondary-color);
 }
 
+
+.cart .close-cart {
+    cursor: pointer;
+}
+
+
+.cart .close-cart:hover {
+    color: var(--secondary-color);
+}
+
 /* ----------------------- menu nav --------------------------- */
 
 .nav-line {
