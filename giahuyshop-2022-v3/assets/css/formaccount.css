@@ -221,6 +221,16 @@
     content: "\f070";
 }
 
+.forgot-password {
+    color: var(--secondary-color);
+    cursor: pointer;
+    margin: 12px 0;
+}
+
+.forgot-password:hover {
+    text-decoration-line: underline;
+}
+
 /* -------------------- btn acc --------------- */
 .wrap-acc .btn {
     width: 200px;
@@ -235,6 +245,7 @@
 }
 
 .social-text {
+    margin: 12px 0;
     padding: 0.7rem 0;
     font-size: 1.3rem;
     text-align: center;
