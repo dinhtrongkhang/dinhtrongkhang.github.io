@@ -200,17 +200,16 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 allHoverImages.forEach((image) => {
-    image.addEventListener('mouseover', () =>{
+    image.addEventListener('mouseover', () => {
         imgContainer.querySelector('img').src = image.src;
         resetActiveImg();
         image.parentElement.classList.add('active');
     });
 });
 
-function resetActiveImg(){
+function resetActiveImg() {
     allHoverImages.forEach((img) => {
         img.parentElement.classList.remove('active');
     });
 }
-
 
