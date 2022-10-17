@@ -45,8 +45,8 @@ img {
 }
 
 .hover-container div {
-    border: 2px solid rgba(252, 160, 175, 0.7);
-    padding: 1rem;
+    /* border: 2px solid rgba(252, 160, 175, 0.7); */
+    /* padding: 1rem; */
     border-radius: 3px;
     margin: 0 4px 8px 4px;
     display: flex;

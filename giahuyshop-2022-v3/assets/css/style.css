@@ -698,6 +698,10 @@ a {
         width: 300px;
     }
 
+    .btn {
+        margin-bottom: 12px;
+    }
+
     .footer-title {
         font-size: 1.6rem;
     }
