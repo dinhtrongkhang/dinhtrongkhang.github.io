@@ -313,6 +313,9 @@ select,
     color: whitesmoke;
 } */
 
+.buy-now {
+    margin-left: 12px;
+}
 .social-links {
     display: flex;
     align-items: center;
