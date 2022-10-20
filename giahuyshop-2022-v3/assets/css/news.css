@@ -1,5 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ff2850;
+    --text-color: #171427;
+    --bg-color: #fcfcfc;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 .main {
     margin: 24px 0;
+}
+
+.title-news {
+    margin-top: 150px;
 }
 
 .new-img {
@@ -13,7 +36,7 @@
 }
 
 .wrap-new--title {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 12px;
 }
 

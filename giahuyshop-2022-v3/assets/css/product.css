@@ -22,14 +22,16 @@ p {
     padding: 0;
 }
 
-.title-navigation {
+.title-navigation,
+.title-news {
     display: flex;
     justify-content: space-between;
     margin-bottom: 12px;
 }
 
 .title-navigation h3 a,
-.title-navigation span a {
+.title-navigation span a,
+.title-news h3 a {
     font-size: 2rem;
     color: #636363;
 }
@@ -73,4 +75,3 @@ p {
     font-size: 1.6rem;
     text-decoration: line-through;
 }
-
