@@ -382,6 +382,23 @@ a {
     font-weight: bold;
 }
 
+.cart-icon span {
+    user-select: none;
+    position: absolute;
+    background-color: var(--secondary-color);
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 4px;
+    right: 65px;
+}
+
 /* ----------------------- menu nav --------------------------- */
 
 .nav-line {
