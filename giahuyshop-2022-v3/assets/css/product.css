@@ -53,6 +53,7 @@ p {
 .product-name {
     font-size: 20px;
     cursor: pointer;
+    margin-top: 12px;
 }
 
 .product-price {
