@@ -1,0 +1,24 @@
+.heading,
+.pokemon-list {
+    display: flex;
+    justify-content: center;
+}
+
+
+.pokemon,
+.user {
+    border: 1px solid #000;
+    margin: 5px;
+    padding: 5px;
+}
+
+.user-name,
+.user-job{
+    text-align: center;
+}
+
+
+.user img {
+    display: block;
+    margin: 0 auto;
+}
