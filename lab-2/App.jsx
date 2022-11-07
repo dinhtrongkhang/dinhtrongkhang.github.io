@@ -597,11 +597,11 @@ const Review = ({ review, onPrev, isPlay, onNext, onDown, onUp }) => {
       </div>
       <div className="volum">
         <button className="btn-turndown" onClick={onDown}>
-          Giảm
+        <i class="fa-solid fa-volume"></i>
         </button>
 
         <button className="btn-turnup" onClick={onUp}>
-          Tăng
+        <i class="fa-solid fa-music"></i>
         </button>
       </div>
     </div>
