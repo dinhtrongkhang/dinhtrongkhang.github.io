@@ -9,6 +9,7 @@
 
 
 
+
 // const img = React.createElement("img", {
 //     src: "https://cuongdulich.com/assets/posts/1631128229-mu-cang-chai-yen-bai-14.JPG",
 //     alt: "MCC",
@@ -559,123 +560,250 @@
 
 ///////////////////////////
 
-const Review = ({ review, onPrev, isPlay, onNext, onDown, onUp }) => {
-  return (
-    <div className="review-card">
-      <div className="review">
-        <div className="author">
-          <div className="author-avatar">
-            <img src={review.avatar} alt={review.name} />
-          </div>
+// const Review = ({ review, onPrev, isPlay, onNext, onDown, onUp }) => {
+//   return (
+//     <div className="review-card">
+//       <div className="review">
+//         <div className="author">
+//           <div className="author-avatar">
+//             <img src={review.avatar} alt={review.name} />
+//           </div>
 
-          <div className="author-info">
-            <h4 className="author-name">{review.singer}</h4>
-            <div className="author-job">{review.jobTitle}</div>
+//           <div className="author-info">
+//             <h4 className="author-name">{review.singer}</h4>
+//             <div className="author-job">{review.jobTitle}</div>
 
-            <div className="Song">
-              <p>{review.Song}</p>
-            </div>
-          </div>
-
-
-        </div>
+//             <div className="Song">
+//               <p>{review.Song}</p>
+//             </div>
+//           </div>
 
 
-      </div>
+//         </div>
 
-      <div className="controls">
-        <button className="btn-prev" onClick={onPrev}>
-          <i class="fa-solid fa-backward-step"></i>
-        </button>
 
-        <button className="btn-play" onClick={isPlay}><i class="fa-solid fa-play"></i>
-        </button>
+//       </div>
 
-        <button className="btn-next" onClick={onNext}>
-          <i class="fa-solid fa-forward-step"></i>
-        </button>
-      </div>
-      <div className="volum">
-        <button className="btn-turndown" onClick={onDown}>
-        <i class="fa-solid fa-volume-low"></i>
-        </button>
+//       <div className="controls">
+//         <button className="btn-prev" onClick={onPrev}>
+//           <i class="fa-solid fa-backward-step"></i>
+//         </button>
 
-        <button className="btn-turnup" onClick={onUp}>
-          <i class="fa-solid fa-music"></i>
-        </button>
-      </div>
-    </div>
-  );
+//         <button className="btn-play" onClick={isPlay}><i class="fa-solid fa-play"></i>
+//         </button>
+
+//         <button className="btn-next" onClick={onNext}>
+//           <i class="fa-solid fa-forward-step"></i>
+//         </button>
+//       </div>
+//       <div className="volum">
+//         <button className="btn-turndown" onClick={onDown}>
+//         <i class="fa-solid fa-volume-low"></i>
+//         </button>
+
+//         <button className="btn-turnup" onClick={onUp}>
+//           <i class="fa-solid fa-music"></i>
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// const App = () => {
+//   const [index, setIndex] = React.useState(0);
+
+//   const reviews = [
+//     {
+//       id: "f78ff93a2f6723ba714b938d",
+//       avatar: "https://vcdn1-giaitri.vnecdn.net/2022/08/08/tangduytan-1659953332-2312-1659954397.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=G5hGugcaD-71nGj6dHPG1g",
+//       singer: "Tăng Duy Tân",
+//       Song:
+//         "Bên trên tầng lầu",
+//     },
+//     {
+//       id: "b39e485adf7eac8ef7ccdb7a",
+//       avatar: "https://nld.mediacdn.vn/k:2015/miule-1450536907797/miu-le-cu-vo-tu-song.jpg",
+//       singer: "Miu Lê, Karik, Châu Đăng Khoa",
+//       Song:
+//         "Vì Mẹ Anh Bắt Chia Tay",
+//     },
+//     {
+//       id: "7c5bca0a82a0fb621acf9dc1",
+//       avatar: "https://image.thanhnien.vn/w1024/Uploaded/2022/znetns/2022_08_08/ha-nhi-7-8636.jpg",
+//       singer: "Hà Nhi",
+//       Song:
+//         "Chưa Quên Người Yêu Cũ",
+//     },
+//     {
+//       id: "42ffffe92ecb90376f7b1541",
+//       avatar: "https://vtv1.mediacdn.vn/thumb_w/650/2017/unnamed-5-1504884168956-1505214712018-crop-1505214720160-crop-1505214738002.jpg",
+//       singer: "Mai Tiến Dũng",
+//       Song:
+//         "Người Như Anh",
+//     },
+//     {
+//       id: "1d1570fa3d0dfeb8fbe90a7f",
+//       avatar: "http://image.daidoanket.vn/w640/images/upload/vanmt/01292021/ho-ngoc-ha.jpg",
+//       singer: "Hồ Ngọc Hà",
+//       Song:
+//         "Cô Đơn Trên Sofa",
+//     },
+//     {
+//       id: "fbe30443cc6aecdcf21dd0be",
+//       avatar: "https://event.mediacdn.vn/257767050295742464/image/hot14/2021/4/1/chau-dang-khoa-33-1617253020373680922092.png",
+//       singer: "Đình Dũng, ACV",
+//       Song:
+//         "Đế Vương",
+//     },
+
+//   ];
+
+//   const handleNext = () => {
+//     if (index == reviews.length - 1) setIndex(0);
+//     else setIndex(index + 1);
+//   };
+
+//   const handlePrev = () => {
+//     if (index == 0) setIndex(reviews.length - 1);
+//     else setIndex(index - 1);
+//   };
+
+//   const review = reviews[index];
+
+//   return (
+//     <div className="section-reviews">
+
+//       <Review review={review} onPrev={handlePrev} onNext={handleNext} />
+//     </div>
+//   );
+// };
+
+// const root = ReactDOM.createRoot(document.querySelector("#app"));
+// root.render(<App />);
+
+
+////////////////////////
+// const Counter = ({ value, onIncrement, onDecrement }) => {
+
+//   return (
+//     <div className="counter">
+//       <button onClick={onDecrement}>-
+//       </button>
+//       {value}
+//       <button onClick={onIncrement}>+
+//       </button>
+//     </div>
+//   );
+// };
+
+// const Square = ({ value }) => {
+//   const style = {
+//     width: 100 + value * 10,
+//     height: 100 + value * 10,
+//   };
+
+//   return (<div className="square" style={style}></div>);
+// };
+
+// const App = () => {
+//   const [value, setValue] = React.useState(0);
+
+//   return (
+//     <div className="container">
+//       <Counter
+//         value={value}
+//         onIncrement={() => setValue(value + 1)}
+//         onDecrement={() => setValue(value - 1)}
+//       />
+
+//       <Square value={value} />
+//     </div>
+//   );
+// };
+
+// const root = ReactDOM.createRoot(document.querySelector("#app"));
+// root.render(<App />);
+
+
+//////////////////
+
+// class Counter extends React.Component {
+//   contructor(props) {
+
+//   }
+// }
+
+
+// const App = () => {
+//   const [value, setValue] = React.useState(0);
+
+//   return (
+//     <div className="container">
+//       <Counter
+//         value={value}
+//         onIncrement={() => setValue(value + 1)}
+//         onDecrement={() => setValue(value - 1)}
+//       />
+
+//       <Square value={value} />
+//     </div>
+//   );
+// };
+
+// const root = ReactDOM.createRoot(document.querySelector("#app"));
+// root.render(<App />);
+
+/////////////////
+
+// const App = () => {
+//   React.useEffect(() => {
+//     console.log("App Mounted")
+//   }, []);
+
+//   console.log("render App")
+//   return <div className="container"></div>
+// };
+
+// const root = ReactDOM.createRoot(document.querySelector("#app"));
+// root.render(<App />);
+
+
+/////////////////////
+
+const Todo = ({ todos }) => {
+  const list = todos.map((todo) => <Todo todo={todo} />)
+  return <div className="todo-list">
+    {list}
+  </div>
 };
 
+Todo.propTypes = PropTypes.exact({
+  userId: PropTypes.number,
+    id: PropTypes.number,
+    title: PropTypes.string,
+    completed: PropTypes.bool
+});
+
 const App = () => {
-  const [index, setIndex] = React.useState(0);
+  const [todos, setTodos] = React.useState([]);
 
-  const reviews = [
-    {
-      id: "f78ff93a2f6723ba714b938d",
-      avatar: "https://vcdn1-giaitri.vnecdn.net/2022/08/08/tangduytan-1659953332-2312-1659954397.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=G5hGugcaD-71nGj6dHPG1g",
-      singer: "Tăng Duy Tân",
-      Song:
-        "Bên trên tầng lầu",
-    },
-    {
-      id: "b39e485adf7eac8ef7ccdb7a",
-      avatar: "https://nld.mediacdn.vn/k:2015/miule-1450536907797/miu-le-cu-vo-tu-song.jpg",
-      singer: "Miu Lê, Karik, Châu Đăng Khoa",
-      Song:
-        "Vì Mẹ Anh Bắt Chia Tay",
-    },
-    {
-      id: "7c5bca0a82a0fb621acf9dc1",
-      avatar: "https://image.thanhnien.vn/w1024/Uploaded/2022/znetns/2022_08_08/ha-nhi-7-8636.jpg",
-      singer: "Hà Nhi",
-      Song:
-        "Chưa Quên Người Yêu Cũ",
-    },
-    {
-      id: "42ffffe92ecb90376f7b1541",
-      avatar: "https://vtv1.mediacdn.vn/thumb_w/650/2017/unnamed-5-1504884168956-1505214712018-crop-1505214720160-crop-1505214738002.jpg",
-      singer: "Mai Tiến Dũng",
-      Song:
-        "Người Như Anh",
-    },
-    {
-      id: "1d1570fa3d0dfeb8fbe90a7f",
-      avatar: "http://image.daidoanket.vn/w640/images/upload/vanmt/01292021/ho-ngoc-ha.jpg",
-      singer: "Hồ Ngọc Hà",
-      Song:
-        "Cô Đơn Trên Sofa",
-    },
-    {
-      id: "fbe30443cc6aecdcf21dd0be",
-      avatar: "https://event.mediacdn.vn/257767050295742464/image/hot14/2021/4/1/chau-dang-khoa-33-1617253020373680922092.png",
-      singer: "Đình Dũng, ACV",
-      Song:
-        "Đế Vương",
-    },
+  React.useEffect(() => {
+    const controller = new AbortController();
 
-  ];
+    fetch("https://jsonplaceholder.typicode.com/todos", {
+      signal: controller.signal,
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setTodos(data);
+      });
 
-  const handleNext = () => {
-    if (index == reviews.length - 1) setIndex(0);
-    else setIndex(index + 1);
-  };
+    return () => {
+      controller.abort();
+    };
+  }, []);
 
-  const handlePrev = () => {
-    if (index == 0) setIndex(reviews.length - 1);
-    else setIndex(index - 1);
-  };
-
-  const review = reviews[index];
-
-  return (
-    <div className="section-reviews">
-      {/* <h2 className="section-heading">Our Reviews</h2> */}
-
-      <Review review={review} onPrev={handlePrev} onNext={handleNext} />
-    </div>
-  );
+  return <div className="todo-app">TodoApp</div>;
 };
 
 const root = ReactDOM.createRoot(document.querySelector("#app"));
