@@ -585,7 +585,7 @@ const Review = ({ review, onPrev, isPlay, onNext, onDown, onUp }) => {
 
       <div className="controls">
         <button className="btn-prev" onClick={onPrev}>
-        <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-solid fa-backward-step"></i>
         </button>
 
         <button className="btn-play" onClick={isPlay}><i class="fa-solid fa-play"></i>
@@ -597,11 +597,11 @@ const Review = ({ review, onPrev, isPlay, onNext, onDown, onUp }) => {
       </div>
       <div className="volum">
         <button className="btn-turndown" onClick={onDown}>
-        <i class="fa-solid fa-volume"></i>
+        <i class="fa-solid fa-volume-low"></i>
         </button>
 
         <button className="btn-turnup" onClick={onUp}>
-        <i class="fa-solid fa-music"></i>
+          <i class="fa-solid fa-music"></i>
         </button>
       </div>
     </div>
