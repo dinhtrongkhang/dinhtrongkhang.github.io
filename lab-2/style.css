@@ -56,3 +56,14 @@
 .volum {
     margin-right: 20px;
 }
+
+.btn-prev,
+.btn-next,
+.btn-play,
+.btn-turndown,
+.btn-turnup {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+}
