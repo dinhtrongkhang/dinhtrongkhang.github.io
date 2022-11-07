@@ -585,21 +585,21 @@ const Review = ({ review, onPrev, isPlay, onNext, onDown, onUp }) => {
 
       <div className="controls">
         <button className="btn-prev" onClick={onPrev}>
-          Prev
+        <i class="fa-solid fa-backward-step"></i>
         </button>
-       
-        <button className="btn-play" onClick={isPlay}>Play
+
+        <button className="btn-play" onClick={isPlay}><i class="fa-solid fa-play"></i>
         </button>
 
         <button className="btn-next" onClick={onNext}>
-          Next
+          <i class="fa-solid fa-forward-step"></i>
         </button>
       </div>
       <div className="volum">
-      <button className="btn-turndown" onClick={onDown}>
+        <button className="btn-turndown" onClick={onDown}>
           Giảm
         </button>
-      
+
         <button className="btn-turnup" onClick={onUp}>
           Tăng
         </button>
@@ -654,7 +654,7 @@ const App = () => {
       Song:
         "Đế Vương",
     },
-    
+
   ];
 
   const handleNext = () => {
