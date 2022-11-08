@@ -97,3 +97,79 @@ useEffect(() => {
   }, []);
 `
 # Custom hook là gì? Ví dụ một custom hook.
+- Custom hooks là việc các bạn tự tạo ra một hook mới với chức năng riêng biệt của nó. Việc này giúp tách phần code logic ra khỏi UI giúp code tường minh, dễ quản lý hơn, tránh lặp lại code và tái sử dụng.
+- Ví dụ khi không dùng custom hook:
+
+`
+import { useState, useEffect } from 'react'
+import Sidebar from 'components/Sidebar'
+
+const App = () => {
+  const [width, setWidth] = useState<number>(window.innerWidth)
+  
+  useEffect(() => {
+    const handler = () => {
+      setWidth(window.innerWidth)
+    }
+    
+    window.addEventListener('resize', handler)
+    
+    return () => {
+      window.removeEventListener('resize', handler)
+    }
+  }, [])
+
+  return (
+    <>
+      {width >= 1024 && <Sidebar />}
+    </>
+  )
+}
+`
+
+- và bây giờ nếu bạn muốn dùng window width ở component khác thì phải lặp lại phần code trên.
+
+- Xây dựng custom hooks: Cùng tạo tạo ra hook useWindowSize để giải quyết vấn đề trên
+
+`
+import { useState, useEffect } from 'react'
+
+export const useWindowSize = () => {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  })
+
+  useEffect(() => {
+    const handler = () => {
+      setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+      })
+    }
+    window.addEventListener('resize', handler)
+
+    return () => {
+        window.removeEventListener('resize', handler)
+    }
+  }, [])
+
+  return windowSize
+}
+`
+
+- Và đây là thành quả, chúng ta có thể sử dụng hook useWindowSize ở bất kì component nào.
+
+`
+import { useWindowSize } from 'hooks'
+
+const App = () => {
+  const { width, height } = useWindowSize()
+
+  return (
+    <>
+      {width >= 1024 && <Sidebar />}
+    </>
+  )
+}
+`
