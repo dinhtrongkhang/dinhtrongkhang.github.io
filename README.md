@@ -23,7 +23,7 @@ Ví dụ bạn đang làm một trang web mạng xã hội, và bạn có thể 
 
 - Context được thiết kế để chia sẽ data khi chúng được xem là “global data” của toàn bộ ứng dụng React, chẳng hạn như thông tin về user hiện tại đang đăng nhập, theme, hoặc ngôn ngữ mà người dùng đã chọn. Ví dụ, ở đoạn code bên dưới, chúng ta truyền một “theme” prop để style một Button component:
 
-`
+```js
 class App extends React.Component {
   render() {
     return <Toolbar theme="dark" />;
@@ -44,7 +44,7 @@ class ThemedButton extends React.Component {
     return <Button theme={this.props.theme} />;
   }
 }
-`
+```
 
 - Sử dụng context, chúng ta có thể tránh được việc truyền props qua các elements trung gian:
 
@@ -53,39 +53,38 @@ class ThemedButton extends React.Component {
 
 - Ví dụ ta muốn fetch dữ liệu lần đầu render thay vì sử dụng componentDidMount:
 
-`
+```js
 componentWillUnmount() {
         fetch("http://localhost:3001/links/")
           .then(response => response.json())
           .then(data => setData(data));
-    );
   }
-`
+```
 
 - bây giờ ta có kiểu viết dùng useEffect tương đương:
 
-`
+```js
  useEffect(() => {
     fetch("http://localhost:3001/links/")
       .then(response => response.json())
       .then(data => setData(data));
   }, []);
-`
+```
 - và nếu như ta muốn nó chạy mỗi lần component được render thì rất đơn giản
 
-`
+```js
   useEffect(() => {
     fetch("http://localhost:3001/links/")
       .then(response => response.json())
       .then(data => setData(data));
   }, [abcState, xyzState]);
-`
+```
 
 - ta sẽ truyền thêm các giá trị vào mảng phụ và hiểu rằng, mỗi khi một giá trị nào đó trong mảng phụ thay đổi thì useEffect sẽ được chạy lại.
 
 - Và với componentWillUnmount ta sẽ chỉ cần thêm return cleanup() vào useEffect
 
-`
+```js
 useEffect(() => {
     fetch("http://localhost:3001/links/")
       .then(response => response.json())
@@ -95,12 +94,12 @@ useEffect(() => {
           //code ...
       }
   }, []);
-`
+```
 # Custom hook là gì? Ví dụ một custom hook.
 - Custom hooks là việc các bạn tự tạo ra một hook mới với chức năng riêng biệt của nó. Việc này giúp tách phần code logic ra khỏi UI giúp code tường minh, dễ quản lý hơn, tránh lặp lại code và tái sử dụng.
 - Ví dụ khi không dùng custom hook:
 
-`
+```js
 import { useState, useEffect } from 'react'
 import Sidebar from 'components/Sidebar'
 
@@ -125,13 +124,13 @@ const App = () => {
     </>
   )
 }
-`
+```
 
 - và bây giờ nếu bạn muốn dùng window width ở component khác thì phải lặp lại phần code trên.
 
 - Xây dựng custom hooks: Cùng tạo tạo ra hook useWindowSize để giải quyết vấn đề trên
 
-`
+```js
 import { useState, useEffect } from 'react'
 
 export const useWindowSize = () => {
@@ -156,11 +155,11 @@ export const useWindowSize = () => {
 
   return windowSize
 }
-`
+```
 
 - Và đây là thành quả, chúng ta có thể sử dụng hook useWindowSize ở bất kì component nào.
 
-`
+```js
 import { useWindowSize } from 'hooks'
 
 const App = () => {
@@ -172,4 +171,4 @@ const App = () => {
     </>
   )
 }
-`
+```
