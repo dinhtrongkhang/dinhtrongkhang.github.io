@@ -23,7 +23,7 @@ Ví dụ bạn đang làm một trang web mạng xã hội, và bạn có thể 
 
 - Context được thiết kế để chia sẽ data khi chúng được xem là “global data” của toàn bộ ứng dụng React, chẳng hạn như thông tin về user hiện tại đang đăng nhập, theme, hoặc ngôn ngữ mà người dùng đã chọn. Ví dụ, ở đoạn code bên dưới, chúng ta truyền một “theme” prop để style một Button component:
 
-``
+`
 class App extends React.Component {
   render() {
     return <Toolbar theme="dark" />;
@@ -44,7 +44,7 @@ class ThemedButton extends React.Component {
     return <Button theme={this.props.theme} />;
   }
 }
-``
+`
 
 - Sử dụng context, chúng ta có thể tránh được việc truyền props qua các elements trung gian:
 
@@ -53,12 +53,47 @@ class ThemedButton extends React.Component {
 
 - Ví dụ ta muốn fetch dữ liệu lần đầu render thay vì sử dụng componentDidMount:
 
-``
+`
 componentWillUnmount() {
         fetch("http://localhost:3001/links/")
           .then(response => response.json())
           .then(data => setData(data));
     );
   }
-``
+`
+
+- bây giờ ta có kiểu viết dùng useEffect tương đương:
+
+`
+ useEffect(() => {
+    fetch("http://localhost:3001/links/")
+      .then(response => response.json())
+      .then(data => setData(data));
+  }, []);
+`
+- và nếu như ta muốn nó chạy mỗi lần component được render thì rất đơn giản
+
+`
+  useEffect(() => {
+    fetch("http://localhost:3001/links/")
+      .then(response => response.json())
+      .then(data => setData(data));
+  }, [abcState, xyzState]);
+`
+
+- ta sẽ truyền thêm các giá trị vào mảng phụ và hiểu rằng, mỗi khi một giá trị nào đó trong mảng phụ thay đổi thì useEffect sẽ được chạy lại.
+
+- Và với componentWillUnmount ta sẽ chỉ cần thêm return cleanup() vào useEffect
+
+`
+useEffect(() => {
+    fetch("http://localhost:3001/links/")
+      .then(response => response.json())
+      .then(data => setData(data));
+      
+      return function cleanup() {
+          //code ...
+      }
+  }, []);
+`
 # Custom hook là gì? Ví dụ một custom hook.
