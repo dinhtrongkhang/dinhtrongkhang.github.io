@@ -48,5 +48,5 @@ class ThemedButton extends React.Component {
 
 - Sử dụng context, chúng ta có thể tránh được việc truyền props qua các elements trung gian:
 
-5. Tìm nạp dữ liệu với useEffect
-6. Custom hook là gì? Ví dụ một custom hook.
+# Tìm nạp dữ liệu với useEffect
+# Custom hook là gì? Ví dụ một custom hook.
