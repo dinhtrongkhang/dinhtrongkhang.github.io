@@ -48,5 +48,18 @@ class ThemedButton extends React.Component {
 
 - Sử dụng context, chúng ta có thể tránh được việc truyền props qua các elements trung gian:
 
-5. Tìm nạp dữ liệu với useEffect
-6. Custom hook là gì? Ví dụ một custom hook.
+# Tìm nạp dữ liệu với useEffect
+- useEffect được ban cho sinh mệnh với nhiệm vụ phục vụ cùng một mục đích với componentDidMount, componentDidUpdate và componentWillUnmount trong các lớp React, nhưng được hợp nhất thành một API duy nhất.
+
+- Ví dụ ta muốn fetch dữ liệu lần đầu render thay vì sử dụng componentDidMount:
+
+``
+componentWillUnmount() {
+        fetch("http://localhost:3001/links/")
+          .then(response => response.json())
+          .then(data => setData(data));
+    );
+  }
+
+``
+# Custom hook là gì? Ví dụ một custom hook.
