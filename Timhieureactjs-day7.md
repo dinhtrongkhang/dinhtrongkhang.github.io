@@ -4,3 +4,19 @@
 ```js
 npm install react-router-dom
 ```
+* Sau khi cài đặt thành công, trong trường hợp cần dùng đến React Router bạn chỉ cần import nó component đó.
+```js
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+```
+* ví dụ:
+
+```js
+src/
+---components/
+--------About.js
+--------Home.js
+---------Shop.js
+---index.js
+---App.js
+...more...
+```
