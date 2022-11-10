@@ -8,7 +8,7 @@ npm install react-router-dom
 ```js
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 ```
-* ví dụ:
+* ví dụ: xây dựng một trang landing page với nhiều trang khác nhau. Cấu trúc thư mục của src sẽ như sau:
 
 ```js
 src/
@@ -19,4 +19,46 @@ src/
 ---index.js
 ---App.js
 ...more...
+```
+* Trước tiên, chúng ta cần phải thiết lập app sử dụng React Router. Mọi thứ sẽ được render cần phải được bọc bên trong BrowserRouter, chúng ta sẽ lựa chọn component App bởi nó chính là component xử lí logic mặc định trong ReactJS. Trong file index.js của dự án chúng ta sẽ chỉnh sửa lại như sau:
+
+```js
+// index.js
+...
+import { BrowserRouter} from 'react-router-dom';
+...
+ReactDOM.render(
+  <BrowserRouter>
+    <App/>
+  </BrowserRouter>,
+  document.getElementById('root')
+);
+```
+
+* Tiếp theo đó ở file src/App.js chúng ta cần phải sử dụng Switch để bọc các Router lại. Đây là điều bắt buộc, tất các các Route cần phải được bọc bởi Switch.
+
+```js
+// Ở đây chúng ta import 4 component được xây dựng trong thư mục  src/components
+// đó là Home, About, Shop, Error
+import React from 'react'
+import { Route, Switch } from 'react-router-dom';
+ 
+​import Home from './components/Home';
+import About from './components/About';
+import Shop from './components/Shop'
+import Error from './components/Error'
+ 
+ 
+export defaults function App() {
+    return (
+        <>
+            <Switch>
+                <Route path="/" component={Home} exact />
+                <Route path="/about" component={About} />
+                <Route path="/shop" component={Shop} />
+                <Route component={Error} />
+            </Switch>
+        </>
+    )
+}
 ```
