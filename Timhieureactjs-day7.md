@@ -62,3 +62,7 @@ export defaults function App() {
     )
 }
 ```
+
+* Route có nhiệm vụ render component theo path được chỉ định. Trong trường hợp ở trên Route có path là / có thêm một props nữa là exact bởi hầu hết các path đều thông qua /. Khi một route không có thuộc tính path thì render component khi URL không tồn tại.
+
+* Bên trên trong file App.js chúng ta đã import 3 component đó là Home, About, Shop , Error trong thư mục src/components, bây giờ chúng ta cần phải xây dựng 3 componet đó.
