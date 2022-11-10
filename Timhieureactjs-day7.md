@@ -129,6 +129,5 @@ export default function Shop() {
     </div>
   );
 };
-
-** Component Link cho phép chúng ta chuyển qua lại giữa các component thông qua URL, nó tương tự như thẻ a trong html. 
 ````
+** Component Link cho phép chúng ta chuyển qua lại giữa các component thông qua URL, nó tương tự như thẻ a trong html. 
