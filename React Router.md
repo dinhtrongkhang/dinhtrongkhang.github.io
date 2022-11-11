@@ -131,3 +131,27 @@ export default function Shop() {
 };
 ````
 ** Component Link cho phép chúng ta chuyển qua lại giữa các component thông qua URL, nó tương tự như thẻ a trong html. 
+
+/////////////////
+# React Router
+* Trang web gồm nhiều trang khác nhau, mỗi trang ánh xạ với URL
+* Hiện tại phiên bản mới nhất v6.4
+## Các component chính
+* BrowserRouter: context cho các component khác
+* Routercontainer:
+* Route: khai báo một đường dẫn và component tương ứng
+* Link/NavLink: điều hướng URL tới các màn hình khách nhau 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
