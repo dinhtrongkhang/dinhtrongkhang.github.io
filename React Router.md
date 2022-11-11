@@ -141,6 +141,7 @@ export default function Shop() {
 * Routercontainer:
 * Route: khai báo một đường dẫn và component tương ứng
 * Link/NavLink: điều hướng URL tới các màn hình khách nhau 
+* Outlet: giống màn hình hiển thị (khi URL khớp với Route nào thì element tương ứng sẽ được hiện thị trong Outlet)
 
 
 
