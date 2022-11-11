@@ -3,6 +3,7 @@
     border-radius: 2px;
     padding: 10px 16px;
     box-shadow: 0 2px 5px rgb(189, 188, 188);
+    flex-basis: calc(50% - 10px);
 }
 
 .title {
