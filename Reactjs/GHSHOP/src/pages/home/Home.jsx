@@ -1,8 +1,21 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
-    return <main>Nội dung trên trang chủ</main>
+    const [posts, setPosts] = useState([]);
+    useEffect(() => {
+        fetch("https://jsonplaceholder.typicode.com/posts")
+            .then(res => res.json())
+            .then(setPosts);
+    }, []);
+    return (
+        <main>
+            <h1>Danh sách bài viết</h1>
+            <div>
+                {posts.map((post) => <Link to="/post/"></Link>)}
+            </div>
+        </main>
+    );
 };
 
 export default Home;
