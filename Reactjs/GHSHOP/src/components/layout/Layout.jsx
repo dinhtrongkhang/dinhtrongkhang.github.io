@@ -7,7 +7,7 @@ const Layout = () => {
     return (
         <div className={styles.container}>
             <header className={styles.header}>
-                <div className={styles.logo}>Logo</div>
+                <div className={styles.logo}>GHSHOP</div>
 
                 <Navigation />
             </header>
