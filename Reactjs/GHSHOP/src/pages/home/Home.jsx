@@ -12,7 +12,14 @@ const Home = () => {
         <main>
             <h1>Danh sách bài viết</h1>
             <div>
-                {posts.map((post) => <Link to="/post/"></Link>)}
+                {posts.map((post) => (
+                    <Link key={post.id} to={"/post/" + post.id}>
+                        <div>
+                            <h3>{post.title}</h3>
+                            <p>{post.body}</p>
+                        </div>
+                    </Link>
+                ))}
             </div>
         </main>
     );
