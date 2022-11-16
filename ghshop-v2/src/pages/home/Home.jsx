@@ -33,6 +33,34 @@ const Home = () => {
 
             <Container>
                 <Row className="gy-4">
+                    {products.map((product) => (
+                        <Col key={product.id} xs={6} md={4} lg={3} xl={2} className="m-5 p-2">
+                            <Card>
+                                <Ratio aspectRatio="1x1">
+                                    <Card.Img
+                                        as={Image}
+                                        thumbnail={true}
+                                        variant="top"
+                                        src={product.image}
+                                        style={{ objectFit: "contain" }}
+                                    />
+                                </Ratio>
+
+                                <Card.Body>
+                                    <Card.Title
+                                        as={Link}
+                                        to={`/products/${product.id}`}
+                                    >
+                                        {product.title}
+                                    </Card.Title>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
+            </Container>
+            <Container>
+                <Row className="gy-4">
                     <Slider {...slickConfig}>
                         {products.map((product) => (
                             <Col key={product.id} xs={6} md={4} lg={3} xl={2} className="m-5 p-2">
