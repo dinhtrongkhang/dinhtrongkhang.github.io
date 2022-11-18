@@ -32,16 +32,16 @@ const Home = () => {
             <Banner />
 
             <Container>
-                <Row className="gy-4">
+                <Row className="gy-2">
                     {products.map((product) => (
-                        <Col key={product.id} xs={6} md={4} lg={3} xl={2} className="m-5 p-2">
+                        <Col key={product.id} xs={6} md={4} lg={3} xl={2} className="mt-5">
                             <Card>
                                 <Ratio aspectRatio="1x1">
                                     <Card.Img
-                                        as={Image}
-                                        thumbnail={true}
-                                        variant="top"
-                                        src={product.image}
+                                        // as={Image}
+                                        // thumbnail={true}
+                                        // variant="top"
+                                        src="/banner-1.webp"
                                         style={{ objectFit: "contain" }}
                                     />
                                 </Ratio>
