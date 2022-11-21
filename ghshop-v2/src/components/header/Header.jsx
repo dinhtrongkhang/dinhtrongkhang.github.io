@@ -22,7 +22,7 @@ const Header = () => {
         <header>
             <Navbar expand="lg">
                 <Container className="d-block">
-                    <Row className="align-items-center justify-content-center">
+                    <Row className="align-items-center justify-content-between">
                         <Col xs={{ span: 4, order: 1 }} className="d-lg-none">
                             <Navbar.Toggle aria-controls="main-nav" />
                         </Col>
