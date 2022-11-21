@@ -33,7 +33,7 @@ const Banner = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="/banner-3.webp"
+                            src="/banner-2.webp"
                             alt="Second slide"
                         />
 
