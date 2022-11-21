@@ -19,7 +19,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header>
+        <header className={styles.Header}>
             <Navbar expand="lg">
                 <Container className="d-block">
                     <Row className="align-items-center justify-content-between">
