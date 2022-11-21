@@ -2,6 +2,7 @@
     background-color: #ff2850;
     border: none;
     margin-bottom: 16px;
+    margin-top: 12px;
     min-width: 120px;
 }
 
@@ -21,4 +22,12 @@
 .imgSlider {
     width: 100%;
     height: 300px;
+}
+
+.productPrice {
+    display: flex;
+}
+
+.oldPrice {
+    margin-right: 12px;
 }
