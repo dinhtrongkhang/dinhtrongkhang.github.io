@@ -1,0 +1,19 @@
+.btnProduct {
+    background-color: #ff2850;
+    border: none;
+    margin-bottom: 16px;
+    min-width: 120px;
+}
+
+.btnProduct:hover {
+    background-color: #de425f;
+}
+
+.wrapTitle {
+    width: 500px;
+    background-color: #fdfcfc;
+    border-radius: 10px;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+}

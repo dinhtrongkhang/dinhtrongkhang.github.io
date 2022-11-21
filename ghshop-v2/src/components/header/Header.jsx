@@ -37,7 +37,7 @@ const Header = () => {
                             </Navbar.Brand>
                         </Col>
 
-                        <Col xs={{ span: 4, order: 1 }} className="d-">
+                        <Col xs={{ span: 4, order: 1 }} className="">
                             <Form>
                                 <Stack direction="horizontal"
                                     gap={3}
