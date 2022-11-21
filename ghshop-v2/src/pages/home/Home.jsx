@@ -4,8 +4,12 @@ import { Card, Col, Container, Row, Ratio, Button } from "react-bootstrap";
 import { Link, useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
 import { BsArrowRightCircleFill } from "react-icons/bs";
+
+import "swiper/swiper-bundle.min.css";
+import "swiper/swiper.min.css";
+
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectFlip } from "swiper";
 
 
 const Home = () => {
@@ -13,7 +17,7 @@ const Home = () => {
 
     const swiperProps = {
         modules: [Navigation, Pagination],
-        spaceBetween: 24,
+        spaceBetween: 12,
         slidesPerView: 4,
         navigation: true,
     };
@@ -34,7 +38,7 @@ const Home = () => {
                             </Ratio>
                             <Container className={styles.wrapTitle}>
                                 <h3>Trẻ Em</h3>
-                                <Button className={styles.btnProduct}>Mua Ngay</Button>
+                                <Button className={styles.btn}>Mua Ngay</Button>
                             </Container>
                         </Card>
                     </Col>
@@ -48,7 +52,7 @@ const Home = () => {
                             </Ratio>
                             <Container className={styles.wrapTitle}>
                                 <h3>Thời Trang Nữ</h3>
-                                <Button className={styles.btnProduct}>Mua Ngay</Button>
+                                <Button className={styles.btn}>Mua Ngay</Button>
                             </Container>
                         </Card>
                     </Col>
@@ -64,7 +68,7 @@ const Home = () => {
                             </Ratio>
                             <Container className={styles.wrapTitle}>
                                 <h3>Áo Khoác</h3>
-                                <Button className={styles.btnProduct}>Mua Ngay</Button>
+                                <Button className={styles.btn}>Mua Ngay</Button>
                             </Container>
                         </Card>
                     </Col>
@@ -78,7 +82,7 @@ const Home = () => {
                             </Ratio>
                             <Container className={styles.wrapTitle}>
                                 <h3>Thời Trang Nam</h3>
-                                <Button className={styles.btnProduct}>Mua Ngay</Button>
+                                <Button className={styles.btn}>Mua Ngay</Button>
                             </Container>
                         </Card>
                     </Col>
@@ -87,8 +91,99 @@ const Home = () => {
 
             <Container>
                 <Row>
+                    <h1 className="mt-2">Sản phẩm bán chạy</h1>
                     <Swiper {...swiperProps}>
-
+                        <SwiperSlide>
+                            <img className={styles.imgSlider} src="./gh-baby-1.webp" alt="" />
+                            <Container>
+                                <h3>Thời Trang Nam</h3>
+                                <Button className={styles.btn}>Mua Ngay</Button>
+                            </Container>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className={styles.imgSlider} src="./gh-baby-2.webp" alt="" />
+                            <Container>
+                                <h3>Thời Trang Nam</h3>
+                                <Button className={styles.btn}>Mua Ngay</Button>
+                            </Container>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className={styles.imgSlider} src="./gh-baby-3.webp" alt="" />
+                            <Container>
+                                <h3>Thời Trang Nam</h3>
+                                <Button className={styles.btn}>Mua Ngay</Button>
+                            </Container>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className={styles.imgSlider} src="./gh-baby-4.webp" alt="" />
+                            <Container>
+                                <h3>Thời Trang Nam</h3>
+                                <Button className={styles.btn}>Mua Ngay</Button>
+                            </Container>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className={styles.imgSlider} src="./gh-baby-5.webp" alt="" />
+                            <Container>
+                                <h3>Thời Trang Nam</h3>
+                                <Button className={styles.btn}>Mua Ngay</Button>
+                            </Container>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className={styles.imgSlider} src="./gh-baby-6.webp" alt="" />
+                            <Container>
+                                <h3>Thời Trang Nam</h3>
+                                <Button className={styles.btn}>Mua Ngay</Button>
+                            </Container>
+                        </SwiperSlide>
+                    </Swiper>
+                </Row>
+            </Container>
+            <Container>
+                <Row>
+                    <h1 className="mt-5">Sản phẩm mới</h1>
+                    <Swiper {...swiperProps}>
+                        <SwiperSlide>
+                            <img className={styles.imgSlider} src="./gh-baby-1.webp" alt="" />
+                            <Container>
+                                <h3>Thời Trang Nam</h3>
+                                <Button className={styles.btn}>Mua Ngay</Button>
+                            </Container>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className={styles.imgSlider} src="./gh-baby-2.webp" alt="" />
+                            <Container>
+                                <h3>Thời Trang Nam</h3>
+                                <Button className={styles.btn}>Mua Ngay</Button>
+                            </Container>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className={styles.imgSlider} src="./gh-baby-3.webp" alt="" />
+                            <Container>
+                                <h3>Thời Trang Nam</h3>
+                                <Button className={styles.btn}>Mua Ngay</Button>
+                            </Container>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className={styles.imgSlider} src="./gh-baby-4.webp" alt="" />
+                            <Container>
+                                <h3>Thời Trang Nam</h3>
+                                <Button className={styles.btn}>Mua Ngay</Button>
+                            </Container>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className={styles.imgSlider} src="./gh-baby-5.webp" alt="" />
+                            <Container>
+                                <h3>Thời Trang Nam</h3>
+                                <Button className={styles.btn}>Mua Ngay</Button>
+                            </Container>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className={styles.imgSlider} src="./gh-baby-6.webp" alt="" />
+                            <Container>
+                                <h3>Thời Trang Nam</h3>
+                                <Button className={styles.btn}>Mua Ngay</Button>
+                            </Container>
+                        </SwiperSlide>
                     </Swiper>
                 </Row>
             </Container>

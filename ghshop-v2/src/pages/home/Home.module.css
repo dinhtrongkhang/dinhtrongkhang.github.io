@@ -1,11 +1,11 @@
-.btnProduct {
+.btn {
     background-color: #ff2850;
     border: none;
     margin-bottom: 16px;
     min-width: 120px;
 }
 
-.btnProduct:hover {
+.btn:hover {
     background-color: #de425f;
 }
 
@@ -16,4 +16,9 @@
     position: absolute;
     top: 90%;
     left: 10%;
+}
+
+.imgSlider {
+    width: 100%;
+    height: 300px;
 }
