@@ -30,6 +30,52 @@ const Home = () => {
     return (
         <main>
             <Banner />
+            <Container className="">
+                <Row className="gy-2 d-flex justify-content-between">
+                    <Col xs={6} md={6} lg={6} xl={6} className="mt-5">
+                        <Card>
+                            <Ratio aspectRatio="1x1">
+                                <Card.Img
+                                    src="/gh-baby-1.webp"
+                                    style={{ objectFit: "cover" }}
+                                />
+                            </Ratio>
+                        </Card>
+                    </Col>
+                    <Col xs={6} md={6} lg={6} xl={6} className="mt-5">
+                        <Card>
+                            <Ratio aspectRatio="1x1">
+                                <Card.Img
+                                    src="/gh-women-1.webp"
+                                    style={{ objectFit: "cover" }}
+                                />
+                            </Ratio>
+                        </Card>
+                    </Col>
+                </Row>
+                <Row className="gy-2">
+                    <Col xs={6} md={6} lg={6} xl={6} className="mt-5">
+                        <Card>
+                            <Ratio aspectRatio="1x1">
+                                <Card.Img
+                                    src="/gh-jacket-1.webp"
+                                    style={{ objectFit: "cover" }}
+                                />
+                            </Ratio>
+                        </Card>
+                    </Col>
+                    <Col xs={6} md={6} lg={6} xl={6} className="mt-5">
+                        <Card>
+                            <Ratio aspectRatio="1x1">
+                                <Card.Img
+                                    src="/gh-men-1.webp"
+                                    style={{ objectFit: "cover" }}
+                                />
+                            </Ratio>
+                        </Card>
+                    </Col>
+                </Row>
+            </Container>
 
             <Container>
                 <Row className="gy-2">

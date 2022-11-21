@@ -1,0 +1,14 @@
+.btnSearch {
+    background-color: #ff2850;
+    border: none;
+}
+
+.btnSearch:hover {
+    background-color: #000;
+}
+
+.navLink {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
