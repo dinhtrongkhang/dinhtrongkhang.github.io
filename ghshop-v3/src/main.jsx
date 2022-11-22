@@ -11,7 +11,7 @@ import App from "./App";
 import Cart from "./pages/cart/Cart";
 import ProductDetail from "./pages/detail/ProductDetail";
 import Home from "./pages/home/Home";
-import ProductList from "./pages/products/ProductList";
+import ProductList from "./pages/babys/ProductList";
 
 const routes = createRoutesFromElements(
     <Route

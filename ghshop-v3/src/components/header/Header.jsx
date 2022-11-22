@@ -80,7 +80,7 @@ const Header = ({ cartLength }) => {
                                     Trang chủ
                                 </Nav.Link>
 
-                                <Nav.Link as={NavLink} to="/about" className={styles.navLink}>
+                                <Nav.Link as={NavLink} to="/babys" className={styles.navLink}>
                                     Trẻ em
                                 </Nav.Link>
 
