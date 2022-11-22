@@ -16,7 +16,7 @@ const Cart = () => {
     );
 
     return (
-        <div className="container">
+        <div className="container mt-5">
             <p>Giỏ hàng</p>
             <Table striped bordered hover>
                 <thead>
