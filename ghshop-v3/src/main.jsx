@@ -11,17 +11,19 @@ import App from "./App";
 import Cart from "./pages/cart/Cart";
 import ProductDetail from "./pages/detail/ProductDetail";
 import Home from "./pages/home/Home";
-import ProductList from "./pages/babys/ProductList";
+
+
+import styles from "./index.css";
 
 const routes = createRoutesFromElements(
     <Route
         element={<App />}
         loader={App.loader}
-        errorElement={<div>Some thing wrong :(</div>}
+        errorElement={<div>Some thing wrong :</div>}
     >
         <Route index element={<Home />} />
         <Route path="/products/:productId" element={<ProductDetail />} />
-        <Route path="/products" element={<ProductList />} />
+        {/* <Route path="/products" element={<ProductList />} /> */}
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<div>404 | Page Not Found</div>} />
     </Route>

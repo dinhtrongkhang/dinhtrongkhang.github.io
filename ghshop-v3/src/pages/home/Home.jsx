@@ -246,15 +246,15 @@ const Home = () => {
                             <SwiperSlide>
                                 <img className={styles.imgSlider} src="./gh-new-1.png" alt="" />
                                 <a href="">Cách phối đồ cho bé gái theo từng độ
-                                        tuổi siêu đáng
-                                        yêu</a>
+                                    tuổi siêu đáng
+                                    yêu</a>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img className={styles.imgSlider} src="./gh-new-5.jpg" alt="" />
                                 <a href="">Cách phối đồ nam mùa đông cực thời
-                                        trang
-                                        và
-                                        trendy</a>
+                                    trang
+                                    và
+                                    trendy</a>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img className={styles.imgSlider} src="./gh-new-7.jpg" alt="" />

@@ -1,53 +1,32 @@
 import React, { useState } from "react";
 import { Carousel, Container } from "react-bootstrap";
 
+import { Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import styles from "./Home.module.css";
 
 const Banner = () => {
     const [activeBanner, setActiveBanner] = useState(0);
 
-    const handleSelectBanner = (selectedBanner, e) => {
-        setActiveBanner(selectedBanner);
+    const swiperProps = {
+        modules: [Navigation, Pagination],
+        spaceBetween: 4,
+        slidesPerView: 1,
+        navigation: true,
     };
 
     return (
-        <section>
+        <section className={styles.banner}>
             <Container>
-                <Carousel
-                    activeIndex={activeBanner}
-                    onSelect={handleSelectBanner}
-                >
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="/banner-1.webp"
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>
-                                Nulla vitae elit libero, a pharetra augue mollis
-                                interdum.
-                            </p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="/banner-2.webp"
-                            alt="Second slide"
-                        />
-
-                        <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit.
-                            </p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
+                <Swiper {...swiperProps}>
+                    <SwiperSlide>
+                        <img className={styles.imgSlider} src="/banner-1.webp" alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className={styles.imgSlider} src="/banner-2.webp" alt="" />
+                    </SwiperSlide>
+                </Swiper>
             </Container>
         </section>
     );
