@@ -19,7 +19,7 @@ import LoginForm from "../login-form/LoginForm";
 
 const Header = ({ cartLength }) => {
     return (
-        <header>
+        <header className={styles.header}>
             <Navbar expand="lg">
                 <Container className="d-block">
                     <Row className="align-items-center justify-content-between">

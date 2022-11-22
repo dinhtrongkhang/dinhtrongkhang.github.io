@@ -1,11 +1,10 @@
-.Header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
     background-color: rgb(255, 255, 255);
-    margin-bottom: 24px;
+    z-index: 2;
 }
 
 .btnSearch {

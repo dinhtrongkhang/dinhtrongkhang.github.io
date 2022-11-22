@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Carousel, Container } from "react-bootstrap";
 
+import styles from "./Home.module.css";
+
 const Banner = () => {
     const [activeBanner, setActiveBanner] = useState(0);
 
