@@ -86,13 +86,194 @@ const Home = () => {
                 </Row>
             </Container>
 
-            <Container>
+            <Container className="mt-5">
+                <h1>Sản phẩm mới</h1>
                 <Swiper {...swiperProps}>
-                    {/* {products.map((product) => (
-                        <SwiperSlide key={product.id}>
-                            <ProductCard product={product} />
-                        </SwiperSlide>
-                    ))} */}
+                    <Row>
+                        <Swiper {...swiperProps}>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-baby-1.webp" alt="" />
+                                <Container>
+                                    <h3 className={styles.title}>Áo thun bé trai</h3>
+                                    <div className={styles.productPrice}>
+                                        <div className={styles.oldPrice}>250.000đ</div>
+                                        <div className={styles.actualPrice}><span>200.000đ</span></div>
+                                    </div>
+                                    <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
+                                </Container>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-women-3.webp" alt="" />
+                                <Container>
+                                    <h3 className={styles.title}>Áo thun dài tay nữ</h3>
+                                    <div className={styles.productPrice}>
+                                        <div className={styles.oldPrice}>250.000đ</div>
+                                        <div className={styles.actualPrice}><span>200.000đ</span></div>
+                                    </div>
+                                    <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
+                                </Container>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-men-3.webp" alt="" />
+                                <Container>
+                                    <h3 className={styles.title}>Áo sơ mi nam dài tay</h3>
+                                    <div className={styles.productPrice}>
+                                        <div className={styles.oldPrice}>250.000đ</div>
+                                        <div className={styles.actualPrice}><span>200.000đ</span></div>
+                                    </div>
+                                    <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
+                                </Container>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-baby-4.webp" alt="" />
+                                <Container>
+                                    <h3 className={styles.title}>Áo thun bé gái</h3>
+                                    <div className={styles.productPrice}>
+                                        <div className={styles.oldPrice}>250.000đ</div>
+                                        <div className={styles.actualPrice}><span>200.000đ</span></div>
+                                    </div>
+                                    <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
+                                </Container>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-baby-5.webp" alt="" />
+                                <Container>
+                                    <h3 className={styles.title}>Áo thun bé gái</h3>
+                                    <div className={styles.productPrice}>
+                                        <div className={styles.oldPrice}>250.000đ</div>
+                                        <div className={styles.actualPrice}><span>200.000đ</span></div>
+                                    </div>
+                                    <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
+                                </Container>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-baby-6.webp" alt="" />
+                                <Container>
+                                    <h3 className={styles.title}>Áo thun bé trai</h3>
+                                    <div className={styles.productPrice}>
+                                        <div className={styles.oldPrice}>250.000đ</div>
+                                        <div className={styles.actualPrice}><span>200.000đ</span></div>
+                                    </div>
+                                    <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
+                                </Container>
+                            </SwiperSlide>
+                        </Swiper>
+                    </Row>
+                </Swiper>
+            </Container>
+
+            <Container className="mt-5">
+                <h1>Sản phẩm bán chạy</h1>
+                <Swiper {...swiperProps}>
+                    <Row>
+                        <Swiper {...swiperProps}>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-baby-1.webp" alt="" />
+                                <Container>
+                                    <h3 className={styles.title}>Áo thun bé trai</h3>
+                                    <div className={styles.productPrice}>
+                                        <div className={styles.oldPrice}>250.000đ</div>
+                                        <div className={styles.actualPrice}><span>200.000đ</span></div>
+                                    </div>
+                                    <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
+                                </Container>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-women-5.webp" alt="" />
+                                <Container>
+                                    <h3 className={styles.title}>Áo thun ngắn tay nữ</h3>
+                                    <div className={styles.productPrice}>
+                                        <div className={styles.oldPrice}>250.000đ</div>
+                                        <div className={styles.actualPrice}><span>200.000đ</span></div>
+                                    </div>
+                                    <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
+                                </Container>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-women-3.webp" alt="" />
+                                <Container>
+                                    <h3 className={styles.title}>Áo thun ngắn tay nữ</h3>
+                                    <div className={styles.productPrice}>
+                                        <div className={styles.oldPrice}>250.000đ</div>
+                                        <div className={styles.actualPrice}><span>200.000đ</span></div>
+                                    </div>
+                                    <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
+                                </Container>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-jacket-3.webp" alt="" />
+                                <Container>
+                                    <h3 className={styles.title}>Áo khoác bé gái</h3>
+                                    <div className={styles.productPrice}>
+                                        <div className={styles.oldPrice}>250.000đ</div>
+                                        <div className={styles.actualPrice}><span>200.000đ</span></div>
+                                    </div>
+                                    <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
+                                </Container>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-jacket-2.webp" alt="" />
+                                <Container>
+                                    <h3 className={styles.title}>Áo khoác bé gái</h3>
+                                    <div className={styles.productPrice}>
+                                        <div className={styles.oldPrice}>250.000đ</div>
+                                        <div className={styles.actualPrice}><span>200.000đ</span></div>
+                                    </div>
+                                    <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
+                                </Container>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-jacket-7.webp" alt="" />
+                                <Container>
+                                    <h3 className={styles.title}>Áo khoác nữ</h3>
+                                    <div className={styles.productPrice}>
+                                        <div className={styles.oldPrice}>250.000đ</div>
+                                        <div className={styles.actualPrice}><span>200.000đ</span></div>
+                                    </div>
+                                    <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
+                                </Container>
+                            </SwiperSlide>
+                        </Swiper>
+                    </Row>
+                </Swiper>
+            </Container>
+
+            <Container className="mt-5">
+                <h1>Tin tức</h1>
+                <Swiper {...swiperProps}>
+                    <Row>
+                        <Swiper {...swiperProps}>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-new-1.png" alt="" />
+                                <a href="">Cách phối đồ cho bé gái theo từng độ
+                                        tuổi siêu đáng
+                                        yêu</a>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-new-5.jpg" alt="" />
+                                <a href="">Cách phối đồ nam mùa đông cực thời
+                                        trang
+                                        và
+                                        trendy</a>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-new-7.jpg" alt="" />
+                                <a href="">Phối đồ với túi xách màu trắng thêm
+                                    phần
+                                    sang
+                                    trọng,
+                                    sang
+                                    chảnh</a>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className={styles.imgSlider} src="./gh-new-8.jpg" alt="" />
+                                <a href="">Phối đồ với boots nữ cá tính nhưng
+                                    vẫn
+                                    cực kỳ sang
+                                    chảnh</a>
+                            </SwiperSlide>
+                        </Swiper>
+                    </Row>
                 </Swiper>
             </Container>
         </main>
