@@ -9,7 +9,7 @@ const Footer = () => {
                     direction="horizontal"
                     className="justify-content-center"
                 >
-                    Copyright by Ba Nguyễn
+                    Dinh Gia Huy
                 </Stack>
             </Container>
         </footer>
