@@ -50,17 +50,6 @@ const ProductList = () => {
             <Row>Breadcrumb</Row>
 
             <Row>
-                <ButtonGroup>
-                    <Button onClick={() => setDisplayStyle("grid")}>
-                        Lưới
-                    </Button>
-                    <Button onClick={() => setDisplayStyle("list")}>
-                        List
-                    </Button>
-                </ButtonGroup>
-            </Row>
-
-            <Row>
                 <Col xs={false} lg={3}>
                     Lọc sản phẩm
                     <Stack direction="vertical">
