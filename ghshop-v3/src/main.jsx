@@ -14,6 +14,7 @@ import Home from "./pages/home/Home";
 
 
 import styles from "./index.css";
+import ProductBaby from "./pages/babys/ProductBaby";
 
 const routes = createRoutesFromElements(
     <Route
@@ -23,7 +24,7 @@ const routes = createRoutesFromElements(
     >
         <Route index element={<Home />} />
         <Route path="/products/:productId" element={<ProductDetail />} />
-        {/* <Route path="/products" element={<ProductList />} /> */}
+        <Route path="/babys" element={<ProductBaby/>} />
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<div>404 | Page Not Found</div>} />
     </Route>
