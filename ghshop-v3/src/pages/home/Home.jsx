@@ -87,7 +87,7 @@ const Home = () => {
             </Container>
 
             <Container className="mt-5">
-                <h1>Sản phẩm mới</h1>
+                <h1 className="mb-3">Sản phẩm mới</h1>
                 <Swiper {...swiperProps}>
                     <Row>
                         <Swiper {...swiperProps}>
@@ -163,7 +163,7 @@ const Home = () => {
             </Container>
 
             <Container className="mt-5">
-                <h1>Sản phẩm bán chạy</h1>
+                <h1 className="mb-3">Sản phẩm bán chạy</h1>
                 <Swiper {...swiperProps}>
                     <Row>
                         <Swiper {...swiperProps}>
@@ -239,7 +239,7 @@ const Home = () => {
             </Container>
 
             <Container className="mt-5">
-                <h1>Tin tức</h1>
+                <h1 className="mb-3">Tin tức thời trang</h1>
                 <Swiper {...swiperProps}>
                     <Row>
                         <Swiper {...swiperProps}>
