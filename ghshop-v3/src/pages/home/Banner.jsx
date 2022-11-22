@@ -10,7 +10,7 @@ const Banner = () => {
 
     return (
         <section>
-            <Container className="mt-5">
+            <Container>
                 <Carousel
                     activeIndex={activeBanner}
                     onSelect={handleSelectBanner}
@@ -18,7 +18,7 @@ const Banner = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="/banner-1.webp"
+                            src="/banner-1.jpeg"
                             alt="First slide"
                         />
                         <Carousel.Caption>
@@ -33,7 +33,7 @@ const Banner = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="/banner-2.webp"
+                            src="/banner-2.jpeg"
                             alt="Second slide"
                         />
 
