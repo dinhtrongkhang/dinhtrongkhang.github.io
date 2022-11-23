@@ -13,9 +13,23 @@ const ProductBabys = () => {
         <main>
             <Banner />
             <Container>
-                <h1>Xin chao Dinh Gia Huy</h1>
+                <Row>
+                    <Col>
+                        {productData.map((item, index) => (
+                            <ProductItem key={item.id}>
+
+                            </ProductItem>
+                        ))}
+                    </Col>
+                </Row>
             </Container>
         </main>
+    );
+};
+
+function ProductItem = () => {
+    return (
+    
     );
 };
 
