@@ -4,6 +4,10 @@
     margin-top: 54px;
 }
 
+.footerTop p a {
+    color: #fff;
+}
+
 .footerTitle {
     border-bottom: 1px solid #fff;
     padding-bottom: 12px;
