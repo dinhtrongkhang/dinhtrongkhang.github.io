@@ -37,7 +37,7 @@ const Header = () => {
                             </Navbar.Brand>
                         </Col>
 
-                        <Col xs={{ span: 4, order: 1 }} className="">
+                        {/* <Col xs={{ span: 4, order: 1 }} className="">
                             <Form>
                                 <Stack direction="horizontal"
                                     gap={3}
@@ -51,7 +51,7 @@ const Header = () => {
                                     <Button className={styles.btnSearch}>Search</Button>
                                 </Stack>
                             </Form>
-                        </Col>
+                        </Col> */}
 
                         <Col xs={{ span: 4, order: 3 }} lg={{ span: 3 }}>
                             <Stack

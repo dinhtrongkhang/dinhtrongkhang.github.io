@@ -2,7 +2,7 @@ import React from 'react';
 import { productData } from './ProductData';
 
 
-import { Container, Row, Col, Card, Ratio, Button } from "react-bootstrap";
+import { Container, Row, Col, ProductItem } from "react-bootstrap";
 import { useOutletContext } from "react-router-dom";
 import Banner from '../home/Banner';
 
@@ -34,3 +34,4 @@ function ProductItem = () => {
 };
 
 export default ProductBabys;
+
