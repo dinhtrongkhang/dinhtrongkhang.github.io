@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Stack } from "react-bootstrap";
+import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
 
 import styles from "../footer/Footer.module.css"
 
@@ -38,10 +39,15 @@ const Footer = () => {
                     <Col xs={12} md={6} lg={4} xl={3}>
                         <Stack className="text-start mt-3">
                             <h4 className={styles.footerTitle}>Theo dõi chúng tôi</h4>
-                            <p><a href="">Lorem, ipsum.</a></p>
-                            <p><a href="">Lorem, ipsum.</a></p>
-                            <p><a href="">Lorem, ipsum.</a></p>
-                            <p><a href="">Lorem, ipsum.</a></p>
+                            <p><a href="">
+                                <BsFacebook />
+                            </a></p>
+                            <p><a href="">
+                                <BsInstagram />
+                            </a></p>
+                            <p><a href="">
+                                <BsYoutube />
+                            </a></p>
                         </Stack>
                     </Col>
                 </Row>

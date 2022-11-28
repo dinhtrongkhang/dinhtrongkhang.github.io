@@ -4,13 +4,17 @@
     margin-top: 54px;
 }
 
+.footerTitle {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 12px;
+}
+
 .footerTop p a {
     color: #fff;
 }
 
-.footerTitle {
-    border-bottom: 1px solid #fff;
-    padding-bottom: 12px;
+.footerTop p a:hover {
+    color: #ff2850;
 }
 
 .copyRight {

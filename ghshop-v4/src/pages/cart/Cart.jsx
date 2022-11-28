@@ -96,7 +96,7 @@ const Cart = () => {
             </Table>
 
             <Button type="danger" onClick={handleClear}>
-                Clear cart
+                Xóa toàn bộ sản phẩm
             </Button>
         </div>
     );
