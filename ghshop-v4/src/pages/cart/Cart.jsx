@@ -15,13 +15,13 @@ const Cart = () => {
     }
 
     const handleDelete = (productId) => {
-        if (confirm("Xoas sanr pham?")) {
+        if (confirm("Bạn có muốn xóa sản phẩm khỏi giỏ hàng?")) {
             dispatch(removeItem(productId));
         }
     };
 
     const handleClear = () => {
-        if (confirm("Xoa toan bo san pham khoi gio hang")) {
+        if (confirm("Bạn có muốn xóa toàn bộ sản phẩm khỏi giỏ hàng?")) {
             dispatch(clearItem());
         }
     };

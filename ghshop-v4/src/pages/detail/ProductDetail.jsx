@@ -66,7 +66,7 @@ const ProductDetail = () => {
                             <Button variant="light">+</Button>
                         </ButtonGroup>
                         <Button onClick={handleAddToCartClick}>
-                            Add to Cart
+                            Thêm vào giỏ hàng
                         </Button>
                     </Stack>
                 </Col>
@@ -75,7 +75,7 @@ const ProductDetail = () => {
             <Row>Thông tin chi tiết hơn về sản phẩm</Row>
 
             <Row>
-                <Col>Sản phẩm liên</Col>
+                <Col>Sản phẩm liên quan</Col>
             </Row>
         </Container>
     );

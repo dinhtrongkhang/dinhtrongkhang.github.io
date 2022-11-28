@@ -10,10 +10,8 @@ const LoginForm = () => {
 
     return (
         <>
-            <Button onClick={display}>
-                <BsPerson />
-            </Button>
-
+            <BsPerson onClick={display}/>
+           
             <Modal show={show} onHide={close}>
                 Nội dung
             </Modal>
