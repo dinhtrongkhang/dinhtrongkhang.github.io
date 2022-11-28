@@ -49,7 +49,7 @@ const Footer = () => {
 
             <Container fluid>
                 <Row>
-                    <p className={styles.copyRight}>Copyright © 2022 by GHSHOP.</p>
+                    <span className={styles.copyRight}>Copyright © 2022 by GHSHOP.</span>
                 </Row>
             </Container>
         </footer>
