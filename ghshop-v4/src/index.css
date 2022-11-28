@@ -1,0 +1,18 @@
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.btn {
+    background-color: #ff2850;
+    border: none;
+    margin-bottom: 16px;
+    margin-top: 12px;
+    max-width: 200px;
+    min-width: 120px;
+}
+
+.btn:hover {
+    background-color: #de425f;
+}
