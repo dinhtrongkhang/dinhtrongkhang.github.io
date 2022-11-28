@@ -23,7 +23,7 @@ const Header = () => {
     const totalItem = useSelector(selectTotalCartItem);
 
     return (
-        <header className="header">
+        <header className={styles.Header}>
             <Navbar expand="lg">
                 <Container className="d-block">
                     <Row className="align-items-center justify-content-between">
@@ -31,7 +31,7 @@ const Header = () => {
                             <Navbar.Toggle aria-controls="main-nav" />
                         </Col>
 
-                        <Col xs={{ span: 4, order: 1}} lg={{ span: 3, order: 1 }} className="text-center text-lg-start"
+                        <Col xs={{ span: 4, order: 1 }} lg={{ span: 3, order: 1 }} className="text-center text-lg-start"
                         >
                             <Navbar.Brand as={Link} to="/">
                                 GHSHOP
@@ -71,7 +71,7 @@ const Header = () => {
                                     <NavDropdown.Item>Logout</NavDropdown.Item>
                                 </NavDropdown> */}
                                 <LoginForm />
-                                
+
                             </Stack>
                         </Col>
 
