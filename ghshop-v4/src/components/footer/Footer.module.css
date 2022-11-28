@@ -1,11 +1,16 @@
 .footerTop {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     margin-top: 54px;
 }
 
+.footerTitle {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 12px;
+}
+
 .copyRight {
-    background-color: #666;
+    background-color: #333;
     color: #fff;
     height: 60px;
     line-height: 60px;
