@@ -8,18 +8,18 @@ const Footer = () => {
     return (
         <footer>
             <Container fluid>
-                <Row className="justify-content-betwen" className={styles.footerTop}>
+                <Row className="" className={styles.footerTop}>
                     <Col xs={12} md={6} lg={4} xl={3}>
-                        <Stack className="text-start mt-3">
+                        <Stack className="text-center mt-3">
                             <h4 className={styles.footerTitle}>Liên hệ với chúng tôi</h4>
                             <p><a href="">Địa chỉ: An Ninh, Tiền Hải, Thái Bình</a></p>
                             <p><a href="">Hotline: +84-9043 39993</a></p>
                             <p><a href="">Email: khangdinhtb@gmail.com</a></p>
-                            <p><a href="">Giờ mở cửa: Hai - Chủ Nhật: 9am-7pm</a></p>
+                            <p><a href="">Giờ mở cửa: Thứ Hai - Chủ Nhật: 9am-7pm</a></p>
                         </Stack>
                     </Col>
                     <Col xs={12} md={6} lg={4} xl={3}>
-                        <Stack className="text-start mt-3">
+                        <Stack className="text-center mt-3">
                             <h4 className={styles.footerTitle}>Chăm sóc khách hàng</h4>
                             <p><a href="">Chính sách điều khoản</a></p>
                             <p><a href="">Hướng dẫn mua hàng</a></p>
@@ -28,7 +28,7 @@ const Footer = () => {
                         </Stack>
                     </Col>
                     <Col xs={12} md={6} lg={4} xl={3}>
-                        <Stack className="text-start mt-3">
+                        <Stack className="text-center mt-3">
                             <h4 className={styles.footerTitle}>Thông tin</h4>
                             <p><a href="">Về GHSHOP</a></p>
                             <p><a href="">Tuyển dụng</a></p>
@@ -36,19 +36,19 @@ const Footer = () => {
                             <p><a href="">Lorem, ipsum.</a></p>
                         </Stack>
                     </Col>
-                    <Col xs={12} md={6} lg={4} xl={3}>
-                        <Stack className="text-start mt-3">
-                            <h4 className={styles.footerTitle}>Theo dõi chúng tôi</h4>
-                            <p><a href="">
-                                <BsFacebook />
-                            </a></p>
-                            <p><a href="">
-                                <BsInstagram />
-                            </a></p>
-                            <p><a href="">
-                                <BsYoutube />
-                            </a></p>
-                        </Stack>
+                    <Col xs={12} md={6} lg={4} xl={3} className="text-center mt-3">
+                        <h4 className={styles.footerTitle}>Theo dõi chúng tôi</h4>
+                        <div className="d-flex justify-content-center">
+                            <a href="">
+                                <BsFacebook className={styles.iconsFolow} />
+                            </a>
+                            <a href="">
+                                <BsInstagram className={styles.iconsFolow} />
+                            </a>
+                            <a href="">
+                                <BsYoutube className={styles.iconsFolow} />
+                            </a>
+                        </div>
                     </Col>
                 </Row>
             </Container>

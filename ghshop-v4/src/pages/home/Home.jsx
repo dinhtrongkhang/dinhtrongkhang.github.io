@@ -233,7 +233,7 @@ const Home = () => {
                 </Row>
             </Container>
             <Container className={styles.title}>
-                <h2>Tin tức</h2>
+                <h2>Tin tức thời trang</h2>
                 <Row>
                     <Col xs={12} md={6} lg={4} xl={3}>
                         {/* <Swiper {...swiperProps}>
