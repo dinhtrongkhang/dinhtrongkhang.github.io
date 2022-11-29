@@ -108,7 +108,7 @@ const Home = () => {
                             </Ratio>
                         </Card>
                         <Stack>
-                            <h3>Áo thun bé trai</h3>
+                            <h4>Áo thun bé trai</h4>
                             <span>200.000đ</span>
                             <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
                         </Stack>
@@ -123,7 +123,7 @@ const Home = () => {
                             </Ratio>
                         </Card>
                         <Stack>
-                            <h3>Áo polo nữ</h3>
+                            <h4>Áo polo nữ</h4>
                             <span>200.000đ</span>
                             <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
                         </Stack>
@@ -138,7 +138,7 @@ const Home = () => {
                             </Ratio>
                         </Card>
                         <Stack>
-                            <h3>Áo khoác bé trai</h3>
+                            <h4>Áo khoác bé trai</h4>
                             <span>200.000đ</span>
                             <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
                         </Stack>
@@ -153,7 +153,7 @@ const Home = () => {
                             </Ratio>
                         </Card>
                         <Stack>
-                            <h3>Áo sơ mi nam dài tay</h3>
+                            <h4>Áo sơ mi nam dài tay</h4>
                             <span>200.000đ</span>
                             <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
                         </Stack>
@@ -180,7 +180,7 @@ const Home = () => {
                             </Ratio>
                         </Card>
                         <Stack>
-                            <h3>Áo thun bé trai</h3>
+                            <h4>Áo thun bé trai</h4>
                             <span>200.000đ</span>
                             <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
                         </Stack>
@@ -195,7 +195,7 @@ const Home = () => {
                             </Ratio>
                         </Card>
                         <Stack>
-                            <h3>Áo thun dài tay nữ</h3>
+                            <h4>Áo thun dài tay nữ</h4>
                             <span>200.000đ</span>
                             <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
                         </Stack>
@@ -210,7 +210,7 @@ const Home = () => {
                             </Ratio>
                         </Card>
                         <Stack>
-                            <h3>Áo khoác nữ</h3>
+                            <h4>Áo khoác nữ</h4>
                             <span>200.000đ</span>
                             <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
                         </Stack>
@@ -225,7 +225,7 @@ const Home = () => {
                             </Ratio>
                         </Card>
                         <Stack>
-                            <h3>Áo sơ mi nam dài tay</h3>
+                            <h4>Áo sơ mi nam dài tay</h4>
                             <span>200.000đ</span>
                             <Button className={styles.btn}>Thêm vào giỏ hàng</Button>
                         </Stack>
