@@ -60,7 +60,7 @@ const Header = () => {
                                 gap={3}
                                 className="justify-content-end"
                             >
-                                <Nav.Link as={Link} to="/cart">
+                                <Nav.Link as={Link} to="/cart" className={styles.cart}>
                                     <BsCart />
 
                                     <Badge className={styles.totalItem}>{totalItem}</Badge>
